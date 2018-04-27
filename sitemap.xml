@@ -9,13 +9,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/04/26/hello-world/</loc>
-    
-    <lastmod>2018-04-26T03:36:30.784Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/about/index.html</loc>
     
     <lastmod>2016-04-27T01:48:50.332Z</lastmod>
@@ -30,7 +23,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/04/26/1-localhost/</loc>
+    <loc>http://yoursite.com/2018/04/26/localhost/</loc>
     
     <lastmod>2016-04-27T01:44:50.896Z</lastmod>
     
