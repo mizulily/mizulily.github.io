@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-27T07:04:28.596Z</updated>
+  <updated>2018-04-27T08:44:15.303Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2018/04/27/opc-1/"/>
     <id>http://yoursite.com/2018/04/27/opc-1/</id>
     <published>2018-04-27T02:06:54.000Z</published>
-    <updated>2018-04-27T07:04:28.596Z</updated>
+    <updated>2018-04-27T08:44:15.303Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/2018/04/27/opc-1/ch1-1.PNG" alt="whatever"></p><!-- toc --><ul><li><a href="#第一章-opc基础知识">第一章 OPC基础知识</a></li></ul><!-- tocstop --><h2><span id="第一章-opc基础知识">第一章 OPC基础知识</span></h2><p>OPC(OLE for Process Control)</p>]]></content>
     
@@ -39,8 +39,10 @@
     
     </summary>
     
-      <category term="OPC note" scheme="http://yoursite.com/categories/OPC-note/"/>
+      <category term="notes" scheme="http://yoursite.com/categories/notes/"/>
     
+    
+      <category term="OPC" scheme="http://yoursite.com/tags/OPC/"/>
     
   </entry>
   
@@ -49,7 +51,7 @@
     <link href="http://yoursite.com/2018/04/26/localhost/"/>
     <id>http://yoursite.com/2018/04/26/localhost/</id>
     <published>2018-04-26T08:51:36.000Z</published>
-    <updated>2016-04-27T01:44:50.896Z</updated>
+    <updated>2018-04-27T08:44:48.682Z</updated>
     
     <content type="html"><![CDATA[<p>localhost是一个域名，在windows中该域名是由/etc/hosts文件预定义的，默认对于ipv4指向127.0.0.1，对于ipv6指向::1，可对hosts文件进行修改配置为任意的IP地址，但可能导致只认127.0.0.1的软件失效。</p><p>127.0.0.1/8整个都是环回(loopback)地址，用来测试本机的TCP/IP协议栈，以及本机中各个应用之间的网络交互，也称虚拟网卡。Windows中看不到这个接口，Linux中这个接口叫lo，可通过ifconfig查看。</p><p>本机IP地址一般指绑定在物理或虚拟接口上的IP地址，供其他设备访问。</p><p>From <a href="https://www.zhihu.com/question/23940717" target="_blank" rel="noopener">知乎</a></p>]]></content>
     
@@ -63,8 +65,10 @@
     
     </summary>
     
-      <category term="network basis" scheme="http://yoursite.com/categories/network-basis/"/>
+      <category term="knowledge" scheme="http://yoursite.com/categories/knowledge/"/>
     
+    
+      <category term="network basis" scheme="http://yoursite.com/tags/network-basis/"/>
     
   </entry>
   

@@ -10,10 +10,16 @@
       
       <categories>
           
-          <category> OPC note </category>
+          <category> notes </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> OPC </tag>
+            
+        </tags>
       
     </entry>
     
@@ -25,10 +31,16 @@
       
       <categories>
           
-          <category> network basis </category>
+          <category> knowledge </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> network basis </tag>
+            
+        </tags>
       
     </entry>
     
