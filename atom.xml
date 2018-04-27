@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-27T08:44:15.303Z</updated>
+  <updated>2018-04-27T09:02:29.738Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -18,23 +18,22 @@
   
   <entry>
     <title>OPC应用程序入门笔记</title>
-    <link href="http://yoursite.com/2018/04/27/opc-1/"/>
-    <id>http://yoursite.com/2018/04/27/opc-1/</id>
+    <link href="http://yoursite.com/2018/04/27/opc-intro/"/>
+    <id>http://yoursite.com/2018/04/27/opc-intro/</id>
     <published>2018-04-27T02:06:54.000Z</published>
-    <updated>2018-04-27T08:44:15.303Z</updated>
+    <updated>2018-04-27T09:02:29.738Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/2018/04/27/opc-1/ch1-1.PNG" alt="whatever"></p><!-- toc --><ul><li><a href="#第一章-opc基础知识">第一章 OPC基础知识</a></li></ul><!-- tocstop --><h2><span id="第一章-opc基础知识">第一章 OPC基础知识</span></h2><p>OPC(OLE for Process Control)</p>]]></content>
+    <content type="html"><![CDATA[<p><img src="/2018/04/27/opc-intro/ch1-1.PNG" alt="ch1-1"></p><!-- toc --><ul><li><a href="#第一章-opc基础知识">第一章 OPC基础知识</a><ul><li><a href="#11-什么是opc">1.1 什么是OPC</a></li></ul></li></ul><!-- tocstop --><h2><span id="第一章-opc基础知识">第一章 OPC基础知识</span></h2><h3><span id="11-什么是opc">1.1 什么是OPC</span></h3><p>OPC(OLE for Process Control)是为不同供应商设备和应用程序之间的软件接口标准化而提出的，使其间的数据交换不依赖于特定开发语言和开发环境。它利用Windows中的OLE/COM技术实现工业制造系统过程控制中数据交换的标准化。OPC系统由提供数据收集服务的OPC服务器(OPC Server)、接受数据服务的OPC应用程序(OPC Client)和OPC接口所构成。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;/2018/04/27/opc-1/ch1-1.PNG&quot; alt=&quot;whatever&quot;&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;/2018/04/27/opc-intro/ch1-1.PNG&quot; alt=&quot;ch1-1&quot;&gt;&lt;/p&gt;
 &lt;!-- toc --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#第一章-opc基础知识&quot;&gt;第一章 OPC基础知识&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- t
+&lt;li&gt;&lt;a href=&quot;#第一章-opc基础知识&quot;&gt;第一章 OPC基础知识&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=
       
     
     </summary>
