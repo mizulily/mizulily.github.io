@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-27T09:02:29.738Z</updated>
+  <updated>2018-04-26T03:36:30.784Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,28 +17,137 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>OPC应用程序入门笔记</title>
-    <link href="http://yoursite.com/2018/04/27/opc-intro/"/>
-    <id>http://yoursite.com/2018/04/27/opc-intro/</id>
-    <published>2018-04-27T02:06:54.000Z</published>
-    <updated>2018-04-27T09:02:29.738Z</updated>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/04/28/hello-world/"/>
+    <id>http://yoursite.com/2018/04/28/hello-world/</id>
+    <published>2018-04-28T05:54:39.047Z</published>
+    <updated>2018-04-26T03:36:30.784Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/2018/04/27/opc-intro/ch1-1.PNG" alt="ch1-1"></p><!-- toc --><ul><li><a href="#第一章-opc基础知识">第一章 OPC基础知识</a><ul><li><a href="#11-什么是opc">1.1 什么是OPC</a></li></ul></li></ul><!-- tocstop --><h2><span id="第一章-opc基础知识">第一章 OPC基础知识</span></h2><h3><span id="11-什么是opc">1.1 什么是OPC</span></h3><p>OPC(OLE for Process Control)是为不同供应商设备和应用程序之间的软件接口标准化而提出的，使其间的数据交换不依赖于特定开发语言和开发环境。它利用Windows中的OLE/COM技术实现工业制造系统过程控制中数据交换的标准化。OPC系统由提供数据收集服务的OPC服务器(OPC Server)、接受数据服务的OPC应用程序(OPC Client)和OPC接口所构成。</p>]]></content>
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2><span id="quick-start">Quick Start</span></h2><h3><span id="create-a-new-post">Create a new post</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3><span id="run-server">Run server</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3><span id="generate-static-files">Generate static files</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3><span id="deploy-to-remote-sites">Deploy to remote sites</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;/2018/04/27/opc-intro/ch1-1.PNG&quot; alt=&quot;ch1-1&quot;&gt;&lt;/p&gt;
-&lt;!-- toc --&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#第一章-opc基础知识&quot;&gt;第一章 OPC基础知识&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
       
     
     </summary>
     
-      <category term="notes" scheme="http://yoursite.com/categories/notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用C#编写OPC程序</title>
+    <link href="http://yoursite.com/2018/04/28/exp-cs-opc/"/>
+    <id>http://yoursite.com/2018/04/28/exp-cs-opc/</id>
+    <published>2018-04-28T01:23:59.000Z</published>
+    <updated>2018-04-28T01:51:43.505Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://opcfoundation.org/" target="_blank" rel="noopener">OPC基金会官网</a>真是弱爆了。</p><h3><span id="1-配置opcdaautodll">1. 配置OPCDAAuto.dll</span></h3><p>OPC的自动化接口即OPCDAAuto.dll<br>1)下载文件OPCDAAuto.dll，版本2.2.5.30<br>2)放到System32文件夹下，用管理员身份打开cmd<br>3)输入regsvr32 opcdaauto.dll后提示成功<br>4)打开Visual Studio在项目中打开相应项目，对解决方案右键-添加-引用，浏览选择opcdaaturo.dll<br>5)依赖项中出现COM-Interop.OPCAutomation，在C#程序开头using OPCAutomation；不再显示红色波浪线错误，即配置成功。</p><p>Reference <a href="https://blog.csdn.net/u012252959/article/details/49699559" target="_blank" rel="noopener">u012252959的博客</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://opcfoundation.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;OPC基金会官网&lt;/a&gt;真是弱爆了。&lt;/p&gt;
+&lt;h3&gt;&lt;span id=&quot;1-配置opcdaautodll&quot;&gt;1. 配置OPCDAAuto
+      
+    
+    </summary>
+    
+      <category term="experience" scheme="http://yoursite.com/categories/experience/"/>
+    
+    
+      <category term="OPC" scheme="http://yoursite.com/tags/OPC/"/>
+    
+      <category term="C#" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《Learning hard C#学习笔记》笔记</title>
+    <link href="http://yoursite.com/2018/04/28/note-cs/"/>
+    <id>http://yoursite.com/2018/04/28/note-cs/</id>
+    <published>2018-04-28T00:55:46.000Z</published>
+    <updated>2018-04-28T06:13:23.847Z</updated>
+    
+    <content type="html"><![CDATA[<!-- toc --><ul><li><a href="#第一章-c基础知识">第一章 C#基础知识</a></li><li><a href="#第八章-委托">第八章 委托</a></li></ul><!-- tocstop --><h2><span id="第一章-c基础知识">第一章 C#基础知识</span></h2><p>C#</p><h2><span id="第八章-委托">第八章 委托</span></h2><p>委托是C#中最中需要的特性之一，可以理解为函数的一个包装，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。<br>委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字，例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public delegate void MyDelegate(int para1, int para2);</span><br></pre></td></tr></table></figure></p><p>能被委托包装的方法需要满足：</p><ol><li>方法的签名与委托一致（参数个数、类型、顺序）</li><li>方法的返回类型与委托一致</li></ol><p>使用委托的例子：</p><div><div class="fold_hider"><div class="close hider_title">点击显/隐内容</div></div><div class="fold"><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line"></span><br><span class="line">namespace CSbook&#123;</span><br><span class="line"></span><br><span class="line">    class Program&#123;</span><br><span class="line"></span><br><span class="line">        delegate void MyDelegate(int para1, int para2);</span><br><span class="line">        </span><br><span class="line">        static void Main(string[] args)&#123;</span><br><span class="line">            MyDelegate d;</span><br><span class="line"></span><br><span class="line">            d = new MyDelegate(new Program().Add);</span><br><span class="line">            MyMethod(d);</span><br><span class="line">            d = new MyDelegate(new Program().Sub);</span><br><span class="line">            MyMethod(d);</span><br><span class="line"></span><br><span class="line">            Console.Read();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        void Add(int para1, int para2)&#123;</span><br><span class="line">            int sum = para1 + para2;</span><br><span class="line">            Console.WriteLine(<span class="string">"Sum is: "</span> + sum);</span><br><span class="line">        &#125;</span><br><span class="line">        void Sub(int para1, int para2)&#123;</span><br><span class="line">            int diff = para1 - para2;</span><br><span class="line">            Console.WriteLine(<span class="string">"Diff is: "</span> + diff);</span><br><span class="line">        &#125;</span><br><span class="line">        private static void MyMethod(MyDelegate mydelegate)&#123;</span><br><span class="line">            mydelegate(1, 2);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;!-- toc --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#第一章-c基础知识&quot;&gt;第一章 C#基础知识&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#第八章-委托&quot;&gt;第八章 委托&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- tocstop --&gt;
+&lt;h2&gt;&lt;span id=&quot;第一
+      
+    
+    </summary>
+    
+      <category term="note" scheme="http://yoursite.com/categories/note/"/>
+    
+    
+      <category term="C#" scheme="http://yoursite.com/tags/C/"/>
+    
+      <category term="programming language" scheme="http://yoursite.com/tags/programming-language/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FactoryTalk Transaction Manager</title>
+    <link href="http://yoursite.com/2018/04/27/exp-trans-1/"/>
+    <id>http://yoursite.com/2018/04/27/exp-trans-1/</id>
+    <published>2018-04-27T09:03:46.000Z</published>
+    <updated>2018-04-28T00:53:38.094Z</updated>
+    
+    <content type="html"><![CDATA[<h3><span id="1-opc-server-sql-server">1. OPC Server <-> SQL Server</-></span></h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3&gt;&lt;span id=&quot;1-opc-server-sql-server&quot;&gt;1. OPC Server &lt;-&gt; SQL Server&lt;/-&gt;&lt;/span&gt;&lt;/h3&gt;
+      
+    
+    </summary>
+    
+      <category term="experience" scheme="http://yoursite.com/categories/experience/"/>
+    
+    
+      <category term="FactoryTalk" scheme="http://yoursite.com/tags/FactoryTalk/"/>
+    
+      <category term="Rockwell" scheme="http://yoursite.com/tags/Rockwell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《OPC应用程序入门》笔记</title>
+    <link href="http://yoursite.com/2018/04/27/note-opc/"/>
+    <id>http://yoursite.com/2018/04/27/note-opc/</id>
+    <published>2018-04-27T02:06:54.000Z</published>
+    <updated>2018-04-28T01:00:14.314Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/2018/04/27/note-opc/ch1-1.PNG" alt="ch1-1"></p><!-- toc --><ul><li><a href="#第一章-opc基础知识">第一章 OPC基础知识</a><ul><li><a href="#11-什么是opc">1.1 什么是OPC</a></li></ul></li></ul><!-- tocstop --><h2><span id="第一章-opc基础知识">第一章 OPC基础知识</span></h2><h3><span id="11-什么是opc">1.1 什么是OPC</span></h3><p>OPC(OLE for Process Control)是为不同供应商设备和应用程序之间的软件接口标准化而提出的，使其间的数据交换不依赖于特定开发语言和开发环境。它利用Windows中的OLE/COM技术实现工业制造系统过程控制中数据交换的标准化。OPC系统由提供数据收集服务的OPC服务器(OPC Server)、接受数据服务的OPC应用程序(OPC Client)和OPC接口所构成。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/2018/04/27/note-opc/ch1-1.PNG&quot; alt=&quot;ch1-1&quot;&gt;&lt;/p&gt;
+&lt;!-- toc --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#第一章-opc基础知识&quot;&gt;第一章 OPC基础知识&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;
+      
+    
+    </summary>
+    
+      <category term="note" scheme="http://yoursite.com/categories/note/"/>
     
     
       <category term="OPC" scheme="http://yoursite.com/tags/OPC/"/>
@@ -47,8 +156,8 @@
   
   <entry>
     <title>localhost</title>
-    <link href="http://yoursite.com/2018/04/26/localhost/"/>
-    <id>http://yoursite.com/2018/04/26/localhost/</id>
+    <link href="http://yoursite.com/2018/04/26/know-localhost/"/>
+    <id>http://yoursite.com/2018/04/26/know-localhost/</id>
     <published>2018-04-26T08:51:36.000Z</published>
     <updated>2018-04-27T08:44:48.682Z</updated>
     
