@@ -102,18 +102,18 @@
 
 
 
-  <meta name="description" content="第一章 C#基础知识 第八章 委托   第一章 C#基础知识C# 第八章 委托委托是C#中最中需要的特性之一，可以理解为函数的一个包装，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字，例如：1public del">
+  <meta name="description" content="第一章 基础知识 第八章 委托 第九章 事件   第一章 基础知识C# 第八章 委托委托是C#中最中需要的特性之一，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字，例如： 访问修饰符 delegate 返回类型">
 <meta name="keywords" content="C#,programming language">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《Learning hard C#学习笔记》笔记">
 <meta property="og:url" content="http://yoursite.com/2018/04/28/note-cs/index.html">
 <meta property="og:site_name" content="Elaine&#39;s Notebook">
-<meta property="og:description" content="第一章 C#基础知识 第八章 委托   第一章 C#基础知识C# 第八章 委托委托是C#中最中需要的特性之一，可以理解为函数的一个包装，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字，例如：1public del">
+<meta property="og:description" content="第一章 基础知识 第八章 委托 第九章 事件   第一章 基础知识C# 第八章 委托委托是C#中最中需要的特性之一，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字，例如： 访问修饰符 delegate 返回类型">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-28T06:13:23.847Z">
+<meta property="og:updated_time" content="2018-04-28T07:28:57.260Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《Learning hard C#学习笔记》笔记">
-<meta name="twitter:description" content="第一章 C#基础知识 第八章 委托   第一章 C#基础知识C# 第八章 委托委托是C#中最中需要的特性之一，可以理解为函数的一个包装，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字，例如：1public del">
+<meta name="twitter:description" content="第一章 基础知识 第八章 委托 第九章 事件   第一章 基础知识C# 第八章 委托委托是C#中最中需要的特性之一，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字，例如： 访问修饰符 delegate 返回类型">
 
 
 
@@ -338,7 +338,7 @@
                 
               
 
-              <time title="创建时间：2018-04-28 08:55:46 / 修改时间：14:13:23" itemprop="dateCreated datePublished" datetime="2018-04-28T08:55:46+08:00">2018-04-28</time>
+              <time title="创建时间：2018-04-28 08:55:46 / 修改时间：15:28:57" itemprop="dateCreated datePublished" datetime="2018-04-28T08:55:46+08:00">2018-04-28</time>
             
 
             
@@ -396,23 +396,25 @@
       
         <!-- toc -->
 <ul>
-<li><a href="#第一章-c基础知识">第一章 C#基础知识</a></li>
+<li><a href="#第一章-基础知识">第一章 基础知识</a></li>
 <li><a href="#第八章-委托">第八章 委托</a></li>
+<li><a href="#第九章-事件">第九章 事件</a></li>
 </ul>
 <!-- tocstop -->
-<h2><span id="第一章-c基础知识">第一章 C#基础知识</span></h2><p>C#</p>
-<h2><span id="第八章-委托">第八章 委托</span></h2><p>委托是C#中最中需要的特性之一，可以理解为函数的一个包装，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。<br>委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字，例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public delegate void MyDelegate(int para1, int para2);</span><br></pre></td></tr></table></figure></p>
-<p>能被委托包装的方法需要满足：</p>
+<h2><span id="第一章-基础知识">第一章 基础知识</span></h2><p>C#</p>
+<h2><span id="第八章-委托">第八章 委托</span></h2><p><strong>委托</strong>是C#中最中需要的特性之一，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。<br>委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字，例如：</p>
+<pre><code>访问修饰符 delegate 返回类型 委托名([参数表])
+</code></pre><p>能被委托包装的方法需要满足：</p>
 <ol>
 <li>方法的签名与委托一致（参数个数、类型、顺序）</li>
 <li>方法的返回类型与委托一致</li>
 </ol>
-<p>使用委托的例子：</p>
-<div><div class="fold_hider"><div class="close hider_title">点击显/隐内容</div></div><div class="fold">
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line"></span><br><span class="line">namespace CSbook&#123;</span><br><span class="line"></span><br><span class="line">    class Program&#123;</span><br><span class="line"></span><br><span class="line">        delegate void MyDelegate(int para1, int para2);</span><br><span class="line">        </span><br><span class="line">        static void Main(string[] args)&#123;</span><br><span class="line">            MyDelegate d;</span><br><span class="line"></span><br><span class="line">            d = new MyDelegate(new Program().Add);</span><br><span class="line">            MyMethod(d);</span><br><span class="line">            d = new MyDelegate(new Program().Sub);</span><br><span class="line">            MyMethod(d);</span><br><span class="line"></span><br><span class="line">            Console.Read();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        void Add(int para1, int para2)&#123;</span><br><span class="line">            int sum = para1 + para2;</span><br><span class="line">            Console.WriteLine(<span class="string">"Sum is: "</span> + sum);</span><br><span class="line">        &#125;</span><br><span class="line">        void Sub(int para1, int para2)&#123;</span><br><span class="line">            int diff = para1 - para2;</span><br><span class="line">            Console.WriteLine(<span class="string">"Diff is: "</span> + diff);</span><br><span class="line">        &#125;</span><br><span class="line">        private static void MyMethod(MyDelegate mydelegate)&#123;</span><br><span class="line">            mydelegate(1, 2);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>委托也可以封装多个方法，称为<strong>委托链</strong>或多路广播委托，在委托链上的委托都会被顺序执行。可以通过“+”运算符把委托链接到一个委托对象实例上，也可以使用“-”运算符将某个委托从委托链对象上移除。</p>
+<div><div class="fold_hider"><div class="close hider_title">委托和委托链的例子（点击显示代码）</div></div><div class="fold">
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">CSbook</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//委托的定义</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">delegate</span> <span class="keyword">void</span> <span class="title">MyDelegate</span>(<span class="params"><span class="keyword">int</span> para1, <span class="keyword">int</span> para2</span>)</span>;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">MyMethod</span>(<span class="params">MyDelegate mydelegate</span>)</span>&#123;</span><br><span class="line">            mydelegate(<span class="number">1</span>, <span class="number">2</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            MyDelegate m = <span class="keyword">new</span> MyDelegate(Program.Mult);</span><br><span class="line">            <span class="comment">// 方法Program.Mult作为方法MyMethod的参数</span></span><br><span class="line">            MyMethod(m);</span><br><span class="line">            </span><br><span class="line"></span><br><span class="line">            MyDelegate p = <span class="keyword">new</span> MyDelegate(<span class="keyword">new</span> Program().Add);</span><br><span class="line">            MyDelegate q = <span class="keyword">new</span> MyDelegate(<span class="keyword">new</span> Program().Sub);</span><br><span class="line">            MyDelegate chain = <span class="literal">null</span>;</span><br><span class="line">            chain += m;</span><br><span class="line">            chain += p;</span><br><span class="line">            chain += q;</span><br><span class="line">            chain -= m;</span><br><span class="line">            chain(<span class="number">1</span>,<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">            Console.Read();</span><br><span class="line">  </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 实例方法</span></span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">Add</span>(<span class="params"><span class="keyword">int</span> para1, <span class="keyword">int</span> para2</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">int</span> sum = para1 + para2;</span><br><span class="line">            Console.WriteLine(<span class="string">"Sum is: "</span> + sum);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">Sub</span>(<span class="params"><span class="keyword">int</span> para1, <span class="keyword">int</span> para2</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">int</span> sub = para1 - para2;</span><br><span class="line">            Console.WriteLine(<span class="string">"Sub is: "</span> + sub);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 静态方法</span></span><br><span class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Mult</span>(<span class="params"><span class="keyword">int</span> para1, <span class="keyword">int</span> para2</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">int</span> mul = para1 * para2;</span><br><span class="line">            Console.WriteLine(<span class="string">"Mul is: "</span> + mul);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 </div></div>
-
+<h2><span id="第九章-事件">第九章 事件</span></h2>
       
     </div>
 
@@ -447,8 +449,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/27/exp-trans-1/" rel="next" title="FactoryTalk Transaction Manager">
-                <i class="fa fa-chevron-left"></i> FactoryTalk Transaction Manager
+              <a href="/2018/04/27/exp-trans-1/" rel="next" title="FactoryTalk Transaction Manager使用心得">
+                <i class="fa fa-chevron-left"></i> FactoryTalk Transaction Manager使用心得
               </a>
             
           </div>
@@ -537,7 +539,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -556,7 +558,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -581,7 +585,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">6</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">标签</span>
                   
                 </div>
@@ -624,7 +632,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第一章 C#基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第八章 委托</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第一章 基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第八章 委托</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第九章 事件</span></a></li></ol></div>
             
 
           </div>

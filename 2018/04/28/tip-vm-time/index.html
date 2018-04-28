@@ -102,17 +102,18 @@
 
 
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="由于软件license的时间限制，需要用过去的时间启动虚拟机。  修改主机时间。启动虚拟机后系统时间即当前主机时间。但在主机中打开Chrome浏览器会报错，提示时钟慢了，无法建立私密连接。 修改虚拟机启动时间。用文本编辑器打开虚拟机.vmx文件，寻找以下设置项并关闭同步，设置虚拟机启动时间，保存后启动虚拟机。1234567tools.syncTime = &amp;quot;FALSE&amp;quot;  ti">
+<meta name="keywords" content="virtual machine">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/04/28/hello-world/index.html">
+<meta property="og:title" content="修改虚拟机启动时间">
+<meta property="og:url" content="http://yoursite.com/2018/04/28/tip-vm-time/index.html">
 <meta property="og:site_name" content="Elaine&#39;s Notebook">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="由于软件license的时间限制，需要用过去的时间启动虚拟机。  修改主机时间。启动虚拟机后系统时间即当前主机时间。但在主机中打开Chrome浏览器会报错，提示时钟慢了，无法建立私密连接。 修改虚拟机启动时间。用文本编辑器打开虚拟机.vmx文件，寻找以下设置项并关闭同步，设置虚拟机启动时间，保存后启动虚拟机。1234567tools.syncTime = &amp;quot;FALSE&amp;quot;  ti">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-26T03:36:30.784Z">
+<meta property="og:updated_time" content="2018-04-28T09:02:46.005Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="修改虚拟机启动时间">
+<meta name="twitter:description" content="由于软件license的时间限制，需要用过去的时间启动虚拟机。  修改主机时间。启动虚拟机后系统时间即当前主机时间。但在主机中打开Chrome浏览器会报错，提示时钟慢了，无法建立私密连接。 修改虚拟机启动时间。用文本编辑器打开虚拟机.vmx文件，寻找以下设置项并关闭同步，设置虚拟机启动时间，保存后启动虚拟机。1234567tools.syncTime = &amp;quot;FALSE&amp;quot;  ti">
 
 
 
@@ -121,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/28/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/28/tip-vm-time/"/>
 
 
 
@@ -131,7 +132,7 @@
   };
 </script>
 
-  <title>Hello World | Elaine's Notebook</title>
+  <title>修改虚拟机启动时间 | Elaine's Notebook</title>
   
 
 
@@ -295,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/28/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/28/tip-vm-time/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Elaine">
@@ -312,7 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World
+          <h1 class="post-title" itemprop="name headline">修改虚拟机启动时间
               
             
           </h1>
@@ -337,28 +338,34 @@
                 
               
 
-              <time title="创建时间：2018-04-28 13:54:39" itemprop="dateCreated datePublished" datetime="2018-04-28T13:54:39+08:00">2018-04-28</time>
+              <time title="创建时间：2018-04-28 14:51:56 / 修改时间：17:02:46" itemprop="dateCreated datePublished" datetime="2018-04-28T14:51:56+08:00">2018-04-28</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-04-26 11:36:30" itemprop="dateModified" datetime="2018-04-26T11:36:30+08:00">2018-04-26</time>
               
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/tip/" itemprop="url" rel="index"><span itemprop="name">tip</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -387,15 +394,14 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2><span id="quick-start">Quick Start</span></h2><h3><span id="create-a-new-post">Create a new post</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3><span id="run-server">Run server</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3><span id="generate-static-files">Generate static files</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3><span id="deploy-to-remote-sites">Deploy to remote sites</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>由于软件license的时间限制，需要用过去的时间启动虚拟机。</p>
+<ol>
+<li>修改主机时间。启动虚拟机后系统时间即当前主机时间。但在主机中打开Chrome浏览器会报错，提示时钟慢了，无法建立私密连接。</li>
+<li>修改虚拟机启动时间。用文本编辑器打开虚拟机.vmx文件，寻找以下设置项并关闭同步，设置虚拟机启动时间，保存后启动虚拟机。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">tools.syncTime = &quot;FALSE&quot;  </span><br><span class="line">time.synchronize.continue = &quot;FALSE&quot;  </span><br><span class="line">time.synchronize.restore = &quot;FALSE&quot;  </span><br><span class="line">time.synchronize.resume.disk = &quot;FALSE&quot;  </span><br><span class="line">time.synchronize.shrink = &quot;FALSE&quot;  </span><br><span class="line">time.synchronize.tools.startup = &quot;FALSE&quot; </span><br><span class="line">rtc.startTime = 1462003200</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>注：rtc.startTime是从1970年1月1日0时0分0秒（Unix时间）到系统启动时间间隔的时间，单位是秒，可以到<a href="http://www.onlineconversion.com/unix_time.htm" target="_blank" rel="noopener">计算时间的网站</a>上换算得到希望虚拟机的启动时间。</p>
+<p>Reference <a href="https://blog.csdn.net/sagafive/article/details/53031740" target="_blank" rel="noopener">SagaFive的专栏</a></p>
 
       
     </div>
@@ -413,6 +419,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/virtual-machine/" rel="tag"># virtual machine</a>
+          
+        </div>
       
 
       
@@ -432,6 +444,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/28/konw-NTP/" rel="prev" title="NTP网络时间协议">
+                NTP网络时间协议 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -480,17 +496,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -509,7 +516,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -528,7 +535,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -553,7 +562,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">6</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">标签</span>
                   
                 </div>
@@ -586,22 +599,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
