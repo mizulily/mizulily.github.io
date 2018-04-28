@@ -102,18 +102,18 @@
 
 
 
-  <meta name="description" content="第一章 基础知识 第八章 委托 第九章 事件   第一章 基础知识C# 第八章 委托委托是C#中最中需要的特性之一，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字，例如： 访问修饰符 delegate 返回类型">
+  <meta name="description" content="第一章 基础知识 第八章 委托 第九章 事件   第一章 基础知识C# 第八章 委托委托是C#中最中需要的特性之一，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字： 访问修饰符 delegate 返回类型 委托名">
 <meta name="keywords" content="C#,programming language">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《Learning hard C#学习笔记》笔记">
 <meta property="og:url" content="http://yoursite.com/2018/04/28/note-cs/index.html">
 <meta property="og:site_name" content="Elaine&#39;s Notebook">
-<meta property="og:description" content="第一章 基础知识 第八章 委托 第九章 事件   第一章 基础知识C# 第八章 委托委托是C#中最中需要的特性之一，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字，例如： 访问修饰符 delegate 返回类型">
+<meta property="og:description" content="第一章 基础知识 第八章 委托 第九章 事件   第一章 基础知识C# 第八章 委托委托是C#中最中需要的特性之一，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字： 访问修饰符 delegate 返回类型 委托名">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-28T07:28:57.260Z">
+<meta property="og:updated_time" content="2018-04-28T11:39:38.861Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《Learning hard C#学习笔记》笔记">
-<meta name="twitter:description" content="第一章 基础知识 第八章 委托 第九章 事件   第一章 基础知识C# 第八章 委托委托是C#中最中需要的特性之一，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字，例如： 访问修饰符 delegate 返回类型">
+<meta name="twitter:description" content="第一章 基础知识 第八章 委托 第九章 事件   第一章 基础知识C# 第八章 委托委托是C#中最中需要的特性之一，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字： 访问修饰符 delegate 返回类型 委托名">
 
 
 
@@ -301,7 +301,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Elaine">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/pic/timg.jpg">
+      <meta itemprop="image" content="/pic/daodao2.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -338,7 +338,7 @@
                 
               
 
-              <time title="创建时间：2018-04-28 08:55:46 / 修改时间：15:28:57" itemprop="dateCreated datePublished" datetime="2018-04-28T08:55:46+08:00">2018-04-28</time>
+              <time title="创建时间：2018-04-28 08:55:46 / 修改时间：19:39:38" itemprop="dateCreated datePublished" datetime="2018-04-28T08:55:46+08:00">2018-04-28</time>
             
 
             
@@ -402,7 +402,7 @@
 </ul>
 <!-- tocstop -->
 <h2><span id="第一章-基础知识">第一章 基础知识</span></h2><p>C#</p>
-<h2><span id="第八章-委托">第八章 委托</span></h2><p><strong>委托</strong>是C#中最中需要的特性之一，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。<br>委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字，例如：</p>
+<h2><span id="第八章-委托">第八章 委托</span></h2><p><strong>委托</strong>是C#中最中需要的特性之一，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。<br>委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字：</p>
 <pre><code>访问修饰符 delegate 返回类型 委托名([参数表])
 </code></pre><p>能被委托包装的方法需要满足：</p>
 <ol>
@@ -525,7 +525,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
-                src="/pic/timg.jpg"
+                src="/pic/daodao2.jpg"
                 alt="Elaine" />
             
               <p class="site-author-name" itemprop="name">Elaine</p>
