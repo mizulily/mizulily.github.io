@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-28T12:50:36.946Z</updated>
+  <updated>2018-05-03T01:08:06.731Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,19 +17,44 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>NTP网络时间协议</title>
-    <link href="http://yoursite.com/2018/04/28/konw-NTP/"/>
-    <id>http://yoursite.com/2018/04/28/konw-NTP/</id>
-    <published>2018-04-28T08:55:35.000Z</published>
-    <updated>2018-04-28T12:50:36.946Z</updated>
+    <title>DNS域名系统</title>
+    <link href="http://yoursite.com/2018/05/03/know-DNS/"/>
+    <id>http://yoursite.com/2018/05/03/know-DNS/</id>
+    <published>2018-05-03T00:53:04.000Z</published>
+    <updated>2018-05-03T01:08:06.731Z</updated>
     
-    <content type="html"><![CDATA[<p>NTP(Network Time Protocol)网络时间协议，是用来同步网络中各个计算机时间的协议，属于应用层协议，采用UDP传输。连接到互联网上的主机通过NTP与UTC(Universal Time Coordinate，国际标准时间)同步，UTC由原子钟报时。<br>计算机主机一般同多个时钟服务器连接，利用统计学的算法过滤来自不同服务器的时间，选择最佳的路径和来源以便校正主机时间。</p><p>test for git</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>DNS(Domain Name System，域名系统)</strong>在万维网上作为域名和IP地址相互映射的分布式数据库。通过域名得到对应IP地址的过程叫做<strong>域名解析</strong>。DNS协议运行在UDP协议之上，使用UDP端口号53。为保证服务的高可用性，DNS要求使用多台名称服务器冗余支持每个区域。</p><p>Reference <a href="https://baike.baidu.com/item/DNS/427444#reference-[4]-15346050-wrap" target="_blank" rel="noopener">百度百科</a></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;NTP(Network Time Protocol)网络时间协议，是用来同步网络中各个计算机时间的协议，属于应用层协议，采用UDP传输。连接到互联网上的主机通过NTP与UTC(Universal Time Coordinate，国际标准时间)同步，UTC由原子钟报时。&lt;br
+        &lt;p&gt;&lt;strong&gt;DNS(Domain Name System，域名系统)&lt;/strong&gt;在万维网上作为域名和IP地址相互映射的分布式数据库。通过域名得到对应IP地址的过程叫做&lt;strong&gt;域名解析&lt;/strong&gt;。DNS协议运行在UDP协议之上，使用UDP端口号53。
+      
+    
+    </summary>
+    
+      <category term="knowledge" scheme="http://yoursite.com/categories/knowledge/"/>
+    
+    
+      <category term="network basis" scheme="http://yoursite.com/tags/network-basis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NTP网络时间协议</title>
+    <link href="http://yoursite.com/2018/04/28/know-NTP/"/>
+    <id>http://yoursite.com/2018/04/28/know-NTP/</id>
+    <published>2018-04-28T08:55:35.000Z</published>
+    <updated>2018-05-03T01:07:26.844Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>NTP(Network Time Protocol，网络时间协议)</strong>是用来同步网络中各个计算机时间的协议，属于应用层协议，采用UDP报文传输，使用UDP端口号为123。连接到互联网上的主机通过NTP与UTC(Universal Time Coordinate，世界协调时)同步，UTC由原子钟报时。<br>计算机主机一般同多个时钟服务器连接，利用统计学的算法过滤来自不同服务器的时间，选择最佳的路径和来源以便校正主机时间。</p><p>Reference <a href="https://baike.baidu.com/item/nTP" target="_blank" rel="noopener">百度百科</a><br>More <a href="http://blog.163.com/yzc_5001/blog/static/2061963420121283050787/" target="_blank" rel="noopener">sms的博客</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;NTP(Network Time Protocol，网络时间协议)&lt;/strong&gt;是用来同步网络中各个计算机时间的协议，属于应用层协议，采用UDP报文传输，使用UDP端口号为123。连接到互联网上的主机通过NTP与UTC(Universal Time Co
       
     
     </summary>
