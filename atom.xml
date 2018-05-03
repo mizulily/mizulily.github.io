@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-03T01:08:06.731Z</updated>
+  <updated>2018-05-03T08:18:07.172Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Profibus和Profinet</title>
+    <link href="http://yoursite.com/2018/05/03/know-profibus/"/>
+    <id>http://yoursite.com/2018/05/03/know-profibus/</id>
+    <published>2018-05-03T07:52:05.000Z</published>
+    <updated>2018-05-03T08:18:07.172Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>Profibus(Process Field Bus，过程现场总线)</strong>是一种国际化、开放式、不依赖于设备生产商的现场总线标准</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;Profibus(Process Field Bus，过程现场总线)&lt;/strong&gt;是一种国际化、开放式、不依赖于设备生产商的现场总线标准&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="knowledge" scheme="http://yoursite.com/categories/knowledge/"/>
+    
+    
+      <category term="protocol" scheme="http://yoursite.com/tags/protocol/"/>
+    
+      <category term="industrial network" scheme="http://yoursite.com/tags/industrial-network/"/>
+    
+      <category term="field bus" scheme="http://yoursite.com/tags/field-bus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Modbus通信协议</title>
+    <link href="http://yoursite.com/2018/05/03/know-modbus/"/>
+    <id>http://yoursite.com/2018/05/03/know-modbus/</id>
+    <published>2018-05-03T07:30:26.000Z</published>
+    <updated>2018-05-03T07:52:17.605Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>Modbus通信协议</strong>是全球第一个用于工业现场的总线协议，支持RS-232、RS-422、RS-485和以太网设备等，属于应用层协议。<br><strong>Modbus网络</strong>是一个工业通信系统，包括硬件、软件及协议，用于各种数据采集和过程监控。Modbus网络只有一个主机，所有通信由它发出，至多支持247个远程从属控制器，实际支持从机数由通信设备决定。主设备可单独和从设备通信，从设备返回一消息作为回应；也能以广播方式和所有从设备通信，从设备不作任何回应。<br>Modbus最初使用串行链路，分为Modbus-ASCII(美国信息交换码)和Modbus-RTU(远程终端设备)两种传输模式，其中RTU传输效率更高。随着网络发展推出了针对以太网通信的Modbus-TCP标准，</p><p>Reference <a href="https://baike.baidu.com/item/Modbus%E9%80%9A%E8%AE%AF%E5%8D%8F%E8%AE%AE" target="_blank" rel="noopener">百度百科</a><br>More <a href="http://www.cnblogs.com/luomingui/archive/2013/06/14/Modbus.html" target="_blank" rel="noopener">老罗传奇的博客</a><br><a href="http://www.zlmcu.com/document/modbus_tcp_2_rtu.html" target="_blank" rel="noopener">上海卓岚公司的网站</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;Modbus通信协议&lt;/strong&gt;是全球第一个用于工业现场的总线协议，支持RS-232、RS-422、RS-485和以太网设备等，属于应用层协议。&lt;br&gt;&lt;strong&gt;Modbus网络&lt;/strong&gt;是一个工业通信系统，包括硬件、软件及协议，用于各种
+      
+    
+    </summary>
+    
+      <category term="knowledge" scheme="http://yoursite.com/categories/knowledge/"/>
+    
+    
+      <category term="protocol" scheme="http://yoursite.com/tags/protocol/"/>
+    
+      <category term="industrial network" scheme="http://yoursite.com/tags/industrial-network/"/>
+    
+  </entry>
   
   <entry>
     <title>DNS域名系统</title>
@@ -46,7 +103,7 @@
     <link href="http://yoursite.com/2018/04/28/know-NTP/"/>
     <id>http://yoursite.com/2018/04/28/know-NTP/</id>
     <published>2018-04-28T08:55:35.000Z</published>
-    <updated>2018-05-03T01:07:26.844Z</updated>
+    <updated>2018-05-03T07:32:22.928Z</updated>
     
     <content type="html"><![CDATA[<p><strong>NTP(Network Time Protocol，网络时间协议)</strong>是用来同步网络中各个计算机时间的协议，属于应用层协议，采用UDP报文传输，使用UDP端口号为123。连接到互联网上的主机通过NTP与UTC(Universal Time Coordinate，世界协调时)同步，UTC由原子钟报时。<br>计算机主机一般同多个时钟服务器连接，利用统计学的算法过滤来自不同服务器的时间，选择最佳的路径和来源以便校正主机时间。</p><p>Reference <a href="https://baike.baidu.com/item/nTP" target="_blank" rel="noopener">百度百科</a><br>More <a href="http://blog.163.com/yzc_5001/blog/static/2061963420121283050787/" target="_blank" rel="noopener">sms的博客</a></p>]]></content>
     
@@ -63,6 +120,8 @@
     
     
       <category term="network basis" scheme="http://yoursite.com/tags/network-basis/"/>
+    
+      <category term="protocol" scheme="http://yoursite.com/tags/protocol/"/>
     
   </entry>
   
@@ -175,11 +234,11 @@
       <category term="experience" scheme="http://yoursite.com/categories/experience/"/>
     
     
-      <category term="OPC" scheme="http://yoursite.com/tags/OPC/"/>
-    
       <category term="FactoryTalk" scheme="http://yoursite.com/tags/FactoryTalk/"/>
     
       <category term="Rockwell" scheme="http://yoursite.com/tags/Rockwell/"/>
+    
+      <category term="OPC" scheme="http://yoursite.com/tags/OPC/"/>
     
       <category term="SQL" scheme="http://yoursite.com/tags/SQL/"/>
     

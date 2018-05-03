@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2018/05/03/know-DNS/</loc>
+    <loc>http://yoursite.com/2018/05/03/know-profibus/</loc>
     
-    <lastmod>2018-05-03T01:08:06.731Z</lastmod>
+    <lastmod>2018-05-03T08:18:07.172Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/03/know-modbus/</loc>
+    
+    <lastmod>2018-05-03T07:52:17.605Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2018/04/28/know-NTP/</loc>
     
-    <lastmod>2018-05-03T01:07:26.844Z</lastmod>
+    <lastmod>2018-05-03T07:32:22.928Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/03/know-DNS/</loc>
+    
+    <lastmod>2018-05-03T01:08:06.731Z</lastmod>
     
   </url>
   

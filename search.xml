@@ -3,6 +3,54 @@
   
     
     <entry>
+      <title>Profibus和Profinet</title>
+      <link href="/2018/05/03/know-profibus/"/>
+      <url>/2018/05/03/know-profibus/</url>
+      <content type="html"><![CDATA[<p><strong>Profibus(Process Field Bus，过程现场总线)</strong>是一种国际化、开放式、不依赖于设备生产商的现场总线标准</p>]]></content>
+      
+      <categories>
+          
+          <category> knowledge </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> protocol </tag>
+            
+            <tag> industrial network </tag>
+            
+            <tag> field bus </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Modbus通信协议</title>
+      <link href="/2018/05/03/know-modbus/"/>
+      <url>/2018/05/03/know-modbus/</url>
+      <content type="html"><![CDATA[<p><strong>Modbus通信协议</strong>是全球第一个用于工业现场的总线协议，支持RS-232、RS-422、RS-485和以太网设备等，属于应用层协议。<br><strong>Modbus网络</strong>是一个工业通信系统，包括硬件、软件及协议，用于各种数据采集和过程监控。Modbus网络只有一个主机，所有通信由它发出，至多支持247个远程从属控制器，实际支持从机数由通信设备决定。主设备可单独和从设备通信，从设备返回一消息作为回应；也能以广播方式和所有从设备通信，从设备不作任何回应。<br>Modbus最初使用串行链路，分为Modbus-ASCII(美国信息交换码)和Modbus-RTU(远程终端设备)两种传输模式，其中RTU传输效率更高。随着网络发展推出了针对以太网通信的Modbus-TCP标准，</p><p>Reference <a href="https://baike.baidu.com/item/Modbus%E9%80%9A%E8%AE%AF%E5%8D%8F%E8%AE%AE" target="_blank" rel="noopener">百度百科</a><br>More <a href="http://www.cnblogs.com/luomingui/archive/2013/06/14/Modbus.html" target="_blank" rel="noopener">老罗传奇的博客</a><br><a href="http://www.zlmcu.com/document/modbus_tcp_2_rtu.html" target="_blank" rel="noopener">上海卓岚公司的网站</a></p>]]></content>
+      
+      <categories>
+          
+          <category> knowledge </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> protocol </tag>
+            
+            <tag> industrial network </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>DNS域名系统</title>
       <link href="/2018/05/03/know-DNS/"/>
       <url>/2018/05/03/know-DNS/</url>
@@ -39,6 +87,8 @@
         <tags>
             
             <tag> network basis </tag>
+            
+            <tag> protocol </tag>
             
         </tags>
       
@@ -126,11 +176,11 @@
       
         <tags>
             
-            <tag> OPC </tag>
-            
             <tag> FactoryTalk </tag>
             
             <tag> Rockwell </tag>
+            
+            <tag> OPC </tag>
             
             <tag> SQL </tag>
             
