@@ -3,6 +3,7 @@ title: NTP网络时间协议
 date: 2018-04-28 16:55:35
 tags:
   - network basis
+  - protocol
 categories: knowledge
 ---
 
