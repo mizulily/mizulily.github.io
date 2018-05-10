@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2018/05/03/know-profibus/</loc>
+    <loc>http://yoursite.com/2018/05/10/note-database/</loc>
     
-    <lastmod>2018-05-03T08:18:07.172Z</lastmod>
+    <lastmod>2018-05-10T06:33:38.330Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/10/rev-industrialcomm/</loc>
+    
+    <lastmod>2018-05-10T03:42:49.759Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2018/05/03/know-modbus/</loc>
     
-    <lastmod>2018-05-03T07:52:17.605Z</lastmod>
+    <lastmod>2018-05-03T13:54:49.522Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/03/know-profibus/</loc>
+    
+    <lastmod>2018-05-03T08:18:07.172Z</lastmod>
     
   </url>
   
