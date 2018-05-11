@@ -1,6 +1,6 @@
 ---
-title: Profibus和Profinet
-date: 2018-05-03 15:52:05
+title: 西门子Profibus和Profinet通信
+date: 2018-05-11 15:52:05
 tags:
   - industrial network
   - protocol
