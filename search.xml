@@ -3,47 +3,9 @@
   
     
     <entry>
-      <title>工业控制设备通信概览</title>
-      <link href="/2018/05/10/rev-industrialcomm/"/>
-      <url>/2018/05/10/rev-industrialcomm/</url>
-      <content type="html"><![CDATA[]]></content>
-      
-      <categories>
-          
-          <category> review </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    <entry>
-      <title>《数据库原理与应用》笔记</title>
-      <link href="/2018/05/10/note-database/"/>
-      <url>/2018/05/10/note-database/</url>
-      <content type="html"><![CDATA[<h2><span id="第十章-存储过程与触发器">第十章 存储过程与触发器</span></h2><p><strong>存储过程</strong>是由一系列Transact-SQL语句构成的程序，经编译后存储在数据库中，可以通过名称直接调用。存储过程还可以接受参数，提高存储过程的灵活性。在SQL Server中，存储过程的类型主要有：用户存储过程、扩展存储过程和系统存储过程。<strong>用户存储过程</strong>包括Transact-SQL存储过程和CLR存储过程；<strong>扩展存储过程</strong>可以加载外部DLL；<strong>系统存储过程</strong>用来实现数据库的管理活动，存放在master中，但其他数据库也可以调用。常用系统存储过程和分类见书P301。</p><p>创建和修改存储过程的语法：</p><pre><code>{CREATE|ALTER} PROC[EDURE] 存储过程(组)名[;序号][{@参数名 数据类型} [=默认值] [OUTPUT]] [,... n][WITH {RECOMPILE|ENCRYPTION|RECOMPILE,ENCRYPTION}][FOR REPLICATION]AS {sql语句 [,... n]} </code></pre><p>删除存储过程的语法：</p><pre><code>DROP PROC[EDURE] 存储过程(组)名</code></pre><p>执行存储过程的语法：</p><pre><code>EXEC[UTE] 存储过程(组)名[;序号][[@参数名=]参数值|@参数名 [OUTPUT]|[DEFAULT]] [,... n][WITH RECOMPILE]</code></pre><p><strong>触发器</strong>是一种特殊的存储过程，可以看作是表定义的一部分，用于对表进行完整性约束。在SQL Server中，触发器的类型主要有：DML触发器、DDL触发器和登录触发器。</p><p>当数据库中发生数据操纵语言(DML)事件时将调用<strong>DML触发器</strong>。按照触发操作的不同可以分为INSERT触发器、UPDATE触发器和DELETE触发器，SQL Server为每个语句创建deleted表或（和）inserted表，表结构与定义触发器的表结构相同，触发器执行完成后自动删除。按照触发时间的不同可以分为AFTER(FOR)触发器和INSTEAD OF触发器。<br>当数据库中发生数据定义语言(DLL)事件时将调用<strong>DLL触发器</strong>，主要用于任务管理。DLL事件主要包括CREATE/ALTER/DROP/GRANT/DENY/REVOKE等语句操作。<br>LOGON事件激发<strong>登录触发器</strong>，将在登录身份验证阶段完成之后用户会话建立之前触发。</p><p>创建和修改DML触发器的语法：</p><pre><code>{CREATE|ALTER} TRIGGER [模式名.]触发器名ON {表名|视图名}[WITH DML触发器选项 [,... n]]{FOR|AFTER|INSTEAD OF}{[INSERT][,][UPDATE][,][DELETE]}AS {sql语句 [,... n]}</code></pre><p>删除DML触发器的语法：</p><pre><code>DROP TRIGGER 触发器名 [,... n]</code></pre><p>创建和修改DLL触发器发的语法：</p><pre><code>{CREATE|ALTER} TRIGGER 触发器名ON {DATABASE|ALL SERVER}[WITH DLL触发器选项 [,... n]]{FOR|AFTER} {触发事件名称|触发事件分组名称} [,... n]AS {sql语句 [,... n]}</code></pre><p>其中常见的数据库作用域的DLL语句和服务器作用域的DLL语句见P315。</p><p>删除DLL触发器的语法：</p><pre><code>DROP TRIGGER 触发器名 [,... n]ON {DATABASE|ALL SERVER}</code></pre><p>启用和禁用触发器的语法：</p><pre><code>{ENABLE|DISABLE} TRIGGER {[模式名.]触发器名 [,... n]|ALL}ON {表名|视图名|DATABASE|ALL SERVER}</code></pre>]]></content>
-      
-      <categories>
-          
-          <category> note </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> databse </tag>
-            
-            <tag> sql server </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>Profibus和Profinet</title>
-      <link href="/2018/05/03/know-profibus/"/>
-      <url>/2018/05/03/know-profibus/</url>
+      <title>西门子Profibus和Profinet通信</title>
+      <link href="/2018/05/11/knowledge/know-profibus&amp;profinet/"/>
+      <url>/2018/05/11/knowledge/know-profibus&amp;profinet/</url>
       <content type="html"><![CDATA[<p><strong>Profibus(Process Field Bus，过程现场总线)</strong>是一种国际化、开放式、不依赖于设备生产商的现场总线标准</p>]]></content>
       
       <categories>
@@ -66,9 +28,57 @@
     </entry>
     
     <entry>
+      <title>工业控制设备通信概览</title>
+      <link href="/2018/05/10/review/rev-industrialcomm/"/>
+      <url>/2018/05/10/review/rev-industrialcomm/</url>
+      <content type="html"><![CDATA[<p>工业以太网、现场总线、工业无线是目前工业通信领域的三大主流技术。<br>常见工业控制设备总线/协议/接口一览</p><table><thead><tr><th style="text-align:center">名称</th><th style="text-align:center">类型</th><th>特点</th><th>链接</th></tr></thead><tbody><tr><td style="text-align:center">ASi (AS-Interface)</td><td style="text-align:center">现场总线</td><td>$1</td><td></td></tr><tr><td style="text-align:center">BACnet</td><td style="text-align:center">wangluo</td><td>$1</td><td></td></tr><tr><td style="text-align:center">CANopen</td><td style="text-align:center">现场总线</td><td></td><td></td></tr><tr><td style="text-align:center">CC-Link</td><td style="text-align:center">现场总线</td><td></td><td></td></tr><tr><td style="text-align:center">CC-Link IE</td><td style="text-align:center">工业以太网</td><td></td><td></td></tr><tr><td style="text-align:center">ControlNet</td><td style="text-align:center">现场总线</td><td></td><td></td></tr><tr><td style="text-align:center">DeviceNet</td><td style="text-align:center">现场总线</td><td></td><td></td></tr><tr><td style="text-align:center">EtherCAT</td><td style="text-align:center">工业以太网</td><td></td><td></td></tr><tr><td style="text-align:center">EtherNet/IP</td><td style="text-align:center">工业以太网</td><td></td><td></td></tr><tr><td style="text-align:center">Ethernet TCP/IP</td><td style="text-align:center">以太网</td><td></td><td></td></tr><tr><td style="text-align:center">Fipio</td><td style="text-align:center">现场总线</td><td></td><td></td></tr><tr><td style="text-align:center">GD (Global Data)</td><td style="text-align:center"></td><td></td><td></td></tr><tr><td style="text-align:center">InterBus</td><td style="text-align:center">现场总线</td><td></td><td></td></tr><tr><td style="text-align:center">IO-Link</td><td style="text-align:center">点对点</td><td></td><td></td></tr><tr><td style="text-align:center">Modbus</td><td style="text-align:center">现场总线</td><td></td><td></td></tr><tr><td style="text-align:center">Profibus</td><td style="text-align:center">现场总线</td><td>$1</td><td><a href="/2018/05/11/knowledge/know-profibus&profinet/" title="西门子Profibus和Profinet通信">西门子Profibus和Profinet通信</a></td></tr><tr><td style="text-align:center">Profinet</td><td style="text-align:center">工业以太网</td><td>7</td><td></td></tr><tr><td style="text-align:center">RS232/RS485</td><td style="text-align:center">串口</td><td></td><td></td></tr><tr><td style="text-align:center">SERCOS Ⅲ</td><td style="text-align:center"></td><td></td><td></td></tr><tr><td style="text-align:center">USB</td><td style="text-align:center"></td><td></td><td></td></tr></tbody></table>]]></content>
+      
+      <categories>
+          
+          <category> review </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> protocol </tag>
+            
+            <tag> industrial network </tag>
+            
+            <tag> field bus </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>《数据库原理与应用》笔记</title>
+      <link href="/2018/05/10/note/note-database/"/>
+      <url>/2018/05/10/note/note-database/</url>
+      <content type="html"><![CDATA[<h2><span id="第十章-存储过程与触发器">第十章 存储过程与触发器</span></h2><p><strong>存储过程</strong>是由一系列Transact-SQL语句构成的程序，经编译后存储在数据库中，可以通过名称直接调用。存储过程还可以接受参数，提高存储过程的灵活性。在SQL Server中，存储过程的类型主要有：用户存储过程、扩展存储过程和系统存储过程。<strong>用户存储过程</strong>包括Transact-SQL存储过程和CLR存储过程；<strong>扩展存储过程</strong>可以加载外部DLL；<strong>系统存储过程</strong>用来实现数据库的管理活动，存放在master中，但其他数据库也可以调用。常用系统存储过程和分类见书P301。</p><p>创建和修改存储过程的语法：</p><pre><code>{CREATE|ALTER} PROC[EDURE] 存储过程(组)名[;序号][{@参数名 数据类型} [=默认值] [OUTPUT]] [,... n][WITH {RECOMPILE|ENCRYPTION|RECOMPILE,ENCRYPTION}][FOR REPLICATION]AS {sql语句 [,... n]} </code></pre><p>删除存储过程的语法：</p><pre><code>DROP PROC[EDURE] 存储过程(组)名</code></pre><p>执行存储过程的语法：</p><pre><code>EXEC[UTE] 存储过程(组)名[;序号][[@参数名=]参数值|@参数名 [OUTPUT]|[DEFAULT]] [,... n][WITH RECOMPILE]</code></pre><p><strong>触发器</strong>是一种特殊的存储过程，可以看作是表定义的一部分，用于对表进行完整性约束。在SQL Server中，触发器的类型主要有：DML触发器、DDL触发器和登录触发器。</p><p>当数据库中发生数据操纵语言(DML)事件时将调用<strong>DML触发器</strong>。按照触发操作的不同可以分为INSERT触发器、UPDATE触发器和DELETE触发器，SQL Server为每个语句创建deleted表或（和）inserted表，表结构与定义触发器的表结构相同，触发器执行完成后自动删除。按照触发时间的不同可以分为AFTER(FOR)触发器和INSTEAD OF触发器。<br>当数据库中发生数据定义语言(DLL)事件时将调用<strong>DLL触发器</strong>，主要用于任务管理。DLL事件主要包括CREATE/ALTER/DROP/GRANT/DENY/REVOKE等语句操作。<br>LOGON事件激发<strong>登录触发器</strong>，将在登录身份验证阶段完成之后用户会话建立之前触发。</p><p>创建和修改DML触发器的语法：</p><pre><code>{CREATE|ALTER} TRIGGER [模式名.]触发器名ON {表名|视图名}[WITH DML触发器选项 [,... n]]{FOR|AFTER|INSTEAD OF}{[INSERT][,][UPDATE][,][DELETE]}AS {sql语句 [,... n]}</code></pre><p>删除DML触发器的语法：</p><pre><code>DROP TRIGGER 触发器名 [,... n]</code></pre><p>创建和修改DLL触发器发的语法：</p><pre><code>{CREATE|ALTER} TRIGGER 触发器名ON {DATABASE|ALL SERVER}[WITH DLL触发器选项 [,... n]]{FOR|AFTER} {触发事件名称|触发事件分组名称} [,... n]AS {sql语句 [,... n]}</code></pre><p>其中常见的数据库作用域的DLL语句和服务器作用域的DLL语句见P315。</p><p>删除DLL触发器的语法：</p><pre><code>DROP TRIGGER 触发器名 [,... n]ON {DATABASE|ALL SERVER}</code></pre><p>启用和禁用触发器的语法：</p><pre><code>{ENABLE|DISABLE} TRIGGER {[模式名.]触发器名 [,... n]|ALL}ON {表名|视图名|DATABASE|ALL SERVER}</code></pre>]]></content>
+      
+      <categories>
+          
+          <category> note </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> databse </tag>
+            
+            <tag> sql server </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Modbus通信协议</title>
-      <link href="/2018/05/03/know-modbus/"/>
-      <url>/2018/05/03/know-modbus/</url>
+      <link href="/2018/05/03/knowledge/know-modbus/"/>
+      <url>/2018/05/03/knowledge/know-modbus/</url>
       <content type="html"><![CDATA[<p><strong>Modbus通信协议</strong>是全球第一个用于工业现场的总线协议，支持RS-232、RS-422、RS-485和以太网设备等，属于应用层协议。<br><strong>Modbus网络</strong>是一个工业通信系统，包括硬件、软件及协议，用于各种数据采集和过程监控。Modbus网络只有一个主机，所有通信由它发出，至多支持247个远程从属控制器，实际支持从机数由通信设备决定。主设备可单独和从设备通信，从设备返回一消息作为回应；也能以广播方式和所有从设备通信，从设备不作任何回应。<br>Modbus最初使用串行链路，分为Modbus-ASCII(美国信息交换码)和Modbus-RTU(远程终端设备)两种传输模式，其中RTU传输效率更高。随着网络发展推出了针对以太网通信的Modbus-TCP标准，</p><p>Reference <a href="https://baike.baidu.com/item/Modbus%E9%80%9A%E8%AE%AF%E5%8D%8F%E8%AE%AE" target="_blank" rel="noopener">百度百科</a><br>More <a href="http://www.cnblogs.com/luomingui/archive/2013/06/14/Modbus.html" target="_blank" rel="noopener">老罗传奇的博客</a><a href="http://www.zlmcu.com/document/modbus_tcp_2_rtu.html" target="_blank" rel="noopener">上海卓岚公司的网站</a></p>]]></content>
       
       <categories>
@@ -90,8 +100,8 @@
     
     <entry>
       <title>DNS域名系统</title>
-      <link href="/2018/05/03/know-DNS/"/>
-      <url>/2018/05/03/know-DNS/</url>
+      <link href="/2018/05/03/knowledge/know-DNS/"/>
+      <url>/2018/05/03/knowledge/know-DNS/</url>
       <content type="html"><![CDATA[<p><strong>DNS(Domain Name System，域名系统)</strong>在万维网上作为域名和IP地址相互映射的分布式数据库。通过域名得到对应IP地址的过程叫做<strong>域名解析</strong>。DNS协议运行在UDP协议之上，使用UDP端口号53。为保证服务的高可用性，DNS要求使用多台名称服务器冗余支持每个区域。</p><p>Reference <a href="https://baike.baidu.com/item/DNS/427444#reference-[4]-15346050-wrap" target="_blank" rel="noopener">百度百科</a></p>]]></content>
       
       <categories>
@@ -111,8 +121,8 @@
     
     <entry>
       <title>NTP网络时间协议</title>
-      <link href="/2018/04/28/know-NTP/"/>
-      <url>/2018/04/28/know-NTP/</url>
+      <link href="/2018/04/28/knowledge/know-NTP/"/>
+      <url>/2018/04/28/knowledge/know-NTP/</url>
       <content type="html"><![CDATA[<p><strong>NTP(Network Time Protocol，网络时间协议)</strong>是用来同步网络中各个计算机时间的协议，属于应用层协议，采用UDP报文传输，使用UDP端口号为123。连接到互联网上的主机通过NTP与UTC(Universal Time Coordinate，世界协调时)同步，UTC由原子钟报时。<br>计算机主机一般同多个时钟服务器连接，利用统计学的算法过滤来自不同服务器的时间，选择最佳的路径和来源以便校正主机时间。</p><p>Reference <a href="https://baike.baidu.com/item/nTP" target="_blank" rel="noopener">百度百科</a><br>More <a href="http://blog.163.com/yzc_5001/blog/static/2061963420121283050787/" target="_blank" rel="noopener">sms的博客</a></p>]]></content>
       
       <categories>
@@ -134,8 +144,8 @@
     
     <entry>
       <title>修改虚拟机启动时间</title>
-      <link href="/2018/04/28/tip-vm-time/"/>
-      <url>/2018/04/28/tip-vm-time/</url>
+      <link href="/2018/04/28/tip/tip-vm-time/"/>
+      <url>/2018/04/28/tip/tip-vm-time/</url>
       <content type="html"><![CDATA[<p>由于软件license的时间限制，需要用过去的时间启动虚拟机。</p><ol><li>修改主机时间。启动虚拟机后系统时间即当前主机时间。但在主机中打开Chrome浏览器会报错，提示时钟慢了，无法建立私密连接。</li><li>修改虚拟机启动时间。用文本编辑器打开虚拟机.vmx文件，寻找以下设置项并关闭同步，设置虚拟机启动时间，保存后启动虚拟机。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">tools.syncTime = &quot;FALSE&quot;  </span><br><span class="line">time.synchronize.continue = &quot;FALSE&quot;  </span><br><span class="line">time.synchronize.restore = &quot;FALSE&quot;  </span><br><span class="line">time.synchronize.resume.disk = &quot;FALSE&quot;  </span><br><span class="line">time.synchronize.shrink = &quot;FALSE&quot;  </span><br><span class="line">time.synchronize.tools.startup = &quot;FALSE&quot; </span><br><span class="line">rtc.startTime = 1462003200</span><br></pre></td></tr></table></figure></li></ol><p>注：rtc.startTime是从1970年1月1日0时0分0秒（Unix时间）到系统启动时间间隔的时间，单位是秒，可以到<a href="http://www.onlineconversion.com/unix_time.htm" target="_blank" rel="noopener">计算时间的网站</a>上换算得到希望虚拟机的启动时间。</p><p>Reference <a href="https://blog.csdn.net/sagafive/article/details/53031740" target="_blank" rel="noopener">SagaFive的专栏</a></p>]]></content>
       
       <categories>
@@ -155,8 +165,8 @@
     
     <entry>
       <title>使用C#编写OPC程序</title>
-      <link href="/2018/04/28/exp-cs-opc/"/>
-      <url>/2018/04/28/exp-cs-opc/</url>
+      <link href="/2018/04/28/experience/exp-cs-opc/"/>
+      <url>/2018/04/28/experience/exp-cs-opc/</url>
       <content type="html"><![CDATA[<p><a href="https://opcfoundation.org/" target="_blank" rel="noopener">OPC基金会官网</a>真是弱爆了。</p><h3><span id="1-配置opcdaautodll">1. 配置OPCDAAuto.dll</span></h3><p>OPC的自动化接口即OPCDAAuto.dll<br>1)下载文件OPCDAAuto.dll，版本2.2.5.30<br>2)放到System32文件夹下，用管理员身份打开cmd<br>3)输入regsvr32 opcdaauto.dll后提示成功<br>4)打开Visual Studio在项目中打开相应项目，对解决方案右键-添加-引用，浏览选择opcdaaturo.dll<br>5)依赖项中出现COM-Interop.OPCAutomation，在C#程序开头using OPCAutomation；不再显示红色波浪线错误，即配置成功。</p><p>Reference <a href="https://blog.csdn.net/u012252959/article/details/49699559" target="_blank" rel="noopener">u012252959的博客</a></p>]]></content>
       
       <categories>
@@ -178,8 +188,8 @@
     
     <entry>
       <title>《Learning hard C#学习笔记》笔记</title>
-      <link href="/2018/04/28/note-cs/"/>
-      <url>/2018/04/28/note-cs/</url>
+      <link href="/2018/04/28/note/note-cs/"/>
+      <url>/2018/04/28/note/note-cs/</url>
       <content type="html"><![CDATA[<!-- toc --><ul><li><a href="#第一章-基础知识">第一章 基础知识</a></li><li><a href="#第八章-委托">第八章 委托</a></li><li><a href="#第九章-事件">第九章 事件</a></li></ul><!-- tocstop --><h2><span id="第一章-基础知识">第一章 基础知识</span></h2><p>C#</p><h2><span id="第八章-委托">第八章 委托</span></h2><p><strong>委托</strong>是C#中最中需要的特性之一，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。<br>委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字：</p><pre><code>访问修饰符 delegate 返回类型 委托名([参数表])</code></pre><p>能被委托包装的方法需要满足：</p><ol><li>方法的签名与委托一致（参数个数、类型、顺序）</li><li>方法的返回类型与委托一致</li></ol><p>委托也可以封装多个方法，称为<strong>委托链</strong>或多路广播委托，在委托链上的委托都会被顺序执行。可以通过“+”运算符把委托链接到一个委托对象实例上，也可以使用“-”运算符将某个委托从委托链对象上移除。</p><div><div class="fold_hider"><div class="close hider_title">委托和委托链的例子（点击显示代码）</div></div><div class="fold"><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">CSbook</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//委托的定义</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">delegate</span> <span class="keyword">void</span> <span class="title">MyDelegate</span>(<span class="params"><span class="keyword">int</span> para1, <span class="keyword">int</span> para2</span>)</span>;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">MyMethod</span>(<span class="params">MyDelegate mydelegate</span>)</span>&#123;</span><br><span class="line">            mydelegate(<span class="number">1</span>, <span class="number">2</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            MyDelegate m = <span class="keyword">new</span> MyDelegate(Program.Mult);</span><br><span class="line">            <span class="comment">// 方法Program.Mult作为方法MyMethod的参数</span></span><br><span class="line">            MyMethod(m);</span><br><span class="line">            </span><br><span class="line"></span><br><span class="line">            MyDelegate p = <span class="keyword">new</span> MyDelegate(<span class="keyword">new</span> Program().Add);</span><br><span class="line">            MyDelegate q = <span class="keyword">new</span> MyDelegate(<span class="keyword">new</span> Program().Sub);</span><br><span class="line">            MyDelegate chain = <span class="literal">null</span>;</span><br><span class="line">            chain += m;</span><br><span class="line">            chain += p;</span><br><span class="line">            chain += q;</span><br><span class="line">            chain -= m;</span><br><span class="line">            chain(<span class="number">1</span>,<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">            Console.Read();</span><br><span class="line">  </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 实例方法</span></span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">Add</span>(<span class="params"><span class="keyword">int</span> para1, <span class="keyword">int</span> para2</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">int</span> sum = para1 + para2;</span><br><span class="line">            Console.WriteLine(<span class="string">"Sum is: "</span> + sum);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">Sub</span>(<span class="params"><span class="keyword">int</span> para1, <span class="keyword">int</span> para2</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">int</span> sub = para1 - para2;</span><br><span class="line">            Console.WriteLine(<span class="string">"Sub is: "</span> + sub);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 静态方法</span></span><br><span class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Mult</span>(<span class="params"><span class="keyword">int</span> para1, <span class="keyword">int</span> para2</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">int</span> mul = para1 * para2;</span><br><span class="line">            Console.WriteLine(<span class="string">"Mul is: "</span> + mul);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></div><h2><span id="第九章-事件">第九章 事件</span></h2>]]></content>
       
       <categories>
@@ -201,9 +211,9 @@
     
     <entry>
       <title>FactoryTalk Transaction Manager使用心得</title>
-      <link href="/2018/04/27/exp-trans-1/"/>
-      <url>/2018/04/27/exp-trans-1/</url>
-      <content type="html"><![CDATA[<h2><span id="基本概念">基本概念</span></h2><p><strong>FactoryTalk Transaction Manager</strong>（前身是RSSql）是Rockwell公司FactoryTalk系列组态软件之一，主要实现工控系统与数据库的通信，该系列软件基于<a href="https://baike.baidu.com/item/SOA/2140650" target="_blank" rel="noopener">SOA架构</a>开发，因此Transaction Manager应用软件部分实际上是对各个数据传送服务进行配置的UI界面，该软件的核心实际上是各个接口的服务程序。</p><p><img src="/2018/04/27/exp-trans-1/structure.png" alt="structure"></p><p>Transaction and Control Manager服务包含了Transaction Manager Service服务和FactoryTalk Live Data控制接口，可以通过该服务连接Rockwell软件和所有OPC服务器。</p><p>启动操作系统后查看服务列表，可以看到Transaction Manager相关的各个服务。</p><p><img src="/2018/04/27/exp-trans-1/services.png" alt="services"></p><p>FactoryTalk Transaction Manager可以使用以下<strong>控制接口</strong>(control connector)，来关联数据点(data point)或存储地址(memory location)：</p><ol><li>FactoryTalk Live Data</li><li>Dynamic Data Exchange (DDE)</li><li>RSLinx Classic OPC</li><li>RSView32</li><li>Generic OPC</li></ol><p>FactoryTalk Transaction Manager可以使用以下<strong>企业接口</strong>(enterprise connector)，来创建数据对象(data object)与企业系统中的数据表(database table)和预存过程(stored procedure)进行交互：</p><ol><li>Open Database Connectivity (ODBC)</li><li>Microsoft OLE DB</li><li>Microsoft COM+</li><li>Oracle Call Interface (OCI)</li><li>Time-series Data Compression</li><li>FactoryTalk Metrics connector</li></ol><h2><span id="1-opc-server-gt-sql-server">1. OPC Server -&gt; SQL Server</span></h2><p>OPC Server: KEPSever Enterprise 5.13<br>SQL Server: Microsoft SQL Server 2008 R2</p><h2><span id="2-live-data-gt-sql-server">2. Live Data -&gt; SQL Server</span></h2>]]></content>
+      <link href="/2018/04/27/experience/exp-trans-1/"/>
+      <url>/2018/04/27/experience/exp-trans-1/</url>
+      <content type="html"><![CDATA[<h2><span id="基本概念">基本概念</span></h2><p><strong>FactoryTalk Transaction Manager</strong>（前身是RSSql）是Rockwell公司FactoryTalk系列组态软件之一，主要实现工控系统与数据库的通信，该系列软件基于<a href="https://baike.baidu.com/item/SOA/2140650" target="_blank" rel="noopener">SOA架构</a>开发，因此Transaction Manager应用软件部分实际上是对各个数据传送服务进行配置的UI界面，该软件的核心实际上是各个接口的服务程序。</p><p><img src="/2018/04/27/experience/exp-trans-1/structure.png" alt="structure"></p><p>Transaction and Control Manager服务包含了Transaction Manager Service服务和FactoryTalk Live Data控制接口，可以通过该服务连接Rockwell软件和所有OPC服务器。</p><p>启动操作系统后查看服务列表，可以看到Transaction Manager相关的各个服务。</p><p><img src="/2018/04/27/experience/exp-trans-1/services.png" alt="services"></p><p>FactoryTalk Transaction Manager可以使用以下<strong>控制接口</strong>(control connector)，来关联数据点(data point)或存储地址(memory location)：</p><ol><li>FactoryTalk Live Data</li><li>Dynamic Data Exchange (DDE)</li><li>RSLinx Classic OPC</li><li>RSView32</li><li>Generic OPC</li></ol><p>FactoryTalk Transaction Manager可以使用以下<strong>企业接口</strong>(enterprise connector)，来创建数据对象(data object)与企业系统中的数据表(database table)和预存过程(stored procedure)进行交互：</p><ol><li>Open Database Connectivity (ODBC)</li><li>Microsoft OLE DB</li><li>Microsoft COM+</li><li>Oracle Call Interface (OCI)</li><li>Time-series Data Compression</li><li>FactoryTalk Metrics connector</li></ol><h2><span id="1-opc-server-gt-sql-server">1. OPC Server -&gt; SQL Server</span></h2><p>OPC Server: KEPSever Enterprise 5.13<br>SQL Server: Microsoft SQL Server 2008 R2</p><h2><span id="2-live-data-gt-sql-server">2. Live Data -&gt; SQL Server</span></h2><h2><span id="3-sql-server-gt-live-data">3. SQL Server -&gt; Live Data</span></h2>]]></content>
       
       <categories>
           
@@ -214,11 +224,11 @@
       
         <tags>
             
-            <tag> OPC </tag>
-            
             <tag> FactoryTalk </tag>
             
             <tag> Rockwell </tag>
+            
+            <tag> OPC </tag>
             
             <tag> SQL </tag>
             
@@ -228,9 +238,9 @@
     
     <entry>
       <title>《OPC应用程序入门》笔记</title>
-      <link href="/2018/04/27/note-opc/"/>
-      <url>/2018/04/27/note-opc/</url>
-      <content type="html"><![CDATA[<p><img src="/2018/04/27/note-opc/ch1-1.PNG" alt="ch1-1"></p><!-- toc --><ul><li><a href="#第一章-opc基础知识">第一章 OPC基础知识</a><ul><li><a href="#11-什么是opc">1.1 什么是OPC</a></li></ul></li></ul><!-- tocstop --><h2><span id="第一章-opc基础知识">第一章 OPC基础知识</span></h2><h3><span id="11-什么是opc">1.1 什么是OPC</span></h3><p>OPC(OLE for Process Control)是为不同供应商设备和应用程序之间的软件接口标准化而提出的，使其间的数据交换不依赖于特定开发语言和开发环境。它利用Windows中的OLE/COM技术实现工业制造系统过程控制中数据交换的标准化。OPC系统由提供数据收集服务的OPC服务器(OPC Server)、接受数据服务的OPC应用程序(OPC Client)和OPC接口所构成。</p>]]></content>
+      <link href="/2018/04/27/note/note-opc/"/>
+      <url>/2018/04/27/note/note-opc/</url>
+      <content type="html"><![CDATA[<p><img src="/2018/04/27/note/note-opc/ch1-1.PNG" alt="ch1-1"></p><!-- toc --><ul><li><a href="#第一章-opc基础知识">第一章 OPC基础知识</a><ul><li><a href="#11-什么是opc">1.1 什么是OPC</a></li></ul></li></ul><!-- tocstop --><h2><span id="第一章-opc基础知识">第一章 OPC基础知识</span></h2><h3><span id="11-什么是opc">1.1 什么是OPC</span></h3><p>OPC(OLE for Process Control)是为不同供应商设备和应用程序之间的软件接口标准化而提出的，使其间的数据交换不依赖于特定开发语言和开发环境。它利用Windows中的OLE/COM技术实现工业制造系统过程控制中数据交换的标准化。OPC系统由提供数据收集服务的OPC服务器(OPC Server)、接受数据服务的OPC应用程序(OPC Client)和OPC接口所构成。</p>]]></content>
       
       <categories>
           
@@ -249,8 +259,8 @@
     
     <entry>
       <title>localhost</title>
-      <link href="/2018/04/26/know-localhost/"/>
-      <url>/2018/04/26/know-localhost/</url>
+      <link href="/2018/04/26/knowledge/know-localhost/"/>
+      <url>/2018/04/26/knowledge/know-localhost/</url>
       <content type="html"><![CDATA[<p>localhost是一个域名，在windows中该域名是由/etc/hosts文件预定义的，默认对于ipv4指向127.0.0.1，对于ipv6指向::1，可对hosts文件进行修改配置为任意的IP地址，但可能导致只认127.0.0.1的软件失效。</p><p>127.0.0.1/8整个都是环回(loopback)地址，用来测试本机的TCP/IP协议栈，以及本机中各个应用之间的网络交互，也称虚拟网卡。Windows中看不到这个接口，Linux中这个接口叫lo，可通过ifconfig查看。</p><p>本机IP地址一般指绑定在物理或虚拟接口上的IP地址，供其他设备访问。</p><p>Reference <a href="https://www.zhihu.com/question/23940717" target="_blank" rel="noopener">知乎</a></p>]]></content>
       
       <categories>

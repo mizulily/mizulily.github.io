@@ -102,18 +102,18 @@
 
 
 
-  <meta name="description" content="由于软件license的时间限制，需要用过去的时间启动虚拟机。  修改主机时间。启动虚拟机后系统时间即当前主机时间。但在主机中打开Chrome浏览器会报错，提示时钟慢了，无法建立私密连接。 修改虚拟机启动时间。用文本编辑器打开虚拟机.vmx文件，寻找以下设置项并关闭同步，设置虚拟机启动时间，保存后启动虚拟机。1234567tools.syncTime = &amp;quot;FALSE&amp;quot;  ti">
-<meta name="keywords" content="virtual machine">
+  <meta name="description" content="Profibus(Process Field Bus，过程现场总线)是一种国际化、开放式、不依赖于设备生产商的现场总线标准">
+<meta name="keywords" content="protocol,industrial network,field bus">
 <meta property="og:type" content="article">
-<meta property="og:title" content="修改虚拟机启动时间">
-<meta property="og:url" content="http://yoursite.com/2018/04/28/tip-vm-time/index.html">
+<meta property="og:title" content="西门子Profibus和Profinet通信">
+<meta property="og:url" content="http://yoursite.com/2018/05/11/knowledge/know-profibus&profinet/index.html">
 <meta property="og:site_name" content="Elaine&#39;s Notebook">
-<meta property="og:description" content="由于软件license的时间限制，需要用过去的时间启动虚拟机。  修改主机时间。启动虚拟机后系统时间即当前主机时间。但在主机中打开Chrome浏览器会报错，提示时钟慢了，无法建立私密连接。 修改虚拟机启动时间。用文本编辑器打开虚拟机.vmx文件，寻找以下设置项并关闭同步，设置虚拟机启动时间，保存后启动虚拟机。1234567tools.syncTime = &amp;quot;FALSE&amp;quot;  ti">
+<meta property="og:description" content="Profibus(Process Field Bus，过程现场总线)是一种国际化、开放式、不依赖于设备生产商的现场总线标准">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-28T09:02:46.005Z">
+<meta property="og:updated_time" content="2018-05-11T03:09:23.180Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="修改虚拟机启动时间">
-<meta name="twitter:description" content="由于软件license的时间限制，需要用过去的时间启动虚拟机。  修改主机时间。启动虚拟机后系统时间即当前主机时间。但在主机中打开Chrome浏览器会报错，提示时钟慢了，无法建立私密连接。 修改虚拟机启动时间。用文本编辑器打开虚拟机.vmx文件，寻找以下设置项并关闭同步，设置虚拟机启动时间，保存后启动虚拟机。1234567tools.syncTime = &amp;quot;FALSE&amp;quot;  ti">
+<meta name="twitter:title" content="西门子Profibus和Profinet通信">
+<meta name="twitter:description" content="Profibus(Process Field Bus，过程现场总线)是一种国际化、开放式、不依赖于设备生产商的现场总线标准">
 
 
 
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/28/tip-vm-time/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/11/knowledge/know-profibus&profinet/"/>
 
 
 
@@ -132,7 +132,7 @@
   };
 </script>
 
-  <title>修改虚拟机启动时间 | Elaine's Notebook</title>
+  <title>西门子Profibus和Profinet通信 | Elaine's Notebook</title>
   
 
 
@@ -296,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/28/tip-vm-time/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/11/knowledge/know-profibus&profinet/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Elaine">
@@ -313,7 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">修改虚拟机启动时间
+          <h1 class="post-title" itemprop="name headline">西门子Profibus和Profinet通信
               
             
           </h1>
@@ -338,7 +338,7 @@
                 
               
 
-              <time title="创建时间：2018-04-28 14:51:56 / 修改时间：17:02:46" itemprop="dateCreated datePublished" datetime="2018-04-28T14:51:56+08:00">2018-04-28</time>
+              <time title="创建时间：2018-05-11 15:52:05 / 修改时间：11:09:23" itemprop="dateCreated datePublished" datetime="2018-05-11T15:52:05+08:00">2018-05-11</time>
             
 
             
@@ -360,7 +360,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/tip/" itemprop="url" rel="index"><span itemprop="name">tip</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/knowledge/" itemprop="url" rel="index"><span itemprop="name">knowledge</span></a></span>
 
                 
                 
@@ -394,14 +394,7 @@
       
 
       
-        <p>由于软件license的时间限制，需要用过去的时间启动虚拟机。</p>
-<ol>
-<li>修改主机时间。启动虚拟机后系统时间即当前主机时间。但在主机中打开Chrome浏览器会报错，提示时钟慢了，无法建立私密连接。</li>
-<li>修改虚拟机启动时间。用文本编辑器打开虚拟机.vmx文件，寻找以下设置项并关闭同步，设置虚拟机启动时间，保存后启动虚拟机。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">tools.syncTime = &quot;FALSE&quot;  </span><br><span class="line">time.synchronize.continue = &quot;FALSE&quot;  </span><br><span class="line">time.synchronize.restore = &quot;FALSE&quot;  </span><br><span class="line">time.synchronize.resume.disk = &quot;FALSE&quot;  </span><br><span class="line">time.synchronize.shrink = &quot;FALSE&quot;  </span><br><span class="line">time.synchronize.tools.startup = &quot;FALSE&quot; </span><br><span class="line">rtc.startTime = 1462003200</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>注：rtc.startTime是从1970年1月1日0时0分0秒（Unix时间）到系统启动时间间隔的时间，单位是秒，可以到<a href="http://www.onlineconversion.com/unix_time.htm" target="_blank" rel="noopener">计算时间的网站</a>上换算得到希望虚拟机的启动时间。</p>
-<p>Reference <a href="https://blog.csdn.net/sagafive/article/details/53031740" target="_blank" rel="noopener">SagaFive的专栏</a></p>
+        <p><strong>Profibus(Process Field Bus，过程现场总线)</strong>是一种国际化、开放式、不依赖于设备生产商的现场总线标准</p>
 
       
     </div>
@@ -422,7 +415,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/virtual-machine/" rel="tag"># virtual machine</a>
+            <a href="/tags/protocol/" rel="tag"># protocol</a>
+          
+            <a href="/tags/industrial-network/" rel="tag"># industrial network</a>
+          
+            <a href="/tags/field-bus/" rel="tag"># field bus</a>
           
         </div>
       
@@ -435,8 +432,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/28/exp-cs-opc/" rel="next" title="使用C#编写OPC程序">
-                <i class="fa fa-chevron-left"></i> 使用C#编写OPC程序
+              <a href="/2018/05/10/review/rev-industrialcomm/" rel="next" title="工业控制设备通信概览">
+                <i class="fa fa-chevron-left"></i> 工业控制设备通信概览
               </a>
             
           </div>
@@ -444,10 +441,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/28/know-NTP/" rel="prev" title="NTP网络时间协议">
-                NTP网络时间协议 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>

@@ -102,18 +102,18 @@
 
 
 
-  <meta name="description" content="第十章 存储过程与触发器存储过程是由一系列Transact-SQL语句构成的程序，经编译后存储在数据库中，可以通过名称直接调用。存储过程还可以接受参数，提高存储过程的灵活性。在SQL Server中，存储过程的类型主要有：用户存储过程、扩展存储过程和系统存储过程。用户存储过程包括Transact-SQL存储过程和CLR存储过程；扩展存储过程可以加载外部DLL；系统存储过程用来实现数据库的管理活动，">
-<meta name="keywords" content="databse,sql server">
+  <meta name="description" content="OPC基金会官网真是弱爆了。 1. 配置OPCDAAuto.dllOPC的自动化接口即OPCDAAuto.dll1)下载文件OPCDAAuto.dll，版本2.2.5.302)放到System32文件夹下，用管理员身份打开cmd3)输入regsvr32 opcdaauto.dll后提示成功4)打开Visual Studio在项目中打开相应项目，对解决方案右键-添加-引用，浏览选择opcdaatur">
+<meta name="keywords" content="OPC,C#">
 <meta property="og:type" content="article">
-<meta property="og:title" content="《数据库原理与应用》笔记">
-<meta property="og:url" content="http://yoursite.com/2018/05/10/note-database/index.html">
+<meta property="og:title" content="使用C#编写OPC程序">
+<meta property="og:url" content="http://yoursite.com/2018/04/28/experience/exp-cs-opc/index.html">
 <meta property="og:site_name" content="Elaine&#39;s Notebook">
-<meta property="og:description" content="第十章 存储过程与触发器存储过程是由一系列Transact-SQL语句构成的程序，经编译后存储在数据库中，可以通过名称直接调用。存储过程还可以接受参数，提高存储过程的灵活性。在SQL Server中，存储过程的类型主要有：用户存储过程、扩展存储过程和系统存储过程。用户存储过程包括Transact-SQL存储过程和CLR存储过程；扩展存储过程可以加载外部DLL；系统存储过程用来实现数据库的管理活动，">
+<meta property="og:description" content="OPC基金会官网真是弱爆了。 1. 配置OPCDAAuto.dllOPC的自动化接口即OPCDAAuto.dll1)下载文件OPCDAAuto.dll，版本2.2.5.302)放到System32文件夹下，用管理员身份打开cmd3)输入regsvr32 opcdaauto.dll后提示成功4)打开Visual Studio在项目中打开相应项目，对解决方案右键-添加-引用，浏览选择opcdaatur">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-10T06:33:38.330Z">
+<meta property="og:updated_time" content="2018-04-28T01:51:43.505Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="《数据库原理与应用》笔记">
-<meta name="twitter:description" content="第十章 存储过程与触发器存储过程是由一系列Transact-SQL语句构成的程序，经编译后存储在数据库中，可以通过名称直接调用。存储过程还可以接受参数，提高存储过程的灵活性。在SQL Server中，存储过程的类型主要有：用户存储过程、扩展存储过程和系统存储过程。用户存储过程包括Transact-SQL存储过程和CLR存储过程；扩展存储过程可以加载外部DLL；系统存储过程用来实现数据库的管理活动，">
+<meta name="twitter:title" content="使用C#编写OPC程序">
+<meta name="twitter:description" content="OPC基金会官网真是弱爆了。 1. 配置OPCDAAuto.dllOPC的自动化接口即OPCDAAuto.dll1)下载文件OPCDAAuto.dll，版本2.2.5.302)放到System32文件夹下，用管理员身份打开cmd3)输入regsvr32 opcdaauto.dll后提示成功4)打开Visual Studio在项目中打开相应项目，对解决方案右键-添加-引用，浏览选择opcdaatur">
 
 
 
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/10/note-database/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/28/experience/exp-cs-opc/"/>
 
 
 
@@ -132,7 +132,7 @@
   };
 </script>
 
-  <title>《数据库原理与应用》笔记 | Elaine's Notebook</title>
+  <title>使用C#编写OPC程序 | Elaine's Notebook</title>
   
 
 
@@ -296,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/10/note-database/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/28/experience/exp-cs-opc/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Elaine">
@@ -313,7 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">《数据库原理与应用》笔记
+          <h1 class="post-title" itemprop="name headline">使用C#编写OPC程序
               
             
           </h1>
@@ -338,7 +338,7 @@
                 
               
 
-              <time title="创建时间：2018-05-10 11:31:31 / 修改时间：14:33:38" itemprop="dateCreated datePublished" datetime="2018-05-10T11:31:31+08:00">2018-05-10</time>
+              <time title="创建时间：2018-04-28 09:23:59 / 修改时间：09:51:43" itemprop="dateCreated datePublished" datetime="2018-04-28T09:23:59+08:00">2018-04-28</time>
             
 
             
@@ -360,7 +360,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/note/" itemprop="url" rel="index"><span itemprop="name">note</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/experience/" itemprop="url" rel="index"><span itemprop="name">experience</span></a></span>
 
                 
                 
@@ -394,44 +394,10 @@
       
 
       
-        <h2><span id="第十章-存储过程与触发器">第十章 存储过程与触发器</span></h2><p><strong>存储过程</strong>是由一系列Transact-SQL语句构成的程序，经编译后存储在数据库中，可以通过名称直接调用。存储过程还可以接受参数，提高存储过程的灵活性。在SQL Server中，存储过程的类型主要有：用户存储过程、扩展存储过程和系统存储过程。<strong>用户存储过程</strong>包括Transact-SQL存储过程和CLR存储过程；<strong>扩展存储过程</strong>可以加载外部DLL；<strong>系统存储过程</strong>用来实现数据库的管理活动，存放在master中，但其他数据库也可以调用。常用系统存储过程和分类见书P301。</p>
-<p>创建和修改存储过程的语法：</p>
-<pre><code>{CREATE|ALTER} PROC[EDURE] 存储过程(组)名[;序号]
-[{@参数名 数据类型} [=默认值] [OUTPUT]] [,... n]
-[WITH {RECOMPILE|ENCRYPTION|RECOMPILE,ENCRYPTION}]
-[FOR REPLICATION]
-AS {sql语句 [,... n]} 
-</code></pre><p>删除存储过程的语法：</p>
-<pre><code>DROP PROC[EDURE] 存储过程(组)名
-</code></pre><p>执行存储过程的语法：</p>
-<pre><code>EXEC[UTE] 存储过程(组)名[;序号]
-[[@参数名=]参数值|@参数名 [OUTPUT]|[DEFAULT]] [,... n]
-[WITH RECOMPILE]
-</code></pre><p><strong>触发器</strong>是一种特殊的存储过程，可以看作是表定义的一部分，用于对表进行完整性约束。在SQL Server中，触发器的类型主要有：DML触发器、DDL触发器和登录触发器。</p>
-<p>当数据库中发生数据操纵语言(DML)事件时将调用<strong>DML触发器</strong>。按照触发操作的不同可以分为INSERT触发器、UPDATE触发器和DELETE触发器，SQL Server为每个语句创建deleted表或（和）inserted表，表结构与定义触发器的表结构相同，触发器执行完成后自动删除。按照触发时间的不同可以分为AFTER(FOR)触发器和INSTEAD OF触发器。<br>当数据库中发生数据定义语言(DLL)事件时将调用<strong>DLL触发器</strong>，主要用于任务管理。DLL事件主要包括CREATE/ALTER/DROP/GRANT/DENY/REVOKE等语句操作。<br>LOGON事件激发<strong>登录触发器</strong>，将在登录身份验证阶段完成之后用户会话建立之前触发。</p>
-<p>创建和修改DML触发器的语法：</p>
-<pre><code>{CREATE|ALTER} TRIGGER [模式名.]触发器名
-ON {表名|视图名}
-[WITH DML触发器选项 [,... n]]
-{FOR|AFTER|INSTEAD OF}
-{[INSERT][,][UPDATE][,][DELETE]}
-AS {sql语句 [,... n]}
-</code></pre><p>删除DML触发器的语法：</p>
-<pre><code>DROP TRIGGER 触发器名 [,... n]
-</code></pre><p>创建和修改DLL触发器发的语法：</p>
-<pre><code>{CREATE|ALTER} TRIGGER 触发器名
-ON {DATABASE|ALL SERVER}
-[WITH DLL触发器选项 [,... n]]
-{FOR|AFTER} {触发事件名称|触发事件分组名称} [,... n]
-AS {sql语句 [,... n]}
-</code></pre><p>其中常见的数据库作用域的DLL语句和服务器作用域的DLL语句见P315。</p>
-<p>删除DLL触发器的语法：</p>
-<pre><code>DROP TRIGGER 触发器名 [,... n]
-ON {DATABASE|ALL SERVER}
-</code></pre><p>启用和禁用触发器的语法：</p>
-<pre><code>{ENABLE|DISABLE} TRIGGER {[模式名.]触发器名 [,... n]|ALL}
-ON {表名|视图名|DATABASE|ALL SERVER}
-</code></pre>
+        <p><a href="https://opcfoundation.org/" target="_blank" rel="noopener">OPC基金会官网</a>真是弱爆了。</p>
+<h3><span id="1-配置opcdaautodll">1. 配置OPCDAAuto.dll</span></h3><p>OPC的自动化接口即OPCDAAuto.dll<br>1)下载文件OPCDAAuto.dll，版本2.2.5.30<br>2)放到System32文件夹下，用管理员身份打开cmd<br>3)输入regsvr32 opcdaauto.dll后提示成功<br>4)打开Visual Studio在项目中打开相应项目，对解决方案右键-添加-引用，浏览选择opcdaaturo.dll<br>5)依赖项中出现COM-Interop.OPCAutomation，在C#程序开头using OPCAutomation；不再显示红色波浪线错误，即配置成功。</p>
+<p>Reference <a href="https://blog.csdn.net/u012252959/article/details/49699559" target="_blank" rel="noopener">u012252959的博客</a></p>
+
       
     </div>
 
@@ -451,9 +417,9 @@ ON {表名|视图名|DATABASE|ALL SERVER}
       
         <div class="post-tags">
           
-            <a href="/tags/databse/" rel="tag"># databse</a>
+            <a href="/tags/OPC/" rel="tag"># OPC</a>
           
-            <a href="/tags/sql-server/" rel="tag"># sql server</a>
+            <a href="/tags/C/" rel="tag"># C#</a>
           
         </div>
       
@@ -466,8 +432,8 @@ ON {表名|视图名|DATABASE|ALL SERVER}
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/03/know-profibus/" rel="next" title="Profibus和Profinet">
-                <i class="fa fa-chevron-left"></i> Profibus和Profinet
+              <a href="/2018/04/28/note/note-cs/" rel="next" title="《Learning hard C#学习笔记》笔记">
+                <i class="fa fa-chevron-left"></i> 《Learning hard C#学习笔记》笔记
               </a>
             
           </div>
@@ -476,8 +442,8 @@ ON {表名|视图名|DATABASE|ALL SERVER}
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/05/10/rev-industrialcomm/" rel="prev" title="工业控制设备通信概览">
-                工业控制设备通信概览 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/04/28/tip/tip-vm-time/" rel="prev" title="修改虚拟机启动时间">
+                修改虚拟机启动时间 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -661,7 +627,7 @@ ON {表名|视图名|DATABASE|ALL SERVER}
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第十章 存储过程与触发器</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1. 配置OPCDAAuto.dll</span></a></li></ol></div>
             
 
           </div>

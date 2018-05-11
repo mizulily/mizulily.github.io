@@ -102,18 +102,18 @@
 
 
 
-  <meta name="description" content="NTP(Network Time Protocol，网络时间协议)是用来同步网络中各个计算机时间的协议，属于应用层协议，采用UDP报文传输，使用UDP端口号为123。连接到互联网上的主机通过NTP与UTC(Universal Time Coordinate，世界协调时)同步，UTC由原子钟报时。计算机主机一般同多个时钟服务器连接，利用统计学的算法过滤来自不同服务器的时间，选择最佳的路径和来源以便校">
-<meta name="keywords" content="network basis,protocol">
+  <meta name="description" content="Modbus通信协议是全球第一个用于工业现场的总线协议，支持RS-232、RS-422、RS-485和以太网设备等，属于应用层协议。Modbus网络是一个工业通信系统，包括硬件、软件及协议，用于各种数据采集和过程监控。Modbus网络只有一个主机，所有通信由它发出，至多支持247个远程从属控制器，实际支持从机数由通信设备决定。主设备可单独和从设备通信，从设备返回一消息作为回应；也能以广播方式和所有">
+<meta name="keywords" content="protocol,industrial network">
 <meta property="og:type" content="article">
-<meta property="og:title" content="NTP网络时间协议">
-<meta property="og:url" content="http://yoursite.com/2018/04/28/know-NTP/index.html">
+<meta property="og:title" content="Modbus通信协议">
+<meta property="og:url" content="http://yoursite.com/2018/05/03/knowledge/know-modbus/index.html">
 <meta property="og:site_name" content="Elaine&#39;s Notebook">
-<meta property="og:description" content="NTP(Network Time Protocol，网络时间协议)是用来同步网络中各个计算机时间的协议，属于应用层协议，采用UDP报文传输，使用UDP端口号为123。连接到互联网上的主机通过NTP与UTC(Universal Time Coordinate，世界协调时)同步，UTC由原子钟报时。计算机主机一般同多个时钟服务器连接，利用统计学的算法过滤来自不同服务器的时间，选择最佳的路径和来源以便校">
+<meta property="og:description" content="Modbus通信协议是全球第一个用于工业现场的总线协议，支持RS-232、RS-422、RS-485和以太网设备等，属于应用层协议。Modbus网络是一个工业通信系统，包括硬件、软件及协议，用于各种数据采集和过程监控。Modbus网络只有一个主机，所有通信由它发出，至多支持247个远程从属控制器，实际支持从机数由通信设备决定。主设备可单独和从设备通信，从设备返回一消息作为回应；也能以广播方式和所有">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-03T07:32:22.928Z">
+<meta property="og:updated_time" content="2018-05-03T13:54:49.522Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="NTP网络时间协议">
-<meta name="twitter:description" content="NTP(Network Time Protocol，网络时间协议)是用来同步网络中各个计算机时间的协议，属于应用层协议，采用UDP报文传输，使用UDP端口号为123。连接到互联网上的主机通过NTP与UTC(Universal Time Coordinate，世界协调时)同步，UTC由原子钟报时。计算机主机一般同多个时钟服务器连接，利用统计学的算法过滤来自不同服务器的时间，选择最佳的路径和来源以便校">
+<meta name="twitter:title" content="Modbus通信协议">
+<meta name="twitter:description" content="Modbus通信协议是全球第一个用于工业现场的总线协议，支持RS-232、RS-422、RS-485和以太网设备等，属于应用层协议。Modbus网络是一个工业通信系统，包括硬件、软件及协议，用于各种数据采集和过程监控。Modbus网络只有一个主机，所有通信由它发出，至多支持247个远程从属控制器，实际支持从机数由通信设备决定。主设备可单独和从设备通信，从设备返回一消息作为回应；也能以广播方式和所有">
 
 
 
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/28/know-NTP/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/03/knowledge/know-modbus/"/>
 
 
 
@@ -132,7 +132,7 @@
   };
 </script>
 
-  <title>NTP网络时间协议 | Elaine's Notebook</title>
+  <title>Modbus通信协议 | Elaine's Notebook</title>
   
 
 
@@ -296,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/28/know-NTP/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/03/knowledge/know-modbus/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Elaine">
@@ -313,7 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">NTP网络时间协议
+          <h1 class="post-title" itemprop="name headline">Modbus通信协议
               
             
           </h1>
@@ -338,24 +338,12 @@
                 
               
 
-              <time title="创建时间：2018-04-28 16:55:35" itemprop="dateCreated datePublished" datetime="2018-04-28T16:55:35+08:00">2018-04-28</time>
+              <time title="创建时间：2018-05-03 15:30:26 / 修改时间：21:54:49" itemprop="dateCreated datePublished" datetime="2018-05-03T15:30:26+08:00">2018-05-03</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-05-03 15:32:22" itemprop="dateModified" datetime="2018-05-03T15:32:22+08:00">2018-05-03</time>
               
             
           </span>
@@ -406,8 +394,8 @@
       
 
       
-        <p><strong>NTP(Network Time Protocol，网络时间协议)</strong>是用来同步网络中各个计算机时间的协议，属于应用层协议，采用UDP报文传输，使用UDP端口号为123。连接到互联网上的主机通过NTP与UTC(Universal Time Coordinate，世界协调时)同步，UTC由原子钟报时。<br>计算机主机一般同多个时钟服务器连接，利用统计学的算法过滤来自不同服务器的时间，选择最佳的路径和来源以便校正主机时间。</p>
-<p>Reference <a href="https://baike.baidu.com/item/nTP" target="_blank" rel="noopener">百度百科</a><br>More <a href="http://blog.163.com/yzc_5001/blog/static/2061963420121283050787/" target="_blank" rel="noopener">sms的博客</a></p>
+        <p><strong>Modbus通信协议</strong>是全球第一个用于工业现场的总线协议，支持RS-232、RS-422、RS-485和以太网设备等，属于应用层协议。<br><strong>Modbus网络</strong>是一个工业通信系统，包括硬件、软件及协议，用于各种数据采集和过程监控。Modbus网络只有一个主机，所有通信由它发出，至多支持247个远程从属控制器，实际支持从机数由通信设备决定。主设备可单独和从设备通信，从设备返回一消息作为回应；也能以广播方式和所有从设备通信，从设备不作任何回应。<br>Modbus最初使用串行链路，分为Modbus-ASCII(美国信息交换码)和Modbus-RTU(远程终端设备)两种传输模式，其中RTU传输效率更高。随着网络发展推出了针对以太网通信的Modbus-TCP标准，</p>
+<p>Reference <a href="https://baike.baidu.com/item/Modbus%E9%80%9A%E8%AE%AF%E5%8D%8F%E8%AE%AE" target="_blank" rel="noopener">百度百科</a><br>More <a href="http://www.cnblogs.com/luomingui/archive/2013/06/14/Modbus.html" target="_blank" rel="noopener">老罗传奇的博客</a><a href="http://www.zlmcu.com/document/modbus_tcp_2_rtu.html" target="_blank" rel="noopener">上海卓岚公司的网站</a></p>
 
       
     </div>
@@ -428,9 +416,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/network-basis/" rel="tag"># network basis</a>
-          
             <a href="/tags/protocol/" rel="tag"># protocol</a>
+          
+            <a href="/tags/industrial-network/" rel="tag"># industrial network</a>
           
         </div>
       
@@ -443,8 +431,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/28/tip-vm-time/" rel="next" title="修改虚拟机启动时间">
-                <i class="fa fa-chevron-left"></i> 修改虚拟机启动时间
+              <a href="/2018/05/03/knowledge/know-DNS/" rel="next" title="DNS域名系统">
+                <i class="fa fa-chevron-left"></i> DNS域名系统
               </a>
             
           </div>
@@ -453,8 +441,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/05/03/know-DNS/" rel="prev" title="DNS域名系统">
-                DNS域名系统 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/05/10/note/note-database/" rel="prev" title="《数据库原理与应用》笔记">
+                《数据库原理与应用》笔记 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

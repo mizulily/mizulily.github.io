@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-10T03:42:49.759Z</updated>
+  <updated>2018-05-11T03:09:23.180Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,54 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>工业控制设备通信概览</title>
-    <link href="http://yoursite.com/2018/05/10/rev-industrialcomm/"/>
-    <id>http://yoursite.com/2018/05/10/rev-industrialcomm/</id>
-    <published>2018-05-10T03:38:56.000Z</published>
-    <updated>2018-05-10T03:42:49.759Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="review" scheme="http://yoursite.com/categories/review/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>《数据库原理与应用》笔记</title>
-    <link href="http://yoursite.com/2018/05/10/note-database/"/>
-    <id>http://yoursite.com/2018/05/10/note-database/</id>
-    <published>2018-05-10T03:31:31.000Z</published>
-    <updated>2018-05-10T06:33:38.330Z</updated>
-    
-    <content type="html"><![CDATA[<h2><span id="第十章-存储过程与触发器">第十章 存储过程与触发器</span></h2><p><strong>存储过程</strong>是由一系列Transact-SQL语句构成的程序，经编译后存储在数据库中，可以通过名称直接调用。存储过程还可以接受参数，提高存储过程的灵活性。在SQL Server中，存储过程的类型主要有：用户存储过程、扩展存储过程和系统存储过程。<strong>用户存储过程</strong>包括Transact-SQL存储过程和CLR存储过程；<strong>扩展存储过程</strong>可以加载外部DLL；<strong>系统存储过程</strong>用来实现数据库的管理活动，存放在master中，但其他数据库也可以调用。常用系统存储过程和分类见书P301。</p><p>创建和修改存储过程的语法：</p><pre><code>{CREATE|ALTER} PROC[EDURE] 存储过程(组)名[;序号][{@参数名 数据类型} [=默认值] [OUTPUT]] [,... n][WITH {RECOMPILE|ENCRYPTION|RECOMPILE,ENCRYPTION}][FOR REPLICATION]AS {sql语句 [,... n]} </code></pre><p>删除存储过程的语法：</p><pre><code>DROP PROC[EDURE] 存储过程(组)名</code></pre><p>执行存储过程的语法：</p><pre><code>EXEC[UTE] 存储过程(组)名[;序号][[@参数名=]参数值|@参数名 [OUTPUT]|[DEFAULT]] [,... n][WITH RECOMPILE]</code></pre><p><strong>触发器</strong>是一种特殊的存储过程，可以看作是表定义的一部分，用于对表进行完整性约束。在SQL Server中，触发器的类型主要有：DML触发器、DDL触发器和登录触发器。</p><p>当数据库中发生数据操纵语言(DML)事件时将调用<strong>DML触发器</strong>。按照触发操作的不同可以分为INSERT触发器、UPDATE触发器和DELETE触发器，SQL Server为每个语句创建deleted表或（和）inserted表，表结构与定义触发器的表结构相同，触发器执行完成后自动删除。按照触发时间的不同可以分为AFTER(FOR)触发器和INSTEAD OF触发器。<br>当数据库中发生数据定义语言(DLL)事件时将调用<strong>DLL触发器</strong>，主要用于任务管理。DLL事件主要包括CREATE/ALTER/DROP/GRANT/DENY/REVOKE等语句操作。<br>LOGON事件激发<strong>登录触发器</strong>，将在登录身份验证阶段完成之后用户会话建立之前触发。</p><p>创建和修改DML触发器的语法：</p><pre><code>{CREATE|ALTER} TRIGGER [模式名.]触发器名ON {表名|视图名}[WITH DML触发器选项 [,... n]]{FOR|AFTER|INSTEAD OF}{[INSERT][,][UPDATE][,][DELETE]}AS {sql语句 [,... n]}</code></pre><p>删除DML触发器的语法：</p><pre><code>DROP TRIGGER 触发器名 [,... n]</code></pre><p>创建和修改DLL触发器发的语法：</p><pre><code>{CREATE|ALTER} TRIGGER 触发器名ON {DATABASE|ALL SERVER}[WITH DLL触发器选项 [,... n]]{FOR|AFTER} {触发事件名称|触发事件分组名称} [,... n]AS {sql语句 [,... n]}</code></pre><p>其中常见的数据库作用域的DLL语句和服务器作用域的DLL语句见P315。</p><p>删除DLL触发器的语法：</p><pre><code>DROP TRIGGER 触发器名 [,... n]ON {DATABASE|ALL SERVER}</code></pre><p>启用和禁用触发器的语法：</p><pre><code>{ENABLE|DISABLE} TRIGGER {[模式名.]触发器名 [,... n]|ALL}ON {表名|视图名|DATABASE|ALL SERVER}</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2&gt;&lt;span id=&quot;第十章-存储过程与触发器&quot;&gt;第十章 存储过程与触发器&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;存储过程&lt;/strong&gt;是由一系列Transact-SQL语句构成的程序，经编译后存储在数据库中，可以通过名称直接调用。存储过程还可以接受参数，提高存储
-      
-    
-    </summary>
-    
-      <category term="note" scheme="http://yoursite.com/categories/note/"/>
-    
-    
-      <category term="databse" scheme="http://yoursite.com/tags/databse/"/>
-    
-      <category term="sql server" scheme="http://yoursite.com/tags/sql-server/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Profibus和Profinet</title>
-    <link href="http://yoursite.com/2018/05/03/know-profibus/"/>
-    <id>http://yoursite.com/2018/05/03/know-profibus/</id>
-    <published>2018-05-03T07:52:05.000Z</published>
-    <updated>2018-05-03T08:18:07.172Z</updated>
+    <title>西门子Profibus和Profinet通信</title>
+    <link href="http://yoursite.com/2018/05/11/knowledge/know-profibus&amp;profinet/"/>
+    <id>http://yoursite.com/2018/05/11/knowledge/know-profibus&amp;profinet/</id>
+    <published>2018-05-11T07:52:05.000Z</published>
+    <updated>2018-05-11T03:09:23.180Z</updated>
     
     <content type="html"><![CDATA[<p><strong>Profibus(Process Field Bus，过程现场总线)</strong>是一种国际化、开放式、不依赖于设备生产商的现场总线标准</p>]]></content>
     
@@ -90,9 +47,70 @@
   </entry>
   
   <entry>
+    <title>工业控制设备通信概览</title>
+    <link href="http://yoursite.com/2018/05/10/review/rev-industrialcomm/"/>
+    <id>http://yoursite.com/2018/05/10/review/rev-industrialcomm/</id>
+    <published>2018-05-10T03:38:56.000Z</published>
+    <updated>2018-05-11T03:26:22.515Z</updated>
+    
+    <content type="html"><![CDATA[<p>工业以太网、现场总线、工业无线是目前工业通信领域的三大主流技术。<br>常见工业控制设备总线/协议/接口一览</p><table><thead><tr><th style="text-align:center">名称</th><th style="text-align:center">类型</th><th>特点</th><th>链接</th></tr></thead><tbody><tr><td style="text-align:center">ASi (AS-Interface)</td><td style="text-align:center">现场总线</td><td>$1</td><td></td></tr><tr><td style="text-align:center">BACnet</td><td style="text-align:center">wangluo</td><td>$1</td><td></td></tr><tr><td style="text-align:center">CANopen</td><td style="text-align:center">现场总线</td><td></td><td></td></tr><tr><td style="text-align:center">CC-Link</td><td style="text-align:center">现场总线</td><td></td><td></td></tr><tr><td style="text-align:center">CC-Link IE</td><td style="text-align:center">工业以太网</td><td></td><td></td></tr><tr><td style="text-align:center">ControlNet</td><td style="text-align:center">现场总线</td><td></td><td></td></tr><tr><td style="text-align:center">DeviceNet</td><td style="text-align:center">现场总线</td><td></td><td></td></tr><tr><td style="text-align:center">EtherCAT</td><td style="text-align:center">工业以太网</td><td></td><td></td></tr><tr><td style="text-align:center">EtherNet/IP</td><td style="text-align:center">工业以太网</td><td></td><td></td></tr><tr><td style="text-align:center">Ethernet TCP/IP</td><td style="text-align:center">以太网</td><td></td><td></td></tr><tr><td style="text-align:center">Fipio</td><td style="text-align:center">现场总线</td><td></td><td></td></tr><tr><td style="text-align:center">GD (Global Data)</td><td style="text-align:center"></td><td></td><td></td></tr><tr><td style="text-align:center">InterBus</td><td style="text-align:center">现场总线</td><td></td><td></td></tr><tr><td style="text-align:center">IO-Link</td><td style="text-align:center">点对点</td><td></td><td></td></tr><tr><td style="text-align:center">Modbus</td><td style="text-align:center">现场总线</td><td></td><td></td></tr><tr><td style="text-align:center">Profibus</td><td style="text-align:center">现场总线</td><td>$1</td><td><a href="/2018/05/11/knowledge/know-profibus&profinet/" title="西门子Profibus和Profinet通信">西门子Profibus和Profinet通信</a></td></tr><tr><td style="text-align:center">Profinet</td><td style="text-align:center">工业以太网</td><td>7</td><td></td></tr><tr><td style="text-align:center">RS232/RS485</td><td style="text-align:center">串口</td><td></td><td></td></tr><tr><td style="text-align:center">SERCOS Ⅲ</td><td style="text-align:center"></td><td></td><td></td></tr><tr><td style="text-align:center">USB</td><td style="text-align:center"></td><td></td><td></td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;工业以太网、现场总线、工业无线是目前工业通信领域的三大主流技术。&lt;br&gt;常见工业控制设备总线/协议/接口一览&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;名称&lt;/th&gt;
+&lt;th style=&quot;text-ali
+      
+    
+    </summary>
+    
+      <category term="review" scheme="http://yoursite.com/categories/review/"/>
+    
+    
+      <category term="protocol" scheme="http://yoursite.com/tags/protocol/"/>
+    
+      <category term="industrial network" scheme="http://yoursite.com/tags/industrial-network/"/>
+    
+      <category term="field bus" scheme="http://yoursite.com/tags/field-bus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《数据库原理与应用》笔记</title>
+    <link href="http://yoursite.com/2018/05/10/note/note-database/"/>
+    <id>http://yoursite.com/2018/05/10/note/note-database/</id>
+    <published>2018-05-10T03:31:31.000Z</published>
+    <updated>2018-05-10T06:33:38.330Z</updated>
+    
+    <content type="html"><![CDATA[<h2><span id="第十章-存储过程与触发器">第十章 存储过程与触发器</span></h2><p><strong>存储过程</strong>是由一系列Transact-SQL语句构成的程序，经编译后存储在数据库中，可以通过名称直接调用。存储过程还可以接受参数，提高存储过程的灵活性。在SQL Server中，存储过程的类型主要有：用户存储过程、扩展存储过程和系统存储过程。<strong>用户存储过程</strong>包括Transact-SQL存储过程和CLR存储过程；<strong>扩展存储过程</strong>可以加载外部DLL；<strong>系统存储过程</strong>用来实现数据库的管理活动，存放在master中，但其他数据库也可以调用。常用系统存储过程和分类见书P301。</p><p>创建和修改存储过程的语法：</p><pre><code>{CREATE|ALTER} PROC[EDURE] 存储过程(组)名[;序号][{@参数名 数据类型} [=默认值] [OUTPUT]] [,... n][WITH {RECOMPILE|ENCRYPTION|RECOMPILE,ENCRYPTION}][FOR REPLICATION]AS {sql语句 [,... n]} </code></pre><p>删除存储过程的语法：</p><pre><code>DROP PROC[EDURE] 存储过程(组)名</code></pre><p>执行存储过程的语法：</p><pre><code>EXEC[UTE] 存储过程(组)名[;序号][[@参数名=]参数值|@参数名 [OUTPUT]|[DEFAULT]] [,... n][WITH RECOMPILE]</code></pre><p><strong>触发器</strong>是一种特殊的存储过程，可以看作是表定义的一部分，用于对表进行完整性约束。在SQL Server中，触发器的类型主要有：DML触发器、DDL触发器和登录触发器。</p><p>当数据库中发生数据操纵语言(DML)事件时将调用<strong>DML触发器</strong>。按照触发操作的不同可以分为INSERT触发器、UPDATE触发器和DELETE触发器，SQL Server为每个语句创建deleted表或（和）inserted表，表结构与定义触发器的表结构相同，触发器执行完成后自动删除。按照触发时间的不同可以分为AFTER(FOR)触发器和INSTEAD OF触发器。<br>当数据库中发生数据定义语言(DLL)事件时将调用<strong>DLL触发器</strong>，主要用于任务管理。DLL事件主要包括CREATE/ALTER/DROP/GRANT/DENY/REVOKE等语句操作。<br>LOGON事件激发<strong>登录触发器</strong>，将在登录身份验证阶段完成之后用户会话建立之前触发。</p><p>创建和修改DML触发器的语法：</p><pre><code>{CREATE|ALTER} TRIGGER [模式名.]触发器名ON {表名|视图名}[WITH DML触发器选项 [,... n]]{FOR|AFTER|INSTEAD OF}{[INSERT][,][UPDATE][,][DELETE]}AS {sql语句 [,... n]}</code></pre><p>删除DML触发器的语法：</p><pre><code>DROP TRIGGER 触发器名 [,... n]</code></pre><p>创建和修改DLL触发器发的语法：</p><pre><code>{CREATE|ALTER} TRIGGER 触发器名ON {DATABASE|ALL SERVER}[WITH DLL触发器选项 [,... n]]{FOR|AFTER} {触发事件名称|触发事件分组名称} [,... n]AS {sql语句 [,... n]}</code></pre><p>其中常见的数据库作用域的DLL语句和服务器作用域的DLL语句见P315。</p><p>删除DLL触发器的语法：</p><pre><code>DROP TRIGGER 触发器名 [,... n]ON {DATABASE|ALL SERVER}</code></pre><p>启用和禁用触发器的语法：</p><pre><code>{ENABLE|DISABLE} TRIGGER {[模式名.]触发器名 [,... n]|ALL}ON {表名|视图名|DATABASE|ALL SERVER}</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2&gt;&lt;span id=&quot;第十章-存储过程与触发器&quot;&gt;第十章 存储过程与触发器&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;存储过程&lt;/strong&gt;是由一系列Transact-SQL语句构成的程序，经编译后存储在数据库中，可以通过名称直接调用。存储过程还可以接受参数，提高存储
+      
+    
+    </summary>
+    
+      <category term="note" scheme="http://yoursite.com/categories/note/"/>
+    
+    
+      <category term="databse" scheme="http://yoursite.com/tags/databse/"/>
+    
+      <category term="sql server" scheme="http://yoursite.com/tags/sql-server/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Modbus通信协议</title>
-    <link href="http://yoursite.com/2018/05/03/know-modbus/"/>
-    <id>http://yoursite.com/2018/05/03/know-modbus/</id>
+    <link href="http://yoursite.com/2018/05/03/knowledge/know-modbus/"/>
+    <id>http://yoursite.com/2018/05/03/knowledge/know-modbus/</id>
     <published>2018-05-03T07:30:26.000Z</published>
     <updated>2018-05-03T13:54:49.522Z</updated>
     
@@ -118,8 +136,8 @@
   
   <entry>
     <title>DNS域名系统</title>
-    <link href="http://yoursite.com/2018/05/03/know-DNS/"/>
-    <id>http://yoursite.com/2018/05/03/know-DNS/</id>
+    <link href="http://yoursite.com/2018/05/03/knowledge/know-DNS/"/>
+    <id>http://yoursite.com/2018/05/03/knowledge/know-DNS/</id>
     <published>2018-05-03T00:53:04.000Z</published>
     <updated>2018-05-03T01:08:06.731Z</updated>
     
@@ -143,8 +161,8 @@
   
   <entry>
     <title>NTP网络时间协议</title>
-    <link href="http://yoursite.com/2018/04/28/know-NTP/"/>
-    <id>http://yoursite.com/2018/04/28/know-NTP/</id>
+    <link href="http://yoursite.com/2018/04/28/knowledge/know-NTP/"/>
+    <id>http://yoursite.com/2018/04/28/knowledge/know-NTP/</id>
     <published>2018-04-28T08:55:35.000Z</published>
     <updated>2018-05-03T07:32:22.928Z</updated>
     
@@ -170,10 +188,10 @@
   
   <entry>
     <title>修改虚拟机启动时间</title>
-    <link href="http://yoursite.com/2018/04/28/tip-vm-time/"/>
-    <id>http://yoursite.com/2018/04/28/tip-vm-time/</id>
+    <link href="http://yoursite.com/2018/04/28/tip/tip-vm-time/"/>
+    <id>http://yoursite.com/2018/04/28/tip/tip-vm-time/</id>
     <published>2018-04-28T06:51:56.000Z</published>
-    <updated>2018-04-28T09:02:46.005Z</updated>
+    <updated>2018-05-11T03:31:16.891Z</updated>
     
     <content type="html"><![CDATA[<p>由于软件license的时间限制，需要用过去的时间启动虚拟机。</p><ol><li>修改主机时间。启动虚拟机后系统时间即当前主机时间。但在主机中打开Chrome浏览器会报错，提示时钟慢了，无法建立私密连接。</li><li>修改虚拟机启动时间。用文本编辑器打开虚拟机.vmx文件，寻找以下设置项并关闭同步，设置虚拟机启动时间，保存后启动虚拟机。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">tools.syncTime = &quot;FALSE&quot;  </span><br><span class="line">time.synchronize.continue = &quot;FALSE&quot;  </span><br><span class="line">time.synchronize.restore = &quot;FALSE&quot;  </span><br><span class="line">time.synchronize.resume.disk = &quot;FALSE&quot;  </span><br><span class="line">time.synchronize.shrink = &quot;FALSE&quot;  </span><br><span class="line">time.synchronize.tools.startup = &quot;FALSE&quot; </span><br><span class="line">rtc.startTime = 1462003200</span><br></pre></td></tr></table></figure></li></ol><p>注：rtc.startTime是从1970年1月1日0时0分0秒（Unix时间）到系统启动时间间隔的时间，单位是秒，可以到<a href="http://www.onlineconversion.com/unix_time.htm" target="_blank" rel="noopener">计算时间的网站</a>上换算得到希望虚拟机的启动时间。</p><p>Reference <a href="https://blog.csdn.net/sagafive/article/details/53031740" target="_blank" rel="noopener">SagaFive的专栏</a></p>]]></content>
     
@@ -198,8 +216,8 @@
   
   <entry>
     <title>使用C#编写OPC程序</title>
-    <link href="http://yoursite.com/2018/04/28/exp-cs-opc/"/>
-    <id>http://yoursite.com/2018/04/28/exp-cs-opc/</id>
+    <link href="http://yoursite.com/2018/04/28/experience/exp-cs-opc/"/>
+    <id>http://yoursite.com/2018/04/28/experience/exp-cs-opc/</id>
     <published>2018-04-28T01:23:59.000Z</published>
     <updated>2018-04-28T01:51:43.505Z</updated>
     
@@ -226,8 +244,8 @@
   
   <entry>
     <title>《Learning hard C#学习笔记》笔记</title>
-    <link href="http://yoursite.com/2018/04/28/note-cs/"/>
-    <id>http://yoursite.com/2018/04/28/note-cs/</id>
+    <link href="http://yoursite.com/2018/04/28/note/note-cs/"/>
+    <id>http://yoursite.com/2018/04/28/note/note-cs/</id>
     <published>2018-04-28T00:55:46.000Z</published>
     <updated>2018-04-28T11:39:38.861Z</updated>
     
@@ -258,12 +276,12 @@
   
   <entry>
     <title>FactoryTalk Transaction Manager使用心得</title>
-    <link href="http://yoursite.com/2018/04/27/exp-trans-1/"/>
-    <id>http://yoursite.com/2018/04/27/exp-trans-1/</id>
+    <link href="http://yoursite.com/2018/04/27/experience/exp-trans-1/"/>
+    <id>http://yoursite.com/2018/04/27/experience/exp-trans-1/</id>
     <published>2018-04-27T09:03:46.000Z</published>
-    <updated>2018-04-28T08:43:21.374Z</updated>
+    <updated>2018-05-11T03:31:56.388Z</updated>
     
-    <content type="html"><![CDATA[<h2><span id="基本概念">基本概念</span></h2><p><strong>FactoryTalk Transaction Manager</strong>（前身是RSSql）是Rockwell公司FactoryTalk系列组态软件之一，主要实现工控系统与数据库的通信，该系列软件基于<a href="https://baike.baidu.com/item/SOA/2140650" target="_blank" rel="noopener">SOA架构</a>开发，因此Transaction Manager应用软件部分实际上是对各个数据传送服务进行配置的UI界面，该软件的核心实际上是各个接口的服务程序。</p><p><img src="/2018/04/27/exp-trans-1/structure.png" alt="structure"></p><p>Transaction and Control Manager服务包含了Transaction Manager Service服务和FactoryTalk Live Data控制接口，可以通过该服务连接Rockwell软件和所有OPC服务器。</p><p>启动操作系统后查看服务列表，可以看到Transaction Manager相关的各个服务。</p><p><img src="/2018/04/27/exp-trans-1/services.png" alt="services"></p><p>FactoryTalk Transaction Manager可以使用以下<strong>控制接口</strong>(control connector)，来关联数据点(data point)或存储地址(memory location)：</p><ol><li>FactoryTalk Live Data</li><li>Dynamic Data Exchange (DDE)</li><li>RSLinx Classic OPC</li><li>RSView32</li><li>Generic OPC</li></ol><p>FactoryTalk Transaction Manager可以使用以下<strong>企业接口</strong>(enterprise connector)，来创建数据对象(data object)与企业系统中的数据表(database table)和预存过程(stored procedure)进行交互：</p><ol><li>Open Database Connectivity (ODBC)</li><li>Microsoft OLE DB</li><li>Microsoft COM+</li><li>Oracle Call Interface (OCI)</li><li>Time-series Data Compression</li><li>FactoryTalk Metrics connector</li></ol><h2><span id="1-opc-server-gt-sql-server">1. OPC Server -&gt; SQL Server</span></h2><p>OPC Server: KEPSever Enterprise 5.13<br>SQL Server: Microsoft SQL Server 2008 R2</p><h2><span id="2-live-data-gt-sql-server">2. Live Data -&gt; SQL Server</span></h2>]]></content>
+    <content type="html"><![CDATA[<h2><span id="基本概念">基本概念</span></h2><p><strong>FactoryTalk Transaction Manager</strong>（前身是RSSql）是Rockwell公司FactoryTalk系列组态软件之一，主要实现工控系统与数据库的通信，该系列软件基于<a href="https://baike.baidu.com/item/SOA/2140650" target="_blank" rel="noopener">SOA架构</a>开发，因此Transaction Manager应用软件部分实际上是对各个数据传送服务进行配置的UI界面，该软件的核心实际上是各个接口的服务程序。</p><p><img src="/2018/04/27/experience/exp-trans-1/structure.png" alt="structure"></p><p>Transaction and Control Manager服务包含了Transaction Manager Service服务和FactoryTalk Live Data控制接口，可以通过该服务连接Rockwell软件和所有OPC服务器。</p><p>启动操作系统后查看服务列表，可以看到Transaction Manager相关的各个服务。</p><p><img src="/2018/04/27/experience/exp-trans-1/services.png" alt="services"></p><p>FactoryTalk Transaction Manager可以使用以下<strong>控制接口</strong>(control connector)，来关联数据点(data point)或存储地址(memory location)：</p><ol><li>FactoryTalk Live Data</li><li>Dynamic Data Exchange (DDE)</li><li>RSLinx Classic OPC</li><li>RSView32</li><li>Generic OPC</li></ol><p>FactoryTalk Transaction Manager可以使用以下<strong>企业接口</strong>(enterprise connector)，来创建数据对象(data object)与企业系统中的数据表(database table)和预存过程(stored procedure)进行交互：</p><ol><li>Open Database Connectivity (ODBC)</li><li>Microsoft OLE DB</li><li>Microsoft COM+</li><li>Oracle Call Interface (OCI)</li><li>Time-series Data Compression</li><li>FactoryTalk Metrics connector</li></ol><h2><span id="1-opc-server-gt-sql-server">1. OPC Server -&gt; SQL Server</span></h2><p>OPC Server: KEPSever Enterprise 5.13<br>SQL Server: Microsoft SQL Server 2008 R2</p><h2><span id="2-live-data-gt-sql-server">2. Live Data -&gt; SQL Server</span></h2><h2><span id="3-sql-server-gt-live-data">3. SQL Server -&gt; Live Data</span></h2>]]></content>
     
     <summary type="html">
     
@@ -277,11 +295,11 @@
       <category term="experience" scheme="http://yoursite.com/categories/experience/"/>
     
     
-      <category term="OPC" scheme="http://yoursite.com/tags/OPC/"/>
-    
       <category term="FactoryTalk" scheme="http://yoursite.com/tags/FactoryTalk/"/>
     
       <category term="Rockwell" scheme="http://yoursite.com/tags/Rockwell/"/>
+    
+      <category term="OPC" scheme="http://yoursite.com/tags/OPC/"/>
     
       <category term="SQL" scheme="http://yoursite.com/tags/SQL/"/>
     
@@ -289,22 +307,22 @@
   
   <entry>
     <title>《OPC应用程序入门》笔记</title>
-    <link href="http://yoursite.com/2018/04/27/note-opc/"/>
-    <id>http://yoursite.com/2018/04/27/note-opc/</id>
+    <link href="http://yoursite.com/2018/04/27/note/note-opc/"/>
+    <id>http://yoursite.com/2018/04/27/note/note-opc/</id>
     <published>2018-04-27T02:06:54.000Z</published>
     <updated>2018-04-28T01:00:14.314Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/2018/04/27/note-opc/ch1-1.PNG" alt="ch1-1"></p><!-- toc --><ul><li><a href="#第一章-opc基础知识">第一章 OPC基础知识</a><ul><li><a href="#11-什么是opc">1.1 什么是OPC</a></li></ul></li></ul><!-- tocstop --><h2><span id="第一章-opc基础知识">第一章 OPC基础知识</span></h2><h3><span id="11-什么是opc">1.1 什么是OPC</span></h3><p>OPC(OLE for Process Control)是为不同供应商设备和应用程序之间的软件接口标准化而提出的，使其间的数据交换不依赖于特定开发语言和开发环境。它利用Windows中的OLE/COM技术实现工业制造系统过程控制中数据交换的标准化。OPC系统由提供数据收集服务的OPC服务器(OPC Server)、接受数据服务的OPC应用程序(OPC Client)和OPC接口所构成。</p>]]></content>
+    <content type="html"><![CDATA[<p><img src="/2018/04/27/note/note-opc/ch1-1.PNG" alt="ch1-1"></p><!-- toc --><ul><li><a href="#第一章-opc基础知识">第一章 OPC基础知识</a><ul><li><a href="#11-什么是opc">1.1 什么是OPC</a></li></ul></li></ul><!-- tocstop --><h2><span id="第一章-opc基础知识">第一章 OPC基础知识</span></h2><h3><span id="11-什么是opc">1.1 什么是OPC</span></h3><p>OPC(OLE for Process Control)是为不同供应商设备和应用程序之间的软件接口标准化而提出的，使其间的数据交换不依赖于特定开发语言和开发环境。它利用Windows中的OLE/COM技术实现工业制造系统过程控制中数据交换的标准化。OPC系统由提供数据收集服务的OPC服务器(OPC Server)、接受数据服务的OPC应用程序(OPC Client)和OPC接口所构成。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;/2018/04/27/note-opc/ch1-1.PNG&quot; alt=&quot;ch1-1&quot;&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;/2018/04/27/note/note-opc/ch1-1.PNG&quot; alt=&quot;ch1-1&quot;&gt;&lt;/p&gt;
 &lt;!-- toc --&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#第一章-opc基础知识&quot;&gt;第一章 OPC基础知识&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;
+&lt;li&gt;&lt;a h
       
     
     </summary>
@@ -318,8 +336,8 @@
   
   <entry>
     <title>localhost</title>
-    <link href="http://yoursite.com/2018/04/26/know-localhost/"/>
-    <id>http://yoursite.com/2018/04/26/know-localhost/</id>
+    <link href="http://yoursite.com/2018/04/26/knowledge/know-localhost/"/>
+    <id>http://yoursite.com/2018/04/26/knowledge/know-localhost/</id>
     <published>2018-04-26T08:51:36.000Z</published>
     <updated>2018-04-28T08:44:24.013Z</updated>
     

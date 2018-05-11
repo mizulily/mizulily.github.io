@@ -102,18 +102,18 @@
 
 
 
-  <meta name="description" content="第一章 基础知识 第八章 委托 第九章 事件   第一章 基础知识C# 第八章 委托委托是C#中最中需要的特性之一，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字： 访问修饰符 delegate 返回类型 委托名">
-<meta name="keywords" content="C#,programming language">
+  <meta name="description" content="DNS(Domain Name System，域名系统)在万维网上作为域名和IP地址相互映射的分布式数据库。通过域名得到对应IP地址的过程叫做域名解析。DNS协议运行在UDP协议之上，使用UDP端口号53。为保证服务的高可用性，DNS要求使用多台名称服务器冗余支持每个区域。 Reference 百度百科">
+<meta name="keywords" content="network basis">
 <meta property="og:type" content="article">
-<meta property="og:title" content="《Learning hard C#学习笔记》笔记">
-<meta property="og:url" content="http://yoursite.com/2018/04/28/note-cs/index.html">
+<meta property="og:title" content="DNS域名系统">
+<meta property="og:url" content="http://yoursite.com/2018/05/03/knowledge/know-DNS/index.html">
 <meta property="og:site_name" content="Elaine&#39;s Notebook">
-<meta property="og:description" content="第一章 基础知识 第八章 委托 第九章 事件   第一章 基础知识C# 第八章 委托委托是C#中最中需要的特性之一，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字： 访问修饰符 delegate 返回类型 委托名">
+<meta property="og:description" content="DNS(Domain Name System，域名系统)在万维网上作为域名和IP地址相互映射的分布式数据库。通过域名得到对应IP地址的过程叫做域名解析。DNS协议运行在UDP协议之上，使用UDP端口号53。为保证服务的高可用性，DNS要求使用多台名称服务器冗余支持每个区域。 Reference 百度百科">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-28T11:39:38.861Z">
+<meta property="og:updated_time" content="2018-05-03T01:08:06.731Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="《Learning hard C#学习笔记》笔记">
-<meta name="twitter:description" content="第一章 基础知识 第八章 委托 第九章 事件   第一章 基础知识C# 第八章 委托委托是C#中最中需要的特性之一，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字： 访问修饰符 delegate 返回类型 委托名">
+<meta name="twitter:title" content="DNS域名系统">
+<meta name="twitter:description" content="DNS(Domain Name System，域名系统)在万维网上作为域名和IP地址相互映射的分布式数据库。通过域名得到对应IP地址的过程叫做域名解析。DNS协议运行在UDP协议之上，使用UDP端口号53。为保证服务的高可用性，DNS要求使用多台名称服务器冗余支持每个区域。 Reference 百度百科">
 
 
 
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/28/note-cs/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/03/knowledge/know-DNS/"/>
 
 
 
@@ -132,7 +132,7 @@
   };
 </script>
 
-  <title>《Learning hard C#学习笔记》笔记 | Elaine's Notebook</title>
+  <title>DNS域名系统 | Elaine's Notebook</title>
   
 
 
@@ -296,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/28/note-cs/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/03/knowledge/know-DNS/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Elaine">
@@ -313,7 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">《Learning hard C#学习笔记》笔记
+          <h1 class="post-title" itemprop="name headline">DNS域名系统
               
             
           </h1>
@@ -338,7 +338,7 @@
                 
               
 
-              <time title="创建时间：2018-04-28 08:55:46 / 修改时间：19:39:38" itemprop="dateCreated datePublished" datetime="2018-04-28T08:55:46+08:00">2018-04-28</time>
+              <time title="创建时间：2018-05-03 08:53:04 / 修改时间：09:08:06" itemprop="dateCreated datePublished" datetime="2018-05-03T08:53:04+08:00">2018-05-03</time>
             
 
             
@@ -360,7 +360,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/note/" itemprop="url" rel="index"><span itemprop="name">note</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/knowledge/" itemprop="url" rel="index"><span itemprop="name">knowledge</span></a></span>
 
                 
                 
@@ -394,27 +394,9 @@
       
 
       
-        <!-- toc -->
-<ul>
-<li><a href="#第一章-基础知识">第一章 基础知识</a></li>
-<li><a href="#第八章-委托">第八章 委托</a></li>
-<li><a href="#第九章-事件">第九章 事件</a></li>
-</ul>
-<!-- tocstop -->
-<h2><span id="第一章-基础知识">第一章 基础知识</span></h2><p>C#</p>
-<h2><span id="第八章-委托">第八章 委托</span></h2><p><strong>委托</strong>是C#中最中需要的特性之一，它使得C#中的函数可以作为参数被传递，与C/C++中的函数指针类似。它是一个特殊的类，所有的委托都是从System.MulticastDelegate类派生的。<br>委托的定义和方法的定义类似，只是在定义前多了一个delegate关键字：</p>
-<pre><code>访问修饰符 delegate 返回类型 委托名([参数表])
-</code></pre><p>能被委托包装的方法需要满足：</p>
-<ol>
-<li>方法的签名与委托一致（参数个数、类型、顺序）</li>
-<li>方法的返回类型与委托一致</li>
-</ol>
-<p>委托也可以封装多个方法，称为<strong>委托链</strong>或多路广播委托，在委托链上的委托都会被顺序执行。可以通过“+”运算符把委托链接到一个委托对象实例上，也可以使用“-”运算符将某个委托从委托链对象上移除。</p>
-<div><div class="fold_hider"><div class="close hider_title">委托和委托链的例子（点击显示代码）</div></div><div class="fold">
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">CSbook</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//委托的定义</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">delegate</span> <span class="keyword">void</span> <span class="title">MyDelegate</span>(<span class="params"><span class="keyword">int</span> para1, <span class="keyword">int</span> para2</span>)</span>;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">MyMethod</span>(<span class="params">MyDelegate mydelegate</span>)</span>&#123;</span><br><span class="line">            mydelegate(<span class="number">1</span>, <span class="number">2</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            MyDelegate m = <span class="keyword">new</span> MyDelegate(Program.Mult);</span><br><span class="line">            <span class="comment">// 方法Program.Mult作为方法MyMethod的参数</span></span><br><span class="line">            MyMethod(m);</span><br><span class="line">            </span><br><span class="line"></span><br><span class="line">            MyDelegate p = <span class="keyword">new</span> MyDelegate(<span class="keyword">new</span> Program().Add);</span><br><span class="line">            MyDelegate q = <span class="keyword">new</span> MyDelegate(<span class="keyword">new</span> Program().Sub);</span><br><span class="line">            MyDelegate chain = <span class="literal">null</span>;</span><br><span class="line">            chain += m;</span><br><span class="line">            chain += p;</span><br><span class="line">            chain += q;</span><br><span class="line">            chain -= m;</span><br><span class="line">            chain(<span class="number">1</span>,<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">            Console.Read();</span><br><span class="line">  </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 实例方法</span></span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">Add</span>(<span class="params"><span class="keyword">int</span> para1, <span class="keyword">int</span> para2</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">int</span> sum = para1 + para2;</span><br><span class="line">            Console.WriteLine(<span class="string">"Sum is: "</span> + sum);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">Sub</span>(<span class="params"><span class="keyword">int</span> para1, <span class="keyword">int</span> para2</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">int</span> sub = para1 - para2;</span><br><span class="line">            Console.WriteLine(<span class="string">"Sub is: "</span> + sub);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 静态方法</span></span><br><span class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Mult</span>(<span class="params"><span class="keyword">int</span> para1, <span class="keyword">int</span> para2</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">int</span> mul = para1 * para2;</span><br><span class="line">            Console.WriteLine(<span class="string">"Mul is: "</span> + mul);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p><strong>DNS(Domain Name System，域名系统)</strong>在万维网上作为域名和IP地址相互映射的分布式数据库。通过域名得到对应IP地址的过程叫做<strong>域名解析</strong>。DNS协议运行在UDP协议之上，使用UDP端口号53。为保证服务的高可用性，DNS要求使用多台名称服务器冗余支持每个区域。</p>
+<p>Reference <a href="https://baike.baidu.com/item/DNS/427444#reference-[4]-15346050-wrap" target="_blank" rel="noopener">百度百科</a></p>
 
-</div></div>
-<h2><span id="第九章-事件">第九章 事件</span></h2>
       
     </div>
 
@@ -434,9 +416,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/C/" rel="tag"># C#</a>
-          
-            <a href="/tags/programming-language/" rel="tag"># programming language</a>
+            <a href="/tags/network-basis/" rel="tag"># network basis</a>
           
         </div>
       
@@ -449,8 +429,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/27/exp-trans-1/" rel="next" title="FactoryTalk Transaction Manager使用心得">
-                <i class="fa fa-chevron-left"></i> FactoryTalk Transaction Manager使用心得
+              <a href="/2018/04/28/knowledge/know-NTP/" rel="next" title="NTP网络时间协议">
+                <i class="fa fa-chevron-left"></i> NTP网络时间协议
               </a>
             
           </div>
@@ -459,8 +439,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/04/28/exp-cs-opc/" rel="prev" title="使用C#编写OPC程序">
-                使用C#编写OPC程序 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/05/03/knowledge/know-modbus/" rel="prev" title="Modbus通信协议">
+                Modbus通信协议 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -510,17 +490,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -634,22 +605,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第一章 基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第八章 委托</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第九章 事件</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       

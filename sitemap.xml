@@ -2,42 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2018/05/10/note-database/</loc>
+    <loc>http://yoursite.com/2018/04/27/experience/exp-trans-1/</loc>
+    
+    <lastmod>2018-05-11T03:31:56.388Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/04/28/tip/tip-vm-time/</loc>
+    
+    <lastmod>2018-05-11T03:31:16.891Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/10/review/rev-industrialcomm/</loc>
+    
+    <lastmod>2018-05-11T03:26:22.515Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/11/knowledge/know-profibus&profinet/</loc>
+    
+    <lastmod>2018-05-11T03:09:23.180Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/10/note/note-database/</loc>
     
     <lastmod>2018-05-10T06:33:38.330Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/05/10/rev-industrialcomm/</loc>
-    
-    <lastmod>2018-05-10T03:42:49.759Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/05/03/know-modbus/</loc>
+    <loc>http://yoursite.com/2018/05/03/knowledge/know-modbus/</loc>
     
     <lastmod>2018-05-03T13:54:49.522Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/05/03/know-profibus/</loc>
-    
-    <lastmod>2018-05-03T08:18:07.172Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/04/28/know-NTP/</loc>
+    <loc>http://yoursite.com/2018/04/28/knowledge/know-NTP/</loc>
     
     <lastmod>2018-05-03T07:32:22.928Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/05/03/know-DNS/</loc>
+    <loc>http://yoursite.com/2018/05/03/knowledge/know-DNS/</loc>
     
     <lastmod>2018-05-03T01:08:06.731Z</lastmod>
     
@@ -58,42 +72,28 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/04/28/note-cs/</loc>
+    <loc>http://yoursite.com/2018/04/28/note/note-cs/</loc>
     
     <lastmod>2018-04-28T11:39:38.861Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/04/28/tip-vm-time/</loc>
-    
-    <lastmod>2018-04-28T09:02:46.005Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/04/26/know-localhost/</loc>
+    <loc>http://yoursite.com/2018/04/26/knowledge/know-localhost/</loc>
     
     <lastmod>2018-04-28T08:44:24.013Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/04/27/exp-trans-1/</loc>
-    
-    <lastmod>2018-04-28T08:43:21.374Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/04/28/exp-cs-opc/</loc>
+    <loc>http://yoursite.com/2018/04/28/experience/exp-cs-opc/</loc>
     
     <lastmod>2018-04-28T01:51:43.505Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/04/27/note-opc/</loc>
+    <loc>http://yoursite.com/2018/04/27/note/note-opc/</loc>
     
     <lastmod>2018-04-28T01:00:14.314Z</lastmod>
     
