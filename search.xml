@@ -3,7 +3,62 @@
   
     
     <entry>
-      <title>西门子Profibus和Profinet通信</title>
+      <title>know-uss</title>
+      <link href="/2018/05/14/knowledge/know-uss/"/>
+      <url>/2018/05/14/knowledge/know-uss/</url>
+      <content type="html"><![CDATA[]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>CRC循环冗余校验码</title>
+      <link href="/2018/05/14/knowledge/know-crc/"/>
+      <url>/2018/05/14/knowledge/know-crc/</url>
+      <content type="html"><![CDATA[<p><strong>循环码</strong>(Cyclic Redundancy Check, CRC)是一种检错率高、编码效率高的检错码，通过除法运算来建立有效信息为和校验位之间的约定关系。CRC码由两部分组成，前部分是<strong>信息码</strong>，后部分是<strong>校验码</strong>，若CRC码总共长$n$位，信息码长$k$位，则称为<strong>$(n,k)$码</strong>，$r=n-k$即冗余位长度，也就是校验码长度。</p><p>基本概念：</p><ul><li>$n$位二进制码可以表示最高次幂为$n-1$的多项式。</li><li><strong>按位除</strong>（模2除）运算实际上就是在除的过程中做异或运算，同时不考虑进位，直到余数的位数小于除数时得到最终余数。在异或运算中模2减与模2加真值表完全相同。</li></ul><p>对于一个给定的$(n,k)$码，可以证明存在最高次幂为$r$的<strong>生成多项式</strong>$G(x)$，满足</p><ol><li>最高位和最低位为1</li><li>当被传送信息任何一位发生错误时，被生成多项式做模2除后使余数不为0</li><li>不同位发生错误时使余数不同</li><li>对余数继续做模2除应使余数循环</li></ol><p>将这些条件反映为数学关系是复杂的，常用的对应不同码制的生成多项式$G(x)$详见<a href="https://en.wikipedia.org/wiki/Cyclic_redundancy_check" target="_blank" rel="noopener">Wikipedia</a>：</p><ul><li>CRC1:  $x^1+x^0$</li><li>CRC4:  $x^4+x^1+x^0$</li><li>CRC8:  $x^8+x^5+x^4+x^0$</li><li>CRC12: $x^{12}+x^{11}+x^3+x^2+x^0$</li><li>CRC16: $x^{16}+x^{15}+x^2+x^0$</li></ul><p>具体<strong>编码规则</strong>如下。</p><ol><li>接收方和发送方约定发送组的信息位k和冗余位r个数，选定生成多项式$G(x)$满足上述条件</li><li>发送方将原始数据左移$r$位得到$M(x)$，随后按位除生成多项式$G(x)$，得到余数$R(x)$，有$\frac{M(x)}{G(x)}=Q(x)…R(x)$</li><li>发送方将$M(x)$与$R(x)$连接（等同于模2加或模2减）后一起发送</li><li>接收方将收到的数据按位除生成多项式$G(x)$，若余数为$0$则传输正确，若余数不为$0$则传输错误，即$\frac{M(x)+R(x)}{G(x)}=\frac{M(x)-R(x)}{G(x)}=Q(x)…0$</li></ol><p>CRC校验码可以检查出全部单个错、全部离散二位错、全部奇数个数、全部长度小等于$k$位的突发错，并以$1-(1/2)^{k-1}$概率检查出长度位$k+1$位的突发错。</p>]]></content>
+      
+      <categories>
+          
+          <category> knowledge </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> communication basis </tag>
+            
+            <tag> error-detecting code </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>网络传输电气知识</title>
+      <link href="/2018/05/14/knowledge/know-networkelectric/"/>
+      <url>/2018/05/14/knowledge/know-networkelectric/</url>
+      <content type="html"><![CDATA[<p>数字表示网络数据传输速率，单位为Mbps；Base表示基带传输，即未经过调制、不能复用的传输，Broad表示宽带传输；-后面的字母或数字指传输介质。<br>IEEE标准共有以下几种：</p><div class="table-container"><table><thead><tr><th style="text-align:center">名称</th><th style="text-align:center">传输介质</th><th style="text-align:center">传输距离</th><th style="text-align:center">连接器</th></tr></thead><tbody><tr><td style="text-align:center">10Base-5</td><td style="text-align:center">RG-8/RG-11同轴电缆（粗缆）</td><td style="text-align:center">500米</td><td style="text-align:center">AUI或MAU连接器</td></tr><tr><td style="text-align:center">10Base-2</td><td style="text-align:center">RG-58同轴电缆（细缆）</td><td style="text-align:center">185米</td><td style="text-align:center">BNC连接器</td></tr><tr><td style="text-align:center"><strong>10Base-T</strong></td><td style="text-align:center">CAT3非屏蔽双绞线</td><td style="text-align:center">100米</td><td style="text-align:center">RJ45连接器</td></tr><tr><td style="text-align:center">10Base-F</td><td style="text-align:center">光纤</td><td style="text-align:center">500米以上</td><td style="text-align:center">FP/FL/FB连接器</td></tr><tr><td style="text-align:center"><strong>100Base-TX</strong></td><td style="text-align:center">CAT5非屏蔽双绞线</td><td style="text-align:center">100米</td><td style="text-align:center">RJ45连接器</td></tr><tr><td style="text-align:center">100Base-T4</td><td style="text-align:center">CAT3非屏蔽双绞线</td><td style="text-align:center">100米</td><td style="text-align:center">RJ45连接器</td></tr><tr><td style="text-align:center">100Base-F</td><td style="text-align:center">光纤</td><td style="text-align:center">2000米</td><td style="text-align:center">SC</td></tr><tr><td style="text-align:center"><strong>1000Base-T</strong></td><td style="text-align:center">CAT5e非屏蔽双绞线</td><td style="text-align:center">100米</td><td style="text-align:center">RJ45连接器</td></tr><tr><td style="text-align:center"><strong>1000Base-TX</strong></td><td style="text-align:center">CAT6非屏蔽双绞线</td><td style="text-align:center">100米</td><td style="text-align:center">RJ45连接器</td></tr><tr><td style="text-align:center">1000Base-CX</td><td style="text-align:center">屏蔽双绞线</td><td style="text-align:center">25米</td><td style="text-align:center">RJ45连接器</td></tr><tr><td style="text-align:center">1000Base-LX</td><td style="text-align:center">单模光纤</td><td style="text-align:center">3000米</td><td style="text-align:center">SFP</td></tr><tr><td style="text-align:center">1000Base-SX</td><td style="text-align:center">多模光纤</td><td style="text-align:center">300-550米</td></tr></tbody></table></div><p><strong>双绞线</strong>把两根22-26号绝缘铜导线按一定密度互相绞在一起，每一根导线在传输中辐射出来的电波会被另一根线上发出的电波抵消，有效降低信号干扰的程度。与其他传输介质相比，双绞线在传输距离，信道宽度和数据传输速度等方面均受到一定限制，但价格较为低廉，应用非常广泛。<br><strong>屏蔽双绞线</strong>在双绞线与外层绝缘封套之间有一个金属屏蔽层。<strong>STP</strong>(Shielded Twisted Pair)指每条线都有各自的屏蔽层，而<strong>FTP</strong>(Foil Twisted Pair)只在整个电缆有屏蔽装置，并且两端都正确接地时才起作用。屏蔽层可减少辐射，防止信息被窃听，也可阻止外部电磁干扰，屏蔽双绞线比同类的非屏蔽双绞线具有更高的传输速率。<br><strong>非屏蔽双绞线UTP</strong>(Unshielded Twisted Pair)直径小、成本低、易弯曲、易安装，广泛用于以太网和电话线中。常见的非屏蔽双绞线由4对8根不同颜色的传输线组成。<br><img src="/2018/05/14/knowledge/know-networkelectric/know-ethmaterial/twisted_pair.jpg" alt="twisted pair"><br>按照频率带宽和信噪比双绞线可以分为：</p><div class="table-container"><table><thead><tr><th style="text-align:center">名称</th><th style="text-align:center">最高频率带宽</th><th style="text-align:left">用途</th></tr></thead><tbody><tr><td style="text-align:center">CAT1</td><td style="text-align:center">750kHz</td><td style="text-align:left">用于报警系统，不用于数据传输</td></tr><tr><td style="text-align:center">CAT2</td><td style="text-align:center">1MHz</td><td style="text-align:left">用于语音传输和最高4Mbps的数据传输</td></tr><tr><td style="text-align:center">CAT3</td><td style="text-align:center">16MHz</td><td style="text-align:left">用于10Base-T以太网和4Mbps令牌环</td></tr><tr><td style="text-align:center">CAT4</td><td style="text-align:center">20MHz</td><td style="text-align:left">用于局域10Base-T/100Base-T以太网和16Mbps令牌环</td></tr><tr><td style="text-align:center"><strong>CAT5</strong></td><td style="text-align:center">100MHz</td><td style="text-align:left">用于10Base-T/100Base-T网络</td></tr><tr><td style="text-align:center">CAT5e</td><td style="text-align:center">100MHz</td><td style="text-align:left">用于1000Base-T网络</td></tr><tr><td style="text-align:center">CAT6</td><td style="text-align:center">250MHz</td><td style="text-align:left">用于最高1Gbps的数据传输</td></tr><tr><td style="text-align:center">CAT6A</td><td style="text-align:center">500MHz</td><td style="text-align:left">用于最高10Gbps的数据传输</td></tr><tr><td style="text-align:center">CAT7</td><td style="text-align:center">600MHz</td><td style="text-align:left">用于最高10Gbps的数据传输</td></tr></tbody></table></div><p>目前最常用的为CAT5和CAT6，CAT6以上的产品国家未出台正式检测标准。电话线接口常用RJ11连接器，网线接口常用RJ45连接器，都称为水晶头。</p><p>EIA/TIA标准规定了两种双绞线线序T568A和T568B，常用网线分为<strong>直连互联</strong>和<strong>交叉互联</strong>两种接法。<br>可以看作<strong>数据终端设备</strong>(Data Terminal Equipment, DTE)的有电脑、路由器、交换机uplink口、HUB级联口等，可以看<strong>数据电路终接设备</strong>(Data Circuit-terminating Equipment, DCE)的有交换机普通口、HUB普通口等。同类设备间相连使用交叉线方式，异类设备间相连使用直通线方式。现在的交换机通常具有端口自动翻转功能，因此对直通线和交叉线不加以区分。<br><img src="/2018/05/14/knowledge/know-networkelectric/know-ethmaterial/utp&amp;stp.jpg" alt="twisted pair"></p><p><strong>单模光纤</strong>中心的玻璃芯很细，只能传播一种模式的光信号，在单模光纤中光沿直线传播，无反射，传播距离非常远，一般为黄色。<strong>多模光纤</strong>芯径较大，可以传输多种模式的光信号，一般为橘红色或灰色，不同模光进入光纤的角度不同，它们到达另一端的时间也不同，称为<strong>模分散</strong>，模分散技术限制了多模光纤的带宽和距离。<br><img src="/2018/05/14/knowledge/know-networkelectric/know-ethmaterial/optical_fiber.JPG" alt="twisted pair"></p><p>常见的光纤接口包括SC（方形卡接式）、LC（圆形小）、DLC（圆形小双头）、FC（圆形带螺纹）、ST（圆形卡接式）和MTRJ（方形双头）等，插芯研磨平面又可以分为PC、UPC、APC等。<br><strong>光电转换器</strong>又称光纤收发器，是一种将短距离电信号和长距离光信号进行互换的设备，目前最常用的光电转换器为热插拔小封装模块(Small Form-factor Pluggables, SFP)，具有体积小、端口多等优点，多采用LC接口。<strong>光纤耦合器</strong>又称分歧器，将光信号从一条光纤中分至多条光纤中。</p>]]></content>
+      
+      <categories>
+          
+          <category> knowledge </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> network basis </tag>
+            
+            <tag> electric </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Profibus和Profinet通信协议</title>
       <link href="/2018/05/11/knowledge/know-profibus&amp;profinet/"/>
       <url>/2018/05/11/knowledge/know-profibus&amp;profinet/</url>
       <content type="html"><![CDATA[<p><strong>Profibus(Process Field Bus，过程现场总线)</strong>是一种国际化、开放式、不依赖于设备生产商的现场总线标准</p>]]></content>
@@ -31,7 +86,7 @@
       <title>工业控制设备通信概览</title>
       <link href="/2018/05/10/review/rev-industrialcomm/"/>
       <url>/2018/05/10/review/rev-industrialcomm/</url>
-      <content type="html"><![CDATA[<p>工业以太网、现场总线、工业无线是目前工业通信领域的三大主流技术。<br>常见工业控制设备总线/协议/接口一览</p><table><thead><tr><th style="text-align:center">名称</th><th style="text-align:center">类型</th><th>特点</th><th>链接</th></tr></thead><tbody><tr><td style="text-align:center">ASi (AS-Interface)</td><td style="text-align:center">现场总线</td><td>$1</td><td></td></tr><tr><td style="text-align:center">BACnet</td><td style="text-align:center">wangluo</td><td>$1</td><td></td></tr><tr><td style="text-align:center">CANopen</td><td style="text-align:center">现场总线</td><td></td><td></td></tr><tr><td style="text-align:center">CC-Link</td><td style="text-align:center">现场总线</td><td></td><td></td></tr><tr><td style="text-align:center">CC-Link IE</td><td style="text-align:center">工业以太网</td><td></td><td></td></tr><tr><td style="text-align:center">ControlNet</td><td style="text-align:center">现场总线</td><td></td><td></td></tr><tr><td style="text-align:center">DeviceNet</td><td style="text-align:center">现场总线</td><td></td><td></td></tr><tr><td style="text-align:center">EtherCAT</td><td style="text-align:center">工业以太网</td><td></td><td></td></tr><tr><td style="text-align:center">EtherNet/IP</td><td style="text-align:center">工业以太网</td><td></td><td></td></tr><tr><td style="text-align:center">Ethernet TCP/IP</td><td style="text-align:center">以太网</td><td></td><td></td></tr><tr><td style="text-align:center">Fipio</td><td style="text-align:center">现场总线</td><td></td><td></td></tr><tr><td style="text-align:center">GD (Global Data)</td><td style="text-align:center"></td><td></td><td></td></tr><tr><td style="text-align:center">InterBus</td><td style="text-align:center">现场总线</td><td></td><td></td></tr><tr><td style="text-align:center">IO-Link</td><td style="text-align:center">点对点</td><td></td><td></td></tr><tr><td style="text-align:center">Modbus</td><td style="text-align:center">现场总线</td><td></td><td></td></tr><tr><td style="text-align:center">Profibus</td><td style="text-align:center">现场总线</td><td>$1</td><td><a href="/2018/05/11/knowledge/know-profibus&profinet/" title="西门子Profibus和Profinet通信">西门子Profibus和Profinet通信</a></td></tr><tr><td style="text-align:center">Profinet</td><td style="text-align:center">工业以太网</td><td>7</td><td></td></tr><tr><td style="text-align:center">RS232/RS485</td><td style="text-align:center">串口</td><td></td><td></td></tr><tr><td style="text-align:center">SERCOS Ⅲ</td><td style="text-align:center"></td><td></td><td></td></tr><tr><td style="text-align:center">USB</td><td style="text-align:center"></td><td></td><td></td></tr></tbody></table>]]></content>
+      <content type="html"><![CDATA[<p>工业以太网、现场总线、工业无线是目前工业通信领域的三大主流技术。</p><p>常见工业现场总线一览：</p><div class="table-container"><table><thead><tr><th style="text-align:center">名称</th><th style="text-align:center">推出时间</th><th style="text-align:center">主推公司</th><th>特点</th><th>链接</th></tr></thead><tbody><tr><td style="text-align:center">ASi (AS-Interface)</td><td style="text-align:center"></td><td style="text-align:center"></td><td>$1</td><td></td></tr><tr><td style="text-align:center">CAN</td><td style="text-align:center">1986</td><td style="text-align:center"></td><td>博世</td><td></td></tr><tr><td style="text-align:center">CC-Link</td><td style="text-align:center">1996</td><td style="text-align:center">三菱</td><td></td><td></td></tr><tr><td style="text-align:center">CompoNet</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td><td></td></tr><tr><td style="text-align:center">ControlNet</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td><td></td></tr><tr><td style="text-align:center">DeviceNet</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td><td></td></tr><tr><td style="text-align:center">Fipio</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td><td></td></tr><tr><td style="text-align:center">InterBus</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td><td></td></tr><tr><td style="text-align:center">LonWorks</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td><td></td></tr><tr><td style="text-align:center">Modbus</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td><td></td></tr><tr><td style="text-align:center">Profibus</td><td style="text-align:center">1986</td><td style="text-align:center">西门子</td><td></td><td><a href="/2018/05/11/knowledge/know-profibus&profinet/" title="Profibus和Profinet通信协议">Profibus和Profinet通信协议</a></td></tr></tbody></table></div><p>常见工业网络协议一览：</p><div class="table-container"><table><thead><tr><th style="text-align:center">名称</th><th style="text-align:center">推出时间</th><th style="text-align:center">主推公司</th><th>特点</th><th>链接</th></tr></thead><tbody><tr><td style="text-align:center">CC-Link IE</td><td style="text-align:center">xxxx</td><td style="text-align:center">三菱</td><td></td><td></td></tr><tr><td style="text-align:center">EtherCAT</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td><td></td></tr><tr><td style="text-align:center">EtherNet/IP</td><td style="text-align:center">2000</td><td style="text-align:center"></td><td></td><td></td></tr><tr><td style="text-align:center">Modbus-TCP</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td><td></td></tr><tr><td style="text-align:center">Profinet</td><td style="text-align:center">xxxx</td><td style="text-align:center">西门子</td><td></td><td></td></tr><tr><td style="text-align:center">SERCOS Ⅲ</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td></tr></tbody></table></div><p>其他通信协议：</p><div class="table-container"><table><thead><tr><th style="text-align:center">名称</th><th style="text-align:center">推出时间</th><th style="text-align:center">主推公司</th><th>特点</th><th>链接</th></tr></thead><tbody><tr><td style="text-align:center">BACnet</td><td style="text-align:center">wangluo</td><td style="text-align:center"></td><td></td><td>$1</td><td></td></tr><tr><td style="text-align:center">GD (Global Data)</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td><td></td><td></td></tr><tr><td style="text-align:center">Ethernet TCP/IP</td><td style="text-align:center">以太网</td><td style="text-align:center"></td><td></td><td></td><td></td></tr><tr><td style="text-align:center">IO-Link</td><td style="text-align:center">点对点</td><td style="text-align:center"></td><td></td><td></td><td></td></tr><tr><td style="text-align:center">USS</td><td style="text-align:center"></td><td style="text-align:center">西门子</td><td></td><td></td></tr><tr><td style="text-align:center">USB</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td><td></td><td></td></tr></tbody></table></div>]]></content>
       
       <categories>
           
@@ -56,7 +111,7 @@
       <title>《数据库原理与应用》笔记</title>
       <link href="/2018/05/10/note/note-database/"/>
       <url>/2018/05/10/note/note-database/</url>
-      <content type="html"><![CDATA[<h2><span id="第十章-存储过程与触发器">第十章 存储过程与触发器</span></h2><p><strong>存储过程</strong>是由一系列Transact-SQL语句构成的程序，经编译后存储在数据库中，可以通过名称直接调用。存储过程还可以接受参数，提高存储过程的灵活性。在SQL Server中，存储过程的类型主要有：用户存储过程、扩展存储过程和系统存储过程。<strong>用户存储过程</strong>包括Transact-SQL存储过程和CLR存储过程；<strong>扩展存储过程</strong>可以加载外部DLL；<strong>系统存储过程</strong>用来实现数据库的管理活动，存放在master中，但其他数据库也可以调用。常用系统存储过程和分类见书P301。</p><p>创建和修改存储过程的语法：</p><pre><code>{CREATE|ALTER} PROC[EDURE] 存储过程(组)名[;序号][{@参数名 数据类型} [=默认值] [OUTPUT]] [,... n][WITH {RECOMPILE|ENCRYPTION|RECOMPILE,ENCRYPTION}][FOR REPLICATION]AS {sql语句 [,... n]} </code></pre><p>删除存储过程的语法：</p><pre><code>DROP PROC[EDURE] 存储过程(组)名</code></pre><p>执行存储过程的语法：</p><pre><code>EXEC[UTE] 存储过程(组)名[;序号][[@参数名=]参数值|@参数名 [OUTPUT]|[DEFAULT]] [,... n][WITH RECOMPILE]</code></pre><p><strong>触发器</strong>是一种特殊的存储过程，可以看作是表定义的一部分，用于对表进行完整性约束。在SQL Server中，触发器的类型主要有：DML触发器、DDL触发器和登录触发器。</p><p>当数据库中发生数据操纵语言(DML)事件时将调用<strong>DML触发器</strong>。按照触发操作的不同可以分为INSERT触发器、UPDATE触发器和DELETE触发器，SQL Server为每个语句创建deleted表或（和）inserted表，表结构与定义触发器的表结构相同，触发器执行完成后自动删除。按照触发时间的不同可以分为AFTER(FOR)触发器和INSTEAD OF触发器。<br>当数据库中发生数据定义语言(DLL)事件时将调用<strong>DLL触发器</strong>，主要用于任务管理。DLL事件主要包括CREATE/ALTER/DROP/GRANT/DENY/REVOKE等语句操作。<br>LOGON事件激发<strong>登录触发器</strong>，将在登录身份验证阶段完成之后用户会话建立之前触发。</p><p>创建和修改DML触发器的语法：</p><pre><code>{CREATE|ALTER} TRIGGER [模式名.]触发器名ON {表名|视图名}[WITH DML触发器选项 [,... n]]{FOR|AFTER|INSTEAD OF}{[INSERT][,][UPDATE][,][DELETE]}AS {sql语句 [,... n]}</code></pre><p>删除DML触发器的语法：</p><pre><code>DROP TRIGGER 触发器名 [,... n]</code></pre><p>创建和修改DLL触发器发的语法：</p><pre><code>{CREATE|ALTER} TRIGGER 触发器名ON {DATABASE|ALL SERVER}[WITH DLL触发器选项 [,... n]]{FOR|AFTER} {触发事件名称|触发事件分组名称} [,... n]AS {sql语句 [,... n]}</code></pre><p>其中常见的数据库作用域的DLL语句和服务器作用域的DLL语句见P315。</p><p>删除DLL触发器的语法：</p><pre><code>DROP TRIGGER 触发器名 [,... n]ON {DATABASE|ALL SERVER}</code></pre><p>启用和禁用触发器的语法：</p><pre><code>{ENABLE|DISABLE} TRIGGER {[模式名.]触发器名 [,... n]|ALL}ON {表名|视图名|DATABASE|ALL SERVER}</code></pre>]]></content>
+      <content type="html"><![CDATA[<h2><span id="第七章-创建与管理数据库表">第七章 创建与管理数据库表</span></h2><h2><span id="第十章-存储过程与触发器">第十章 存储过程与触发器</span></h2><p><strong>存储过程</strong>是由一系列Transact-SQL语句构成的程序，经编译后存储在数据库中，可以通过名称直接调用。存储过程还可以接受参数，提高存储过程的灵活性。在SQL Server中，存储过程的类型主要有：用户存储过程、扩展存储过程和系统存储过程。<strong>用户存储过程</strong>包括Transact-SQL存储过程和CLR存储过程；<strong>扩展存储过程</strong>可以加载外部DLL；<strong>系统存储过程</strong>用来实现数据库的管理活动，存放在master中，但其他数据库也可以调用。常用系统存储过程和分类见书P301。</p><p>创建和修改存储过程的语法：</p><pre><code>{CREATE|ALTER} PROC[EDURE] 存储过程(组)名[;序号][{@参数名 数据类型} [=默认值] [OUTPUT]] [,... n][WITH {RECOMPILE|ENCRYPTION|RECOMPILE,ENCRYPTION}][FOR REPLICATION]AS {sql语句 [,... n]} </code></pre><p>删除存储过程的语法：</p><pre><code>DROP PROC[EDURE] 存储过程(组)名</code></pre><p>执行存储过程的语法：</p><pre><code>EXEC[UTE] 存储过程(组)名[;序号][[@参数名=]参数值|@参数名 [OUTPUT]|[DEFAULT]] [,... n][WITH RECOMPILE]</code></pre><p><strong>触发器</strong>是一种特殊的存储过程，可以看作是表定义的一部分，用于对表进行完整性约束。在SQL Server中，触发器的类型主要有：DML触发器、DDL触发器和登录触发器。</p><p>当数据库中发生数据操纵语言(DML)事件时将调用<strong>DML触发器</strong>。按照触发操作的不同可以分为INSERT触发器、UPDATE触发器和DELETE触发器，SQL Server为每个语句创建deleted表或（和）inserted表，表结构与定义触发器的表结构相同，触发器执行完成后自动删除。按照触发时间的不同可以分为AFTER(FOR)触发器和INSTEAD OF触发器。<br>当数据库中发生数据定义语言(DLL)事件时将调用<strong>DLL触发器</strong>，主要用于任务管理。DLL事件主要包括CREATE/ALTER/DROP/GRANT/DENY/REVOKE等语句操作。<br>LOGON事件激发<strong>登录触发器</strong>，将在登录身份验证阶段完成之后用户会话建立之前触发。</p><p>创建和修改DML触发器的语法：</p><pre><code>{CREATE|ALTER} TRIGGER [模式名.]触发器名ON {表名|视图名}[WITH DML触发器选项 [,... n]]{FOR|AFTER|INSTEAD OF}{[INSERT][,][UPDATE][,][DELETE]}AS {sql语句 [,... n]}</code></pre><p>删除DML触发器的语法：</p><pre><code>DROP TRIGGER 触发器名 [,... n]</code></pre><p>创建和修改DLL触发器发的语法：</p><pre><code>{CREATE|ALTER} TRIGGER 触发器名ON {DATABASE|ALL SERVER}[WITH DLL触发器选项 [,... n]]{FOR|AFTER} {触发事件名称|触发事件分组名称} [,... n]AS {sql语句 [,... n]}</code></pre><p>其中常见的数据库作用域的DLL语句和服务器作用域的DLL语句见P315。</p><p>删除DLL触发器的语法：</p><pre><code>DROP TRIGGER 触发器名 [,... n]ON {DATABASE|ALL SERVER}</code></pre><p>启用和禁用触发器的语法：</p><pre><code>{ENABLE|DISABLE} TRIGGER {[模式名.]触发器名 [,... n]|ALL}ON {表名|视图名|DATABASE|ALL SERVER}</code></pre>]]></content>
       
       <categories>
           
@@ -79,7 +134,7 @@
       <title>Modbus通信协议</title>
       <link href="/2018/05/03/knowledge/know-modbus/"/>
       <url>/2018/05/03/knowledge/know-modbus/</url>
-      <content type="html"><![CDATA[<p><strong>Modbus通信协议</strong>是全球第一个用于工业现场的总线协议，支持RS-232、RS-422、RS-485和以太网设备等，属于应用层协议。<br><strong>Modbus网络</strong>是一个工业通信系统，包括硬件、软件及协议，用于各种数据采集和过程监控。Modbus网络只有一个主机，所有通信由它发出，至多支持247个远程从属控制器，实际支持从机数由通信设备决定。主设备可单独和从设备通信，从设备返回一消息作为回应；也能以广播方式和所有从设备通信，从设备不作任何回应。<br>Modbus最初使用串行链路，分为Modbus-ASCII(美国信息交换码)和Modbus-RTU(远程终端设备)两种传输模式，其中RTU传输效率更高。随着网络发展推出了针对以太网通信的Modbus-TCP标准，</p><p>Reference <a href="https://baike.baidu.com/item/Modbus%E9%80%9A%E8%AE%AF%E5%8D%8F%E8%AE%AE" target="_blank" rel="noopener">百度百科</a><br>More <a href="http://www.cnblogs.com/luomingui/archive/2013/06/14/Modbus.html" target="_blank" rel="noopener">老罗传奇的博客</a><a href="http://www.zlmcu.com/document/modbus_tcp_2_rtu.html" target="_blank" rel="noopener">上海卓岚公司的网站</a></p>]]></content>
+      <content type="html"><![CDATA[<p><img src="/2018/05/03/knowledge/know-modbus/th.jpg" alt="modbus-logo"></p><p><strong>Modbus通信协议</strong>是全球第一个用于工业现场的总线协议，支持RS-232、RS-422、RS-485和以太网设备等，属于应用层协议。<br><strong>Modbus网络</strong>是一个工业通信系统，包括硬件、软件及协议，用于各种数据采集和过程监控。Modbus网络只有一个主机，所有通信由它发出，至多支持247个远程从属控制器，实际支持从机数由通信设备决定。主设备可单独和从设备通信，从设备返回一消息作为回应；也能以广播方式和所有从设备通信，从设备不作任何回应。<br>Modbus最初使用串行链路，分为Modbus-ASCII(美国信息交换码)和Modbus-RTU(远程终端设备)两种传输模式，其中RTU传输效率更高。随着网络发展推出了针对以太网通信的Modbus-TCP标准，</p><p>Reference <a href="https://baike.baidu.com/item/Modbus%E9%80%9A%E8%AE%AF%E5%8D%8F%E8%AE%AE" target="_blank" rel="noopener">百度百科</a><br>More <a href="http://www.cnblogs.com/luomingui/archive/2013/06/14/Modbus.html" target="_blank" rel="noopener">老罗传奇的博客</a><a href="http://www.zlmcu.com/document/modbus_tcp_2_rtu.html" target="_blank" rel="noopener">上海卓岚公司的网站</a></p>]]></content>
       
       <categories>
           
@@ -99,10 +154,10 @@
     </entry>
     
     <entry>
-      <title>DNS域名系统</title>
-      <link href="/2018/05/03/knowledge/know-DNS/"/>
-      <url>/2018/05/03/knowledge/know-DNS/</url>
-      <content type="html"><![CDATA[<p><strong>DNS(Domain Name System，域名系统)</strong>在万维网上作为域名和IP地址相互映射的分布式数据库。通过域名得到对应IP地址的过程叫做<strong>域名解析</strong>。DNS协议运行在UDP协议之上，使用UDP端口号53。为保证服务的高可用性，DNS要求使用多台名称服务器冗余支持每个区域。</p><p>Reference <a href="https://baike.baidu.com/item/DNS/427444#reference-[4]-15346050-wrap" target="_blank" rel="noopener">百度百科</a></p>]]></content>
+      <title>DNS域名系统与localhost</title>
+      <link href="/2018/05/03/knowledge/know-DNS&amp;localhost/"/>
+      <url>/2018/05/03/knowledge/know-DNS&amp;localhost/</url>
+      <content type="html"><![CDATA[<p><strong>DNS(Domain Name System，域名系统)</strong>在万维网上作为域名和IP地址相互映射的分布式数据库。通过域名得到对应IP地址的过程叫做<strong>域名解析</strong>。DNS协议运行在UDP协议之上，使用UDP端口号53。为保证服务的高可用性，DNS要求使用多台名称服务器冗余支持每个区域。</p><p>Reference <a href="https://baike.baidu.com/item/DNS/427444#reference-[4]-15346050-wrap" target="_blank" rel="noopener">百度百科</a></p><p><strong>localhost</strong>是一个域名，在windows中该域名是由/etc/hosts文件预定义的，默认对于ipv4指向127.0.0.1，对于ipv6指向::1，可对hosts文件进行修改配置为任意的IP地址，但可能导致只认127.0.0.1的软件失效。</p><p>127.0.0.1/8整个都是环回(loopback)地址，用来测试本机的TCP/IP协议栈，以及本机中各个应用之间的网络交互，也称虚拟网卡。Windows中看不到这个接口，Linux中这个接口叫lo，可通过ifconfig查看。</p><p>本机IP地址一般指绑定在物理或虚拟接口上的IP地址，供其他设备访问。</p><p>Reference <a href="https://www.zhihu.com/question/23940717" target="_blank" rel="noopener">知乎</a></p>]]></content>
       
       <categories>
           
@@ -252,27 +307,6 @@
         <tags>
             
             <tag> OPC </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>localhost</title>
-      <link href="/2018/04/26/knowledge/know-localhost/"/>
-      <url>/2018/04/26/knowledge/know-localhost/</url>
-      <content type="html"><![CDATA[<p>localhost是一个域名，在windows中该域名是由/etc/hosts文件预定义的，默认对于ipv4指向127.0.0.1，对于ipv6指向::1，可对hosts文件进行修改配置为任意的IP地址，但可能导致只认127.0.0.1的软件失效。</p><p>127.0.0.1/8整个都是环回(loopback)地址，用来测试本机的TCP/IP协议栈，以及本机中各个应用之间的网络交互，也称虚拟网卡。Windows中看不到这个接口，Linux中这个接口叫lo，可通过ifconfig查看。</p><p>本机IP地址一般指绑定在物理或虚拟接口上的IP地址，供其他设备访问。</p><p>Reference <a href="https://www.zhihu.com/question/23940717" target="_blank" rel="noopener">知乎</a></p>]]></content>
-      
-      <categories>
-          
-          <category> knowledge </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> network basis </tag>
             
         </tags>
       

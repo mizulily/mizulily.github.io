@@ -2,6 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2018/05/14/knowledge/know-uss/</loc>
+    
+    <lastmod>2018-05-14T08:37:37.045Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/10/review/rev-industrialcomm/</loc>
+    
+    <lastmod>2018-05-14T08:36:55.268Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/03/knowledge/know-DNS&localhost/</loc>
+    
+    <lastmod>2018-05-14T08:35:35.197Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/14/knowledge/know-networkelectric/</loc>
+    
+    <lastmod>2018-05-14T08:32:39.788Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/14/knowledge/know-crc/</loc>
+    
+    <lastmod>2018-05-14T05:54:21.294Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/03/knowledge/know-modbus/</loc>
+    
+    <lastmod>2018-05-14T00:53:19.185Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/10/note/note-database/</loc>
+    
+    <lastmod>2018-05-11T07:34:20.631Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/11/knowledge/know-profibus&profinet/</loc>
+    
+    <lastmod>2018-05-11T03:44:33.541Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018/04/27/experience/exp-trans-1/</loc>
     
     <lastmod>2018-05-11T03:31:56.388Z</lastmod>
@@ -16,44 +72,9 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/05/10/review/rev-industrialcomm/</loc>
-    
-    <lastmod>2018-05-11T03:26:22.515Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/05/11/knowledge/know-profibus&profinet/</loc>
-    
-    <lastmod>2018-05-11T03:09:23.180Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/05/10/note/note-database/</loc>
-    
-    <lastmod>2018-05-10T06:33:38.330Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/05/03/knowledge/know-modbus/</loc>
-    
-    <lastmod>2018-05-03T13:54:49.522Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2018/04/28/knowledge/know-NTP/</loc>
     
     <lastmod>2018-05-03T07:32:22.928Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/05/03/knowledge/know-DNS/</loc>
-    
-    <lastmod>2018-05-03T01:08:06.731Z</lastmod>
     
   </url>
   
@@ -75,13 +96,6 @@
     <loc>http://yoursite.com/2018/04/28/note/note-cs/</loc>
     
     <lastmod>2018-04-28T11:39:38.861Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/04/26/knowledge/know-localhost/</loc>
-    
-    <lastmod>2018-04-28T08:44:24.013Z</lastmod>
     
   </url>
   
