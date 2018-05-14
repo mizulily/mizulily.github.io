@@ -1,10 +1,10 @@
 ---
-title: 西门子Profibus和Profinet通信
+title: Profibus和Profinet通信协议
 date: 2018-05-11 15:52:05
 tags:
   - industrial network
-  - protocol
   - field bus
+  - protocol
 categories: knowledge
 ---
 

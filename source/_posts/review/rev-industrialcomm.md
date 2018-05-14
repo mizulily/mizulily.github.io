@@ -9,27 +9,45 @@ categories: review
 ---
 
 工业以太网、现场总线、工业无线是目前工业通信领域的三大主流技术。
-常见工业控制设备总线/协议/接口一览
 
-| 名称        | 类型 | 特点    |  链接  |
-| :----:  | :----: | -----   | ---- |
-| ASi (AS-Interface)  | 现场总线 | $1      |       |
-| BACnet | wangluo | $1      |  |
-| CANopen | 现场总线 |  |  |
-| CC-Link | 现场总线 |  |  |
-| CC-Link IE | 工业以太网 |  |  |
-| ControlNet | 现场总线 |  |  |
-| DeviceNet | 现场总线 |  |  |
-| EtherCAT | 工业以太网 |  |  |
-| EtherNet/IP | 工业以太网 |  |  |
-| Ethernet TCP/IP | 以太网 |  |  |
-| Fipio | 现场总线 |  |  |
-| GD (Global Data) |  |  |  |
-| InterBus | 现场总线 |  |  |
-| IO-Link | 点对点 |  |  |
-| Modbus | 现场总线 |  |  |
-| Profibus | 现场总线 | $1      | {% post_link knowledge/know-profibus&profinet %} |
-| Profinet | 工业以太网 |   7    | {% post_link knowledge/know-profibus&profine %} |
-| RS232/RS485 | 串口 |  |  |
-| SERCOS Ⅲ | |  |  |
-| USB |  |  |  |
+
+
+
+常见工业现场总线一览：
+
+| 名称    | 推出时间 | 主推公司 | 特点    |  链接  |
+| :----:  | :----: | :----:| -----   | ---- |
+| ASi (AS-Interface)  |  |  | $1      |       |
+| CAN | 1986 |  | 博世 |  |
+| CC-Link | 1996 | 三菱 |  |  |
+| CompoNet |   |  |  |  |
+| ControlNet |  |  |  |  |
+| DeviceNet |  |  |  |  |
+| Fipio |  |  |  |  |
+| InterBus |  |  |  |  |
+| LonWorks |  |  |  |  |
+| Modbus |  |  |  |  |
+| Profibus | 1986 | 西门子 |  | {% post_link knowledge/know-profibus&profinet %} |
+
+
+常见工业网络协议一览：
+
+| 名称  | 推出时间  | 主推公司  | 特点  | 链接 |
+| :---: | :------: | :-------:| ----- | ---- |
+| CC-Link IE | xxxx | 三菱 |  |  |
+| EtherCAT |  |  |  |  |
+| EtherNet/IP | 2000 |  |  |  |
+| Modbus-TCP |  |  |  |  |
+| Profinet |   xxxx    | 西门子 |  |{% post_link knowledge/know-profibus&profine %} |
+| SERCOS Ⅲ |  |  | |  |
+
+其他通信协议：
+
+| 名称  | 推出时间  | 主推公司  | 特点  | 链接 |
+| :---: | :------: | :-------:| ----- | ---- |
+| BACnet | wangluo |  |  | $1      |
+| GD (Global Data) |  |  |  |  |
+| Ethernet TCP/IP | 以太网 |  |  |  |
+| IO-Link | 点对点 |  |  |  |
+| USS |  | 西门子 |  | {% post_link knowledge/know-uss %} |
+| USB |  |  |  | |
