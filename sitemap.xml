@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2018/05/14/knowledge/know-uss/</loc>
+    <loc>http://yoursite.com/2018/05/10/review/rev-industrialcomm/</loc>
     
-    <lastmod>2018-05-14T08:37:37.045Z</lastmod>
+    <lastmod>2018-05-14T08:42:41.300Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/05/10/review/rev-industrialcomm/</loc>
+    <loc>http://yoursite.com/2018/05/14/knowledge/know-uss/</loc>
     
-    <lastmod>2018-05-14T08:36:55.268Z</lastmod>
+    <lastmod>2018-05-14T08:41:55.635Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/14/knowledge/know-networkelectric/</loc>
+    
+    <lastmod>2018-05-14T08:40:51.505Z</lastmod>
     
   </url>
   
@@ -19,13 +26,6 @@
     <loc>http://yoursite.com/2018/05/03/knowledge/know-DNS&localhost/</loc>
     
     <lastmod>2018-05-14T08:35:35.197Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/05/14/knowledge/know-networkelectric/</loc>
-    
-    <lastmod>2018-05-14T08:32:39.788Z</lastmod>
     
   </url>
   
