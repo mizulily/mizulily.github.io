@@ -4,6 +4,7 @@ date: 2018-04-28 14:51:56
 tags:
   - virtual machine
 categories: tip
+hide: true
 ---
 
 由于软件license的时间限制，需要用过去的时间启动虚拟机。

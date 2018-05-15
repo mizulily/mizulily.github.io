@@ -5,9 +5,12 @@ tags:
   - communication basis
   - error-detecting code
 categories: knowledge
+hide: true
 ---
 
-**循环码**(Cyclic Redundancy Check, CRC)是一种检错率高、编码效率高的检错码，通过除法运算来建立有效信息为和校验位之间的约定关系。CRC码由两部分组成，前部分是**信息码**，后部分是**校验码**，若CRC码总共长$n$位，信息码长$k$位，则称为**$(n,k)$码**，$r=n-k$即冗余位长度，也就是校验码长度。
+**循环码**(Cyclic Redundancy Check, CRC)是一种检错率高、编码效率高的检错码，通过除法运算来建立有效信息位和校验位之间的约定关系。
+<!--more-->
+CRC码由两部分组成，前部分是**信息码**，后部分是**校验码**，若CRC码总共长$n$位，信息码长$k$位，则称为**$(n,k)$码**，$r=n-k$即冗余位长度，也就是校验码长度。
 
 基本概念：
 - $n$位二进制码可以表示最高次幂为$n-1$的多项式。

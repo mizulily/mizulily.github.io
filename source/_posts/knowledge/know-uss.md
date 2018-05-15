@@ -6,4 +6,5 @@ tags:
   - serial communication
   - protocol
 categories: knowledge
+hide: true
 ---

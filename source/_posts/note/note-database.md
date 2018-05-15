@@ -2,11 +2,15 @@
 title: 《数据库原理与应用》笔记
 date: 2018-05-10 11:31:31
 tags:
-  - databse
+  - database
   - sql server
 categories: note
 toc: true
+
 ---
+
+《数据库原理与应用——SQL Server 2016版本》 清华大学出版社
+<!--more-->
 
 ## 第七章 创建与管理数据库表
 

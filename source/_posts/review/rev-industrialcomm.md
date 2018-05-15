@@ -6,10 +6,11 @@ tags:
   - field bus
   - protocol
 categories: review
+#top: 1
 ---
 
 工业以太网、现场总线、工业无线是目前工业通信领域的三大主流技术。
-
+<!--more-->
 
 
 
