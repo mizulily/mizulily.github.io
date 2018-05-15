@@ -102,18 +102,18 @@
 
 
 
-  <meta name="description" content="循环码(Cyclic Redundancy Check, CRC)是一种检错率高、编码效率高的检错码，通过除法运算来建立有效信息为和校验位之间的约定关系。CRC码由两部分组成，前部分是信息码，后部分是校验码，若CRC码总共长$n$位，信息码长$k$位，则称为$(n,k)$码，$r=n-k$即冗余位长度，也就是校验码长度。 基本概念：  $n$位二进制码可以表示最高次幂为$n-1$的多项式。 按位除">
+  <meta name="description" content="循环码(Cyclic Redundancy Check, CRC)是一种检错率高、编码效率高的检错码，通过除法运算来建立有效信息位和校验位之间的约定关系。">
 <meta name="keywords" content="communication basis,error-detecting code">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CRC循环冗余校验码">
 <meta property="og:url" content="http://yoursite.com/2018/05/14/knowledge/know-crc/index.html">
 <meta property="og:site_name" content="Elaine&#39;s Notebook">
-<meta property="og:description" content="循环码(Cyclic Redundancy Check, CRC)是一种检错率高、编码效率高的检错码，通过除法运算来建立有效信息为和校验位之间的约定关系。CRC码由两部分组成，前部分是信息码，后部分是校验码，若CRC码总共长$n$位，信息码长$k$位，则称为$(n,k)$码，$r=n-k$即冗余位长度，也就是校验码长度。 基本概念：  $n$位二进制码可以表示最高次幂为$n-1$的多项式。 按位除">
+<meta property="og:description" content="循环码(Cyclic Redundancy Check, CRC)是一种检错率高、编码效率高的检错码，通过除法运算来建立有效信息位和校验位之间的约定关系。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-14T05:54:21.294Z">
+<meta property="og:updated_time" content="2018-05-15T01:15:02.561Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CRC循环冗余校验码">
-<meta name="twitter:description" content="循环码(Cyclic Redundancy Check, CRC)是一种检错率高、编码效率高的检错码，通过除法运算来建立有效信息为和校验位之间的约定关系。CRC码由两部分组成，前部分是信息码，后部分是校验码，若CRC码总共长$n$位，信息码长$k$位，则称为$(n,k)$码，$r=n-k$即冗余位长度，也就是校验码长度。 基本概念：  $n$位二进制码可以表示最高次幂为$n-1$的多项式。 按位除">
+<meta name="twitter:description" content="循环码(Cyclic Redundancy Check, CRC)是一种检错率高、编码效率高的检错码，通过除法运算来建立有效信息位和校验位之间的约定关系。">
 
 
 
@@ -227,9 +227,9 @@
         
         
           
-          <li class="menu-item menu-item-about">
-    <a href="/about/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
   </li>
         
         
@@ -243,9 +243,17 @@
         
         
           
-          <li class="menu-item menu-item-archives">
-    <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
   </li>
 
       
@@ -338,12 +346,24 @@
                 
               
 
-              <time title="创建时间：2018-05-14 09:30:53 / 修改时间：13:54:21" itemprop="dateCreated datePublished" datetime="2018-05-14T09:30:53+08:00">2018-05-14</time>
+              <time title="创建时间：2018-05-14 09:30:53" itemprop="dateCreated datePublished" datetime="2018-05-14T09:30:53+08:00">2018-05-14</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-05-15 09:15:02" itemprop="dateModified" datetime="2018-05-15T09:15:02+08:00">2018-05-15</time>
               
             
           </span>
@@ -394,7 +414,7 @@
       
 
       
-        <p><strong>循环码</strong>(Cyclic Redundancy Check, CRC)是一种检错率高、编码效率高的检错码，通过除法运算来建立有效信息为和校验位之间的约定关系。CRC码由两部分组成，前部分是<strong>信息码</strong>，后部分是<strong>校验码</strong>，若CRC码总共长$n$位，信息码长$k$位，则称为<strong>$(n,k)$码</strong>，$r=n-k$即冗余位长度，也就是校验码长度。</p>
+        <p><strong>循环码</strong>(Cyclic Redundancy Check, CRC)是一种检错率高、编码效率高的检错码，通过除法运算来建立有效信息位和校验位之间的约定关系。<br><a id="more"></a><br>CRC码由两部分组成，前部分是<strong>信息码</strong>，后部分是<strong>校验码</strong>，若CRC码总共长$n$位，信息码长$k$位，则称为<strong>$(n,k)$码</strong>，$r=n-k$即冗余位长度，也就是校验码长度。</p>
 <p>基本概念：</p>
 <ul>
 <li>$n$位二进制码可以表示最高次幂为$n-1$的多项式。</li>
@@ -443,9 +463,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/communication-basis/" rel="tag"># communication basis</a>
+            <a href="/tags/communication-basis/" rel="tag"><i class="fa fa-tag"></i> communication basis</a>
           
-            <a href="/tags/error-detecting-code/" rel="tag"># error-detecting code</a>
+            <a href="/tags/error-detecting-code/" rel="tag"><i class="fa fa-tag"></i> error-detecting code</a>
           
         </div>
       
@@ -572,7 +592,7 @@
                 
                 
                 <div class="site-state-item site-state-tags">
-                  
+                  <a href="/tags/index.html">
                     
                     
                       
@@ -613,7 +633,7 @@
                     
                     <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">标签</span>
-                  
+                  </a>
                 </div>
               
             </nav>
@@ -628,6 +648,15 @@
             </div>
           
 
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:465394192@qq.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+            </div>
           
 
           
