@@ -4,14 +4,56 @@
   <url>
     <loc>http://yoursite.com/2018/05/10/review/rev-industrialcomm/</loc>
     
-    <lastmod>2018-05-15T01:21:16.058Z</lastmod>
+    <lastmod>2018-05-16T06:54:17.229Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/05/11/knowledge/know-profibus&profinet/</loc>
+    <loc>http://yoursite.com/2018/05/16/knowledge/know-ccl/</loc>
     
-    <lastmod>2018-05-15T01:18:47.431Z</lastmod>
+    <lastmod>2018-05-16T06:52:26.197Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/03/knowledge/know-modbus/</loc>
+    
+    <lastmod>2018-05-16T06:50:10.130Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/16/knowledge/know-cip/</loc>
+    
+    <lastmod>2018-05-16T06:41:01.474Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/04/knowledge/know-profi/</loc>
+    
+    <lastmod>2018-05-16T06:32:35.412Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/04/27/note/note-opc/</loc>
+    
+    <lastmod>2018-05-15T01:45:33.098Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/04/27/experience/exp-trans-1/</loc>
+    
+    <lastmod>2018-05-15T01:44:53.041Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/04/28/note/note-cs/</loc>
+    
+    <lastmod>2018-05-15T01:43:59.306Z</lastmod>
     
   </url>
   
@@ -44,13 +86,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/05/03/knowledge/know-modbus/</loc>
-    
-    <lastmod>2018-05-15T01:17:06.328Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2018/04/28/tip/tip-vm-time/</loc>
     
     <lastmod>2018-05-15T01:16:25.873Z</lastmod>
@@ -79,13 +114,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/04/27/experience/exp-trans-1/</loc>
-    
-    <lastmod>2018-05-11T03:31:56.388Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/about/index.html</loc>
     
     <lastmod>2018-04-28T11:54:30.735Z</lastmod>
@@ -100,23 +128,9 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/04/28/note/note-cs/</loc>
-    
-    <lastmod>2018-04-28T11:39:38.861Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2018/04/28/experience/exp-cs-opc/</loc>
     
     <lastmod>2018-04-28T01:51:43.505Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/04/27/note/note-opc/</loc>
-    
-    <lastmod>2018-04-28T01:00:14.314Z</lastmod>
     
   </url>
   
