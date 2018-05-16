@@ -6,12 +6,12 @@ tags:
 categories: note
 toc: true
 ---
+<!-- toc -->
+《OPC应用程序入门》
+<!--more-->
 
 ![ch1-1](note-opc/ch1-1.PNG)
 
-
-
-<!-- toc -->
 ## 第一章 OPC基础知识 ##
 
 ### 1.1 什么是OPC ###

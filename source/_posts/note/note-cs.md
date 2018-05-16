@@ -9,6 +9,9 @@ toc: true
 ---
 
 <!-- toc -->
+《Learning hard C#学习笔记》 李志 人民邮电出版社
+<!--more-->
+
 ## 第一章 基础知识 ##
 
 C#

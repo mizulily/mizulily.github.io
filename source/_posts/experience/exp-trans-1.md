@@ -13,6 +13,7 @@ toc: true
 ## 基本概念 ##
 
 **FactoryTalk Transaction Manager**（前身是RSSql）是Rockwell公司FactoryTalk系列组态软件之一，主要实现工控系统与数据库的通信，该系列软件基于[SOA架构](https://baike.baidu.com/item/SOA/2140650)开发，因此Transaction Manager应用软件部分实际上是对各个数据传送服务进行配置的UI界面，该软件的核心实际上是各个接口的服务程序。
+<!--more-->
 
 ![structure](exp-trans-1/structure.png)
 
