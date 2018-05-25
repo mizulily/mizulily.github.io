@@ -79,7 +79,7 @@ Modbus针对串行链路的协议规定了通信的物理层和数据链路层(O
 - 该模式也称为命令行模式，由于发送的是可视化字符串，调试简便，但该模式传输效率较低
 
 ### Modbus以太网协议 ###
-基于Modbus协议进行以太网传输有多种形式，官方文档中给出的是基于Ethernet TCP/IP的Modbus TCP/IP（即Modbus-TCP），定义了TCP传输的报文格式以及默认端口号502。除此之外还有Modbus over TCP/IP（将Modbus-RTU/ASCII报文作为TCP数据包）、Modbus UDP/IP、Modbus over UDP/IP等非标准变体。
+基于Modbus协议进行以太网传输有多种形式，官方文档中给出的是基于Ethernet TCP/IP的Modbus TCP/IP（即Modbus-TCP），定义了TCP传输的报文格式以及**默认端口号502**。除此之外还有Modbus over TCP/IP（将Modbus-RTU/ASCII报文作为TCP数据包）、Modbus UDP/IP、Modbus over UDP/IP等非标准变体。
 
 #### Modbus-TCP报文格式 ####
 Modbus-TCP报文（消息帧）形式如下：

@@ -84,7 +84,10 @@ pagination_dir: page
 # category_generator: 
 #   per_page: 20 ##分类页面默认20篇文章，如果值为0不分页
 
-
+# toc:
+#   maxdepth: 3
+#   class: toc
+#   slugify: transliteration
 
 
 ## Themes: https://hexo.io/themes/

@@ -15,7 +15,7 @@ toc: true
 **FactoryTalk Transaction Manager**（前身是RSSql）是Rockwell公司FactoryTalk系列组态软件之一，主要实现工控系统与数据库的通信，该系列软件基于[SOA架构](https://baike.baidu.com/item/SOA/2140650)开发，因此Transaction Manager应用软件部分实际上是对各个数据传送服务进行配置的UI界面，该软件的核心实际上是各个接口的服务程序。
 <!--more-->
 
-![structure](exp-trans-1/structure.png)
+![structure](exp-trans-1/structure.JPG)
 
 Transaction and Control Manager服务包含了Transaction Manager Service服务和FactoryTalk Live Data控制接口，可以通过该服务连接Rockwell软件和所有OPC服务器。
 
@@ -38,7 +38,7 @@ FactoryTalk Transaction Manager可以使用以下**企业接口**(enterprise con
 5. Time-series Data Compression
 6. FactoryTalk Metrics connector
 
-## 1. OPC Server -> SQL Server ##
+<!-- ## 1. OPC Server -> SQL Server ##
 
 OPC Server: KEPSever Enterprise 5.13
 SQL Server: Microsoft SQL Server 2008 R2
@@ -47,4 +47,4 @@ SQL Server: Microsoft SQL Server 2008 R2
 ## 2. Live Data -> SQL Server
 
 
-## 3. SQL Server -> Live Data
+## 3. SQL Server -> Live Data -->
