@@ -4,7 +4,7 @@ date: 2018-05-17 15:11:12
 tags:
   - OPC
 categories: knowledge
-#hide: true
+hide: true
 ---
 
 OPC是一个工业标准，属于[OPC基金会](https://opcfoundation.org/)，现有会员已超过220家，包括世界上所有主要的自动化控制系统、仪器仪表及过程控制系统的公司。
