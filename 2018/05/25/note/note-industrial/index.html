@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.2.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.2.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.2.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.2.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="《工业控制网络》 主编：王振力 人民邮电出版社 2012年1月第1版 TP273 ISBN: 978-7-115-30136-9 本书介绍了工业控制网络的特点、发展历程、技术现状和发展趋势，重点介绍了Modbus、Profibus、CAN、DeviceNet及CANopen等现场总线技术，还介绍了EAP、Profinet、HSE、EtherNet/IP及Modbus-TCP等工业以太网技术，并结合">
+<meta name="keywords" content="communication basis,industrial control">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《工业控制网络》笔记">
+<meta property="og:url" content="http://yoursite.com/2018/05/25/note/note-industrial/index.html">
+<meta property="og:site_name" content="Elaine&#39;s Notebook">
+<meta property="og:description" content="《工业控制网络》 主编：王振力 人民邮电出版社 2012年1月第1版 TP273 ISBN: 978-7-115-30136-9 本书介绍了工业控制网络的特点、发展历程、技术现状和发展趋势，重点介绍了Modbus、Profibus、CAN、DeviceNet及CANopen等现场总线技术，还介绍了EAP、Profinet、HSE、EtherNet/IP及Modbus-TCP等工业以太网技术，并结合">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-05-29T06:35:07.086Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《工业控制网络》笔记">
+<meta name="twitter:description" content="《工业控制网络》 主编：王振力 人民邮电出版社 2012年1月第1版 TP273 ISBN: 978-7-115-30136-9 本书介绍了工业控制网络的特点、发展历程、技术现状和发展趋势，重点介绍了Modbus、Profibus、CAN、DeviceNet及CANopen等现场总线技术，还介绍了EAP、Profinet、HSE、EtherNet/IP及Modbus-TCP等工业以太网技术，并结合">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Elaine's Notebook" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/05/25/note/note-industrial/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>《工业控制网络》笔记 | Elaine's Notebook</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Elaine's Notebook</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/25/note/note-industrial/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Elaine">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/pic/daodao2.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Elaine's Notebook">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">《工业控制网络》笔记
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-05-25 12:41:39" itemprop="dateCreated datePublished" datetime="2018-05-25T12:41:39+08:00">2018-05-25</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-05-29 14:35:07" itemprop="dateModified" datetime="2018-05-29T14:35:07+08:00">2018-05-29</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/note/" itemprop="url" rel="index"><span itemprop="name">note</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><strong>《工业控制网络》 主编：王振力 人民邮电出版社 2012年1月第1版 TP273 ISBN: 978-7-115-30136-9 </strong><br>本书介绍了工业控制网络的特点、发展历程、技术现状和发展趋势，重点介绍了Modbus、Profibus、CAN、DeviceNet及CANopen等现场总线技术，还介绍了EAP、Profinet、HSE、EtherNet/IP及Modbus-TCP等工业以太网技术，并结合台达工业自动化产品有针对性地安排了大量工业控制网络应用案例和实验内容。<br><a id="more"></a></p>
+<!-- toc -->
+<ul>
+<li><a href="#第一章-绪论">第一章 绪论</a><ul>
+<li><a href="#11-工业自动控制系统历史">1.1 工业自动控制系统历史</a></li>
+<li><a href="#12-工业控制网络特点">1.2 工业控制网络特点</a></li>
+<li><a href="#13-传统控制网络现场总线">1.3 传统控制网络：现场总线</a></li>
+<li><a href="#14-现代控制网络工业以太网">1.4 现代控制网络：工业以太网</a></li>
+<li><a href="#16-工业控制网络发展趋势">1.6 工业控制网络发展趋势</a></li>
+</ul>
+</li>
+<li><a href="#第二章-数据通信与网络基础">第二章 数据通信与网络基础</a><ul>
+<li><a href="#21-数据通信系统概述">2.1 数据通信系统概述</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<h2><span id="第一章-绪论">第一章 绪论</span></h2><h3><span id="11-工业自动控制系统历史">1.1 工业自动控制系统历史</span></h3><p>20世纪50年代前 - <strong>模拟仪表控制系统(Analog Control System, ACS)</strong>：精度低、干扰大<br>20世纪60年代起 - <strong>直接数字控制系统(Direct Digital Control, DDC)</strong>：中心计算机可靠性差<br>20世纪70年代起 - <strong>集散式控制系统(Distributed Control System, DCS)</strong>：电缆多、互操作性差<br>20世纪90年代起 - <strong>现场总线控制系统(Fieldbus Control System, FCS)</strong>：成本低、通信可靠</p>
+<h3><span id="12-工业控制网络特点">1.2 工业控制网络特点</span></h3><p>工业控制网络是3C技术(Computer,Communication,Control)发展汇集成的结合点，是信息技术、数字化、智能化网络发展到现场的结果，是一类特殊的网络，与传统信息网络相比有如下特点：</p>
+<ol>
+<li>应用于工业现场，对环境要求高</li>
+<li>包含多种复杂、异构的节点，多为嵌入式CPU</li>
+<li>主要任务为传输工业数据、承担自动测控任务，实时性要求高</li>
+</ol>
+<h3><span id="13-传统控制网络现场总线">1.3 传统控制网络：现场总线</span></h3><p>现场总线技术源于欧洲，目前以欧美日地区最为发达，经过近20年的竞争和完善，目前较有生命力的有10多种，并仍处于激烈的市场竞争中。诞生于不同领域的总线技术往往对特定领域的适用性较好，如Profibus较适合工厂自动化、CAN适合汽车工业、FF适用于过程控制、LonWorks适用于楼宇自动化等。</p>
+<h3><span id="14-现代控制网络工业以太网">1.4 现代控制网络：工业以太网</span></h3><p>工业以太网是在以太网技术和TCP/IP技术的基础上发展起来的一种工业控制网络。由于现场总线多种标准并存，异种网络通信困难，以太网进入工业自动化领域并快速发展。<br>以太网是在1972年发明的，并于1982年公布了以太网规范，IEEE802.3就是以这个技术规范为基础制定的。以太网技术具有成本低、通信速率和带宽高、兼容性好、软硬件资源丰富等诸多优点。<br>将工业以太网引入工业控制领域，主要有以下优点：</p>
+<ol>
+<li>采用TCP/IP国际标准，协议开放，互连和互操作性强</li>
+<li>可实现远程访问和诊断</li>
+<li>网络速度快，不同传输介质可以灵活组合</li>
+<li>指出冗余连接配置，数据可达性强</li>
+<li>成熟可靠的系统安全体系</li>
+</ol>
+<p>同时工业以太网也存在实时性、可靠性、安全性、总线供电等问题。</p>
+<h3><span id="16-工业控制网络发展趋势">1.6 工业控制网络发展趋势</span></h3><p>纵观当今工业控制网络的发展趋势和市场需求，未来工业控制网络发展方向包括：</p>
+<ol>
+<li>提高通信的实时性：操作系统和交换技术的实时性</li>
+<li>提高通信的可靠性：虚拟自动化网络</li>
+<li>提高通信的安全性：黑通道机制和安全完整性等级SIL</li>
+<li>多现场总线集成：<a href="/2018/05/17/knowledge/know-opc/" title="OPC及OPC UA技术">OPC及OPC UA技术</a></li>
+<li>无线网络技术应用：工业WLAN协议(IEEE802.11n)、蓝牙(IEEE 802.15.1)和ZigBee(IEEE 802.15.4)</li>
+</ol>
+<h2><span id="第二章-数据通信与网络基础">第二章 数据通信与网络基础</span></h2><h3><span id="21-数据通信系统概述">2.1 数据通信系统概述</span></h3><p><strong>数据通信</strong></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/communication-basis/" rel="tag"><i class="fa fa-tag"></i> communication basis</a>
+          
+            <a href="/tags/industrial-control/" rel="tag"><i class="fa fa-tag"></i> industrial control</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/17/knowledge/know-opc/" rel="next" title="OPC及OPC UA技术">
+                <i class="fa fa-chevron-left"></i> OPC及OPC UA技术
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/25/tip/tip-ftld-bug/" rel="prev" title="FTTM中的软件Bug">
+                FTTM中的软件Bug <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/pic/daodao2.jpg"
+                alt="Elaine" />
+            
+              <p class="site-author-name" itemprop="name">Elaine</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">20</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">24</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:465394192@qq.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第一章 绪论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 工业自动控制系统历史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2 工业控制网络特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.3 传统控制网络：现场总线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.4 现代控制网络：工业以太网</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.6 工业控制网络发展趋势</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第二章 数据通信与网络基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.1 数据通信系统概述</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Elaine</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Pisces</a> v6.2.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.2.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.2.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.2.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.2.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.2.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.2.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.2.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+    
+      <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+  
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

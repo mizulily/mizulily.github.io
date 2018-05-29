@@ -10,7 +10,7 @@
 
 <html class="theme-next pisces use-motion" lang="zh-CN">
 <head>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+  <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
@@ -118,7 +118,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/05/03/knowledge/know-modbus/g1.JPG">
 <meta property="og:image" content="http://yoursite.com/2018/05/03/knowledge/know-modbus/g3.JPG">
 <meta property="og:image" content="http://yoursite.com/2018/05/03/knowledge/know-modbus/MBAP_header.JPG">
-<meta property="og:updated_time" content="2018-05-16T06:50:10.130Z">
+<meta property="og:updated_time" content="2018-05-17T00:28:20.180Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Modbus通信协议">
 <meta name="twitter:description" content="Modbus历史Modbus协议最早由Modicon公司（现为施耐德电气公司的品牌）于1979年开发，旨在实现可编程控制器(PLC)之间的通信，后逐渐被大多数公司认可，成为事实上的标准协议，是全球第一个真正用于工业现场的总线协议。该公司后来还推出增强型Modbusplus(MB+)协议，完整定义了通信协议、网络结构、线缆等，是典型的令牌环网，与Modbus差异较大。2004年起施耐德电气已将Mo">
@@ -177,7 +177,7 @@
       .logo-line-after i { right: initial; }
     }
   </style>
-</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</noscript>
 
 </head>
 
@@ -188,7 +188,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -372,7 +372,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-05-16 14:50:10" itemprop="dateModified" datetime="2018-05-16T14:50:10+08:00">2018-05-16</time>
+                <time title="修改时间：2018-05-17 08:28:20" itemprop="dateModified" datetime="2018-05-17T08:28:20+08:00">2018-05-17</time>
               
             
           </span>
@@ -430,7 +430,6 @@
 <h3><span id="modbus应用层协议">Modbus应用层协议</span></h3><p>Modbus应用层协议(OSI L7)规定了与下层实现无关的<strong>协议数据单元</strong>(Protocol Data Unit, PDU)，Modbus协议在某种总线或网络上的映射定义了<strong>应用数据单元</strong>(Application Data Unit, ADU)。不论是Modbus串行链路协议、以太网协议还是其他由Modbus衍生的协议，协议数据单元PDU都由<strong>功能代码段</strong>和<strong>数据段</strong>组成，数据段可以不存在。<br><img src="/2018/05/03/knowledge/know-modbus/general-pdu.JPG" alt="modbus-pdu"></p>
 <h4><span id="请求回应模型">请求——回应模型</span></h4><p>在上层协议中，发出请求的一方为客户端Client，响应的一方为服务端Server。<br>在客户端发出请求消息中，功能代码告知服务端要执行何种功能。数据段包含了服务端要执行功能的任何附加信息。<br>如果服务端产生正常的回应，则返回相同的功能代码给客户端，数据段包括了服务端收集的数据；如果有错误发生，服务端将功能代码的MSB置1返回给客户端，同时数据段包含了描述此错误信息的代码。</p>
 <h4><span id="数据编码和类型">数据编码和类型</span></h4><p>采用<strong>高字节序</strong>(Big-Endian)，即高字节先发送、低字节后发送。<br>Modbus协议中只有两种数据类型，即位bit和字word(16-bit)，根据访问类型分为以下四种：</p>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -467,7 +466,6 @@
 </tr>
 </tbody>
 </table>
-</div>
 <p>地址寻址从0开始，详细的设备地址映射参见具体设备手册。</p>
 <h4><span id="功能代码">功能代码</span></h4><p>功能代码段占用1个字节，取值范围为1-255，其中128-255为保留值，用于异常消息应答报文（原功能代码MSB置1）；1-127为功能代码编号，其中65-72和100-110为用户自定义功能代码，其余取值为通用功能代码。<strong>通用功能代码</strong>(Public Function Code)是已经公布的功能代码，由确定的功能，用户不能修改。<br>常用的通用功能代码如下：<br><img src="/2018/05/03/knowledge/know-modbus/pfc.JPG" alt="modbus-func-code">详细用法见<a href="http://modbus.org/docs/Modbus_Application_Protocol_V1_1b3.pdf" target="_blank" rel="noopener">Modbus应用层协议</a>。</p>
 <h3><span id="modbus串行链路协议">Modbus串行链路协议</span></h3><p>Modbus针对串行链路的协议规定了通信的物理层和数据链路层(OSI L1/2)。物理层采用多种物理接口，最常用的是EIA/TIA-485双线接口。</p>
@@ -492,7 +490,7 @@
 <li>起始符1个字节，地址域2个字节，功能代码2个字节，LRC校验2个字节，终止符2个字节，数据至多为2*252字节</li>
 <li>该模式也称为命令行模式，由于发送的是可视化字符串，调试简便，但该模式传输效率较低</li>
 </ul>
-<h3><span id="modbus以太网协议">Modbus以太网协议</span></h3><p>基于Modbus协议进行以太网传输有多种形式，官方文档中给出的是基于Ethernet TCP/IP的Modbus TCP/IP（即Modbus-TCP），定义了TCP传输的报文格式以及默认端口号502。除此之外还有Modbus over TCP/IP（将Modbus-RTU/ASCII报文作为TCP数据包）、Modbus UDP/IP、Modbus over UDP/IP等非标准变体。</p>
+<h3><span id="modbus以太网协议">Modbus以太网协议</span></h3><p>基于Modbus协议进行以太网传输有多种形式，官方文档中给出的是基于Ethernet TCP/IP的Modbus TCP/IP（即Modbus-TCP），定义了TCP传输的报文格式以及<strong>默认端口号502</strong>。除此之外还有Modbus over TCP/IP（将Modbus-RTU/ASCII报文作为TCP数据包）、Modbus UDP/IP、Modbus over UDP/IP等非标准变体。</p>
 <h4><span id="modbus-tcp报文格式">Modbus-TCP报文格式</span></h4><p>Modbus-TCP报文（消息帧）形式如下：<br><img src="/2018/05/03/knowledge/know-modbus/g3.JPG" alt="modbus-frame">数据以类似Modbus-RTU的二进制数据流发送。由于Ethernet TCP/IP数据链路层的校验机制保证了数据的完整性，报文中不含有数据校验，也没有地址域。同时Modbus-TCP加入了4个域、7个字节的报文头来识别应用数据单元ADU，称为<strong>MBAP报文头</strong>(Modbus Application Protoco Header)，具体形式如下：<br><img src="/2018/05/03/knowledge/know-modbus/MBAP_header.JPG" alt="modbus-tcp-header"></p>
 <ol>
 <li>事务处理标识符：用于事务处理配对，在响应中服务端复制请求的事务处理标识符</li>
@@ -629,7 +627,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">16</span>
+                    <span class="site-state-item-count">20</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -703,7 +701,17 @@
                     
                       
                     
-                    <span class="site-state-item-count">19</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">24</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -972,24 +980,7 @@
         }
     });
 </script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-      all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-</script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
-</script>
-<!-- End: Injected MathJax -->
-<!-- hexo-inject:end -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
     
   

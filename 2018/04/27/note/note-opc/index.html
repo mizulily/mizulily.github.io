@@ -10,7 +10,7 @@
 
 <html class="theme-next pisces use-motion" lang="zh-CN">
 <head>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+  <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
@@ -111,7 +111,7 @@
 <meta property="og:description" content="第一章 OPC基础知识 1.1 什么是OPC     《OPC应用程序入门》">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2018/04/27/note/note-opc/ch1-1.PNG">
-<meta property="og:updated_time" content="2018-05-15T01:45:33.098Z">
+<meta property="og:updated_time" content="2018-05-25T05:13:28.650Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《OPC应用程序入门》笔记">
 <meta name="twitter:description" content="第一章 OPC基础知识 1.1 什么是OPC     《OPC应用程序入门》">
@@ -170,7 +170,7 @@
       .logo-line-after i { right: initial; }
     }
   </style>
-</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</noscript>
 
 </head>
 
@@ -181,7 +181,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -365,7 +365,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-05-15 09:45:33" itemprop="dateModified" datetime="2018-05-15T09:45:33+08:00">2018-05-15</time>
+                <time title="修改时间：2018-05-25 13:13:28" itemprop="dateModified" datetime="2018-05-25T13:13:28+08:00">2018-05-25</time>
               
             
           </span>
@@ -426,7 +426,8 @@
 <!-- tocstop -->
 <p>《OPC应用程序入门》<br><a id="more"></a></p>
 <p><img src="/2018/04/27/note/note-opc/ch1-1.PNG" alt="ch1-1"></p>
-<h2><span id="第一章-opc基础知识">第一章 OPC基础知识</span></h2><h3><span id="11-什么是opc">1.1 什么是OPC</span></h3><p>OPC(OLE for Process Control)是为不同供应商设备和应用程序之间的软件接口标准化而提出的，使其间的数据交换不依赖于特定开发语言和开发环境。它利用Windows中的OLE/COM技术实现工业制造系统过程控制中数据交换的标准化。OPC系统由提供数据收集服务的OPC服务器(OPC Server)、接受数据服务的OPC应用程序(OPC Client)和OPC接口所构成。</p>
+<h2><span id="第一章-opc基础知识">第一章 OPC基础知识</span></h2><h3><span id="11-什么是opc">1.1 什么是OPC</span></h3><p><strong>OPC</strong>(OLE for Process Control)是为不同供应商设备和应用程序之间的软件接口标准化而提出的，使其间的数据交换不依赖于特定开发语言和开发环境。它利用Windows中的OLE/COM技术实现<strong>工业制造系统过程控制中数据交换的标准化</strong>。OPC系统由提供数据收集服务的<strong>OPC服务器</strong>(OPC Server)、接受数据服务的<strong>OPC应用程序</strong>(OPC Client)和<strong>OPC接口</strong>所构成。</p>
+<p>在OPC技术出现以前，<strong>DDE</strong>（Dynamic Data Exchange）技术曾经对过程控制做出巨大贡献，但是DDE是基于Windows信息传递而建立的技术，存在诸多问题。OPC基于<strong>COM</strong>（组件对象模型，Component Object Model）和<strong>DCOM</strong>（分布式COM）技术开发，实际上OPC是为工业标准定义的特殊的COM接口，与DDE相比在速度、分布式安全管理、开发成本、可靠性等方面都具有优势。</p>
 
       
     </div>
@@ -459,6 +460,10 @@
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/08/01/Scala和Spark学习总结/" rel="next" title="Scala和Spark学习总结">
+                <i class="fa fa-chevron-left"></i> Scala和Spark学习总结
+              </a>
             
           </div>
 
@@ -546,7 +551,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">16</span>
+                    <span class="site-state-item-count">20</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -620,7 +625,17 @@
                     
                       
                     
-                    <span class="site-state-item-count">19</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">24</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -889,24 +904,7 @@
         }
     });
 </script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-      all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-</script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
-</script>
-<!-- End: Injected MathJax -->
-<!-- hexo-inject:end -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
     
   

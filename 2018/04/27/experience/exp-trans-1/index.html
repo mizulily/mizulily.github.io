@@ -10,7 +10,7 @@
 
 <html class="theme-next pisces use-motion" lang="zh-CN">
 <head>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+  <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
@@ -110,13 +110,13 @@
 <meta property="og:site_name" content="Elaine&#39;s Notebook">
 <meta property="og:description" content="基本概念FactoryTalk Transaction Manager（前身是RSSql）是Rockwell公司FactoryTalk系列组态软件之一，主要实现工控系统与数据库的通信，该系列软件基于SOA架构开发，因此Transaction Manager应用软件部分实际上是对各个数据传送服务进行配置的UI界面，该软件的核心实际上是各个接口的服务程序。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2018/04/27/experience/exp-trans-1/structure.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/27/experience/exp-trans-1/structure.JPG">
 <meta property="og:image" content="http://yoursite.com/2018/04/27/experience/exp-trans-1/services.png">
-<meta property="og:updated_time" content="2018-05-15T01:44:53.041Z">
+<meta property="og:updated_time" content="2018-05-17T01:57:43.022Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="FactoryTalk Transaction Manager使用心得">
 <meta name="twitter:description" content="基本概念FactoryTalk Transaction Manager（前身是RSSql）是Rockwell公司FactoryTalk系列组态软件之一，主要实现工控系统与数据库的通信，该系列软件基于SOA架构开发，因此Transaction Manager应用软件部分实际上是对各个数据传送服务进行配置的UI界面，该软件的核心实际上是各个接口的服务程序。">
-<meta name="twitter:image" content="http://yoursite.com/2018/04/27/experience/exp-trans-1/structure.png">
+<meta name="twitter:image" content="http://yoursite.com/2018/04/27/experience/exp-trans-1/structure.JPG">
 
 
 
@@ -171,7 +171,7 @@
       .logo-line-after i { right: initial; }
     }
   </style>
-</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</noscript>
 
 </head>
 
@@ -182,7 +182,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -366,7 +366,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-05-15 09:44:53" itemprop="dateModified" datetime="2018-05-15T09:44:53+08:00">2018-05-15</time>
+                <time title="修改时间：2018-05-17 09:57:43" itemprop="dateModified" datetime="2018-05-17T09:57:43+08:00">2018-05-17</time>
               
             
           </span>
@@ -418,7 +418,7 @@
 
       
         <h2><span id="基本概念">基本概念</span></h2><p><strong>FactoryTalk Transaction Manager</strong>（前身是RSSql）是Rockwell公司FactoryTalk系列组态软件之一，主要实现工控系统与数据库的通信，该系列软件基于<a href="https://baike.baidu.com/item/SOA/2140650" target="_blank" rel="noopener">SOA架构</a>开发，因此Transaction Manager应用软件部分实际上是对各个数据传送服务进行配置的UI界面，该软件的核心实际上是各个接口的服务程序。<br><a id="more"></a></p>
-<p><img src="/2018/04/27/experience/exp-trans-1/structure.png" alt="structure"></p>
+<p><img src="/2018/04/27/experience/exp-trans-1/structure.JPG" alt="structure"></p>
 <p>Transaction and Control Manager服务包含了Transaction Manager Service服务和FactoryTalk Live Data控制接口，可以通过该服务连接Rockwell软件和所有OPC服务器。</p>
 <p>启动操作系统后查看服务列表，可以看到Transaction Manager相关的各个服务。</p>
 <p><img src="/2018/04/27/experience/exp-trans-1/services.png" alt="services"></p>
@@ -439,8 +439,17 @@
 <li>Time-series Data Compression</li>
 <li>FactoryTalk Metrics connector</li>
 </ol>
-<h2><span id="1-opc-server-gt-sql-server">1. OPC Server -&gt; SQL Server</span></h2><p>OPC Server: KEPSever Enterprise 5.13<br>SQL Server: Microsoft SQL Server 2008 R2</p>
-<h2><span id="2-live-data-gt-sql-server">2. Live Data -&gt; SQL Server</span></h2><h2><span id="3-sql-server-gt-live-data">3. SQL Server -&gt; Live Data</span></h2>
+<!-- ## 1. OPC Server -> SQL Server ##
+
+OPC Server: KEPSever Enterprise 5.13
+SQL Server: Microsoft SQL Server 2008 R2
+
+
+## 2. Live Data -> SQL Server
+
+
+## 3. SQL Server -> Live Data -->
+
       
     </div>
 
@@ -569,7 +578,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">16</span>
+                    <span class="site-state-item-count">20</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -643,7 +652,17 @@
                     
                       
                     
-                    <span class="site-state-item-count">19</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">24</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -695,7 +714,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">1. OPC Server -&gt; SQL Server</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">2. Live Data -&gt; SQL Server</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">3. SQL Server -&gt; Live Data</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">基本概念</span></a></li></ol></div>
             
 
           </div>
@@ -912,24 +931,7 @@
         }
     });
 </script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-      all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-</script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
-</script>
-<!-- End: Injected MathJax -->
-<!-- hexo-inject:end -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
     
   

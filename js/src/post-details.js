@@ -17,7 +17,7 @@ $(document).ready(function () {
         $currentActiveElement.addClass('active-current');
 
         // Scrolling to center active TOC element if TOC content is taller then viewport.
-        $tocElement.scrollTop($currentActiveElement.offset().top - $tocElement.offset().top + $tocElement.scrollTop() - ($tocElement.height() / 2));
+        //$tocElement.scrollTop($currentActiveElement.offset().top - $tocElement.offset().top + $tocElement.scrollTop() - ($tocElement.height() / 2));
       })
       .on('clear.bs.scrollspy', removeCurrentActiveClass);
 
