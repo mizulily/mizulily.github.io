@@ -5,7 +5,7 @@ tags:
   - industrial network
   - field bus
   - protocol
-categories: knowledge
+categories: introduction
 hide: true
 ---
 

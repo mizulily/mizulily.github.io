@@ -5,11 +5,11 @@ tags:
   - industrial network
   - field bus
   - protocol
-categories: knowledge
+categories: introduction
 hide: true
 ---
 
-![modbus-logo](know-modbus/th.jpg)
+![modbus-logo](intro-modbus/th.jpg)
 
 ### Modbus历史 ###
 **Modbus协议**最早由Modicon公司（现为施耐德电气公司的品牌）于1979年开发，旨在实现可编程控制器(PLC)之间的通信，后逐渐被大多数公司认可，成为事实上的标准协议，是**全球第一个真正用于工业现场的总线协议**。
@@ -18,14 +18,14 @@ hide: true
 
 ### Modbus概述 ###
 Modbus协议是一项应用层报文传输协议，包括ASCII、RTU、TCP三种报文类型，协议本身没有定义物理层，只是定义了消息帧格式、描述了设备请求和返回数据的过程以及侦测错误的手段等。在现实使用中，可以通过网关将串行链路(RS232/RS485)和以太网等不同物理连接网络通过Modbus协议组成统一的系统。
-![modbus-unified](know-modbus/tcp-structure.JPG)
+![modbus-unified](intro-modbus/tcp-structure.JPG)
 
 **Modbus协议栈**主要包括[Modbus应用层协议](http://modbus.org/docs/Modbus_Application_Protocol_V1_1b3.pdf)、[Modbus串行链路协议](http://modbus.org/docs/Modbus_over_serial_line_V1_02.pdf)和[Modbus在以太网上的映射](http://modbus.org/docs/Modbus_Messaging_Implementation_Guide_V1_0b.pdf)，相应的规范可点击链接下载。
-![modbus-stack](know-modbus/stack2.JPG)
+![modbus-stack](intro-modbus/stack2.JPG)
 
 ### Modbus应用层协议 ###
 Modbus应用层协议(OSI L7)规定了与下层实现无关的**协议数据单元**(Protocol Data Unit, PDU)，Modbus协议在某种总线或网络上的映射定义了**应用数据单元**(Application Data Unit, ADU)。不论是Modbus串行链路协议、以太网协议还是其他由Modbus衍生的协议，协议数据单元PDU都由**功能代码段**和**数据段**组成，数据段可以不存在。
-![modbus-pdu](know-modbus/general-pdu.JPG)
+![modbus-pdu](intro-modbus/general-pdu.JPG)
 
 #### 请求——回应模型 ####
 在上层协议中，发出请求的一方为客户端Client，响应的一方为服务端Server。
@@ -48,7 +48,7 @@ Modbus协议中只有两种数据类型，即位bit和字word(16-bit)，根据�
 #### 功能代码 ####
 功能代码段占用1个字节，取值范围为1-255，其中128-255为保留值，用于异常消息应答报文（原功能代码MSB置1）；1-127为功能代码编号，其中65-72和100-110为用户自定义功能代码，其余取值为通用功能代码。**通用功能代码**(Public Function Code)是已经公布的功能代码，由确定的功能，用户不能修改。
 常用的通用功能代码如下：
-![modbus-func-code](know-modbus/pfc.JPG)详细用法见[Modbus应用层协议](http://modbus.org/docs/Modbus_Application_Protocol_V1_1b3.pdf)。
+![modbus-func-code](intro-modbus/pfc.JPG)详细用法见[Modbus应用层协议](http://modbus.org/docs/Modbus_Application_Protocol_V1_1b3.pdf)。
 
 ### Modbus串行链路协议 ###
 Modbus针对串行链路的协议规定了通信的物理层和数据链路层(OSI L1/2)。物理层采用多种物理接口，最常用的是EIA/TIA-485双线接口。
@@ -64,7 +64,7 @@ Modbus针对串行链路的协议规定了通信的物理层和数据链路层(O
 
 #### 报文格式 ####
 串行链路的通用Modbus报文（消息帧）形式如下：
-![modbus-frame](know-modbus/g1.JPG)
+![modbus-frame](intro-modbus/g1.JPG)
 **1. Modbus-RTU**
   - 该模式中直接发送二进制数据流，以至少3.5个字符时间的停顿间隔分隔两帧，作为两帧开始和终止的标志，整个消息帧必须为连续的传输流，同一帧的两个数据间隔不能超过1.5个字符时间
   - 在传输过程中需要定时器，从设备不断侦测总线及停顿间隔，当第一个域（即地址域）接收到，每个从设备都进行解码以判断是否发给自己
@@ -83,8 +83,8 @@ Modbus针对串行链路的协议规定了通信的物理层和数据链路层(O
 
 #### Modbus-TCP报文格式 ####
 Modbus-TCP报文（消息帧）形式如下：
-![modbus-frame](know-modbus/g3.JPG)数据以类似Modbus-RTU的二进制数据流发送。由于Ethernet TCP/IP数据链路层的校验机制保证了数据的完整性，报文中不含有数据校验，也没有地址域。同时Modbus-TCP加入了4个域、7个字节的报文头来识别应用数据单元ADU，称为**MBAP报文头**(Modbus Application Protoco Header)，具体形式如下：
-![modbus-tcp-header](know-modbus/MBAP_header.JPG)
+![modbus-frame](intro-modbus/g3.JPG)数据以类似Modbus-RTU的二进制数据流发送。由于Ethernet TCP/IP数据链路层的校验机制保证了数据的完整性，报文中不含有数据校验，也没有地址域。同时Modbus-TCP加入了4个域、7个字节的报文头来识别应用数据单元ADU，称为**MBAP报文头**(Modbus Application Protoco Header)，具体形式如下：
+![modbus-tcp-header](intro-modbus/MBAP_header.JPG)
 1. 事务处理标识符：用于事务处理配对，在响应中服务端复制请求的事务处理标识符
 2. 协议标识符：用于系统内多路复用，通过值0识别Modbus协议
 3. 长度：单元标识符和PDU的长度

@@ -3,6 +3,7 @@ title: 修改虚拟机启动时间
 date: 2018-04-28 14:51:56
 tags:
   - virtual machine
+  - VMWare
 categories: tip
 hide: true
 ---

@@ -5,6 +5,6 @@ tags:
   - USS
   - serial communication
   - protocol
-categories: knowledge
+categories: introduction
 hide: true
 ---

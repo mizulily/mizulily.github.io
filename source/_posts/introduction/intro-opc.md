@@ -3,7 +3,7 @@ title: OPC及OPC UA技术
 date: 2018-05-17 15:11:12
 tags:
   - OPC
-categories: knowledge
+categories: introduction
 hide: true
 ---
 

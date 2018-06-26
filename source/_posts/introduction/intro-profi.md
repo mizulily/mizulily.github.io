@@ -5,11 +5,11 @@ tags:
   - industrial network
   - field bus
   - protocol
-categories: knowledge
+categories: introduction
 hide: true
 ---
 
-![pi-logo](know-profi/logo.jpg)
+![pi-logo](intro-profi/logo.jpg)
 
 https://www.profibus.com/
 
