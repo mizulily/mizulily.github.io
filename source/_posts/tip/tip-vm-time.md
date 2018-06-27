@@ -22,4 +22,4 @@ rtc.startTime = 1462003200
 ```
 注：rtc.startTime是从1970年1月1日0时0分0秒（Unix时间）到系统启动时间间隔的时间，单位是秒，可以到[计算时间的网站](http://www.onlineconversion.com/unix_time.htm)上换算得到希望虚拟机的启动时间。
 
-Reference [SagaFive的专栏](https://blog.csdn.net/sagafive/article/details/53031740)
+Reference [VMware12.0 设定虚拟机时间](https://blog.csdn.net/sagafive/article/details/53031740)

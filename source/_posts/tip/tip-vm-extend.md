@@ -22,4 +22,4 @@ hide: true
 4. 合并完成后可以将新生成的单个虚拟磁盘文件替换原有多个虚拟磁盘文件
 5. 重新打开VMWare，选择扩容虚拟磁盘即可
 
-Reference [xx033138的博客](https://blog.csdn.net/xx033138/article/details/78568985)
+Reference [VMware:在部分链上无法执行所调用的函数，请打开父虚拟磁盘](https://blog.csdn.net/xx033138/article/details/78568985)

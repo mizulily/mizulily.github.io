@@ -18,4 +18,4 @@ Reference [百度百科](https://baike.baidu.com/item/DNS/427444#reference-[4]-1
 
 本机IP地址一般指绑定在物理或虚拟接口上的IP地址，供其他设备访问。
 
-Reference [知乎](https://www.zhihu.com/question/23940717)
+Reference [知乎：localhost、127.0.0.1 和 本机IP 三者的区别?](https://www.zhihu.com/question/23940717)
