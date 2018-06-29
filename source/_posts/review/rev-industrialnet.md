@@ -1,5 +1,5 @@
 ---
-title: 工业控制设备通信概览
+title: 工业设备通信协议概览
 date: 2018-05-10 11:38:56
 tags:
   - industrial network
@@ -9,15 +9,14 @@ categories: review
 #top: 2
 ---
 
-工业以太网、现场总线、工业无线是目前工业通信领域的三大主流技术。
-
+![protocols](rev-industrialnet/protocols.jpg)
+本篇介绍了常见的工业现场总线和工业以太网协议。
 <!--more-->
 
+工业以太网、现场总线、工业无线是目前工业通信领域的三大主流技术。
+
 IEC 61158于2007年第四版标准规定了20种类型的通信协议：
-![IEC](rev-industrialcomm/IEC.JPG)其中Type1可以理解为FF现场总线，Type2包括DeviceNet、ControlNet和EtherNet/IP，Type6由于应用不理想被撤销。
-
-
-
+![IEC](rev-industrialnet/IEC.JPG)其中Type1可以理解为FF现场总线，Type2包括DeviceNet、ControlNet和EtherNet/IP，Type6由于应用不理想被撤销。
 
 
 常见工业现场总线一览：
