@@ -103,17 +103,19 @@
 
 
   <meta name="description" content="《工业控制网络》 主编：王振力 人民邮电出版社 2012年1月第1版 TP273 ISBN: 978-7-115-30136-9 本书介绍了工业控制网络的特点、发展历程、技术现状和发展趋势，重点介绍了Modbus、Profibus、CAN、DeviceNet及CANopen等现场总线技术，还介绍了EAP、Profinet、HSE、EtherNet/IP及Modbus-TCP等工业以太网技术，并结合">
-<meta name="keywords" content="industrial control,communication basis">
+<meta name="keywords" content="communication basis,industrial control">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《工业控制网络》笔记">
 <meta property="og:url" content="http://yoursite.com/2018/05/25/note/note-industrial/index.html">
 <meta property="og:site_name" content="Elaine&#39;s Notebook">
 <meta property="og:description" content="《工业控制网络》 主编：王振力 人民邮电出版社 2012年1月第1版 TP273 ISBN: 978-7-115-30136-9 本书介绍了工业控制网络的特点、发展历程、技术现状和发展趋势，重点介绍了Modbus、Profibus、CAN、DeviceNet及CANopen等现场总线技术，还介绍了EAP、Profinet、HSE、EtherNet/IP及Modbus-TCP等工业以太网技术，并结合">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-29T06:35:07.086Z">
+<meta property="og:image" content="http://yoursite.com/2018/05/25/note/note-industrial/comm_model.JPG">
+<meta property="og:updated_time" content="2018-06-27T06:53:33.592Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《工业控制网络》笔记">
 <meta name="twitter:description" content="《工业控制网络》 主编：王振力 人民邮电出版社 2012年1月第1版 TP273 ISBN: 978-7-115-30136-9 本书介绍了工业控制网络的特点、发展历程、技术现状和发展趋势，重点介绍了Modbus、Profibus、CAN、DeviceNet及CANopen等现场总线技术，还介绍了EAP、Profinet、HSE、EtherNet/IP及Modbus-TCP等工业以太网技术，并结合">
+<meta name="twitter:image" content="http://yoursite.com/2018/05/25/note/note-industrial/comm_model.JPG">
 
 
 
@@ -363,7 +365,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-05-29 14:35:07" itemprop="dateModified" datetime="2018-05-29T14:35:07+08:00">2018-05-29</time>
+                <time title="修改时间：2018-06-27 14:53:33" itemprop="dateModified" datetime="2018-06-27T14:53:33+08:00">2018-06-27</time>
               
             
           </span>
@@ -427,6 +429,9 @@
 </li>
 <li><a href="#第二章-数据通信与网络基础">第二章 数据通信与网络基础</a><ul>
 <li><a href="#21-数据通信系统概述">2.1 数据通信系统概述</a></li>
+<li><a href="#22-数据编码技术">2.2 数据编码技术</a></li>
+<li><a href="#24-工业控制网络的节点">2.4 工业控制网络的节点</a></li>
+<li><a href="#通信传输介质">通信传输介质</a></li>
 </ul>
 </li>
 </ul>
@@ -453,11 +458,22 @@
 <li>提高通信的实时性：操作系统和交换技术的实时性</li>
 <li>提高通信的可靠性：虚拟自动化网络</li>
 <li>提高通信的安全性：黑通道机制和安全完整性等级SIL</li>
-<li>多现场总线集成：<a href="/2018/05/17/knowledge/know-opc/" title="OPC及OPC UA技术">OPC及OPC UA技术</a></li>
+<li>多现场总线集成：<a href="/2018/05/17/introduction/intro-opc/" title="OPC及OPC UA技术">OPC及OPC UA技术</a></li>
 <li>无线网络技术应用：工业WLAN协议(IEEE802.11n)、蓝牙(IEEE 802.15.1)和ZigBee(IEEE 802.15.4)</li>
 </ol>
-<h2><span id="第二章-数据通信与网络基础">第二章 数据通信与网络基础</span></h2><h3><span id="21-数据通信系统概述">2.1 数据通信系统概述</span></h3><p><strong>数据通信</strong></p>
-
+<h2><span id="第二章-数据通信与网络基础">第二章 数据通信与网络基础</span></h2><h3><span id="21-数据通信系统概述">2.1 数据通信系统概述</span></h3><p><strong>数据通信系统</strong>一般由信息源与信宿、发送与接收设备和传输介质几部分组成。<strong>信源和信宿</strong>是信息的产生者和使用者；<strong>发送设备</strong>将信息源产生的消息信号经过编码变换为便于传送的信号形式并送往传输介质；<strong>接收设备</strong>的任务是从带有干扰的信号中正确恢复出原始信息，解除多路复用等；<strong>传输介质</strong>指发送设备到接收设备之间的信号传递所经的媒介。<br><img src="/2018/05/25/note/note-industrial/comm_model.JPG" alt="comm_system"></p>
+<p>衡量数据通信系统性能的指标包括：</p>
+<ol>
+<li><strong>误码率</strong>，二进制数据被错误传输的概率</li>
+<li><strong>传输速率</strong>，单位时间内传送二进制数据的位数</li>
+<li><strong>协议效率</strong>，所传数据包中有效二进制数据位数与所传输的总位数之比</li>
+</ol>
+<p>总体来说通信协议越简单，协议效率越好，但往往无法满足可靠性要求。</p>
+<h3><span id="22-数据编码技术">2.2 数据编码技术</span></h3><p>在信息源中将原始的信息转换成代码表示的数据过程称为<strong>信源编码</strong>，如BCD码、ASCII码、汉字区位码等。<strong>信道编码</strong>是将信源编码变换到某种适合于信道传输的信号形式。</p>
+<p>数字信号可以通过调制和解调在模拟通信信道中传输，根据所控制的载波参数不同分为幅移键控法(ASK)、频移键控法(FSK)和相移键控法(PSK)。</p>
+<p>数字信号编码方法很多，信号电平有正负两种极性的称为<strong>双极性码</strong>，只有一种极性称为<strong>单极性码</strong>；信号电平在每位二进制数传输时间内都返回零电平的称为<strong>归零码</strong>，与之对应信号电平保持的称为<strong>不归零码</strong>，最普遍采用的信号编码方法为单极性不归零码。</p>
+<h3><span id="24-工业控制网络的节点">2.4 工业控制网络的节点</span></h3><p><strong>可编程控制器</strong>，工业控制网络中不可或缺的设备，大多支持多种现场总线和工业以太网。<br><strong>传感器</strong>将检测感受到的信号按一定规律变换成标准信号，<strong>变送器</strong>将传感器输出信号转换为可以被控制器接受的标准信号。仪器仪表公司为了适应工业控制网络的需求，设计了智能型传感器与变送器，通过嵌入式微处理器实现现场总线和工业以太网的通信接口。<br><strong>执行器</strong>是过程控制系统中对被控对象施加控制作用的仪表，<strong>驱动器</strong>是运动控制系统中驱动各种电动机的装置。工业控制中使用最多的执行器和驱动器包括电动调节阀、变频器和伺服驱动器。<br><strong>人机界面</strong>泛指控制系统与操作人员交换信息的设备。<br><strong>网络互连设备</strong>是工业控制网络互联互通的关键，主要包括网卡（网络适配器）、中继器、集线器、网桥、交换机、路由器和网关。</p>
+<h3><span id="通信传输介质">通信传输介质</span></h3>
       
     </div>
 
@@ -477,9 +493,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/industrial-control/" rel="tag"><i class="fa fa-tag"></i> industrial control</a>
-          
             <a href="/tags/communication-basis/" rel="tag"><i class="fa fa-tag"></i> communication basis</a>
+          
+            <a href="/tags/industrial-control/" rel="tag"><i class="fa fa-tag"></i> industrial control</a>
           
         </div>
       
@@ -492,7 +508,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/17/knowledge/know-opc/" rel="next" title="OPC及OPC UA技术">
+              <a href="/2018/05/17/introduction/intro-opc/" rel="next" title="OPC及OPC UA技术">
                 <i class="fa fa-chevron-left"></i> OPC及OPC UA技术
               </a>
             
@@ -582,7 +598,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">20</span>
+                    <span class="site-state-item-count">25</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -605,7 +621,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">5</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -666,7 +686,15 @@
                     
                       
                     
-                    <span class="site-state-item-count">24</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">27</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -718,7 +746,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第一章 绪论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 工业自动控制系统历史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2 工业控制网络特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.3 传统控制网络：现场总线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.4 现代控制网络：工业以太网</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.6 工业控制网络发展趋势</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第二章 数据通信与网络基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.1 数据通信系统概述</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第一章 绪论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 工业自动控制系统历史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2 工业控制网络特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.3 传统控制网络：现场总线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.4 现代控制网络：工业以太网</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.6 工业控制网络发展趋势</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第二章 数据通信与网络基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.1 数据通信系统概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.2 数据编码技术</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.4 工业控制网络的节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">通信传输介质</span></a></li></ol></li></ol></div>
             
 
           </div>

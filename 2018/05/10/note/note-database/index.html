@@ -103,7 +103,7 @@
 
 
   <meta name="description" content="《数据库原理与应用——SQL Server 2016版本》 主编：邓立国 佟强 清华大学出版社 2017年9月第1版 TP311.138 ISBN: 978-7-302-48305-2 本书系统地讲述数据库原理与SQL Server 2016的功能、应用及实践知识，包括关系数据库知识、数据库创建与维护、数据库表的操作管理及维护、完整性控制、查询与管理表数据、Transaction-SQL编程、存储">
-<meta name="keywords" content="database,sql server">
+<meta name="keywords" content="SQL,database,SQL Server">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《数据库原理与应用》笔记">
 <meta property="og:url" content="http://yoursite.com/2018/05/10/note/note-database/index.html">
@@ -111,7 +111,7 @@
 <meta property="og:description" content="《数据库原理与应用——SQL Server 2016版本》 主编：邓立国 佟强 清华大学出版社 2017年9月第1版 TP311.138 ISBN: 978-7-302-48305-2 本书系统地讲述数据库原理与SQL Server 2016的功能、应用及实践知识，包括关系数据库知识、数据库创建与维护、数据库表的操作管理及维护、完整性控制、查询与管理表数据、Transaction-SQL编程、存储">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2018/05/10/note/note-database/data_type.JPG">
-<meta property="og:updated_time" content="2018-06-04T08:47:35.037Z">
+<meta property="og:updated_time" content="2018-06-05T01:57:17.454Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《数据库原理与应用》笔记">
 <meta name="twitter:description" content="《数据库原理与应用——SQL Server 2016版本》 主编：邓立国 佟强 清华大学出版社 2017年9月第1版 TP311.138 ISBN: 978-7-302-48305-2 本书系统地讲述数据库原理与SQL Server 2016的功能、应用及实践知识，包括关系数据库知识、数据库创建与维护、数据库表的操作管理及维护、完整性控制、查询与管理表数据、Transaction-SQL编程、存储">
@@ -365,7 +365,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-06-04 16:47:35" itemprop="dateModified" datetime="2018-06-04T16:47:35+08:00">2018-06-04</time>
+                <time title="修改时间：2018-06-05 09:57:17" itemprop="dateModified" datetime="2018-06-05T09:57:17+08:00">2018-06-05</time>
               
             
           </span>
@@ -439,7 +439,7 @@
 <li><a href="#第十一章-数据库安全">第十一章 数据库安全</a></li>
 </ul>
 <!-- tocstop -->
-<h2><span id="第一章-数据库基础知识">第一章 数据库基础知识</span></h2><h2><span id="第二章-数据库设计">第二章 数据库设计</span></h2><h2><span id="第三章-数据库编程">第三章 数据库编程</span></h2><h3><span id="31-关系数据库标准语言sql">3.1 关系数据库标准语言SQL</span></h3><p><strong>结构化查询语言（Structured Query Language, SQL）</strong>是关系数据库的标准语言，具有集数据查询、数据操作、数据定义和数据控制于一体的强大功能。</p>
+<h2><span id="第一章-数据库基础知识">第一章 数据库基础知识</span></h2><h2><span id="第二章-数据库设计">第二章 数据库设计</span></h2><h2><span id="第三章-数据库编程">第三章 数据库编程</span></h2><h3><span id="31-关系数据库标准语言sql">3.1 关系数据库标准语言SQL</span></h3><p><strong>结构化查询语言（Structured Query Language, SQL）</strong>是关系数据库的标准语言，具有集数据查询、数据操作、数据定义和数据控制于一体的强大功能，通过九个动词来实现：SELECT、CREATE、DROP、ALTER、INSERT、UPDATE、DELETE、GRANT、REVOKE。</p>
 <!-- | SQL功能 | 动词 |
 | :-----: | :--- |
 | 数据查询 | SELECT |
@@ -447,14 +447,6 @@
 | 数据操纵 | INSERT、UPDATE、DELETE |
 | 数据控制 | GRANT、REVOKE | -->
 <p>支持SQL的RDBMS同样支持关系数据库二级模式结构，外模式对应于视图和部分基本表，模式对应于基本表，内模式对应于存储文件的逻辑结构，其物理结构是任意的，对用户是透明的。各个RDBMS产品在实现标准SQL时有所差别。</p>
-<!-- ## 3.1 数据定义
-只有拥有DBA权限的用户才能调用创建模式的命令。创建和删除模式的语句：
-
-    CREATE SCHEMA [模式名] AUTHORIZATION 用户名 [SQL语句]
-
-    DROP SCHEMA 模式名 [{RESTRICT|CASCADE}]
-
-基本表的定义和删除 -->
 <h3><span id="32-sql-server中的transact-sql语言">3.2 SQL Server中的Transact-SQL语言</span></h3><p><strong>Transact-SQL</strong>是Microsoft SQL Server中对SQL-3标准的实现和扩展，具有SQL的主要特点，同时增加了多种语言元素，使其功能更加强大。<br>根据其具体完成的功能，可以将Transact-SQL语句分为四大类：</p>
 <ol>
 <li>数据定义语句：CREATE、DROP、ALTER等</li>
@@ -469,13 +461,13 @@
 <li>不能为Transact-SQL的保留字（大小写不区分）</li>
 <li>不能嵌入空格、不能使用增补字符</li>
 </ul>
-<p><strong>分隔标识符</strong>是包含在双引号””或方括号[]内的标识符，符合标识符格式规则的可以分隔也可以不分隔，若包含保留字或使用了特殊字符，必须进行分隔。</p>
-<p>在搜索数据库中的对象时，<strong>通配符</strong>包括：%（任意字符串）、_（任意字符）、[]集合中的字符、[^]不属于集合中的字符。</p>
+<p><strong>分隔标识符</strong>是包含在双引号””或方括号[]内的标识符，符合标识符格式规则的可以分隔也可以不分隔，若包含保留字或使用了特殊字符，必须进行分隔。<br>在搜索数据库中的对象时，<strong>通配符</strong>包括：%（任意字符串）、_（任意字符）、[]集合中的字符、[^]不属于集合中的字符。</p>
 <p><strong>常量</strong>表示特定数据值。ASCII字符串常量用单引号，每个字符占一个字节，Unicode字符串常量在单引号前加大写N，每个字符用两个字节存储。十六进制整型常量用前缀0x表示，浮点用E表示。money常量以$为前缀；datetime常量使用特定格式字符表示；uniqueidentifier常量表示全局唯一标识符，可以指定字符格式或十六进制字符串格式。<br><strong>变量</strong>在程序运行过程中会发生改变。<strong>局部变量</strong>是用户自己定义的变量，只能保存一个值，作用范围仅在程序内部。局部变量用以下语句来声明和赋值：</p>
 <pre><code>DECLARE {@变量名 数据类型}[...n]
 SET @变量名 = 值 [,...n] （普通赋值）
 SELECT @变量名 = 值 [,...n] （查询赋值）
-</code></pre><p>使用SELECT语句赋值时，若返回多个值则结果为返回的最后一个值。<br><strong>全局变量</strong>也称配置函数，用于存储系统的特性信息，作用范围不限于某一程序，在服务器级定义，以@@开头，对于用户是只读的，常用的全局变量见书P155。<br><strong>运算符</strong>按照起功能分类如下，优先级见书P159：</p>
+</code></pre><p>使用SELECT语句赋值时，若返回多个值则结果为返回的最后一个值。<br><strong>全局变量</strong>也称配置函数，用于存储系统的特性信息，作用范围不限于某一程序，在服务器级定义，以@@开头，对于用户是只读的，常用的全局变量见书P155。</p>
+<p><strong>运算符</strong>按照起功能分类如下，优先级见书P159：</p>
 <ol>
 <li>算数运算符：+ - * / %</li>
 <li>赋值运算符：=</li>
@@ -484,7 +476,15 @@ SELECT @变量名 = 值 [,...n] （查询赋值）
 <li>比较运算符：= &gt; &lt; &gt;= &lt;= &lt;&gt; != !&lt; !&gt;</li>
 <li>字符串串联运算符：+</li>
 </ol>
-<h3><span id="33-程序设计接口odbc与jdbc">3.3 程序设计接口ODBC与JDBC</span></h3><h2><span id="第六章-数据库操作">第六章 数据库操作</span></h2><h2><span id="第七章-数据表操作">第七章 数据表操作</span></h2><p><strong>表</strong>是关系模型中表示实体的方式，是数据库存储数据的主要对象，同一数据库不能有相同表名。SQL Server中表由行和列组成，行称为<strong>记录</strong>，列称为<strong>字段</strong>，行和列的顺序都是任意的，一个表最多可以定义1024列且列名唯一。</p>
+<h3><span id="33-程序设计接口odbc与jdbc">3.3 程序设计接口ODBC与JDBC</span></h3><h2><span id="第六章-数据库操作">第六章 数据库操作</span></h2><!-- ## 3.1 数据定义
+只有拥有DBA权限的用户才能调用创建模式的命令。创建和删除模式的语句：
+
+    CREATE SCHEMA [模式名] AUTHORIZATION 用户名 [SQL语句]
+
+    DROP SCHEMA 模式名 [{RESTRICT|CASCADE}]
+
+基本表的定义和删除 -->
+<h2><span id="第七章-数据表操作">第七章 数据表操作</span></h2><p><strong>表</strong>是关系模型中表示实体的方式，是数据库存储数据的主要对象，同一数据库不能有相同表名。SQL Server中表由行和列组成，行称为<strong>记录</strong>，列称为<strong>字段</strong>，行和列的顺序都是任意的，一个表最多可以定义1024列且列名唯一。</p>
 <h3><span id="71-数据类型">7.1 数据类型</span></h3><p><img src="/2018/05/10/note/note-database/data_type.JPG" alt="data_type"></p>
 <h3><span id="72-操作表">7.2 操作表</span></h3><p><strong>创建表</strong>一般要经过定义表结构、设置约束和添加数据三个步骤。设计表结构时需要确定表的名称、表包含的各个列名、数据类型和长度、能否为空值等。</p>
 <p>数据表可以通过图形界面创建，也可以通过SQL语句：</p>
@@ -565,9 +565,11 @@ ON {表名|视图名|DATABASE|ALL SERVER}
       
         <div class="post-tags">
           
+            <a href="/tags/SQL/" rel="tag"><i class="fa fa-tag"></i> SQL</a>
+          
             <a href="/tags/database/" rel="tag"><i class="fa fa-tag"></i> database</a>
           
-            <a href="/tags/sql-server/" rel="tag"><i class="fa fa-tag"></i> sql server</a>
+            <a href="/tags/SQL-Server/" rel="tag"><i class="fa fa-tag"></i> SQL Server</a>
           
         </div>
       
@@ -580,7 +582,7 @@ ON {表名|视图名|DATABASE|ALL SERVER}
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/04/knowledge/know-profi/" rel="next" title="Profibus和Profinet通信协议">
+              <a href="/2018/05/04/introduction/intro-profi/" rel="next" title="Profibus和Profinet通信协议">
                 <i class="fa fa-chevron-left"></i> Profibus和Profinet通信协议
               </a>
             
@@ -590,8 +592,8 @@ ON {表名|视图名|DATABASE|ALL SERVER}
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/05/10/review/rev-industrialcomm/" rel="prev" title="工业控制设备通信概览">
-                工业控制设备通信概览 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/05/10/review/rev-industrialnet/" rel="prev" title="工业设备通信协议概览">
+                工业设备通信协议概览 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -670,7 +672,7 @@ ON {表名|视图名|DATABASE|ALL SERVER}
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">20</span>
+                    <span class="site-state-item-count">25</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -693,7 +695,11 @@ ON {表名|视图名|DATABASE|ALL SERVER}
                     
                       
                     
-                    <span class="site-state-item-count">5</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -754,7 +760,15 @@ ON {表名|视图名|DATABASE|ALL SERVER}
                     
                       
                     
-                    <span class="site-state-item-count">24</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">27</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

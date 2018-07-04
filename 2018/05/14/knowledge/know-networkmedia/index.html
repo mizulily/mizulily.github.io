@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.2.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.2.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.2.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.2.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="网络通信中常用的传输介质包括有线、无线两大类。本篇简要整理了有线传输介质、速率和网线类型、光纤类型等，以及无线传输介质等基础知识。其中以太网传输介质主要有同轴电缆、双绞线和光纤三种。无线传输介质包括无线电、红外线、激光等。">
+<meta name="keywords" content="network basis,transmission media">
+<meta property="og:type" content="article">
+<meta property="og:title" content="网络通信传输介质">
+<meta property="og:url" content="http://yoursite.com/2018/05/14/knowledge/know-networkmedia/index.html">
+<meta property="og:site_name" content="Elaine&#39;s Notebook">
+<meta property="og:description" content="网络通信中常用的传输介质包括有线、无线两大类。本篇简要整理了有线传输介质、速率和网线类型、光纤类型等，以及无线传输介质等基础知识。其中以太网传输介质主要有同轴电缆、双绞线和光纤三种。无线传输介质包括无线电、红外线、激光等。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2018/05/14/knowledge/know-networkmedia/twisted_pair.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/05/14/knowledge/know-networkmedia/utp&stp.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/05/14/knowledge/know-networkmedia/optical_fiber.JPG">
+<meta property="og:image" content="http://yoursite.com/2018/05/14/knowledge/know-networkmedia/spectrum.jpg">
+<meta property="og:updated_time" content="2018-07-03T02:09:57.469Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="网络通信传输介质">
+<meta name="twitter:description" content="网络通信中常用的传输介质包括有线、无线两大类。本篇简要整理了有线传输介质、速率和网线类型、光纤类型等，以及无线传输介质等基础知识。其中以太网传输介质主要有同轴电缆、双绞线和光纤三种。无线传输介质包括无线电、红外线、激光等。">
+<meta name="twitter:image" content="http://yoursite.com/2018/05/14/knowledge/know-networkmedia/twisted_pair.jpg">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Elaine's Notebook" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/05/14/knowledge/know-networkmedia/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>网络通信传输介质 | Elaine's Notebook</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Elaine's Notebook</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/14/knowledge/know-networkmedia/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Elaine">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/pic/daodao2.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Elaine's Notebook">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">网络通信传输介质
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-05-14 09:07:37" itemprop="dateCreated datePublished" datetime="2018-05-14T09:07:37+08:00">2018-05-14</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-03 10:09:57" itemprop="dateModified" datetime="2018-07-03T10:09:57+08:00">2018-07-03</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/knowledge/" itemprop="url" rel="index"><span itemprop="name">knowledge</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>网络通信中常用的传输介质包括有线、无线两大类。本篇简要整理了有线传输介质、速率和网线类型、光纤类型等，以及无线传输介质等基础知识。其中以太网传输介质主要有同轴电缆、双绞线和光纤三种。无线传输介质包括无线电、红外线、激光等。<br><a id="more"></a><br>以太网传输标准IEEE 802.3标准规定了以下几种：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">传输介质</th>
+<th style="text-align:center">传输距离</th>
+<th style="text-align:center">连接器</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">10Base-5</td>
+<td style="text-align:center">RG-8/RG-11同轴电缆（粗缆）</td>
+<td style="text-align:center">500米</td>
+<td style="text-align:center">AUI或MAU连接器</td>
+</tr>
+<tr>
+<td style="text-align:center">10Base-2</td>
+<td style="text-align:center">RG-58同轴电缆（细缆）</td>
+<td style="text-align:center">185米</td>
+<td style="text-align:center">BNC连接器</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>10Base-T</strong></td>
+<td style="text-align:center">CAT3非屏蔽双绞线</td>
+<td style="text-align:center">100米</td>
+<td style="text-align:center">RJ45连接器</td>
+</tr>
+<tr>
+<td style="text-align:center">10Base-F</td>
+<td style="text-align:center">光纤</td>
+<td style="text-align:center">500米以上</td>
+<td style="text-align:center">FP/FL/FB连接器</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>100Base-TX</strong></td>
+<td style="text-align:center">CAT5非屏蔽双绞线</td>
+<td style="text-align:center">100米</td>
+<td style="text-align:center">RJ45连接器</td>
+</tr>
+<tr>
+<td style="text-align:center">100Base-T4</td>
+<td style="text-align:center">CAT3非屏蔽双绞线</td>
+<td style="text-align:center">100米</td>
+<td style="text-align:center">RJ45连接器</td>
+</tr>
+<tr>
+<td style="text-align:center">100Base-F</td>
+<td style="text-align:center">光纤</td>
+<td style="text-align:center">2000米</td>
+<td style="text-align:center">SC</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>1000Base-T</strong></td>
+<td style="text-align:center">CAT5e非屏蔽双绞线</td>
+<td style="text-align:center">100米</td>
+<td style="text-align:center">RJ45连接器</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>1000Base-TX</strong></td>
+<td style="text-align:center">CAT6非屏蔽双绞线</td>
+<td style="text-align:center">100米</td>
+<td style="text-align:center">RJ45连接器</td>
+</tr>
+<tr>
+<td style="text-align:center">1000Base-CX</td>
+<td style="text-align:center">屏蔽双绞线</td>
+<td style="text-align:center">25米</td>
+<td style="text-align:center">RJ45连接器</td>
+</tr>
+<tr>
+<td style="text-align:center">1000Base-LX</td>
+<td style="text-align:center">单模光纤</td>
+<td style="text-align:center">3000米</td>
+<td style="text-align:center">SFP</td>
+</tr>
+<tr>
+<td style="text-align:center">1000Base-SX</td>
+<td style="text-align:center">多模光纤</td>
+<td style="text-align:center">300-550米</td>
+</tr>
+</tbody>
+</table>
+<p>其中数字表示网络数据传输速率，单位为Mbps；Base表示基带传输，即未经过调制、不能复用的传输，Broad表示宽带传输；-后面的字母或数字指传输介质。</p>
+<p><strong>同轴电缆</strong>是指导体和屏蔽层共用同一轴心的电缆。同轴电缆由里到外分为四层：中心铜线，塑料绝缘体，网状导电层（屏蔽层）和外层保护套，中心铜线和网状导电层形成电流回路。<br><strong>基带同轴电缆</strong>特征阻抗为50Ω，如RG-8、RG-58等，传输基带数字信号。<br><strong>宽带同轴电缆</strong>特征阻抗为75Ω，如RG-59等，传输频分多路模拟信号。</p>
+<p><strong>双绞线</strong>把两根22-26号绝缘铜导线按一定密度互相绞在一起，每一根导线在传输中辐射出来的电波会被另一根线上发出的电波抵消，有效降低信号干扰的程度。与其他传输介质相比，双绞线在传输距离，信道宽度和数据传输速度等方面均受到一定限制，但价格较为低廉，应用非常广泛。<br><strong>屏蔽双绞线</strong>在双绞线与外层绝缘封套之间有一个金属屏蔽层。<strong>STP</strong>(Shielded Twisted Pair)指每条线都有各自的屏蔽层，而<strong>FTP</strong>(Foil Twisted Pair)只在整个电缆有屏蔽装置，并且两端都正确接地时才起作用。屏蔽层可减少辐射，防止信息被窃听，也可阻止外部电磁干扰，屏蔽双绞线比同类的非屏蔽双绞线具有更高的传输速率。<br><strong>非屏蔽双绞线UTP</strong>(Unshielded Twisted Pair)直径小、成本低、易弯曲、易安装，广泛用于以太网和电话线中。常见的非屏蔽双绞线由4对8根不同颜色的传输线组成。<br><img src="/2018/05/14/knowledge/know-networkmedia/twisted_pair.jpg" alt="twisted pair"><br>按照频率带宽和信噪比双绞线可以分为：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">最高频率带宽</th>
+<th style="text-align:left">用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">CAT1</td>
+<td style="text-align:center">750kHz</td>
+<td style="text-align:left">用于报警系统，不用于数据传输</td>
+</tr>
+<tr>
+<td style="text-align:center">CAT2</td>
+<td style="text-align:center">1MHz</td>
+<td style="text-align:left">用于语音传输和最高4Mbps的数据传输</td>
+</tr>
+<tr>
+<td style="text-align:center">CAT3</td>
+<td style="text-align:center">16MHz</td>
+<td style="text-align:left">用于10Base-T以太网和4Mbps令牌环</td>
+</tr>
+<tr>
+<td style="text-align:center">CAT4</td>
+<td style="text-align:center">20MHz</td>
+<td style="text-align:left">用于局域10Base-T/100Base-T以太网和16Mbps令牌环</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>CAT5</strong></td>
+<td style="text-align:center">100MHz</td>
+<td style="text-align:left">用于10Base-T/100Base-T网络</td>
+</tr>
+<tr>
+<td style="text-align:center">CAT5e</td>
+<td style="text-align:center">100MHz</td>
+<td style="text-align:left">用于1000Base-T网络</td>
+</tr>
+<tr>
+<td style="text-align:center">CAT6</td>
+<td style="text-align:center">250MHz</td>
+<td style="text-align:left">用于最高1Gbps的数据传输</td>
+</tr>
+<tr>
+<td style="text-align:center">CAT6A</td>
+<td style="text-align:center">500MHz</td>
+<td style="text-align:left">用于最高10Gbps的数据传输</td>
+</tr>
+<tr>
+<td style="text-align:center">CAT7</td>
+<td style="text-align:center">600MHz</td>
+<td style="text-align:left">用于最高10Gbps的数据传输</td>
+</tr>
+</tbody>
+</table>
+<p>目前最常用的为CAT5和CAT6，CAT6以上的产品国家未出台正式检测标准。电话线接口常用RJ11连接器，网线接口常用RJ45连接器，都称为水晶头。</p>
+<p>EIA/TIA标准规定了两种双绞线线序T568A和T568B，常用网线分为<strong>直连互联</strong>和<strong>交叉互联</strong>两种接法。<br>可以看作<strong>数据终端设备</strong>(Data Terminal Equipment, DTE)的有电脑、路由器、交换机uplink口、HUB级联口等，可以看<strong>数据电路终接设备</strong>(Data Circuit-terminating Equipment, DCE)的有交换机普通口、HUB普通口等。同类设备间相连使用交叉线方式，异类设备间相连使用直通线方式。现在的交换机通常具有端口自动翻转功能，因此对直通线和交叉线不加以区分。<br><img src="/2018/05/14/knowledge/know-networkmedia/utp&amp;stp.jpg" alt="twisted pair"></p>
+<p><strong>光纤</strong>由光导纤维作为芯线加上防护外皮做成的，通常采用石英玻璃拉成的细丝，通过光信号进行传输。光纤只能做单向传输，通过成对使用进行双向通信。相比于其他介质，光纤具有传输距离长、速率高、抗干扰能力强、延时小等特点，主要使用于大型网络主干线。<br><strong>单模光纤</strong>中心的玻璃芯很细，只能传播一种模式的光信号，在单模光纤中光沿直线传播，无反射，传播距离非常远，一般为黄色。<br><strong>多模光纤</strong>芯径较大，可以传输多种模式的光信号，一般为橘红色或灰色，不同模光进入光纤的角度不同，它们到达另一端的时间也不同，称为<strong>模分散</strong>，模分散技术限制了多模光纤的带宽和距离。<br><img src="/2018/05/14/knowledge/know-networkmedia/optical_fiber.JPG" alt="twisted pair"></p>
+<p>常见的光纤接口包括SC（方形卡接式）、LC（圆形小）、DLC（圆形小双头）、FC（圆形带螺纹）、ST（圆形卡接式）和MTRJ（方形双头）等，插芯研磨平面又可以分为PC、UPC、APC等。<br><strong>光电转换器</strong>又称光纤收发器，是一种将短距离电信号和长距离光信号进行互换的设备，目前最常用的光电转换器为热插拔小封装模块(Small Form-factor Pluggables, SFP)，具有体积小、端口多等优点，多采用LC接口。<strong>光纤耦合器</strong>又称分歧器，将光信号从一条光纤中分至多条光纤中。</p>
+<p><img src="/2018/05/14/knowledge/know-networkmedia/spectrum.jpg" alt="spectrum"></p>
+<p>在自由空间传播的电磁波或广播统称为无线传输介质。<br><strong>无线电波</strong>指1GHz以内的电磁波，通信常用600MHz~1GHz频段，该频段信号会穿透电离层，传播损耗较大，一般用于沿地面局部无方向性广播通信场合。我国的调频广播为88-108MHz。<br><strong>微波</strong>指1~300GHz范围内的电磁波，常用2~30GHz频段，该频段微波沿直线传播，同时会穿透电离层进入宇宙空间，一般用于地面微波接力通信或卫星通信。<br><strong>红外线</strong>具有很强的方向性，但对环境干扰敏感。通信链路只需要一对收发器，设备便宜且不需要天线，一般用于室内通信、近距离遥控等。<br><strong>激光通信</strong>具有通信容量大、保密性强、结构轻便等优点，同时具有通信距离短、易受干扰、瞄准困难等缺点，一般用于地面短距离通信和星际通信等。</p>
+<p>Wifi是一种民用无线电磁波技术，工作在2.4GHz、5GHz、60GHz这几个国家允许的频段下。蓝牙和无线键鼠等也工作在2.4GHz。我国手机数据通信主要集中在1.8GHz、2.1GHz、2.3GHz、2.6GHz等频段。</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/network-basis/" rel="tag"><i class="fa fa-tag"></i> network basis</a>
+          
+            <a href="/tags/transmission-media/" rel="tag"><i class="fa fa-tag"></i> transmission media</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/10/review/rev-industrialnet/" rel="next" title="工业设备通信协议概览">
+                <i class="fa fa-chevron-left"></i> 工业设备通信协议概览
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/14/knowledge/know-crc/" rel="prev" title="CRC循环冗余校验码">
+                CRC循环冗余校验码 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/pic/daodao2.jpg"
+                alt="Elaine" />
+            
+              <p class="site-author-name" itemprop="name">Elaine</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">25</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">27</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:465394192@qq.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Elaine</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Pisces</a> v6.2.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.2.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.2.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.2.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.2.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.2.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.2.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.2.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+    
+      <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+  
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
