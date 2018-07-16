@@ -2,7 +2,7 @@
 title: Transact-SQL中变量的作用范围
 date: 2018-06-05 09:47:13
 tags:
-  - SQL
+  - SQL Server
 categories: tip
 hide: true
 ---

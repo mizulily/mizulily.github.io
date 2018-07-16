@@ -136,7 +136,7 @@ toc: true
 
 **存储过程**是由一系列Transact-SQL语句构成的程序，经编译后存储在数据库中，可以通过名称直接调用。存储过程还可以接受参数，提高存储过程的灵活性。在SQL Server中，存储过程的类型主要有：用户存储过程、扩展存储过程和系统存储过程。**用户存储过程**包括Transact-SQL存储过程和CLR存储过程；**扩展存储过程**可以加载外部DLL；**系统存储过程**用来实现数据库的管理活动，存放在master中，但其他数据库也可以调用。常用系统存储过程和分类见书P301。
 
-创建和修改存储过程的语法：
+创建和修改存储过程：
 
     {CREATE|ALTER} PROC[EDURE] 存储过程(组)名[;序号]
     [{@参数名 数据类型} [=默认值] [OUTPUT]] [,... n]
@@ -144,11 +144,11 @@ toc: true
     [FOR REPLICATION]
     AS {SQL语句 [,... n]} 
 
-删除存储过程的语法：
+删除存储过程：
 
     DROP PROC[EDURE] 存储过程(组)名
 
-执行存储过程的语法：
+执行存储过程：
 
     EXEC[UTE] 存储过程(组)名[;序号]
     [[@参数名=]参数值|@参数名 [OUTPUT]|[DEFAULT]] [,... n]
@@ -160,7 +160,7 @@ toc: true
 当数据库中发生数据定义语言(DLL)事件时将调用**DLL触发器**，主要用于任务管理。DLL事件主要包括CREATE/ALTER/DROP/GRANT/DENY/REVOKE等语句操作。
 LOGON事件激发**登录触发器**，将在登录身份验证阶段完成之后用户会话建立之前触发。
 
-创建和修改DML触发器的语法：
+创建和修改DML触发器：
 
     {CREATE|ALTER} TRIGGER [模式名.]触发器名
     ON {表名|视图名}
@@ -169,11 +169,11 @@ LOGON事件激发**登录触发器**，将在登录身份验证阶段完成之�
     {[INSERT][,][UPDATE][,][DELETE]}
     AS {SQL语句 [,... n]}
 
-删除DML触发器的语法：
+删除DML触发器：
 
     DROP TRIGGER 触发器名 [,... n]
 
-创建和修改DLL触发器发的语法：
+创建和修改DLL触发器发：
 
     {CREATE|ALTER} TRIGGER 触发器名
     ON {DATABASE|ALL SERVER}
@@ -182,15 +182,49 @@ LOGON事件激发**登录触发器**，将在登录身份验证阶段完成之�
     AS {SQL语句 [,... n]}
 其中常见的数据库作用域的DLL语句和服务器作用域的DLL语句见P315。
 
-删除DLL触发器的语法：
+删除DLL触发器：
 
     DROP TRIGGER 触发器名 [,... n]
     ON {DATABASE|ALL SERVER}
 
-启用和禁用触发器的语法：
+启用和禁用触发器：
 
     {ENABLE|DISABLE} TRIGGER {[模式名.]触发器名 [,... n]|ALL}
     ON {表名|视图名|DATABASE|ALL SERVER}
 
-## 第十一章 数据库安全
+## 第十一章 游标
+
+**游标**可以理解为一个定义在特定数据集上的指针，可以通过游标遍历数据集，或仅仅指向特定的行。在关系数据库中查询是面向集合的，而游标打破了这一规则，使操作变为逐行进行。使用游标会占用更多内存，减少可用并发，锁定资源，以及更多的代码量。
+
+定义游标：
+
+    DECLARE 游标名 CURSOR 
+        [{LOCAL|GLOBAL}
+         {FORWARD_ONLY|SCROLL}
+         {STATIC|KEYSET|DYNAMIC|FAST_FORWORD}
+         {READ_ONLY|SCROLL_LOCKS|OPTIMISTIC}
+         TYPE_WARNING]
+        FOR SQL语句
+        [ FOR UPDATE [ OF column_name [ ,...n ] ] ]
+
+定义游标为局部游标(LOCAL)，需像定义局部变量一样在游标名前加"@"，批处理结束后被释放；定义游标为全局游标(GLOBAL)，只支持定义时直接赋值，在批处理结束后依然有效。
+只进游标(FORWARD_ONLY)意味着游标只能从数据集开始向结束方向读取，只能用FETCH NEXT；滚动游标(SCROLL)支持游标在定义的数据集中向任何方向或位置移动。
+STATIC意味着游标建立时会创建副本，对真实表内数据的更改不会影响到游标内容；DYNAMIC与其完全相反；KEYSET是介于前两者的折中方案，将游标所在的结果集的主键存入临时表，当结果集中行改变或删除时游标内容改变，但新加入的数据不会造成游标内容改变；FAST_FORWARD根据情况选择采用动态计划或静态计划。
+READ_ONLY代表游标只能读取数据，不能做任何更新；SCROLL_LOCKS将读入数据进行锁定，防止其他程序更改，以确保更新成功；OPTIMISTICS不锁定任何数据，根据底层表数据更新情况来决定更新游标内数据是否成功。
+
+打开/关闭/释放游标：
+
+    {OPEN|CLOSE|DEALLOCATE} 游标名
+
+使用游标分为两部分操作，一是操作游标在数据集内的指向，二是对游标所指向行的操作。游标移动选项一共6种，分别为第一行(FIRST)、最后一行(LAST)、下一行(NEXT)、上一行(PRIOR)、直接跳到某行(ABSOLUTE(n))、相对目前跳几行(RELATIVE(n))。
+游标经常会和全局变量@@FETCH_STATUS和WHILE循环来共同使用，以达到遍历游标所在数据集的目的。
+
+使用游标的注意事项：
+1. 尽量不要用，尤其是大量数据
+2. 尽量使用FAST_FORWARD，避免使用INSENSITIVE/STATIC/KEYSET这些参数
+3. 如果只对数据进行读取并只用到FETCH NEXT选项，最好使用FORWARD_ONLY
+4. 用完之后一定要关闭和释放
+
+
+## 第十二章 数据库安全
 
