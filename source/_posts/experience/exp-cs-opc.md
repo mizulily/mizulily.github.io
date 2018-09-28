@@ -21,3 +21,6 @@ OPC的自动化接口即OPCDAAuto.dll
 
 
 Reference [u012252959的博客](https://blog.csdn.net/u012252959/article/details/49699559)
+
+
+----To Be Continued----

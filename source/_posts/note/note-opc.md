@@ -21,3 +21,4 @@ toc: true
 在OPC技术出现以前，**DDE**（Dynamic Data Exchange）技术曾经对过程控制做出巨大贡献，但是DDE是基于Windows信息传递而建立的技术，存在诸多问题。OPC基于**COM**（组件对象模型，Component Object Model）和**DCOM**（分布式COM）技术开发，实际上OPC是为工业标准定义的特殊的COM接口，与DDE相比在速度、分布式安全管理、开发成本、可靠性等方面都具有优势。
 
 
+----To Be Continued----
