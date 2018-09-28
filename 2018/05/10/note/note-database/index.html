@@ -111,7 +111,7 @@
 <meta property="og:description" content="《数据库原理与应用——SQL Server 2016版本》 主编：邓立国 佟强 清华大学出版社 2017年9月第1版 TP311.138 ISBN: 978-7-302-48305-2 本书系统地讲述数据库原理与SQL Server 2016的功能、应用及实践知识，包括关系数据库知识、数据库创建与维护、数据库表的操作管理及维护、完整性控制、查询与管理表数据、Transaction-SQL编程、存储">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2018/05/10/note/note-database/data_type.JPG">
-<meta property="og:updated_time" content="2018-06-05T01:57:17.454Z">
+<meta property="og:updated_time" content="2018-09-28T05:41:29.631Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《数据库原理与应用》笔记">
 <meta name="twitter:description" content="《数据库原理与应用——SQL Server 2016版本》 主编：邓立国 佟强 清华大学出版社 2017年9月第1版 TP311.138 ISBN: 978-7-302-48305-2 本书系统地讲述数据库原理与SQL Server 2016的功能、应用及实践知识，包括关系数据库知识、数据库创建与维护、数据库表的操作管理及维护、完整性控制、查询与管理表数据、Transaction-SQL编程、存储">
@@ -365,7 +365,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-06-05 09:57:17" itemprop="dateModified" datetime="2018-06-05T09:57:17+08:00">2018-06-05</time>
+                <time title="修改时间：2018-09-28 13:41:29" itemprop="dateModified" datetime="2018-09-28T13:41:29+08:00">2018-09-28</time>
               
             
           </span>
@@ -436,7 +436,8 @@
 </li>
 <li><a href="#第八章-数据操作">第八章 数据操作</a></li>
 <li><a href="#第十章-存储过程与触发器">第十章 存储过程与触发器</a></li>
-<li><a href="#第十一章-数据库安全">第十一章 数据库安全</a></li>
+<li><a href="#第十一章-游标">第十一章 游标</a></li>
+<li><a href="#第十二章-数据库安全">第十二章 数据库安全</a></li>
 </ul>
 <!-- tocstop -->
 <h2><span id="第一章-数据库基础知识">第一章 数据库基础知识</span></h2><h2><span id="第二章-数据库设计">第二章 数据库设计</span></h2><h2><span id="第三章-数据库编程">第三章 数据库编程</span></h2><h3><span id="31-关系数据库标准语言sql">3.1 关系数据库标准语言SQL</span></h3><p><strong>结构化查询语言（Structured Query Language, SQL）</strong>是关系数据库的标准语言，具有集数据查询、数据操作、数据定义和数据控制于一体的强大功能，通过九个动词来实现：SELECT、CREATE、DROP、ALTER、INSERT、UPDATE、DELETE、GRANT、REVOKE。</p>
@@ -509,43 +510,65 @@ EXEC sp_rename &apos;旧名&apos;, &apos;新名&apos;, {&apos;TABLE&apos;|&apos;
 
  -->
 <h3><span id="74-表约束">7.4 表约束</span></h3><h2><span id="第八章-数据操作">第八章 数据操作</span></h2><h2><span id="第十章-存储过程与触发器">第十章 存储过程与触发器</span></h2><p><strong>存储过程</strong>是由一系列Transact-SQL语句构成的程序，经编译后存储在数据库中，可以通过名称直接调用。存储过程还可以接受参数，提高存储过程的灵活性。在SQL Server中，存储过程的类型主要有：用户存储过程、扩展存储过程和系统存储过程。<strong>用户存储过程</strong>包括Transact-SQL存储过程和CLR存储过程；<strong>扩展存储过程</strong>可以加载外部DLL；<strong>系统存储过程</strong>用来实现数据库的管理活动，存放在master中，但其他数据库也可以调用。常用系统存储过程和分类见书P301。</p>
-<p>创建和修改存储过程的语法：</p>
+<p>创建和修改存储过程：</p>
 <pre><code>{CREATE|ALTER} PROC[EDURE] 存储过程(组)名[;序号]
 [{@参数名 数据类型} [=默认值] [OUTPUT]] [,... n]
 [WITH {RECOMPILE|ENCRYPTION|RECOMPILE,ENCRYPTION}]
 [FOR REPLICATION]
 AS {SQL语句 [,... n]} 
-</code></pre><p>删除存储过程的语法：</p>
+</code></pre><p>删除存储过程：</p>
 <pre><code>DROP PROC[EDURE] 存储过程(组)名
-</code></pre><p>执行存储过程的语法：</p>
+</code></pre><p>执行存储过程：</p>
 <pre><code>EXEC[UTE] 存储过程(组)名[;序号]
 [[@参数名=]参数值|@参数名 [OUTPUT]|[DEFAULT]] [,... n]
 [WITH RECOMPILE]
 </code></pre><p><strong>触发器</strong>是一种特殊的存储过程，可以看作是表定义的一部分，用于对表进行完整性约束。在SQL Server中，触发器的类型主要有：DML触发器、DDL触发器和登录触发器。</p>
 <p>当数据库中发生数据操纵语言(DML)事件时将调用<strong>DML触发器</strong>。按照触发操作的不同可以分为INSERT触发器、UPDATE触发器和DELETE触发器，SQL Server为每个语句创建deleted表或（和）inserted表，表结构与定义触发器的表结构相同，触发器执行完成后自动删除。按照触发时间的不同可以分为AFTER(FOR)触发器和INSTEAD OF触发器。<br>当数据库中发生数据定义语言(DLL)事件时将调用<strong>DLL触发器</strong>，主要用于任务管理。DLL事件主要包括CREATE/ALTER/DROP/GRANT/DENY/REVOKE等语句操作。<br>LOGON事件激发<strong>登录触发器</strong>，将在登录身份验证阶段完成之后用户会话建立之前触发。</p>
-<p>创建和修改DML触发器的语法：</p>
+<p>创建和修改DML触发器：</p>
 <pre><code>{CREATE|ALTER} TRIGGER [模式名.]触发器名
 ON {表名|视图名}
 [WITH DML触发器选项 [,... n]]
 {FOR|AFTER|INSTEAD OF}
 {[INSERT][,][UPDATE][,][DELETE]}
 AS {SQL语句 [,... n]}
-</code></pre><p>删除DML触发器的语法：</p>
+</code></pre><p>删除DML触发器：</p>
 <pre><code>DROP TRIGGER 触发器名 [,... n]
-</code></pre><p>创建和修改DLL触发器发的语法：</p>
+</code></pre><p>创建和修改DLL触发器发：</p>
 <pre><code>{CREATE|ALTER} TRIGGER 触发器名
 ON {DATABASE|ALL SERVER}
 [WITH DLL触发器选项 [,... n]]
 {FOR|AFTER} {触发事件名称|触发事件分组名称} [,... n]
 AS {SQL语句 [,... n]}
 </code></pre><p>其中常见的数据库作用域的DLL语句和服务器作用域的DLL语句见P315。</p>
-<p>删除DLL触发器的语法：</p>
+<p>删除DLL触发器：</p>
 <pre><code>DROP TRIGGER 触发器名 [,... n]
 ON {DATABASE|ALL SERVER}
-</code></pre><p>启用和禁用触发器的语法：</p>
+</code></pre><p>启用和禁用触发器：</p>
 <pre><code>{ENABLE|DISABLE} TRIGGER {[模式名.]触发器名 [,... n]|ALL}
 ON {表名|视图名|DATABASE|ALL SERVER}
-</code></pre><h2><span id="第十一章-数据库安全">第十一章 数据库安全</span></h2>
+</code></pre><h2><span id="第十一章-游标">第十一章 游标</span></h2><p><strong>游标</strong>可以理解为一个定义在特定数据集上的指针，可以通过游标遍历数据集，或仅仅指向特定的行。在关系数据库中查询是面向集合的，而游标打破了这一规则，使操作变为逐行进行。使用游标会占用更多内存，减少可用并发，锁定资源，以及更多的代码量。</p>
+<p>定义游标：</p>
+<pre><code>DECLARE 游标名 CURSOR 
+    [{LOCAL|GLOBAL}
+     {FORWARD_ONLY|SCROLL}
+     {STATIC|KEYSET|DYNAMIC|FAST_FORWORD}
+     {READ_ONLY|SCROLL_LOCKS|OPTIMISTIC}
+     TYPE_WARNING]
+    FOR SQL语句
+    [ FOR UPDATE [ OF column_name [ ,...n ] ] ]
+</code></pre><p>定义游标为局部游标(LOCAL)，需像定义局部变量一样在游标名前加”@”，批处理结束后被释放；定义游标为全局游标(GLOBAL)，只支持定义时直接赋值，在批处理结束后依然有效。<br>只进游标(FORWARD_ONLY)意味着游标只能从数据集开始向结束方向读取，只能用FETCH NEXT；滚动游标(SCROLL)支持游标在定义的数据集中向任何方向或位置移动。<br>STATIC意味着游标建立时会创建副本，对真实表内数据的更改不会影响到游标内容；DYNAMIC与其完全相反；KEYSET是介于前两者的折中方案，将游标所在的结果集的主键存入临时表，当结果集中行改变或删除时游标内容改变，但新加入的数据不会造成游标内容改变；FAST_FORWARD根据情况选择采用动态计划或静态计划。<br>READ_ONLY代表游标只能读取数据，不能做任何更新；SCROLL_LOCKS将读入数据进行锁定，防止其他程序更改，以确保更新成功；OPTIMISTICS不锁定任何数据，根据底层表数据更新情况来决定更新游标内数据是否成功。</p>
+<p>打开/关闭/释放游标：</p>
+<pre><code>{OPEN|CLOSE|DEALLOCATE} 游标名
+</code></pre><p>使用游标分为两部分操作，一是操作游标在数据集内的指向，二是对游标所指向行的操作。游标移动选项一共6种，分别为第一行(FIRST)、最后一行(LAST)、下一行(NEXT)、上一行(PRIOR)、直接跳到某行(ABSOLUTE(n))、相对目前跳几行(RELATIVE(n))。<br>游标经常会和全局变量@@FETCH_STATUS和WHILE循环来共同使用，以达到遍历游标所在数据集的目的。</p>
+<p>使用游标的注意事项：</p>
+<ol>
+<li>尽量不要用，尤其是大量数据</li>
+<li>尽量使用FAST_FORWARD，避免使用INSENSITIVE/STATIC/KEYSET这些参数</li>
+<li>如果只对数据进行读取并只用到FETCH NEXT选项，最好使用FORWARD_ONLY</li>
+<li>用完之后一定要关闭和释放</li>
+</ol>
+<h2><span id="第十二章-数据库安全">第十二章 数据库安全</span></h2><p>—-To Be Continued—-</p>
+
       
     </div>
 
@@ -672,7 +695,7 @@ ON {表名|视图名|DATABASE|ALL SERVER}
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">25</span>
+                    <span class="site-state-item-count">32</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -699,7 +722,9 @@ ON {表名|视图名|DATABASE|ALL SERVER}
                     
                       
                     
-                    <span class="site-state-item-count">7</span>
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -768,7 +793,17 @@ ON {表名|视图名|DATABASE|ALL SERVER}
                     
                       
                     
-                    <span class="site-state-item-count">27</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">33</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -820,7 +855,7 @@ ON {表名|视图名|DATABASE|ALL SERVER}
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第一章 数据库基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第二章 数据库设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第三章 数据库编程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">3.1 关系数据库标准语言SQL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">3.2 SQL Server中的Transact-SQL语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">3.3 程序设计接口ODBC与JDBC</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第六章 数据库操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第七章 数据表操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">7.1 数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">7.2 操作表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">7.4 表约束</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第八章 数据操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第十章 存储过程与触发器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第十一章 数据库安全</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第一章 数据库基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第二章 数据库设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第三章 数据库编程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">3.1 关系数据库标准语言SQL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">3.2 SQL Server中的Transact-SQL语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">3.3 程序设计接口ODBC与JDBC</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第六章 数据库操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第七章 数据表操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">7.1 数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">7.2 操作表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">7.4 表约束</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第八章 数据操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第十章 存储过程与触发器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第十一章 游标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">第十二章 数据库安全</span></a></li></ol></div>
             
 
           </div>
