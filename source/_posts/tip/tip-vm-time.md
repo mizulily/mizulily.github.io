@@ -6,6 +6,7 @@ tags:
   - VMWare
 categories: tip
 hide: true
+end: true
 ---
 
 由于软件license的时间限制，需要用过去的时间启动虚拟机。

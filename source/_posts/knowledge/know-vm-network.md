@@ -6,6 +6,7 @@ tags:
   - VMWare
 categories: knowledge
 hide: true
+end: true
 ---
 
 VMware虚拟机有三种网络模式，分别是**桥接模式(Bridged)**、**网络地址转换模式(NAT)**、**仅主机模式(Host-only)**。

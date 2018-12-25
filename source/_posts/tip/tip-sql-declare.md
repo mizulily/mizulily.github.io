@@ -5,6 +5,7 @@ tags:
   - SQL Server
 categories: tip
 hide: true
+end: true
 ---
 
 与常见的高级语言不同，Transact-SQL中局部变量的作用域是所在的**批处理**，在IF语句内定义的变量在IF外仍可继续使用，而由于Transact-SQL是以GO语句来区分批处理的，在下一个GO之后无法继续使用。

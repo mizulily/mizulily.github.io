@@ -5,6 +5,7 @@ tags:
   - network basis
   - transmission media
 categories: knowledge
+end: true
 ---
 
 网络通信中常用的传输介质包括有线、无线两大类。本篇简要整理了有线传输介质、速率和网线类型、光纤类型等，以及无线传输介质等基础知识。其中以太网传输介质主要有同轴电缆、双绞线和光纤三种。无线传输介质包括无线电、红外线、激光等。

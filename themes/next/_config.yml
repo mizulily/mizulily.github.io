@@ -324,6 +324,10 @@ post_edit:
 # url: https://github.com/theme-next/theme-next.org/_posts/edit/master/ # Link for fork & edit.
 
 
+end_tag:
+  enable: true
+
+
 # ---------------------------------------------------------------
 # Misc Theme Settings
 # ---------------------------------------------------------------

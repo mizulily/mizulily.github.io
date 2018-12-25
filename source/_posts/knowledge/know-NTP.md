@@ -6,6 +6,7 @@ tags:
   - protocol
 categories: knowledge
 hide: true
+end: true
 ---
 
 **NTP(Network Time Protocol，网络时间协议)**是用来同步网络中各个计算机时间的协议，属于应用层协议，采用UDP报文传输，使用UDP端口号为123。连接到互联网上的主机通过NTP与UTC(Universal Time Coordinate，世界协调时)同步，UTC由原子钟报时。

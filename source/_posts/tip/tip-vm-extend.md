@@ -6,6 +6,7 @@ tags:
   - VMWare
 categories: tip
 hide: true
+end: true
 ---
 
 扩展虚拟机存储空间分为两类：

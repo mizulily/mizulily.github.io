@@ -6,6 +6,7 @@ tags:
   - management
 categories: training
 hide: true
+end: true
 ---
 
 生产运作过程包括投入、转换、产出、反馈。**生产管理**是对生产运作系统的设计、运行和维护过程的管理。

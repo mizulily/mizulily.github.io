@@ -7,6 +7,7 @@ tags:
   - Transaction Manager
 categories: tip
 hide: true
+end: true
 ---
 
 在使用FactoryTalk Transaction Manager过程中，有时会遇到双击配置Live Data Connector时整个程序没有响应的情况，排除可能的问题包括：

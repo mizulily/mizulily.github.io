@@ -6,6 +6,7 @@ tags:
   - error-detecting code
 categories: knowledge
 hide: true
+end: true
 ---
 
 **循环码**(Cyclic Redundancy Check, CRC)是一种检错率高、编码效率高的检错码，通过除法运算来建立有效信息位和校验位之间的约定关系。
