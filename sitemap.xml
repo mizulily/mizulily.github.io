@@ -2,9 +2,170 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2018/06/12/knowledge/know-vm-network/</loc>
+    
+    <lastmod>2018-12-25T00:37:16.613Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/04/28/knowledge/know-NTP/</loc>
+    
+    <lastmod>2018-12-25T00:37:06.876Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/14/knowledge/know-networkmedia/</loc>
+    
+    <lastmod>2018-12-25T00:37:01.433Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/03/knowledge/know-DNS&localhost/</loc>
+    
+    <lastmod>2018-12-25T00:36:45.083Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/09/28/knowledge/know-datastruct/</loc>
+    
+    <lastmod>2018-12-25T00:36:34.571Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/14/knowledge/know-crc/</loc>
+    
+    <lastmod>2018-12-25T00:31:23.169Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018/08/20/craft/craft-machine/</loc>
     
-    <lastmod>2018-09-28T05:44:48.264Z</lastmod>
+    <lastmod>2018-12-24T06:11:45.449Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/12/10/tip/tip-vm-using/</loc>
+    
+    <lastmod>2018-12-24T06:11:35.064Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/04/28/tip/tip-vm-time/</loc>
+    
+    <lastmod>2018-12-24T06:11:31.763Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/10/19/tip/tip-vm-ghost/</loc>
+    
+    <lastmod>2018-12-24T06:11:27.299Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/06/25/tip/tip-vm-extend/</loc>
+    
+    <lastmod>2018-12-24T06:11:23.743Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/10/08/tip/tip-sqlindex/</loc>
+    
+    <lastmod>2018-12-24T06:11:20.013Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/12/19/tip/tip-ping-icmp/</loc>
+    
+    <lastmod>2018-12-24T06:11:13.680Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/06/05/tip/tip-sql-declare/</loc>
+    
+    <lastmod>2018-12-24T06:11:08.758Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/07/24/tip/tip-killservice/</loc>
+    
+    <lastmod>2018-12-24T06:11:00.206Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/25/tip/tip-ftld-bug/</loc>
+    
+    <lastmod>2018-12-24T06:10:48.342Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/07/05/tip/tip-backup-data/</loc>
+    
+    <lastmod>2018-12-24T06:10:41.339Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/06/26/training/train-safety/</loc>
+    
+    <lastmod>2018-12-24T06:10:00.739Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/09/25/knowledge/know-manufacture/</loc>
+    
+    <lastmod>2018-12-24T06:08:57.921Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/10/note/note-database/</loc>
+    
+    <lastmod>2018-12-20T07:28:12.305Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/04/28/note/note-cs/</loc>
+    
+    <lastmod>2018-12-19T08:56:09.782Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/10/30/note/note-ccna/</loc>
+    
+    <lastmod>2018-12-19T02:56:51.987Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/12/12/note/note-oracle/</loc>
+    
+    <lastmod>2018-12-12T08:37:06.836Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/04/27/experience/exp-trans-1/</loc>
+    
+    <lastmod>2018-10-29T01:56:54.749Z</lastmod>
     
   </url>
   
@@ -12,13 +173,6 @@
     <loc>http://yoursite.com/2018/08/21/craft/craft-inj-mold/</loc>
     
     <lastmod>2018-09-28T05:44:44.169Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/04/27/experience/exp-trans-1/</loc>
-    
-    <lastmod>2018-09-28T05:44:34.107Z</lastmod>
     
   </url>
   
@@ -100,20 +254,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/05/10/note/note-database/</loc>
-    
-    <lastmod>2018-09-28T05:41:29.631Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/04/28/note/note-cs/</loc>
-    
-    <lastmod>2018-09-28T05:41:21.209Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2018/06/29/review/rev-mobilecomm/</loc>
     
     <lastmod>2018-09-28T05:40:54.700Z</lastmod>
@@ -128,100 +268,9 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/09/25/knowledge/know-manufacture/</loc>
-    
-    <lastmod>2018-09-27T00:39:20.794Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/05/14/knowledge/know-crc/</loc>
-    
-    <lastmod>2018-08-20T03:32:08.279Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/07/24/tip/tip-killservice/</loc>
-    
-    <lastmod>2018-07-24T04:46:46.888Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/07/05/tip/tip-backup-data/</loc>
-    
-    <lastmod>2018-07-05T00:46:51.727Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/06/05/tip/tip-sql-declare/</loc>
-    
-    <lastmod>2018-07-05T00:40:48.019Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/05/14/knowledge/know-networkmedia/</loc>
-    
-    <lastmod>2018-07-03T02:09:57.469Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/06/26/training/train-safety/</loc>
-    
-    <lastmod>2018-06-27T01:59:11.364Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/05/03/knowledge/know-DNS&localhost/</loc>
-    
-    <lastmod>2018-06-27T01:54:11.449Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/04/28/knowledge/know-NTP/</loc>
-    
-    <lastmod>2018-06-27T01:53:38.145Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/06/25/tip/tip-vm-extend/</loc>
-    
-    <lastmod>2018-06-27T01:52:52.847Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/04/28/tip/tip-vm-time/</loc>
-    
-    <lastmod>2018-06-27T01:52:13.185Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/06/12/knowledge/know-vm-network/</loc>
-    
-    <lastmod>2018-06-26T08:59:53.913Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2018/05/03/introduction/intro-modbus/</loc>
     
     <lastmod>2018-06-26T06:07:49.223Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/05/25/tip/tip-ftld-bug/</loc>
-    
-    <lastmod>2018-05-25T05:11:47.550Z</lastmod>
     
   </url>
   

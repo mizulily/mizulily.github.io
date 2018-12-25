@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-27T00:39:20.794Z</updated>
+  <updated>2018-12-24T06:11:13.680Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,200 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>单方ping不通的防火墙设置</title>
+    <link href="http://yoursite.com/2018/12/19/tip/tip-ping-icmp/"/>
+    <id>http://yoursite.com/2018/12/19/tip/tip-ping-icmp/</id>
+    <published>2018-12-19T02:47:05.000Z</published>
+    <updated>2018-12-24T06:11:13.680Z</updated>
+    
+    <content type="html"><![CDATA[<p>A与B在同一子网内，B可以ping通A，但A却ping不通B。关闭B防火墙后可以ping通。</p><p>原因：ICMP被B的防火墙禁止了<br>解决办法：防火墙-&gt;高级设置-&gt;入站规则，开启“文件与打印机共享（回显请求-ICMPv4-In）”</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;A与B在同一子网内，B可以ping通A，但A却ping不通B。关闭B防火墙后可以ping通。&lt;/p&gt;
+&lt;p&gt;原因：ICMP被B的防火墙禁止了&lt;br&gt;解决办法：防火墙-&amp;gt;高级设置-&amp;gt;入站规则，开启“文件与打印机共享（回显请求-ICMPv4-In）”&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="tip" scheme="http://yoursite.com/categories/tip/"/>
+    
+    
+      <category term="ping" scheme="http://yoursite.com/tags/ping/"/>
+    
+      <category term="firewall" scheme="http://yoursite.com/tags/firewall/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《Oracle精髓》笔记</title>
+    <link href="http://yoursite.com/2018/12/12/note/note-oracle/"/>
+    <id>http://yoursite.com/2018/12/12/note/note-oracle/</id>
+    <published>2018-12-12T03:02:57.000Z</published>
+    <updated>2018-12-12T08:37:06.836Z</updated>
+    
+    <content type="html"><![CDATA[<!-- toc --><!-- tocstop --><p>《Oracle精髓》第五版 O’Reilly系列 机械工业出版社</p><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;!-- toc --&gt;
+&lt;!-- tocstop --&gt;
+&lt;p&gt;《Oracle精髓》第五版 O’Reilly系列 机械工业出版社&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="note" scheme="http://yoursite.com/categories/note/"/>
+    
+    
+      <category term="Oracle" scheme="http://yoursite.com/tags/Oracle/"/>
+    
+      <category term="Database" scheme="http://yoursite.com/tags/Database/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解除虚拟机占用</title>
+    <link href="http://yoursite.com/2018/12/10/tip/tip-vm-using/"/>
+    <id>http://yoursite.com/2018/12/10/tip/tip-vm-using/</id>
+    <published>2018-12-10T07:35:14.000Z</published>
+    <updated>2018-12-24T06:11:35.064Z</updated>
+    
+    <content type="html"><![CDATA[<p>打开虚拟机时提示“该虚拟机似乎正在使用中。如果该虚拟机未在使用，请按‘获取所有权(T)’按钮获取它的所有权。否则，请按‘取消(C)’按钮以防损坏”。</p><p>这是由于虚拟机未正常关闭引起的，打开存放该虚拟机的目录，删除.lck文件夹即可。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;打开虚拟机时提示“该虚拟机似乎正在使用中。如果该虚拟机未在使用，请按‘获取所有权(T)’按钮获取它的所有权。否则，请按‘取消(C)’按钮以防损坏”。&lt;/p&gt;
+&lt;p&gt;这是由于虚拟机未正常关闭引起的，打开存放该虚拟机的目录，删除.lck文件夹即可。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="tip" scheme="http://yoursite.com/categories/tip/"/>
+    
+    
+      <category term="virtual machine" scheme="http://yoursite.com/tags/virtual-machine/"/>
+    
+      <category term="VMWare" scheme="http://yoursite.com/tags/VMWare/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《趣学CCNA》笔记</title>
+    <link href="http://yoursite.com/2018/10/30/note/note-ccna/"/>
+    <id>http://yoursite.com/2018/10/30/note/note-ccna/</id>
+    <published>2018-10-30T01:30:10.000Z</published>
+    <updated>2018-12-19T02:56:51.987Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="note" scheme="http://yoursite.com/categories/note/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>将Ghost系统还原到虚拟机</title>
+    <link href="http://yoursite.com/2018/10/19/tip/tip-vm-ghost/"/>
+    <id>http://yoursite.com/2018/10/19/tip/tip-vm-ghost/</id>
+    <published>2018-10-19T03:05:28.000Z</published>
+    <updated>2018-12-24T06:11:27.299Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li><p>创建空虚拟机<br>安装来源界面，选择“稍后安装操作系统”，并选择需要还原的系统和版本，选择合适的内存、硬盘后完成创建。</p></li><li><p>用老毛桃进入WinPE<br>打开老毛桃，左侧选择ISO模式，点击“生成ISO”会在D盘创建名为“老毛桃ISO”的文件夹。在刚创建的虚拟机设置里面，“硬件”标签中的光驱选择“使用ISO映像文件”并选择“老毛桃ISO”文件夹下的LMT.iso文件，“选项”标签中的高级，固件类型选择“BIOS”。<br>启动虚拟机后引导进入WinPE，选择一项进入，建议选择新机器的WinPE，启动成功后会进入老毛桃的WinPE，包含多个系统维护工具。</p></li><li><p>用老毛桃还原Ghost<br>首先进行硬盘分区，打开DiskGenius分区工具，点击快速分区，选择MBR或者GUID分区表类型，并完成分区。<br>点击“老毛桃PE装机工具”，选择“还原分区”，选择需要还原的Ghost文件和安装的分区，点击确定进行还原。</p></li><li><p>用老毛桃修复引导记录<br>还原完成后重启出现了“The boot configuration data for your pc is missing or contain errors”报错，点击启动“修复引导工具”并选择还原后的系统分区。<br>注意，若选用GUID分区，需要创建ESP分区并将引导放入ESP分区，并在虚拟机中设置UEFI启动。<br>修复完成后重启就可以正常启动啦！</p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;创建空虚拟机&lt;br&gt;安装来源界面，选择“稍后安装操作系统”，并选择需要还原的系统和版本，选择合适的内存、硬盘后完成创建。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;用老毛桃进入WinPE&lt;br&gt;打开老毛桃，左侧选择ISO模式，点击“生成ISO”会在D盘创建名为“老
+      
+    
+    </summary>
+    
+      <category term="tip" scheme="http://yoursite.com/categories/tip/"/>
+    
+    
+      <category term="virtual machine" scheme="http://yoursite.com/tags/virtual-machine/"/>
+    
+      <category term="VMWare" scheme="http://yoursite.com/tags/VMWare/"/>
+    
+      <category term="ghost" scheme="http://yoursite.com/tags/ghost/"/>
+    
+      <category term="LAOMAOTAO" scheme="http://yoursite.com/tags/LAOMAOTAO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>查询SQL Server表的索引</title>
+    <link href="http://yoursite.com/2018/10/08/tip/tip-sqlindex/"/>
+    <id>http://yoursite.com/2018/10/08/tip/tip-sqlindex/</id>
+    <published>2018-10-08T08:45:20.000Z</published>
+    <updated>2018-12-24T06:11:20.013Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.执行存储过程</p><pre><code>EXEC sp_helpindex 表名</code></pre><p>2.或者获取表的所有信息，即执行存储过程</p><pre><code>EXEC sp_help 表名</code></pre><p>在输出结果中包含’index_name’和’index_keys’项</p><p>3.将表的设计模式打开，查看表属性</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1.执行存储过程&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;EXEC sp_helpindex 表名
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.或者获取表的所有信息，即执行存储过程&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;EXEC sp_help 表名
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在输出结果中包含
+      
+    
+    </summary>
+    
+      <category term="tip" scheme="http://yoursite.com/categories/tip/"/>
+    
+    
+      <category term="SQL Server" scheme="http://yoursite.com/tags/SQL-Server/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>结构化数据、半结构化数据和非结构化数据</title>
+    <link href="http://yoursite.com/2018/09/28/knowledge/know-datastruct/"/>
+    <id>http://yoursite.com/2018/09/28/knowledge/know-datastruct/</id>
+    <published>2018-09-28T05:49:52.000Z</published>
+    <updated>2018-12-25T00:36:34.571Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>结构化数据</strong>是指可以使用关系型数据库表示和存储，表现为二维形式的数据。一般特点是数据以行为单位，一行数据表示一个实体信息，一列数据具有相同的类型。结构化数据的存储和排列是很有规律的，有利于查询和修改，但扩展性不好。</p><p><strong>半结构化数据</strong>不顾和关系型数据库的数据模型结构，但包含相关标记，用来分隔语义元素并对记录和字段分层，也称自描述的结构。半结构化数据，对于同一类实体可以有不同的属性，个数也不一定相同，属性的顺序不重要，可以看作树或者图的存储结构，常见的有xml和json文件，扩展性较好。</p><p><strong>非结构化数据</strong>就是没有固定结构的数据，如文档、图片、视频等，对于这类数据一般直接整体进行存储，且通常存储为二进制数据格式。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;结构化数据&lt;/strong&gt;是指可以使用关系型数据库表示和存储，表现为二维形式的数据。一般特点是数据以行为单位，一行数据表示一个实体信息，一列数据具有相同的类型。结构化数据的存储和排列是很有规律的，有利于查询和修改，但扩展性不好。&lt;/p&gt;
+&lt;p&gt;&lt;stron
+      
+    
+    </summary>
+    
+      <category term="knowledge" scheme="http://yoursite.com/categories/knowledge/"/>
+    
+    
+      <category term="data management" scheme="http://yoursite.com/tags/data-management/"/>
+    
+  </entry>
+  
+  <entry>
     <title>离散制造与流程制造</title>
     <link href="http://yoursite.com/2018/09/25/knowledge/know-manufacture/"/>
     <id>http://yoursite.com/2018/09/25/knowledge/know-manufacture/</id>
     <published>2018-09-25T07:33:34.000Z</published>
-    <updated>2018-09-27T00:39:20.794Z</updated>
+    <updated>2018-12-24T06:08:57.921Z</updated>
     
     <content type="html"><![CDATA[<p>根据生产中使用的物质形态，制造业可划分为离散制造和流程制造。</p><p><strong>离散制造</strong>是将不同的零部件加工、装配成最终产品，如汽车、电子、船舶等制造业。<br>离散制造主要特征为生产过程中没有发生物质改变，只是物料的形状和组合发生改变，一般具有相对固定的产品结构、原材料清单和零部件配套关系。<br>离散制造型企业自动化主要在单元级，一般是人员密集型企业，自动化水平相对较低，柔性要求高。其产能主要由加工要素配置合理性决定，既有按订单生产，也有按库存生产。由于产品工艺过程经常变更，因此需要良好的计划能力，对工序级的作业调度需要考虑优先级、设备能力、均衡生产等多个方面，通过良好的作业顺序提高生产效率。从这个意义上来说，离散制造型企业通过软件改进来提升竞争力更具潜力。</p><p><strong>流程制造</strong>是经过一些列加工装置使原材料进行化学或物理变化得到最终产品，如化工、食品、制药、钢铁等制造业。流程制造分为重复生产和连续生产两种类型，区别在于重复生产可以将产品一个个分开。流程制造在每个工艺过程中会出现主产品、副产品、中间产品、回流物和废物等，上级物料和下级物料的数量关系可能随温度、压力、湿度、季节、人员技术水平、工艺条件的不同而变化。<br>流程制造主要特征为计划制定相对简单和稳定，工具和设备为专用产品而设计，专注于物料数量、质量和工艺参数的控制。<br>流程制造型企业大多采用大规模大批量的生产方式，工艺技术成熟，自动化水平较高，只有满负荷生产才能降低成本，因此企业年度生产计划更重要，作业调度不一定需要精确到工序。其产能主要由设备产能决定，设备维护尤为重要，主要采用按库存的生产方式，生产计划的依据主要是市场预测。</p>]]></content>
     
@@ -75,7 +264,7 @@
     <link href="http://yoursite.com/2018/08/20/craft/craft-machine/"/>
     <id>http://yoursite.com/2018/08/20/craft/craft-machine/</id>
     <published>2018-08-20T02:27:14.000Z</published>
-    <updated>2018-09-28T05:44:48.264Z</updated>
+    <updated>2018-12-24T06:11:45.449Z</updated>
     
     <content type="html"><![CDATA[<p>金属加工主要分为粗加工、精加工和热加工等方式。<strong>粗加工</strong></p><p><strong>细加工</strong>包括磨削、</p><p>车削、磨削、铣削、镗削、钻削都是常见的金属冷加工方式。<br><strong>热加工</strong>包括铸造、焊接、锻造、冲压等。</p><p><strong>车削</strong>是指利用工件的旋转运动和刀具的直线或曲线运动来改变毛坯形状和尺寸，适合加工回转表面，如内外圆柱面、圆锥面、沟槽、螺纹等。<strong>铣削</strong>是指将工件固定，用高速旋转的铣刀在毛坯上走刀。</p><p><strong>卧式机床</strong>主轴横卧，工件夹在卡盘上将负荷传递给主轴，优点是观察和操作方便，适合加工中小型轮盘和轴类。<strong>立式机床</strong>主轴直立，工件重量分散到床身上，优点是承重能力强、刚性好，时候加工直径大的工件。</p><p>—-To Be Continued—-</p>]]></content>
     
@@ -151,7 +340,7 @@
     <link href="http://yoursite.com/2018/07/24/tip/tip-killservice/"/>
     <id>http://yoursite.com/2018/07/24/tip/tip-killservice/</id>
     <published>2018-07-24T04:41:59.000Z</published>
-    <updated>2018-07-24T04:46:46.888Z</updated>
+    <updated>2018-12-24T06:11:00.206Z</updated>
     
     <content type="html"><![CDATA[<p>状态为Starting或Stopping的服务无法在Service桌面应用或任务管理器的Service选项卡中启动或停止，可以通过命令行taskkill指令进行强制停止。</p><pre><code>taskkill /PID 任务管理器中的服务PID /F</code></pre>]]></content>
     
@@ -178,7 +367,7 @@
     <link href="http://yoursite.com/2018/07/05/tip/tip-backup-data/"/>
     <id>http://yoursite.com/2018/07/05/tip/tip-backup-data/</id>
     <published>2018-07-05T00:39:25.000Z</published>
-    <updated>2018-07-05T00:46:51.727Z</updated>
+    <updated>2018-12-24T06:10:41.339Z</updated>
     
     <content type="html"><![CDATA[<ol><li><p>数据库整体备份/还原<br>右键数据库名-任务-备份/还原，将数据库整体备份到一个.bak文件中。</p></li><li><p>生成脚本还原<br>需要单独备份SQL Server中某些表、存储过程、函数等对象，或导出部分表格数据时，右键数据库名-任务-生成脚本，选择需要备份的对象，点击“高级”，在“要编写脚本的数据类型”项中选择“仅限架构”、“仅限数据”或“架构和数据”。</p></li></ol>]]></content>
     
@@ -230,7 +419,7 @@
     <link href="http://yoursite.com/2018/06/26/training/train-safety/"/>
     <id>http://yoursite.com/2018/06/26/training/train-safety/</id>
     <published>2018-06-26T08:22:43.000Z</published>
-    <updated>2018-06-27T01:59:11.364Z</updated>
+    <updated>2018-12-24T06:10:00.739Z</updated>
     
     <content type="html"><![CDATA[<p>生产运作过程包括投入、转换、产出、反馈。<strong>生产管理</strong>是对生产运作系统的设计、运行和维护过程的管理。<br><strong>生产管理的基本问题</strong>包括产出要素管理、资源要素管理、环境要素管理等。<strong>产出要素管理</strong>包括质量、时间、成本、服务。<strong>资源要素管理</strong>包括设备设施管理、物料管理、人力资源管理、信息管理。<br><strong>生产效率</strong>，又称作业能率，是指实际产量与标准产量的比率。</p><h2><span id="现场管理">现场管理</span></h2><p><strong>现场管理的核心内容</strong>就是提高人的业务效率，并可以应对现场工作环境的改变。<strong>优化现场管理的实质</strong>是改善存在的差距。</p><h3><span id="6s管理方法">6S管理方法</span></h3><p><strong>整理（SEIRI）</strong>将工作场所的任何物品区分为有必要和没有必要的，除了有必要的留下来，其他的都消除掉。<br><strong>整顿（SEITON）</strong>把留下来的必要用的物品依规定位置摆放，并放置整齐加以标识。<br><strong>清扫（SEISO）</strong>将工作场所内看得见与看不见的地方清扫干净，保持工作场所干净、亮丽的环境。<br><strong>清洁（SEIKETSU）</strong>将整理、整顿、清扫进行到底，并且制度化，经常保持环境处在美观的状态。<br><strong>素养（SHITSUKE）</strong>每位成员养成良好的习惯，并遵守规则做事，培养积极主动的精神（也称习惯性）。<br><strong>安全（SECURITY）</strong>重视成员安全教育，每时每刻都有安全第一观念，防患于未然。 </p><h3><span id="现场管理五大要素">现场管理五大要素</span></h3><p>提高生产效率、产品质量以及预防安全事故都离不开人、机、料、法、环这五大要素。<br><strong>人（Man）</strong>就是指在现场的所有人员，是现场管理中最大的不可控因素。<br><strong>机（Machine）</strong>就是指生产中所用的设备、工具等。<br><strong>料（Material）</strong>就是指物料、备件、半成品等<br><strong>法（Method）</strong>是指制造产品所使用的方法、技术。<br><strong>环（Environment）</strong>是指生产现场的环境。</p><h2><span id="班组管理">班组管理</span></h2><p><strong>班组</strong>是企业组织生产经营活动的基本单位，是企业最基层的生产管理组织，班组执行程度的好坏直接影响公司产品品质。<strong>班组管理的基本内容</strong>是人、财、物、信息、时间。班组规范化管理中的三定是<strong>定岗、定责、定薪</strong>。</p><p><strong>班组创新管理的主要方式</strong>，按照变革的幅度划分有：渐进式创新、突变式创新、开拓式创新；按照自主性程度划分有：跟随式创新、自主式创新。<br><strong>班组常用的激励方法</strong>有需要激励法、强化激励法、目标激励法和公平激励法。</p><p><strong>班组长</strong>是企业的生产管理者。<br><strong>班组长管理的基本原则</strong>是职工本位原则、系统性原则、激励原则、效益原则、目标管理原则、质量第一原则。班组长每天上班第一件事是<strong>去生产现场</strong>。<br><strong>班组建设最有效的手段</strong>是自身示范，其次是培训。班组培训包括生产技能培训、规章制度培训、安全培训、应急问题能力培训、创新能力培训等。</p><p><strong>沟通的两个基本原则</strong>是目标关注和角色定位。<br><strong>下达命令的三大原则</strong>是任务明确具体、确认下属了解程度、激发下属执行意愿。</p><p><strong>召开班前会的目的</strong>包括营造工作气氛、进行工作安排、员工的教育和指导、传递公司信息等。</p><p><strong>班组安全员</strong>对本班组的<strong>班组人员关系</strong>等情况比较熟悉，工作更具有针对性和实效性。</p><h2><span id="质量管理">质量管理</span></h2><p>质量概念涵盖的对象是一切可单独描述和研究的事物。<strong>质量环</strong>是对产品质量的产生、形成和实现过程进行的抽象描述和理论概括。<br>影响产品质量的异常因素是可以发现和消除的。质量检验的实质是<strong>事后把关</strong>。质量检查的<strong>三检制</strong>指自检、互检、专检。<br><strong>质量管理的三个阶段</strong>为质量检验阶段、统计质量控制阶段、全面质量管理阶段。<strong>统计质量控制阶段</strong>的重点主要是确保产品质量符合规范和标准。<br><strong>全过程质量管理</strong>认为质量产生、形成和实现的过程中每个环节都影响最终的质量情况。</p><p><strong>PDCA循环</strong>，P-Plan计划，确定方针和目标；D-Do执行，实现计划中的内容；C-Check检查，总结执行计划的结果，找出问题；A-Action行动，对总结检查的结果进行处理。</p><h2><span id="安全管理">安全管理</span></h2><p><strong>安全</strong>是生产系统中的人员免遭不可承受危险的伤害。<strong>安全生产</strong>是专指国家对劳动者在劳动生产过程中可能引起伤亡的保护。<br><strong>安全管理目标</strong>包括生产安全事故控制目标、安全达标目标、文明施工实现目标等。<strong>安全管理的实施程序</strong>，第一步是危害辨别，第二步时危险评估，第三步是危险控制。<br>我国的安全工作方针是<strong>安全第一、预防为主、综合治理</strong>。</p><p><strong>本质安全</strong>是指通过设计等手段使生产设备或生产系统本身具有安全性。具体包括失误—安全（误操作不会导致事故发生或自动阻止误操作）、故障—安全（设备、工艺发生故障时还能暂时正常工作或自动转变安全状态）。</p><p><strong>安全标志</strong>是用于表达特定信息的标志，由（图形符号、安全色、几何图形、文字）组成。<br><strong>劳防用品</strong>分为一般劳动防护用品和特种劳动防护用品。</p><h3><span id="安全生产法">安全生产法</span></h3><p>安全生产法律体系既包括宪法规范（安全生产法律法规基础），也包括行政法律法规、技术性法律法规、程序性法律法规。<br><strong>《安全生产法》</strong>是对<strong>所有生产经营单位</strong>的安全生产普遍使用的基本法律。</p><p>生产经营单位最基本的安全管理制度是<strong>安全生产责任制</strong>。</p><p>生产经营单位的责任和义务包括：</p><ol><li>必须对安全设备进行<strong>经常性</strong>维护、保养</li><li>生产、经营、储存、使用危险品的车间、商店、仓库不得与员工宿舍在同一座建筑物内</li><li>生产经营单位负责人对本单位的安全生产工作全面负责</li><li>生产经营单位负责人接到事故报告后，应当迅速采取有效措施并组织抢救</li><li>对同一个项目的多个承包单位承租的安全生产工作实施<strong>统一协调、管理</strong></li></ol><p>从业人员在安全生产方面的权利包括：</p><ol><li>依法获得社会保险的权利</li><li>了解作业场所和岗位存在危险因素的权利</li><li>了解事故防范和应急措施，并对本单位<strong>安全生产工作</strong>提出意见和建议</li><li>对安全生产工作中存在的问题提出批评、检举和控告的权利，有权拒绝<strong>违章指挥</strong>和<strong>强令冒险作业</strong></li><li>发现直接危及人身安全的紧急情况时，有权进行<strong>紧急避险</strong></li><li>因生产安全事故受到损害时，除依法享有工伤社会保险外，还有依照民事法律相关规定，向本单位提出赔偿要求的权利</li></ol><p>从业人员在安全生产方面的义务包括：</p><ol><li>遵守国家有关安全生产方面的法律、法规和规章</li><li>作业过程中，严格遵守本单位<strong>安全生产规章制度和操作规程</strong>，服从安全生产管理</li><li>作业过程中，正确佩戴和使用<strong>劳动防护用品</strong></li><li>自觉接受生产经营单位有关安全生产的<strong>教育和培训</strong>，掌握所从事工作应当具备的安全生产知识</li></ol><h3><span id="事故处理">事故处理</span></h3><p><strong>事故隐患</strong>泛指生产系统中导致事故发生的人的不安全行为、物的不安全状态和管理上的缺陷等，分为一般事故隐患和重大事故隐患。</p><p>事故按照性质可以分为责任事故、非责任事故和破坏事故。<br>生产安全事故的调查应坚持<strong>“四不放过”原则</strong>，即：</p><ol><li>事故原因未查清不放过</li><li>事故责任人未受到处理不放过</li><li>事故责任人和周围群众未受到教育不放过</li><li>事故没有制定切实可行的整改措施不放过</li></ol><h3><span id="安全知识">安全知识</span></h3><p>发生触电事故的危险电压一般是从<strong>65V</strong>开始。</p>]]></content>
     
@@ -281,7 +470,7 @@
     <link href="http://yoursite.com/2018/06/25/tip/tip-vm-extend/"/>
     <id>http://yoursite.com/2018/06/25/tip/tip-vm-extend/</id>
     <published>2018-06-25T04:36:49.000Z</published>
-    <updated>2018-06-27T01:52:52.847Z</updated>
+    <updated>2018-12-24T06:11:23.743Z</updated>
     
     <content type="html"><![CDATA[<p>扩展虚拟机存储空间分为两类：</p><ol><li>仅仅空间不够用，可以添加一块新的虚拟硬盘，进入虚拟机后用磁盘管理配置为一个新盘符</li><li>扩展系统盘空间，使用VMWare中的工具（实用工具——扩展容量），可以扩展容量的磁盘不可以有快照（快照管理器——删除快照），同时虚拟磁盘文件不可以分成多个文件存储</li></ol><p>若扩展磁盘容量时提示“<strong>在部分链上无法执行所调用的函数，请打开父虚拟磁盘</strong>”，报错是由于虚拟磁盘分成多个文件存储，无法直接扩容，解决方法如下：</p><ol><li>在VMWare中选中该磁盘，确定需要转换的磁盘文件名并关闭 </li><li>打开DOS窗口，进入VMWare安装目录</li><li><p>输入命令</p><pre><code>vmware-vdiskmanager.exe -r &quot;虚拟磁盘文件旧.vmdk&quot; -t 0 &quot;虚拟磁盘文件新.vmdk&quot;</code></pre></li><li><p>合并完成后可以将新生成的单个虚拟磁盘文件替换原有多个虚拟磁盘文件</p></li><li>重新打开VMWare，选择扩容虚拟磁盘即可</li></ol><p>Reference <a href="https://blog.csdn.net/xx033138/article/details/78568985" target="_blank" rel="noopener">VMware:在部分链上无法执行所调用的函数，请打开父虚拟磁盘</a></p>]]></content>
     
@@ -311,7 +500,7 @@
     <link href="http://yoursite.com/2018/06/12/knowledge/know-vm-network/"/>
     <id>http://yoursite.com/2018/06/12/knowledge/know-vm-network/</id>
     <published>2018-06-12T08:08:32.000Z</published>
-    <updated>2018-06-26T08:59:53.913Z</updated>
+    <updated>2018-12-25T00:37:16.613Z</updated>
     
     <content type="html"><![CDATA[<p>VMware虚拟机有三种网络模式，分别是<strong>桥接模式(Bridged)</strong>、<strong>网络地址转换模式(NAT)</strong>、<strong>仅主机模式(Host-only)</strong>。</p><p>安装完成VMWare之后会自动生成三个虚拟网络，其中VMnet0用于桥接模式，VMnet1用于仅主机模式，VMnet8用于NAT模式，后两者提供DHCP服务不需要手动设定IP。</p><ol><li><p>桥接模式<br>该模式下虚拟机就像局域网中一台独立的主机，在分配局域网所要求的网络地址、子网掩码、网管等之后，与宿主计算机所在网络的其他计算机都可以互相访问。<br>若希望利用VMWare在局域网内建立虚拟服务器并为局域网用户提供网络服务，就应该选择桥接模式。<br>如果出现主机不能ping通虚拟机的情况，可以查看主机的防火墙的入站规则中对ICMP协议相关的配置文件是否启用。<br><img src="/2018/06/12/knowledge/know-vm-network/vmware_network_bridged.png" alt="bridged"></p></li><li><p>NAT模式<br>该模式下虚拟机网卡连接到宿主计算机VMnet8网卡上，加设了一个虚拟的NAT服务器，虚拟机可以与宿主计算机互访，对外访问时使用的时宿主机的IP地址，而外部无法访问虚拟机。<br>若希望将虚拟机连接外部网络，这种模式最简单，不需要做任何网络设置。<br><img src="/2018/06/12/knowledge/know-vm-network/vmware_network_nat.png" alt="bridged"></p></li><li><p>仅主机模式<br>该模式下虚拟机网卡连接到宿主计算机VMnet1网卡上，虚拟机只能与宿主计算机互访。<br>若希望创建与网内其他机器隔离的虚拟系统，进行特殊的网络调试工作，可以使用仅主机模式。<br><img src="/2018/06/12/knowledge/know-vm-network/vmware_network_hostonly.png" alt="bridged"></p></li></ol><p>Reference<br><a href="https://blog.csdn.net/collection4u/article/details/14127671" target="_blank" rel="noopener">Vmware虚拟机下三种网络模式配置</a><br><a href="http://penpenguanguan.com/337.html" target="_blank" rel="noopener">理解VMWare的三种网络连接模式(bridged、NAT、host-only)</a></p>]]></content>
     
@@ -339,7 +528,7 @@
     <link href="http://yoursite.com/2018/06/05/tip/tip-sql-declare/"/>
     <id>http://yoursite.com/2018/06/05/tip/tip-sql-declare/</id>
     <published>2018-06-05T01:47:13.000Z</published>
-    <updated>2018-07-05T00:40:48.019Z</updated>
+    <updated>2018-12-24T06:11:08.758Z</updated>
     
     <content type="html"><![CDATA[<p>与常见的高级语言不同，Transact-SQL中局部变量的作用域是所在的<strong>批处理</strong>，在IF语句内定义的变量在IF外仍可继续使用，而由于Transact-SQL是以GO语句来区分批处理的，在下一个GO之后无法继续使用。<br>具体示例见参考链接。</p><p>Reference <a href="http://www.cnblogs.com/breezeli/archive/2010/04/16/1713308.html" target="_blank" rel="noopener">SQL中declare变量的作用域</a></p>]]></content>
     
@@ -356,197 +545,6 @@
     
     
       <category term="SQL Server" scheme="http://yoursite.com/tags/SQL-Server/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>FTTM中的软件Bug</title>
-    <link href="http://yoursite.com/2018/05/25/tip/tip-ftld-bug/"/>
-    <id>http://yoursite.com/2018/05/25/tip/tip-ftld-bug/</id>
-    <published>2018-05-25T04:42:56.000Z</published>
-    <updated>2018-05-25T05:11:47.550Z</updated>
-    
-    <content type="html"><![CDATA[<p>在使用FactoryTalk Transaction Manager过程中，有时会遇到双击配置Live Data Connector时整个程序没有响应的情况，排除可能的问题包括：</p><ol><li>两个Configuration中重名的Connector</li><li>选择不存在的FactoryTalk View SE程序</li><li>打开FactoryTalk View SE服务器和客户端的顺序</li><li>Kepserver OPC服务器安装</li><li>硬盘剩余容量小</li></ol><p>这些情况都不会造成软件崩溃。<br>在一次尝试中意外复现了该问题，证明如下操作会造成Live Data Connector无法配置：<br>对于一个未绑定FactoryTalk View SE程序的Live Data Connector，双击初次配置并选择程序的过程中<strong>不可以</strong>选择“Cancel取消”，<strong>可以</strong>任意选择一个程序后在导入标签的页面选择“Close关闭”，否则FactoryTalk Transaction Manager会立即崩溃，再次打开可以启动自身或其他Configuration中的服务，但无法更改任何Live Data Connector的配置。</p><p>软件版本：<br>Windows Server 2008 R2<br>FactoryTalk Service Platform 2.74.00 (CPR9 SR7.4)<br>FactoryTalk Transaction Manager 10.10.00</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;在使用FactoryTalk Transaction Manager过程中，有时会遇到双击配置Live Data Connector时整个程序没有响应的情况，排除可能的问题包括：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;两个Configuration中重名的Connector&lt;/li&gt;
-
-      
-    
-    </summary>
-    
-      <category term="tip" scheme="http://yoursite.com/categories/tip/"/>
-    
-    
-      <category term="FactoryTalk" scheme="http://yoursite.com/tags/FactoryTalk/"/>
-    
-      <category term="Rockwell" scheme="http://yoursite.com/tags/Rockwell/"/>
-    
-      <category term="Transaction Manager" scheme="http://yoursite.com/tags/Transaction-Manager/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>《工业控制网络》笔记</title>
-    <link href="http://yoursite.com/2018/05/25/note/note-industrial/"/>
-    <id>http://yoursite.com/2018/05/25/note/note-industrial/</id>
-    <published>2018-05-25T04:41:39.000Z</published>
-    <updated>2018-09-28T05:41:35.246Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>《工业控制网络》 主编：王振力 人民邮电出版社 2012年1月第1版 TP273 ISBN: 978-7-115-30136-9 </strong><br>本书介绍了工业控制网络的特点、发展历程、技术现状和发展趋势，重点介绍了Modbus、Profibus、CAN、DeviceNet及CANopen等现场总线技术，还介绍了EAP、Profinet、HSE、EtherNet/IP及Modbus-TCP等工业以太网技术，并结合台达工业自动化产品有针对性地安排了大量工业控制网络应用案例和实验内容。<br><a id="more"></a></p><!-- toc --><ul><li><a href="#第一章-绪论">第一章 绪论</a><ul><li><a href="#11-工业自动控制系统历史">1.1 工业自动控制系统历史</a></li><li><a href="#12-工业控制网络特点">1.2 工业控制网络特点</a></li><li><a href="#13-传统控制网络现场总线">1.3 传统控制网络：现场总线</a></li><li><a href="#14-现代控制网络工业以太网">1.4 现代控制网络：工业以太网</a></li><li><a href="#16-工业控制网络发展趋势">1.6 工业控制网络发展趋势</a></li></ul></li><li><a href="#第二章-数据通信与网络基础">第二章 数据通信与网络基础</a><ul><li><a href="#21-数据通信系统概述">2.1 数据通信系统概述</a></li><li><a href="#22-数据编码技术">2.2 数据编码技术</a></li><li><a href="#24-工业控制网络的节点">2.4 工业控制网络的节点</a></li><li><a href="#通信传输介质">通信传输介质</a></li></ul></li></ul><!-- tocstop --><h2><span id="第一章-绪论">第一章 绪论</span></h2><h3><span id="11-工业自动控制系统历史">1.1 工业自动控制系统历史</span></h3><p>20世纪50年代前 - <strong>模拟仪表控制系统(Analog Control System, ACS)</strong>：精度低、干扰大<br>20世纪60年代起 - <strong>直接数字控制系统(Direct Digital Control, DDC)</strong>：中心计算机可靠性差<br>20世纪70年代起 - <strong>集散式控制系统(Distributed Control System, DCS)</strong>：电缆多、互操作性差<br>20世纪90年代起 - <strong>现场总线控制系统(Fieldbus Control System, FCS)</strong>：成本低、通信可靠</p><h3><span id="12-工业控制网络特点">1.2 工业控制网络特点</span></h3><p>工业控制网络是3C技术(Computer,Communication,Control)发展汇集成的结合点，是信息技术、数字化、智能化网络发展到现场的结果，是一类特殊的网络，与传统信息网络相比有如下特点：</p><ol><li>应用于工业现场，对环境要求高</li><li>包含多种复杂、异构的节点，多为嵌入式CPU</li><li>主要任务为传输工业数据、承担自动测控任务，实时性要求高</li></ol><h3><span id="13-传统控制网络现场总线">1.3 传统控制网络：现场总线</span></h3><p>现场总线技术源于欧洲，目前以欧美日地区最为发达，经过近20年的竞争和完善，目前较有生命力的有10多种，并仍处于激烈的市场竞争中。诞生于不同领域的总线技术往往对特定领域的适用性较好，如Profibus较适合工厂自动化、CAN适合汽车工业、FF适用于过程控制、LonWorks适用于楼宇自动化等。</p><h3><span id="14-现代控制网络工业以太网">1.4 现代控制网络：工业以太网</span></h3><p>工业以太网是在以太网技术和TCP/IP技术的基础上发展起来的一种工业控制网络。由于现场总线多种标准并存，异种网络通信困难，以太网进入工业自动化领域并快速发展。<br>以太网是在1972年发明的，并于1982年公布了以太网规范，IEEE802.3就是以这个技术规范为基础制定的。以太网技术具有成本低、通信速率和带宽高、兼容性好、软硬件资源丰富等诸多优点。<br>将工业以太网引入工业控制领域，主要有以下优点：</p><ol><li>采用TCP/IP国际标准，协议开放，互连和互操作性强</li><li>可实现远程访问和诊断</li><li>网络速度快，不同传输介质可以灵活组合</li><li>指出冗余连接配置，数据可达性强</li><li>成熟可靠的系统安全体系</li></ol><p>同时工业以太网也存在实时性、可靠性、安全性、总线供电等问题。</p><h3><span id="16-工业控制网络发展趋势">1.6 工业控制网络发展趋势</span></h3><p>纵观当今工业控制网络的发展趋势和市场需求，未来工业控制网络发展方向包括：</p><ol><li>提高通信的实时性：操作系统和交换技术的实时性</li><li>提高通信的可靠性：虚拟自动化网络</li><li>提高通信的安全性：黑通道机制和安全完整性等级SIL</li><li>多现场总线集成：<a href="/2018/05/17/introduction/intro-opc/" title="OPC及OPC UA技术">OPC及OPC UA技术</a></li><li>无线网络技术应用：工业WLAN协议(IEEE802.11n)、蓝牙(IEEE 802.15.1)和ZigBee(IEEE 802.15.4)</li></ol><h2><span id="第二章-数据通信与网络基础">第二章 数据通信与网络基础</span></h2><h3><span id="21-数据通信系统概述">2.1 数据通信系统概述</span></h3><p><strong>数据通信系统</strong>一般由信息源与信宿、发送与接收设备和传输介质几部分组成。<strong>信源和信宿</strong>是信息的产生者和使用者；<strong>发送设备</strong>将信息源产生的消息信号经过编码变换为便于传送的信号形式并送往传输介质；<strong>接收设备</strong>的任务是从带有干扰的信号中正确恢复出原始信息，解除多路复用等；<strong>传输介质</strong>指发送设备到接收设备之间的信号传递所经的媒介。<br><img src="/2018/05/25/note/note-industrial/comm_model.JPG" alt="comm_system"></p><p>衡量数据通信系统性能的指标包括：</p><ol><li><strong>误码率</strong>，二进制数据被错误传输的概率</li><li><strong>传输速率</strong>，单位时间内传送二进制数据的位数</li><li><strong>协议效率</strong>，所传数据包中有效二进制数据位数与所传输的总位数之比</li></ol><p>总体来说通信协议越简单，协议效率越好，但往往无法满足可靠性要求。</p><h3><span id="22-数据编码技术">2.2 数据编码技术</span></h3><p>在信息源中将原始的信息转换成代码表示的数据过程称为<strong>信源编码</strong>，如BCD码、ASCII码、汉字区位码等。<strong>信道编码</strong>是将信源编码变换到某种适合于信道传输的信号形式。</p><p>数字信号可以通过调制和解调在模拟通信信道中传输，根据所控制的载波参数不同分为幅移键控法(ASK)、频移键控法(FSK)和相移键控法(PSK)。</p><p>数字信号编码方法很多，信号电平有正负两种极性的称为<strong>双极性码</strong>，只有一种极性称为<strong>单极性码</strong>；信号电平在每位二进制数传输时间内都返回零电平的称为<strong>归零码</strong>，与之对应信号电平保持的称为<strong>不归零码</strong>，最普遍采用的信号编码方法为单极性不归零码。</p><h3><span id="24-工业控制网络的节点">2.4 工业控制网络的节点</span></h3><p><strong>可编程控制器</strong>，工业控制网络中不可或缺的设备，大多支持多种现场总线和工业以太网。<br><strong>传感器</strong>将检测感受到的信号按一定规律变换成标准信号，<strong>变送器</strong>将传感器输出信号转换为可以被控制器接受的标准信号。仪器仪表公司为了适应工业控制网络的需求，设计了智能型传感器与变送器，通过嵌入式微处理器实现现场总线和工业以太网的通信接口。<br><strong>执行器</strong>是过程控制系统中对被控对象施加控制作用的仪表，<strong>驱动器</strong>是运动控制系统中驱动各种电动机的装置。工业控制中使用最多的执行器和驱动器包括电动调节阀、变频器和伺服驱动器。<br><strong>人机界面</strong>泛指控制系统与操作人员交换信息的设备。<br><strong>网络互连设备</strong>是工业控制网络互联互通的关键，主要包括网卡（网络适配器）、中继器、集线器、网桥、交换机、路由器和网关。</p><h3><span id="通信传输介质">通信传输介质</span></h3><p>—-To Be Continued—-</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;《工业控制网络》 主编：王振力 人民邮电出版社 2012年1月第1版 TP273 ISBN: 978-7-115-30136-9 &lt;/strong&gt;&lt;br&gt;本书介绍了工业控制网络的特点、发展历程、技术现状和发展趋势，重点介绍了Modbus、Profibus、CAN、DeviceNet及CANopen等现场总线技术，还介绍了EAP、Profinet、HSE、EtherNet/IP及Modbus-TCP等工业以太网技术，并结合台达工业自动化产品有针对性地安排了大量工业控制网络应用案例和实验内容。&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="note" scheme="http://yoursite.com/categories/note/"/>
-    
-    
-      <category term="communication basis" scheme="http://yoursite.com/tags/communication-basis/"/>
-    
-      <category term="industrial control" scheme="http://yoursite.com/tags/industrial-control/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>OPC及OPC UA技术</title>
-    <link href="http://yoursite.com/2018/05/17/introduction/intro-opc/"/>
-    <id>http://yoursite.com/2018/05/17/introduction/intro-opc/</id>
-    <published>2018-05-17T07:11:12.000Z</published>
-    <updated>2018-09-28T05:44:05.129Z</updated>
-    
-    <content type="html"><![CDATA[<p>OPC是一个工业标准，属于<a href="https://opcfoundation.org/" target="_blank" rel="noopener">OPC基金会</a>，现有会员已超过220家，包括世界上所有主要的自动化控制系统、仪器仪表及过程控制系统的公司。</p><p>经典OPC规范基于微软Windows系统提供的COM/DCOM技术，用于软件之间数据交换的规范。OPC规范定义了几种不同的，用于访问过程数据、报警信息以及历史数据的版本规范：<br>OPC实时数据访问规范（OPC DA）定义了包括数据值，更新时间与数据品质信息的相关标准。<br>OPC历史数据访问规范（OPC HDA）定义了查询、分析历史数据和含有时标的数据的方法。<br>OPC报警事件访问规范（OPC AE）定义了报警与时间类型的消息类信息，以及状态变化管理等相关标准。</p><p>基于COM/DCOM的技术有着不可根除的缺点，因此随着技术的进步，以及数据交换各方面需求的提高，OPC基金会在2008年发布了新的规范：OPC UA。</p><p>OPC UA规范不再是基于COM/DCOM技术，因此OPC UA不仅能在Windows平台上实现，更可以在Linux，以及其他的嵌入式平台中实现。与传统OPC规范相同，OPC UA 同样有着相同的设计目标：</p><ol><li>功能等价：所有的基于COM的OPC规范中的功能，都映射到了OPC UA中。</li><li>多平台支持：支持从嵌入式的微控制器到基于云的分散式控制架构。</li><li>安全：信息加密，互访认证以及安全监听功能。</li><li>扩展性：不影响现有应用程序的情况下，就可以添加新的功能。</li><li>丰富的信息建模：可定义复杂的信息，而不再是单一的数据。</li></ol><p>相比于传统OPC，OPC UA具有以下特点：<br>一、功能方面，OPC UA不仅支持传统OPC的所有功能，更支持更多新的功能：1. 网络发现：自动查询本PC机中与当前网络中可用的OPC Server。2. 地址空间优化：所有的数据都可以分级结构定义，使得OPC Client不仅能够读取并利用简单数据，也能访问复杂的结构体。3. 互访认证：所有的读写数据/消息行为，都必须有访问许可。4. 数据订阅：针对OPCClient不同的配置与标准，提供数据/消息的监控，以及数值变化时的变化报告。5. 方案(Methods)功能：OPC UA中定义了通过在OPCServer中定义方案（Methods），来让OPC client执行特定的程序。<br>二、平台支持方面，由于不再基于COM/DCOM技术，OPC UA标准提供的更多的可支持的硬件或软件平台。硬件平台诸如传统的PC机、基于云的服务器、PLC、ARM等其他微处理器；而软件平台可支持微软的Windows、苹果公司的OSX、安卓，以及其他的基于Linux的分布式操作系统。<br>三、安全性方面，最大的变化是OPC UA可以通过任何单一端口（经管理员开放后）进行通信，这使得OPC通信不再会由于防火墙受到大量的限制</p><p>1、OPC UA在传输中可通过XML格式或者二进制格式来传输，并且可选择并兼容更多通用的IT通信协议，比如HTTPS。同时，在加密时，也能达到128或者256位的加密深度。在客户端与服务器的通信许可方面，OPC UA使用了OpenSSL许可证来规定哪些应用程序或系统可以使用OPC与另一端相连接。2、在建模方面，OPC UA将建模的架构由“数据建模”扩展为了“信息建模”。OPC UA规范中不仅仅提供了完整的面向对象的数据建模，同时也可定义复杂的多级结构体。数据类型或结构体都在配置文件（profiles）中定义，不仅可以定义已存在的传统OPC规范中的类型，还可以扩展加入其他的供应商或组织定义的新类型。</p><p><a href="http://blog.sina.com.cn/s/blog_a68809ea0102vk1p.html" target="_blank" rel="noopener">http://blog.sina.com.cn/s/blog_a68809ea0102vk1p.html</a></p><p>【1. OPC UA 规范组成】</p><p>OPC统一体系架构规范由十一部分组成。各部分规范概要介绍如下：</p><p>第一部分——概念<br>这部分规范描述了关于OPC UA 服务器和客户端的基本概念。</p><p>第二部分——安全模型<br>这部分规范描述了用于OPC UA客户端和OPC UA服务器之间安全交互的模型。</p><p>第三部分——地址空间模型<br>这部分规范描述了服务器地址空间的内容和结构。</p><p>第四部分——服务<br>这部分规范指定了OPC UA服务器提供的所有服务。</p><p>第五部分——信息模型<br>详细说明了为OPC UA服务器定义的标准数据类型和它们之间的关系。</p><p>第六部分——映射<br>这部分规范详细说明了OPC UA支持的传输映射和数据编码机制。</p><p>第七部分——协议<br>这部分规范详细说明了可用于OPC客户端和服务器的协议。这些协议提供了可用于一致性标准的服务和功能。服务器和客户端可依靠这些协议来进行测试。</p><p>第八部分——数据访问<br>详细说明了如何使用OPC UA进行数据访问。</p><p>第九部分——报警与事件<br>详细说明了使用OPC UA对报警与条件通道的支持。基本的系统包括对简单事件的支持；这部分规范拓展了对报警与事件的支持。</p><p>第十部分——程序<br>详细说明了OPC UA对程序访问的支持。</p><p>第十一部分——历史数据访问<br>详细说明了使用OPC UA对历史信息的访问。访问包括对历史数据和历史事件的访问。</p><p>【2. OPC UA 规范总貌】</p><p>2.1 介绍<br>    OPC统一体系结构是一个不依赖任何平台的标准，借助此标准各种各样的系统和设备能在不同的网络中以C/S的模式进行通信。OPC统一体系结构通过确认客户端和服务器的身份和自动抵御攻击来支持稳定的、安全的通信。OPC UA定义了一系列服务器所能提供的服务，特定的服务器需要向客户端详细说明它们所支持的服务。信息通过使用标准的和宿主程序定义的数据类型进行表达。服务器定义客户端可识别的对象模型。服务器可以提供查看实时数据和历史数据的接口，并且由报警和事件组件来通知客户端重要的变量或事件变化。OPC UA可以被映射到一种通信协议上并且数据可以以不同的形式进行编码来达到传输便捷和高效的目的。</p><p>2.2 设计目标</p><pre><code>OPC UA提供了一个一致的、完整的地址空间和服务模型。这就允许一个单一的OPC UA服务器把数据，报警与事件和历史信息统一到它的地址空间里，并且可以用一套统一的服务为它们向外提供接口。这些服务也包括一个统一的安全模型。对于地址空间中要被访问的对象，OPC UA也允许服务器给客户端提供类型定义。这使得标准信息模型可以被用来描述地址空间的内容。OPC UA允许数据以不同的格式暴露出来，包括二进制结构和XML文档。数据格式可能被OPC或其他标准组织和厂商定义。通过地址空间，客户端能向服务器查询描述了数据格式的元数据。在许多情况下，没有数据格式编程知识的客户也能够在运行时刻决定数据格式并能恰当的使用数据。OPC UA扩充了对节点间关联的支持而不是把节点限制在单一的层面上。这样就使得，一个OPC UA服务器能从不同的层面提供数据，来满足客户端有选择性查看数据的要求。这种灵活性，不仅融合了对类型定义的支持，而且使得OPC UA适用于更宽泛的领域。所以，OPC UA不仅致力于现场遥测的服务层面，而且在上层管理功能上也提供了更好的互用性。OPC UA的目标是源源不断地提供已公布的数据。所有OPC服务器的一个主要特色就是发布数据和事件通知。OPC UA为客户端提供的机制可以使其快速检测到传输过程中的错误，并从中恢复过来，而不用等到底层协议所设定的超时时间结束。OPC UA目标也要支持更广泛的服务器，从底层的PLC到企业服务器。从容量，性能，执行平台和功能上区分这些服务器。因此，OPC UA定义了一系列功能，不同的服务器可能只实现所有功能中的某些功能。为了推动互操作性，OPC UA定义了标准子集，与协议相关，以保证不同服务器的一致性。客户随后可以得到一个服务器的协议，然后依靠协议来和服务器进行交互。规范的第七部分详细说明了协议。把OPC UA规范划分成不同的部分是为了把核心设计从底层的运算处理和网络传输分离出来。这使得OPC UA在不改变基础设计的情况下，被运用到未来技术上称为可能。映射和数据编码被定义在规范的第六部分。这里也定义了两种数据编码形式：1、可扩展标记语言/文本形式；2、UA 二进制形式。另外，这部分规范给出了两种传输协议：1、TCP（传输控制协议）；2、运用于HTTP（超文本传输协议）之上的网络服务简单对象访问协议。由于客户端和服务器支持多种传输形式和编码形式，这使得最终用户可以在实施阶段来确定性能和网络服务兼容性之间的平衡点，而不是由OPC厂商在生产定义阶段确定其平衡点。OPC UA的设计对于基于微软COM技术的OPC客户端和服务器来说，是可移植的。可移植性在设计OPC UA的时候已经给予了考虑，以至于由OPC COM服务器（数据访问，历史数据访问和事件报警）暴露出来的数据可以通过OPC UA进行映射和暴露出来。生产厂商既可以直接遵循OPC UA标准移植他们的产品，也可以对先前的产品进行外部封装来达到从OPC COM到OPC UA的过渡。先前每种OPC规范都是定义自己的地址空间和相应服务。OPC UA用一套服务把先前的各种模型统一到一个单一的地址空间里。</code></pre><p>2.3 统一的模型和服务<br>2.3.1 安全模型<br>2.3.1.1 概要</p><pre><code>OPC UA安全性主要考虑：客户端和服务器的合法性，用户的合法性，客户端和服务器之间通信的一致性和机密性，功能发布的真实性。OPC UA安全性不指定包含了多种必需安全机制的环境。安全模型规范是非常重要的，但是它可能在特定条件下由系统的设计者来制定，也可能由其他标准来指定。另外，OPC UA提供了一个安全模型，规范的第二部分给予了定义，安全方法可以针对给定设备进行选择和配置来满足其安全性需要。安全模型包括标准安全机制和参数。在某些情况下，用于交换安全参数的机制需要定义，但是运用这些参数的方法不用定义。框架也定义了所有UA服务器必须支持的最少安全功能子集，即使这个功能子集中的功能没有被用在所有设备中。规范的第七部分定义了安全性协议。</code></pre><p>2.3.1.2 建立会话</p><pre><code>应用程序级的安全性依靠一个安全的通信通道，这个通信通道在应用程序会话过程中始终有效，并且保证所有被交换信息的完整性。这也就意味着用户在应用程序会话建立时进行一次认证就可以了，不需要第二次认证。规范的第四部分和第六部分定义了建立安全通道和应用程序会话的机制。当一个会话建立时，客户端和服务器应用程序协商构造一个安全通信通道并且交换表明客户端和服务器身份的软件认证书还要交换各自所能提供功能的信息。OPC基金会发布的软件认证书显示了OPC UA中应用程序需要实现的基本要求，而且OPC UA认证标准贯彻到了每个协议中。规范的第七部分详细说明了每个协议和认证书的细节。由其他组织发行的认证也可能在会话建立期间进行交换。会话建立之后，服务器会对用户身份进行鉴别，随后批准用户对服务器中对象访问的请求。诸如访问控制列表这样的授权机制，OPC UA规范没有给予详细说明。这些机制与特定的应用程序或系统有关。</code></pre><p>2.3.1.3 审核</p><pre><code>在客户端和服务器审查日志可查的条件下，用户级安全性为安全审查记录提供支持。如果在服务器端检测到一个安全连接问题，与之关联的客户端将在其审查日志中添加相应条目。OPC UA也为服务器提供了产生审查事件通知的功能，审查事件通知可以向有能力处理和记录审查事件的客户端报告审查性的事件。OPC UA定义了标准审查参数，审查日志和审查事件通知都可以包含这些参数。规范的第五部分定义了这些参数的数据类型。并不是所有的服务器和客户端都提供所有的审查特性。规范第七部分的协议显示了所要支持的审查特性。</code></pre><p>2.3.1.4 传输安全性</p><pre><code>OPC UA安全性弥补了大部分网络服务可选平台上底层结构安全性的不足。传输级别上的安全性可以用来加密并标记消息。加密和标记技术防止了信息的泄露，保证了消息的完整性。用于在OPC UA应用程序之间传递消息的底层通信技术提供了加密功能。规范的第七部分定义了用于给定协议上的加密和标记方法。</code></pre><p>2.3.2 统一的地址空间模型</p><pre><code>OPC UA服务器为客户端提供的对象和相关信息都是与服务器的地址空间有关的。OPC UA地址空间是以一组用引用形式连接起来的节点来描绘它的内容的。OPC定义的属性描述了节点的原始特性。属性仅仅是一个服务器中拥有数值的元素。用来定义属性值的数据类型既可以是简单数据类型也可以是高级数据类型。依照地址空间中节点的用途和含义，把它们进行分类。节点类为OPC UA的地址空间定义了元数据。规范的第三部分定义了OPC UA节点类。节点基类定义了所有节点的公共属性。包括认证，分类和命名。每个节点类继承这些属性并可以另外定义自己的属性。为了提高客户端和服务器的互操作性，在对所有服务器进行最高级标准化的条件下，对OPC UA的地址空间进行分层组织。尽管地址空间中的节点经过分层后，是相对独立唯一的，但是节点之间可能存在引用关系。这就使得地址空间可以描绘出一个相关联的节点网络。规范的第三部分定义了地址空间模型。OPC UA服务器把地址空间以视点的形式划分成不同的子集，以此向客户端扩充自己的访问通道。3.3.3.3展示了地址空间视点的更多细节。</code></pre><p>2.3.3 统一的对象模型<br>    OPC UA对象模型提供了一套一致的、完整的节点类来描述地址空间中的对象。模型中根据对象包含的变量，事件，方法以及和其他对象的关系来描绘对象。规范的第三部分详细介绍了对象模型。</p><pre><code>OPC UA对象模型允许服务器为对象提供类型定义和对象组件。类型定义可以被继承，也可以标准化或是由系统指定。对象类型可以由OPC基金会，其他权威组织，生产商或最终用户来定义。统一对象模型允许把数据访问，事件报警，和历史数据访问功能集成到一个单一的OPC UA服务器中。例如，OPC UA服务器可以把一个温度传感器描述成一个对象，它由温度值，报警参数和相应的报警上下限组成。</code></pre><p>2.3.4 统一的服务<br>    OPC UA客户端和服务器之间的接口被定义成了一系列服务。这些服务又被组织划分成不同的组，每个组叫做服务子集。第四节对服务集进行了讨论，规范的第四部分详细说明了服务集。</p><pre><code>OPC UA服务向客户提供两种功能服务。首先，它们允许客户端向服务器发送请求并接受服务器的相应消息。而且，它们也允许客户端向服务器订阅通知。服务器用通知来发布某些事件的发生，如报警，数据值的改变，事件以及程序执行结果。为了提高传输性能，OPC UA消息可以被编码生XML文本格式或是二进制格式。它们可以使用多种传输协议进行传输，例如：TCP或是通过HTTP的网络服务。规范的第七部分介绍了不同的编码和传输机制。</code></pre><p>2.4 会话<br>    OPC UA需要一个状态模型。状态信息被保存在应用程序会话之中。例如，状态信息可能包括订阅信息，用户认证书和跨越多重请求操作的延长点信息。</p><pre><code>会话就是客户端和服务器之间的合法连接。服务器可以根据有效资源，许可限制或其他约束条件来限制并发的会话的数量。每个会话是不依赖底层通信协议的。通信协议的失败不会自动终止会话。会话的终止依靠客户端或服务器的指令，或客户端的失效。在会话建立时，要设定会话的间隔时间。</code></pre><p>2.5 冗余</p><pre><code>OPC UA的机制确保了开发商可以用同一种方式开发冗余客户端和服务器。冗余可用于提高系统的稳定性，容错性和负载平衡能力。规范的第四部分介绍了冗余的细节。规范的子协议中要求冗余支持，但是基本协议不需要冗余支持。</code></pre><p> 【3. OPC UA 系统概要】</p><p>3.1 总貌<br>    OPC UA系统结构以相互联系对象的方式模型化了OPC UA客户端和服务器。每个系统可能包含多个客户端和服务器。每个客户端可能同时与一个或多个服务器相连接，每个服务器也可能同时与一个或多个客户端相连接。一个应用程序可能同时包含了服务器和客户端的两部分组件，以此来达到与其他服务器和客户端的连接要求，3.3.6节描述了这种情况。</p><p>3.2 OPC UA客户端</p><pre><code>OPC UA客户端结构模型化了C/S结构中的客户端部分。客户端应用程序的代码实现了客户端的功能。客户端应用程序使用OPC UA客户端的API来向OPC UA服务器发送和接收相关服务的请求和响应。第四节介绍了OPC UA的服务，规范的第四部分详细说明了OPC UA的服务。注意到“OPC UA客户端API”是一个内部接口，它把客户端应用程序代码从OPC UA通信堆栈中分离出来了。OPC UA通信堆栈把OPC UA客户端的API调用转换成消息，并通过底层消息体发送给服务器，通知服务器客户端应用程序的请求。OPC UA通信堆栈也接受来自服务器的响应和通知消息，并通过OPC UA客户端API传递给客户端应用程序。</code></pre><p>3.3 OPC UA服务器</p><pre><code>OPC UA服务器结构模型化了C/S结构中的服务器部分。</code></pre><p>3.3.1 真实对象</p><pre><code>真实对象是可以由OPC UA服务器应用程序直接访问的物理设备或包含在其内部的软件程序。</code></pre><p>3.3.2 OPC UA服务器应用程序</p><pre><code>OPC UA服务器应用程序的代码实现了服务器的功能。服务器应用程序使用OPC UA服务器的API来向OPC UA客户端发送和接收消息。注意到“OPC UA服务器API”是一个内部接口，它把服务器应用程序代码从OPC UA通信堆栈中分离出来了。这可能是OPC基金会提供的一个标准应用或是由生产商制定的应用。</code></pre><p>3.3.3 OPC UA地址空间<br>3.3.3.1 地址空间节点<br>    地址空间由一系列节点组成，客户端可以通过使用OPC UA服务（接口和方法）来访问节点。地址空间中的节点用来代表真实对象，以及它们的定义和相互之间的引用。</p><p>3.3.3.2 地址空间组织</p><pre><code>规范的第三部分讲述了用“积木”模型以一种标准的一致的方式构造空节点地址空间的细节。服务器可以在它们的地址空间中自由的组织它们选择的节点。节点间引用的使用，允许服务器可以把地址空间组织成分层结构，网状节点结构，或任何可能的结构混合。</code></pre><p>规范的第五部分定义了OPC UA节点，引用以及它们在地址空间中组织结构的标准。</p><p>3.3.3.3 地址空间概要<br>    视点是地址空间的子集。视点限制了服务器向客户端暴露的节点数量，也就限制了客户端所能请求到的地址空间尺寸。视点的默认设置是整个地址空间。服务器可以有选择的定义其他视点。视点也就隐藏地址空间中的某些节点和引用。通过地址空间视点是可见的，客户端可以通过浏览视点从而确定它们的结构。视点通常是分层结构的，这样利于客户用树形结构来理解和表示它。</p><p>3.3.3.4 对信息模型的支持<br>    OPC UA地址空间支持信息模型。支持如下：a)节点引用允许地址空间中的对象相互关联；b)对象类型节点为真实对象提供语义信息（类型定义）；c)对象类型节点支持类型定义子集；d)地址空间中暴露的数据类型定义允许使用工业上特定的数据类型；e)OPC UA的联合标准允许工业团体在OPC UA服务器的地址空间中制定它们特定信息模型的表示方法。</p><p>3.3.4.1 监控项<br>    监控项是由客户端在服务器中创建的实体，它用来监控地址空间中的节点和它们现实世界中所对应的实体。当监控项检测到数据变化或有事件或报警发生时，它们就产生通知，由订阅传送给客户端。</p><p>3.3.4.2 订阅<br>    订阅是服务器中的一个终端，它用来向客户端发布通知。它是客户端控制发布的条件。</p><p>3.3.5 OPC UA服务接口<br>3.3.5.1 概要<br>    第四节对OPC UA定义的服务进行了介绍，规范的第四部分对它们进行了详细说明。<br>3.3.5.2 请求/响应服务<br>    请求或响应服务是由客户端通过OPC UA服务接口调用的服务，它们对地址空间中的节点进行特定的操作并返回操作结果。<br>3.3.5.3 发布服务<br>    发布服务是由客户端通过OPC UA服务接口调用的服务，它的作用是周期性地向客户端发送通知。通知都包括事件，报警，数据变化以及程序输出结果。<br>3.3.6 服务器之间的关联<br>    服务器之间的关联就是一个服务器作为另一个服务器的客户端。服务器之间的关联考虑到了服务器的以下拓展能力：a)相互间以点对点的形式交换信息，这使得一个服务器可以连接一个冗余服务器或是一个远程服务器，用它们来保存系统额外的类型定义；b)以分层结构链接起来的服务器可以提供如下功能：1)集合底层服务器的数据；2)上层数据发往客户端；3)客户端的接口层为每个底层服务器提供单一访问结点。</p><p>【4. OPC UA 服务设置】</p><p>4.1 概要</p><pre><code>OPC UA服务被划分成不同的服务子集，每个子集定义了一组逻辑上相关的服务，用于显示服务器一个特定的方面。以下介绍了服务子集。规范的第四部分详细说明了服务子集和它们所包含的服务。无论一个服务器是否支持一个服务子集，服务子集中的特定服务都被服务器的协议所定义。规范的第七部分介绍了协议。</code></pre><p>4.2 安全通道服务集</p><pre><code>这个服务子集定义的服务用作去查询一个服务器的安全配置并且构造一个通信通道，这个通道可以确保与服务器交换的所有消息是保密的，完整的。规范的第二部分定义了UA安全性的基本概念。安全通道服务与其他服务不同，因为安全通道服务不被UA应用程序直接执行。它们是由UA应用程序所依靠的通信堆栈来提供的。例如，一个UA服务器可能被建立在一个简单对象访问协议堆栈上，这个协议堆栈允许应用程序使用网络服务安全会话规范建立安全通道。在这些情况下，当UA应用程序接收到消息时，它仅需要校验网络服务安全会话是可用的。规范的第六部分描述了安全通道服务如何被使用。安全通道是单一客户端和单一服务器之间一个长期运行的合法连接。通道内保存了许多只有客户端和服务器知道的密钥，这些密钥用于认证和编码在网络间传输的消息。安全通道服务允许客户端和服务器安全协商密钥的使用方法。服务器的安全策略描述了鉴定和加密消息的确切算法。一个客户端在构造一个安全通道时，必须选择一种服务器所支持的安全策略。当一个客户端和服务器通过安全通道进行通信时，它们必须核实所有正在传入的消息已经依照某种安全策略进行了标识和加密。一个UA应用程序不能处理通道内不符合安全策略的消息。安全通道与UA应用程序会话是相分离的，然而，一个UA应用程序会话只能通过唯一的安全通道进行访问。这说明了UA应用程序必须能够决定每条消息所联系的安全通道。通信堆栈提供了安全通道机制，但它不允许应用程序知道用于给定消息的安全通道，是不能用于完成安全通道服务的。UA应用程序用通信堆栈去交换消息。首先，用安全通道服务在通信堆栈间构造一个安全通道，使得通信堆栈之间可以安全交换消息。然后，UA应用程序使用会话服务子集构造一个UA应用程序会话。当一个客户端构造一个安全通道时，它可能提供一个用户标识。这个标识可能与客户端初始化UA应用程序会话时所提供的用户标识不一样。</code></pre><p>4.3 会话服务集<br>    这个服务集定义的服务用作去构造一个应用层的连接，这个连接就是为了一个特定用户而建立的会话。</p><p>4.4 节点管理服务集</p><pre><code>节点管理服务集允许客户去添加，修改以及删除地址空间里的节点。这些服务为服务器的构造提供了一个标准接口。</code></pre><p>4.5 视点服务集</p><pre><code>视点是由服务器创造的地址空间子集。视点的默认值是全部地址空间。因此，视点服务可以操作整个地址空间。规范的未来版本可能会制定相应服务来构造客户端定义的视点。视点服务允许客户端通过浏览视点查找节点。客户端在视点中进行分层查找，或通过节点间的引用进行查找。在这种方式下，也允许客户端查看视点的结构。</code></pre><p>4.6 属性服务集</p><pre><code>属性服务集用作去读写属性值。属性是由OPC UA定义的节点原始特性。它们可能不是由客户端和服务器来定义的。属性是地址空间中允许存放数据值的唯一元素。一个特定的属性，属性值用来定义变量的值。</code></pre><p>4.7 方法服务集</p><pre><code>方法代表了对象的函数调用。规范的第三部分定义了方法服务。方法被调用，无论成功与否，都在方法执行完毕后返回。不同方法的运行时间可能不同，这主要取决于它们运行的函数。方法服务集定义了调用方法的手段。一个方法必须是一个对象的组件。方法的暴露由浏览和查询服务来提供。客户端查询一个服务器所支持的方法是通过浏览特有的对象来完成的，这些对象标识了自己所支持的方法。因为方法可以控制设备操作的某些环节，所以方法调用可能依靠环境条件或其他条件。这使得反复调用同一种方法成为可能。需要调用方法的条件可能先前并没有返回一个允许该方法重新启动的状态。另外，有些方法可能支持并发调用，而有些方法只能单独调用。</code></pre><p>4.8 监视项服务集</p><pre><code>监视项服务集被客户端用来去构造和保存监视项。监视项用来监视变量，属性和事件通知器。当它们检测到特定条件发生时，它们会产生相应通知。监视项监视变量数值，状态或时间戳的变化；属性值的变化；以及事件通知器对新产生的报警和事件的报告。每个监视项都标识了要监视的项目和用于向客户端周期性发布通知的订阅（参阅4.9节）。每个监视项也指定了被监视项目的采集频率，对于变量和事件通知器，用过滤标准来决定什么时候来产生通知。属性的过滤标准由规范第四部分的属性定义来加以说明。监视项的采样速度可能比订阅的发布速度更快。所以，监视项可能由一个包含所有通知的队列组成，或是由一个仅含有最近通知的队列组成。第二种情况，队列里只含有一个通知。监视项服务也定义了一个监视模式。这个模式可以配置成三种模式：不采集不报告模式，仅采集模式，或是既采集也报告模式。当设置了采集模式时，服务器采集被监视项的值（或状态）。另外，通过对采集结果的判断来决定是否产生一个通知。如果需要产生通知，则构建一个通知队列。如果允许报告，则通知队列可以由订阅来向外发送。最后，一个监视项的报告选项能够由其他监视项来设置。在这种情况下，需要报告的监视项的监视模式仅需要再设置采集选项就可以了，当被触发的监视项产生一个通知时，需要报告的监视项通知队列由订阅来向外发送。</code></pre><p>4.9 订阅服务集</p><pre><code>订阅服务集由客户端构造并保持和使用。订阅周期性的发布来自它们相关监视项的通知消息（参阅4.7节）。所有通知都应包含一个公共消息头。通知的格式与被监视项目的类型有关。（例如：变量，属性，和事件通知器）。已构造出的存在的订阅并不依靠客户端与服务器的会话。这就允许由一个客户端来构造订阅，另一个客户端，可能是冗余客户端，从订阅上来接受通知消息。有些客户端并不需要订阅，所以订阅设置了一个由客户端周期性更新的生命周期属性。如果客户端没有成功更新订阅的生命周期，则订阅终止，服务器关闭订阅。当一个订阅被关闭后，所有与它关联的监视项都被删除。订阅也包括支持检测和恢复丢失消息的特性。每个通知消息都包含一个允许客户端检测丢失消息的序号。当没有通知在有效时间间隔内需要发送时，服务器发送一个保持消息，它含有最后一次被传送消息的序号。如果客户端在通信时间间隔终止之后还没有收到消息，它可以要求服务器重发先前消息。</code></pre><p>4.10 查询服务集</p><pre><code>查询服务集允许客户端选择地址空间中的一个节点子集或是一个视点中的节点子集，视点建立在客户端提供的过滤标准的基础上。被查询服务选择的节点和属性叫做一个结果集。结果集可能是节点的简单组合，其中也可能包含了节点间引用的结构。服务器可能发现有些查询不好处理，如查询诸如设备数据一样的实时数据，或是查询操作需要消耗大量资源或存在较长延时。这些情况下，服务器可以拒绝查询。----To Be Continued----</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;OPC是一个工业标准，属于&lt;a href=&quot;https://opcfoundation.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;OPC基金会&lt;/a&gt;，现有会员已超过220家，包括世界上所有主要的自动化控制系统、仪器仪表及过程控制系统的公司。
-      
-    
-    </summary>
-    
-      <category term="introduction" scheme="http://yoursite.com/categories/introduction/"/>
-    
-    
-      <category term="OPC" scheme="http://yoursite.com/tags/OPC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CC-Link通信协议</title>
-    <link href="http://yoursite.com/2018/05/16/introduction/intro-ccl/"/>
-    <id>http://yoursite.com/2018/05/16/introduction/intro-ccl/</id>
-    <published>2018-05-16T06:51:47.000Z</published>
-    <updated>2018-09-28T05:43:43.613Z</updated>
-    
-    <content type="html"><![CDATA[<p>—-To Be Continued—-</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;—-To Be Continued—-&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="introduction" scheme="http://yoursite.com/categories/introduction/"/>
-    
-    
-      <category term="industrial network - field bus - protocol" scheme="http://yoursite.com/tags/industrial-network-field-bus-protocol/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CIP通信协议及其衍生</title>
-    <link href="http://yoursite.com/2018/05/16/introduction/intro-cip/"/>
-    <id>http://yoursite.com/2018/05/16/introduction/intro-cip/</id>
-    <published>2018-05-16T06:38:11.000Z</published>
-    <updated>2018-09-28T05:43:46.609Z</updated>
-    
-    <content type="html"><![CDATA[<p>—-To Be Continued—-</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;—-To Be Continued—-&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="introduction" scheme="http://yoursite.com/categories/introduction/"/>
-    
-    
-      <category term="industrial network" scheme="http://yoursite.com/tags/industrial-network/"/>
-    
-      <category term="field bus" scheme="http://yoursite.com/tags/field-bus/"/>
-    
-      <category term="protocol" scheme="http://yoursite.com/tags/protocol/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>USS通用串行接口协议</title>
-    <link href="http://yoursite.com/2018/05/14/introduction/intro-uss/"/>
-    <id>http://yoursite.com/2018/05/14/introduction/intro-uss/</id>
-    <published>2018-05-14T08:37:37.000Z</published>
-    <updated>2018-09-28T05:44:20.271Z</updated>
-    
-    <content type="html"><![CDATA[<p>—-To Be Continued—-</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;—-To Be Continued—-&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="introduction" scheme="http://yoursite.com/categories/introduction/"/>
-    
-    
-      <category term="protocol" scheme="http://yoursite.com/tags/protocol/"/>
-    
-      <category term="USS" scheme="http://yoursite.com/tags/USS/"/>
-    
-      <category term="serial communication" scheme="http://yoursite.com/tags/serial-communication/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CRC循环冗余校验码</title>
-    <link href="http://yoursite.com/2018/05/14/knowledge/know-crc/"/>
-    <id>http://yoursite.com/2018/05/14/knowledge/know-crc/</id>
-    <published>2018-05-14T01:30:53.000Z</published>
-    <updated>2018-08-20T03:32:08.279Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>循环码</strong>(Cyclic Redundancy Check, CRC)是一种检错率高、编码效率高的检错码，通过除法运算来建立有效信息位和校验位之间的约定关系。<br><a id="more"></a><br>CRC码由两部分组成，前部分是<strong>信息码</strong>，后部分是<strong>校验码</strong>，若CRC码总共长$n$位，信息码长$k$位，则称为<strong>$(n,k)$码</strong>，$r=n-k$即冗余位长度，也就是校验码长度。</p><p>基本概念：</p><ul><li>$n$位二进制码可以表示最高次幂为$n-1$的多项式。</li><li><strong>按位除</strong>（模2除）运算实际上就是在除的过程中做异或运算，同时不考虑进位，直到余数的位数小于除数时得到最终余数。在异或运算中模2减与模2加真值表完全相同。</li></ul><p>对于一个给定的$(n,k)$码，可以证明存在最高次幂为$r$的<strong>生成多项式</strong>$G(x)$，满足</p><ol><li>最高位和最低位为1</li><li>当被传送信息任何一位发生错误时，被生成多项式做模2除后使余数不为0</li><li>不同位发生错误时使余数不同</li><li>对余数继续做模2除应使余数循环</li></ol><p>将这些条件反映为数学关系是复杂的，常用的对应不同码制的生成多项式$G(x)$详见<a href="https://en.wikipedia.org/wiki/Cyclic_redundancy_check" target="_blank" rel="noopener">Wikipedia</a>：</p><ul><li>CRC1:  $x^1+x^0$</li><li>CRC4:  $x^4+x^1+x^0$</li><li>CRC8:  $x^8+x^5+x^4+x^0$</li><li>CRC12: $x^{12}+x^{11}+x^3+x^2+x^0$</li><li>CRC16: $x^{16}+x^{15}+x^2+x^0$</li></ul><p>具体<strong>编码规则</strong>如下。</p><ol><li>接收方和发送方约定发送组的信息位k和冗余位r个数，选定生成多项式$G(x)$满足上述条件</li><li>发送方将原始数据左移$r$位得到$M(x)$，随后按位除生成多项式$G(x)$，得到余数$R(x)$，有$\frac{M(x)}{G(x)}=Q(x)…R(x)$</li><li>发送方将$M(x)$与$R(x)$连接（等同于模2加或模2减）后一起发送</li><li>接收方将收到的数据按位除生成多项式$G(x)$，若余数为$0$则传输正确，若余数不为$0$则传输错误，即$\frac{M(x)+R(x)}{G(x)}=\frac{M(x)-R(x)}{G(x)}=Q(x)…0$</li></ol><p>CRC校验码可以检查出全部单个错、全部离散二位错、全部奇数个数、全部长度小等于$k$位的突发错，并以$1-(1/2)^{k-1}$概率检查出长度位$k+1$位的突发错。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;循环码&lt;/strong&gt;(Cyclic Redundancy Check, CRC)是一种检错率高、编码效率高的检错码，通过除法运算来建立有效信息位和校验位之间的约定关系。&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="knowledge" scheme="http://yoursite.com/categories/knowledge/"/>
-    
-    
-      <category term="communication basis" scheme="http://yoursite.com/tags/communication-basis/"/>
-    
-      <category term="error-detecting code" scheme="http://yoursite.com/tags/error-detecting-code/"/>
     
   </entry>
   
