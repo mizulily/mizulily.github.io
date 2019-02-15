@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-24T06:11:13.680Z</updated>
+  <updated>2018-12-26T07:08:10.559Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows中工作组、域及账户</title>
+    <link href="http://yoursite.com/2018/12/26/knowledge/know-wkgp-dm-acc/"/>
+    <id>http://yoursite.com/2018/12/26/knowledge/know-wkgp-dm-acc/</id>
+    <published>2018-12-26T06:53:13.000Z</published>
+    <updated>2018-12-26T07:08:10.559Z</updated>
+    
+    <content type="html"><![CDATA[<p>局域网上的资源需要管理，<strong>工作组</strong>和<strong>域</strong>是两种不同的资源管理模式。</p><ol><li><p>工作组<br>工作组(Workgroup)是松散的管理方式，每台计算机管理员只能管理本地计算机，没有统一查找网络资源的机制，也没有统一的用户账户身份验证机制，用户（本地或远程）登录该计算机只能使用本机的用户账户来验证身份，是较小规模计算机网络的组织形式。计算机安装操作系统后，默认属于WORKGROUP工作组。</p></li><li><p>域<br>域(Domain)是相对严格的组织，至少有一台服务器负责每台连入局域网的电脑和用户的验证工作，称为<strong>域控制器</strong>。域控制器中包含了这个域的账户、密码、计算机信息等构成的数据库，仅当局域网计算机的域、账号、密码都正确时可以访问域中的资源，否则以对等网用户的方式访问共享资源。</p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;局域网上的资源需要管理，&lt;strong&gt;工作组&lt;/strong&gt;和&lt;strong&gt;域&lt;/strong&gt;是两种不同的资源管理模式。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;工作组&lt;br&gt;工作组(Workgroup)是松散的管理方式，每台计算机管理员只能管理本地计算机，没有统一查找网络
+      
+    
+    </summary>
+    
+      <category term="knowledge" scheme="http://yoursite.com/categories/knowledge/"/>
+    
+    
+      <category term="Windows" scheme="http://yoursite.com/tags/Windows/"/>
+    
+      <category term="System Management" scheme="http://yoursite.com/tags/System-Management/"/>
+    
+  </entry>
   
   <entry>
     <title>单方ping不通的防火墙设置</title>
@@ -520,31 +549,6 @@
       <category term="virtual machine" scheme="http://yoursite.com/tags/virtual-machine/"/>
     
       <category term="VMWare" scheme="http://yoursite.com/tags/VMWare/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Transact-SQL中变量的作用范围</title>
-    <link href="http://yoursite.com/2018/06/05/tip/tip-sql-declare/"/>
-    <id>http://yoursite.com/2018/06/05/tip/tip-sql-declare/</id>
-    <published>2018-06-05T01:47:13.000Z</published>
-    <updated>2018-12-24T06:11:08.758Z</updated>
-    
-    <content type="html"><![CDATA[<p>与常见的高级语言不同，Transact-SQL中局部变量的作用域是所在的<strong>批处理</strong>，在IF语句内定义的变量在IF外仍可继续使用，而由于Transact-SQL是以GO语句来区分批处理的，在下一个GO之后无法继续使用。<br>具体示例见参考链接。</p><p>Reference <a href="http://www.cnblogs.com/breezeli/archive/2010/04/16/1713308.html" target="_blank" rel="noopener">SQL中declare变量的作用域</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;与常见的高级语言不同，Transact-SQL中局部变量的作用域是所在的&lt;strong&gt;批处理&lt;/strong&gt;，在IF语句内定义的变量在IF外仍可继续使用，而由于Transact-SQL是以GO语句来区分批处理的，在下一个GO之后无法继续使用。&lt;br&gt;具体示例见参考链接。
-      
-    
-    </summary>
-    
-      <category term="tip" scheme="http://yoursite.com/categories/tip/"/>
-    
-    
-      <category term="SQL Server" scheme="http://yoursite.com/tags/SQL-Server/"/>
     
   </entry>
   
