@@ -113,7 +113,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/05/10/note/note-database/user_model.jpg">
 <meta property="og:image" content="http://yoursite.com/2018/05/10/note/note-database/data_type.jpg">
 <meta property="og:image" content="http://yoursite.com/2018/05/10/note/note-database/object_grant.jpg">
-<meta property="og:updated_time" content="2019-02-27T06:37:33.663Z">
+<meta property="og:updated_time" content="2019-02-28T01:16:07.207Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《数据库原理与应用》笔记">
 <meta name="twitter:description" content="《数据库原理与应用——SQL Server 2016版本》 主编：邓立国 佟强 清华大学出版社 2017年9月第1版 TP311.138 ISBN: 978-7-302-48305-2 本书系统地讲述数据库原理与SQL Server 2016的功能、应用及实践知识，包括关系数据库知识、数据库创建与维护、数据库表的操作管理及维护、完整性控制、查询与管理表数据、Transaction-SQL编程、存储">
@@ -367,7 +367,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-27 14:37:33" itemprop="dateModified" datetime="2019-02-27T14:37:33+08:00">2019-02-27</time>
+                <time title="修改时间：2019-02-28 09:16:07" itemprop="dateModified" datetime="2019-02-28T09:16:07+08:00">2019-02-28</time>
               
             
           </span>
@@ -423,8 +423,9 @@
 <ul>
 <li><a href="#第一章-数据库基础知识">第一章 数据库基础知识</a><ul>
 <li><a href="#11-数据库系统概论">1.1 数据库系统概论</a></li>
-<li><a href="#12-数据模型和数据库模式结构">1.2 数据模型和数据库模式结构</a></li>
-<li><a href="#13-数据库系统组成">1.3 数据库系统组成</a></li>
+<li><a href="#12-数据模型">1.2 数据模型</a></li>
+<li><a href="#13-数据库模式结构">1.3 数据库模式结构</a></li>
+<li><a href="#14-数据库系统组成">1.4 数据库系统组成</a></li>
 </ul>
 </li>
 <li><a href="#第二章-数据库设计">第二章 数据库设计</a></li>
@@ -464,11 +465,11 @@
 <!-- tocstop -->
 <h1><span id="第一章-数据库基础知识">第一章 数据库基础知识</span></h1><h2><span id="11-数据库系统概论">1.1 数据库系统概论</span></h2><p><strong>数据</strong>(Data)是指能输入计算机并能被计算机程序处理的所有符号，是数据库中存储的基本对象。数据被赋予的含义称为数据的语义。<br><strong>数据库</strong>(DataBase, DB)是指在计算机存储设备上建立起来的用于存储数据的仓库。按照一定的数学模型组织、描述和存储数据，使得数据库中的数据具有尽可能小的冗余度、较高的独立性和易扩展性。<br><strong>数据库管理系统</strong>(DataBase Management System, DBMS)是指位于用户和操作系统之间的数据管理软件，实现数据和数据库的管理和操作。<br><strong>数据库系统</strong>(DataBase System, DBS)是指带有数据库并利用数据库技术管理数据的计算机系统，一般由满足一定要求的计算机硬件和包括数据库、数据库管理系统、数据库应用开发系统在内的计算机软件，以及相关人员组成。</p>
 <p>对数据的管理经理了人工管理、文件系统管理和数据库管理三个主要阶段，数据库管理的主要优势为：数据结构化、数据共享性和独立性高、冗余度低、易扩充。</p>
-<h2><span id="12-数据模型和数据库模式结构">1.2 数据模型和数据库模式结构</span></h2><p><strong>数据模型</strong>是对现实世界进行模拟与抽象，是一组概念的集合，是数据库系统的核心和基础。</p>
+<h2><span id="12-数据模型">1.2 数据模型</span></h2><p><strong>数据模型</strong>是对现实世界进行模拟与抽象，是一组概念的集合，是数据库系统的核心和基础。</p>
 <p>数据模型通常由数据结构、数据操作和完整性约束三个部分组成。<br><strong>数据结构</strong>是数据对象的集合，描述了数据对象的类型、内容、属性及数据对象之间的关系，是对系统静态特性的描述。<strong>数据操作</strong>是允许执行操作的集合，是对系统动态特性的描述。<strong>数据完整性约束</strong>是规则的集合，是对数据之间制约和依存关系的描述，用于保证数据的完整性和一致性。</p>
 <p>数据模型分为概念模型、逻辑模型和物理模型三个抽象层级。<br><strong>概念模型</strong>是现实世界到信息世界的抽象，用符号记录现实世界的信息，与具体的计算机系统无关。基本概念有实体（客观存在并可相互区别的事务）、属性（实体所具有的某一特性）、码（唯一标识实体的属性集合）、域（属性的取值范围）、实体型（同类实体的共同属性）、实体集（同类实体的集合）、联系（包括实体型内部各个属性的联系和实体型之间的联系）。两个实体型之间的联系可以分为一对一、一对多、多对多三种。概念模型最常用的表示方法是<strong>实体-联系图</strong>(Entity-Relationship Graph, E-R图)，矩形表示实体型，椭圆表示属性，无向边和菱形表示联系并标注联系类型。<br><strong>逻辑模型</strong>是信息世界到计算机世界的抽象，不同的逻辑模型与DBMS有关。<br>目前比较成熟的逻辑模型有层次模型、网状模型和关系模型，层次模型以树结构表示数据之间的关联；网状模型以图结构表示数据之间的关联；关系模型以二维表表示数据之间的关联，概念单一、结构简单，建立在严格的数学概念基础上，是目前最重要、应用最广泛的逻辑模型。<br><strong>物理模型</strong>是逻辑模型在计算机中的存储结构，包含数据的存储和数据之间联系的存储。</p>
-<p>数据库系统通常采用三级模式和二级映象的系统结构，并以此保证了数据较高的逻辑独立性和物理独立性。<strong>三级模式结构</strong>是指外模式、模式和内模式，<strong>二级映象</strong>是指外模式/模式和模式/内模式的映象。<br><strong>外模式</strong>也称子模型或用户模式，是数据库用户的数据视图，是与某一应用有关的数据逻辑表示，应用程序开发依赖于数据的外模式。<br><strong>模式</strong>也称逻辑模式或概念模式，是数据库设计者用某种数据模型对全部数据的逻辑结构和特征的总体描述，是所有用户的公共数据视图。<br><strong>内模式</strong>也称物理模式或存储模式，描述了数据在存储介质上的存储方式和物理结构，一个数据库只有一个内模式，内模式由内模式描述语言来定义。<br><strong>外模式/模式映象</strong>实现了数据的逻辑独立性，即当数据的逻辑结构改变时，只需要改变相应的外模式/模式映象，不需要改变用户程序。对于每个外模式，数据库都有一个外模式/模式映象。<br><strong>模式/内模式映象</strong>实现了数据的物理独立性，当数据的存储结构发生变化时，只需要数据库管理员改变相应的模式/内模式映象，不需要改变模式。数据库的模式/内模式映象是唯一的。</p>
-<h2><span id="13-数据库系统组成">1.3 数据库系统组成</span></h2><p>数据库系统包括计算机硬件、计算机软件和人员。<br>数据库系统中的人员主要分为四类：<br><strong>数据库系统和数据库设计人员</strong>，前者负责应用系统需求分析和规范说明、确定系统硬件配置、参与数据库系统概要设计，后者负责数据库中数据的确定和各级模式的设计。<br><strong>应用程序员</strong>负责编写使用数据库的应用程序，应用程序可以对数据进行检索、建立、删除或修改。<br><strong>最终用户</strong>利用系统的接口或查询语言范围数据库。<br><strong>数据库管理员</strong>(Database Administrator, DBA)负责数据库的总体信息控制，即决定信息内容和结构、决定存储结构和存取策略、定义安全性要求和完整性约束条件、监控运行情况、改进性能等。<br><img src="/2018/05/10/note/note-database/user_model.jpg" alt="user_model"></p>
+<h2><span id="13-数据库模式结构">1.3 数据库模式结构</span></h2><p>数据库系统通常采用三级模式和二级映象的系统结构，并以此保证了数据较高的逻辑独立性和物理独立性。<strong>三级模式结构</strong>是指外模式、模式和内模式，<strong>二级映象</strong>是指外模式/模式和模式/内模式的映象。<br><strong>外模式</strong>也称子模型或用户模式，是数据库用户的数据视图，是与某一应用有关的数据逻辑表示，应用程序开发依赖于数据的外模式。<br><strong>模式</strong>也称逻辑模式或概念模式，是数据库设计者用某种数据模型对全部数据的逻辑结构和特征的总体描述，是所有用户的公共数据视图。<br><strong>内模式</strong>也称物理模式或存储模式，描述了数据在存储介质上的存储方式和物理结构，一个数据库只有一个内模式，内模式由内模式描述语言来定义。<br><strong>外模式/模式映象</strong>实现了数据的逻辑独立性，即当数据的逻辑结构改变时，只需要改变相应的外模式/模式映象，不需要改变用户程序。对于每个外模式，数据库都有一个外模式/模式映象。<br><strong>模式/内模式映象</strong>实现了数据的物理独立性，当数据的存储结构发生变化时，只需要数据库管理员改变相应的模式/内模式映象，不需要改变模式。数据库的模式/内模式映象是唯一的。</p>
+<h2><span id="14-数据库系统组成">1.4 数据库系统组成</span></h2><p>数据库系统包括计算机硬件、计算机软件和人员。<br>数据库系统中的人员主要分为四类：<br><strong>数据库系统和数据库设计人员</strong>，前者负责应用系统需求分析和规范说明、确定系统硬件配置、参与数据库系统概要设计，后者负责数据库中数据的确定和各级模式的设计。<br><strong>应用程序员</strong>负责编写使用数据库的应用程序，应用程序可以对数据进行检索、建立、删除或修改。<br><strong>最终用户</strong>利用系统的接口或查询语言范围数据库。<br><strong>数据库管理员</strong>(Database Administrator, DBA)负责数据库的总体信息控制，即决定信息内容和结构、决定存储结构和存取策略、定义安全性要求和完整性约束条件、监控运行情况、改进性能等。<br><img src="/2018/05/10/note/note-database/user_model.jpg" alt="user_model"></p>
 <h1><span id="第二章-数据库设计">第二章 数据库设计</span></h1><h1><span id="第三章-数据库编程">第三章 数据库编程</span></h1><h2><span id="31-关系数据库标准语言sql">3.1 关系数据库标准语言SQL</span></h2><p><strong>结构化查询语言（Structured Query Language, SQL）</strong>是关系数据库的标准语言，具有集数据查询、数据操作、数据定义和数据控制于一体的强大功能，通过九个动词来实现：SELECT、CREATE、DROP、ALTER、INSERT、UPDATE、DELETE、GRANT、REVOKE。</p>
 <!-- | SQL功能 | 动词 |
 | :-----: | :--- |
@@ -878,7 +879,15 @@ TO 被授权者[,..n] [WITH GRANT OPTION]
                     
                       
                     
-                    <span class="site-state-item-count">43</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">47</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -930,7 +939,7 @@ TO 被授权者[,..n] [WITH GRANT OPTION]
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第一章 数据库基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 数据库系统概论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">1.2 数据模型和数据库模式结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">1.3 数据库系统组成</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第二章 数据库设计</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第三章 数据库编程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">3.1 关系数据库标准语言SQL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">3.2 SQL Server中的Transact-SQL语言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">3.3 程序设计接口ODBC与JDBC</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第四章 认识SQL Server 2016</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第五章 数据库操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">5.1 数据库的操作</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第六章 数据表操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">6.1 数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">6.2 操作表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">6.4 表约束</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第七章 数据操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第八章 复杂查询</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">游标</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第九章 函数、存储过程与触发器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">10.1 存储过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">10.2 触发器</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第十一章 事务、定时作业和错误日志</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第十二章 数据库安全</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">10.4 权限管理</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第一章 数据库基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 数据库系统概论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">1.2 数据模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">1.3 数据库模式结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">1.4 数据库系统组成</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第二章 数据库设计</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第三章 数据库编程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">3.1 关系数据库标准语言SQL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">3.2 SQL Server中的Transact-SQL语言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">3.3 程序设计接口ODBC与JDBC</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第四章 认识SQL Server 2016</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第五章 数据库操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">5.1 数据库的操作</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第六章 数据表操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">6.1 数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">6.2 操作表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">6.4 表约束</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第七章 数据操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第八章 复杂查询</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">游标</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第九章 函数、存储过程与触发器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">10.1 存储过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">10.2 触发器</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第十一章 事务、定时作业和错误日志</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-text">第十二章 数据库安全</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">10.4 权限管理</span></a></li></ol></li></ol></div>
             
 
           </div>

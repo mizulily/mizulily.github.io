@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-02-28T00:46:32.483Z</updated>
+  <updated>2019-02-28T03:20:57.160Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,30 +17,56 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>know-opensource</title>
+    <title>开源软件协议</title>
     <link href="http://yoursite.com/2019/02/28/knowledge/know-opensource/"/>
     <id>http://yoursite.com/2019/02/28/knowledge/know-opensource/</id>
     <published>2019-02-28T00:46:32.000Z</published>
-    <updated>2019-02-28T00:46:32.483Z</updated>
+    <updated>2019-02-28T03:20:57.160Z</updated>
+    
+    <content type="html"><![CDATA[<p>现今存在的开源软件协议很多，而经过Open Source Initiative 组织通过批准的开源协议目前有60多种（<a href="http://www.opensource.org/licenses/alphabetical" target="_blank" rel="noopener">http://www.opensource.org/licenses/alphabetical</a> ）。</p><p>要分清楚不同的开源协议，需要了解以下基本概念。<br><strong>贡献者</strong>指对开源项目提供了代码的人或实体，按照贡献的先后又可分为创始人和参与者；<strong>获取者</strong>是指开源项目的使用者。<br><strong>源代码</strong>是指由各种语言写成的未经编译的程序文本；<strong>目标代码</strong>是指经过编译后生成类似“类库”的程序，提供各种接口给他人使用的代码，如dll, jar等。<br><strong>衍生模块</strong>是指依托或包含开源代码而产生的代码；<strong>独立模块</strong>是指参考或借助开源代码开发出来的独立的、不包含或依赖源代码的功能模块。</p><p><img src="/2019/02/28/knowledge/know-opensource/opensource.png" alt="licenses"></p><p>在OSI网站上被列为主流及被广泛使用的许可有：</p><ol><li><p>Apache License, 2.0 (<strong>Apache</strong>-2.0)<br>允许使用者以其他协议形式修改和重新发布代码，允许闭源商业发布和销售，同时鼓励代码共享和尊重原作者著作权。</p></li><li><p>Berkerly Software Distribution (<strong>BSD</strong> 3-Clause, BSD 2-Clause)<br>允许使用者以其他协议形式修改和重新发布代码，允许闭源商业发布和销售，同时鼓励代码共享和尊重原作者著作权。</p></li><li><p>General Public Licese (<strong>GPL</strong>)<br>源代码和目标代码免费使用，但修改或衍生的代码不允许作为闭源的商业软件发布和销售，同时修改或衍生的代码必须采用同样的GPL许可证。</p></li><li><p>Lesser General Public Licese (<strong>LGPL</strong>)<br>允许商业软件通过目标代码引用的方式使用LGPL类库而不需要开源，但是修改或新增的额外代码必须采用LGPL协议，因此适合作为第三方类库引用，而不适合做二次开发。</p></li><li><p>MIT license (<strong>MIT</strong>)<br>允许修改、使用甚至出售MIT协议的代码，但是必须在发行版里包含原许可协议的声明。</p></li><li><p>Mozilla Public License 2 (<strong>MPL</strong>v2)<br>允许免费重发布、修改和使用，但要求修改后的代码版权归软件的发起者，围绕该软件的所有代码版权都集中在发起者手中。</p></li><li><p>Common Development and Distribution License (<strong>CDDL</strong>-1.0)<br>MPL的扩展协议，允许公共版权使用，无专利费并提供专利保护，可集成于商业软件中，允许自行发布许可。</p></li><li><p>Eclipse Public License (<strong>EPL</strong>-1.0)<br>允许任意使用、分发、修改及修改后闭源二次商业发布，但必须声明商业发布的源代码或目标代码的原始版本时可以获取的，并告知获取方法。</p></li></ol>]]></content>
     
     <summary type="html">
     
+      
+      
+        &lt;p&gt;现今存在的开源软件协议很多，而经过Open Source Initiative 组织通过批准的开源协议目前有60多种（&lt;a href=&quot;http://www.opensource.org/licenses/alphabetical&quot; target=&quot;_blank&quot; rel=
+      
+    
     </summary>
     
+      <category term="knowledge" scheme="http://yoursite.com/categories/knowledge/"/>
+    
+    
+      <category term="open source" scheme="http://yoursite.com/tags/open-source/"/>
+    
+      <category term="license" scheme="http://yoursite.com/tags/license/"/>
     
   </entry>
   
   <entry>
-    <title>train-career</title>
+    <title>职业技能培训</title>
     <link href="http://yoursite.com/2019/02/28/training/train-career/"/>
     <id>http://yoursite.com/2019/02/28/training/train-career/</id>
     <published>2019-02-28T00:46:18.000Z</published>
-    <updated>2019-02-28T00:46:18.936Z</updated>
+    <updated>2019-02-28T00:51:24.229Z</updated>
+    
+    <content type="html"><![CDATA[<h2><span id="社交行为风格">社交行为风格</span></h2>]]></content>
     
     <summary type="html">
     
+      
+      
+        &lt;h2&gt;&lt;span id=&quot;社交行为风格&quot;&gt;社交行为风格&lt;/span&gt;&lt;/h2&gt;
+      
+    
     </summary>
     
+      <category term="training" scheme="http://yoursite.com/categories/training/"/>
+    
+    
+      <category term="career" scheme="http://yoursite.com/tags/career/"/>
+    
+      <category term="skill" scheme="http://yoursite.com/tags/skill/"/>
     
   </entry>
   
@@ -256,7 +282,7 @@
     <link href="http://yoursite.com/2018/09/28/knowledge/know-datastruct/"/>
     <id>http://yoursite.com/2018/09/28/knowledge/know-datastruct/</id>
     <published>2018-09-28T05:49:52.000Z</published>
-    <updated>2018-12-25T00:36:34.571Z</updated>
+    <updated>2019-02-28T00:54:03.661Z</updated>
     
     <content type="html"><![CDATA[<p><strong>结构化数据</strong>是指可以使用关系型数据库表示和存储，表现为二维形式的数据。一般特点是数据以行为单位，一行数据表示一个实体信息，一列数据具有相同的类型。结构化数据的存储和排列是很有规律的，有利于查询和修改，但扩展性不好。</p><p><strong>半结构化数据</strong>不顾和关系型数据库的数据模型结构，但包含相关标记，用来分隔语义元素并对记录和字段分层，也称自描述的结构。半结构化数据，对于同一类实体可以有不同的属性，个数也不一定相同，属性的顺序不重要，可以看作树或者图的存储结构，常见的有xml和json文件，扩展性较好。</p><p><strong>非结构化数据</strong>就是没有固定结构的数据，如文档、图片、视频等，对于这类数据一般直接整体进行存储，且通常存储为二进制数据格式。</p>]]></content>
     
@@ -491,9 +517,9 @@
     <link href="http://yoursite.com/2018/06/26/training/train-safety/"/>
     <id>http://yoursite.com/2018/06/26/training/train-safety/</id>
     <published>2018-06-26T08:22:43.000Z</published>
-    <updated>2018-12-24T06:10:00.739Z</updated>
+    <updated>2019-02-28T01:14:51.615Z</updated>
     
-    <content type="html"><![CDATA[<p>生产运作过程包括投入、转换、产出、反馈。<strong>生产管理</strong>是对生产运作系统的设计、运行和维护过程的管理。<br><strong>生产管理的基本问题</strong>包括产出要素管理、资源要素管理、环境要素管理等。<strong>产出要素管理</strong>包括质量、时间、成本、服务。<strong>资源要素管理</strong>包括设备设施管理、物料管理、人力资源管理、信息管理。<br><strong>生产效率</strong>，又称作业能率，是指实际产量与标准产量的比率。</p><h2><span id="现场管理">现场管理</span></h2><p><strong>现场管理的核心内容</strong>就是提高人的业务效率，并可以应对现场工作环境的改变。<strong>优化现场管理的实质</strong>是改善存在的差距。</p><h3><span id="6s管理方法">6S管理方法</span></h3><p><strong>整理（SEIRI）</strong>将工作场所的任何物品区分为有必要和没有必要的，除了有必要的留下来，其他的都消除掉。<br><strong>整顿（SEITON）</strong>把留下来的必要用的物品依规定位置摆放，并放置整齐加以标识。<br><strong>清扫（SEISO）</strong>将工作场所内看得见与看不见的地方清扫干净，保持工作场所干净、亮丽的环境。<br><strong>清洁（SEIKETSU）</strong>将整理、整顿、清扫进行到底，并且制度化，经常保持环境处在美观的状态。<br><strong>素养（SHITSUKE）</strong>每位成员养成良好的习惯，并遵守规则做事，培养积极主动的精神（也称习惯性）。<br><strong>安全（SECURITY）</strong>重视成员安全教育，每时每刻都有安全第一观念，防患于未然。 </p><h3><span id="现场管理五大要素">现场管理五大要素</span></h3><p>提高生产效率、产品质量以及预防安全事故都离不开人、机、料、法、环这五大要素。<br><strong>人（Man）</strong>就是指在现场的所有人员，是现场管理中最大的不可控因素。<br><strong>机（Machine）</strong>就是指生产中所用的设备、工具等。<br><strong>料（Material）</strong>就是指物料、备件、半成品等<br><strong>法（Method）</strong>是指制造产品所使用的方法、技术。<br><strong>环（Environment）</strong>是指生产现场的环境。</p><h2><span id="班组管理">班组管理</span></h2><p><strong>班组</strong>是企业组织生产经营活动的基本单位，是企业最基层的生产管理组织，班组执行程度的好坏直接影响公司产品品质。<strong>班组管理的基本内容</strong>是人、财、物、信息、时间。班组规范化管理中的三定是<strong>定岗、定责、定薪</strong>。</p><p><strong>班组创新管理的主要方式</strong>，按照变革的幅度划分有：渐进式创新、突变式创新、开拓式创新；按照自主性程度划分有：跟随式创新、自主式创新。<br><strong>班组常用的激励方法</strong>有需要激励法、强化激励法、目标激励法和公平激励法。</p><p><strong>班组长</strong>是企业的生产管理者。<br><strong>班组长管理的基本原则</strong>是职工本位原则、系统性原则、激励原则、效益原则、目标管理原则、质量第一原则。班组长每天上班第一件事是<strong>去生产现场</strong>。<br><strong>班组建设最有效的手段</strong>是自身示范，其次是培训。班组培训包括生产技能培训、规章制度培训、安全培训、应急问题能力培训、创新能力培训等。</p><p><strong>沟通的两个基本原则</strong>是目标关注和角色定位。<br><strong>下达命令的三大原则</strong>是任务明确具体、确认下属了解程度、激发下属执行意愿。</p><p><strong>召开班前会的目的</strong>包括营造工作气氛、进行工作安排、员工的教育和指导、传递公司信息等。</p><p><strong>班组安全员</strong>对本班组的<strong>班组人员关系</strong>等情况比较熟悉，工作更具有针对性和实效性。</p><h2><span id="质量管理">质量管理</span></h2><p>质量概念涵盖的对象是一切可单独描述和研究的事物。<strong>质量环</strong>是对产品质量的产生、形成和实现过程进行的抽象描述和理论概括。<br>影响产品质量的异常因素是可以发现和消除的。质量检验的实质是<strong>事后把关</strong>。质量检查的<strong>三检制</strong>指自检、互检、专检。<br><strong>质量管理的三个阶段</strong>为质量检验阶段、统计质量控制阶段、全面质量管理阶段。<strong>统计质量控制阶段</strong>的重点主要是确保产品质量符合规范和标准。<br><strong>全过程质量管理</strong>认为质量产生、形成和实现的过程中每个环节都影响最终的质量情况。</p><p><strong>PDCA循环</strong>，P-Plan计划，确定方针和目标；D-Do执行，实现计划中的内容；C-Check检查，总结执行计划的结果，找出问题；A-Action行动，对总结检查的结果进行处理。</p><h2><span id="安全管理">安全管理</span></h2><p><strong>安全</strong>是生产系统中的人员免遭不可承受危险的伤害。<strong>安全生产</strong>是专指国家对劳动者在劳动生产过程中可能引起伤亡的保护。<br><strong>安全管理目标</strong>包括生产安全事故控制目标、安全达标目标、文明施工实现目标等。<strong>安全管理的实施程序</strong>，第一步是危害辨别，第二步时危险评估，第三步是危险控制。<br>我国的安全工作方针是<strong>安全第一、预防为主、综合治理</strong>。</p><p><strong>本质安全</strong>是指通过设计等手段使生产设备或生产系统本身具有安全性。具体包括失误—安全（误操作不会导致事故发生或自动阻止误操作）、故障—安全（设备、工艺发生故障时还能暂时正常工作或自动转变安全状态）。</p><p><strong>安全标志</strong>是用于表达特定信息的标志，由（图形符号、安全色、几何图形、文字）组成。<br><strong>劳防用品</strong>分为一般劳动防护用品和特种劳动防护用品。</p><h3><span id="安全生产法">安全生产法</span></h3><p>安全生产法律体系既包括宪法规范（安全生产法律法规基础），也包括行政法律法规、技术性法律法规、程序性法律法规。<br><strong>《安全生产法》</strong>是对<strong>所有生产经营单位</strong>的安全生产普遍使用的基本法律。</p><p>生产经营单位最基本的安全管理制度是<strong>安全生产责任制</strong>。</p><p>生产经营单位的责任和义务包括：</p><ol><li>必须对安全设备进行<strong>经常性</strong>维护、保养</li><li>生产、经营、储存、使用危险品的车间、商店、仓库不得与员工宿舍在同一座建筑物内</li><li>生产经营单位负责人对本单位的安全生产工作全面负责</li><li>生产经营单位负责人接到事故报告后，应当迅速采取有效措施并组织抢救</li><li>对同一个项目的多个承包单位承租的安全生产工作实施<strong>统一协调、管理</strong></li></ol><p>从业人员在安全生产方面的权利包括：</p><ol><li>依法获得社会保险的权利</li><li>了解作业场所和岗位存在危险因素的权利</li><li>了解事故防范和应急措施，并对本单位<strong>安全生产工作</strong>提出意见和建议</li><li>对安全生产工作中存在的问题提出批评、检举和控告的权利，有权拒绝<strong>违章指挥</strong>和<strong>强令冒险作业</strong></li><li>发现直接危及人身安全的紧急情况时，有权进行<strong>紧急避险</strong></li><li>因生产安全事故受到损害时，除依法享有工伤社会保险外，还有依照民事法律相关规定，向本单位提出赔偿要求的权利</li></ol><p>从业人员在安全生产方面的义务包括：</p><ol><li>遵守国家有关安全生产方面的法律、法规和规章</li><li>作业过程中，严格遵守本单位<strong>安全生产规章制度和操作规程</strong>，服从安全生产管理</li><li>作业过程中，正确佩戴和使用<strong>劳动防护用品</strong></li><li>自觉接受生产经营单位有关安全生产的<strong>教育和培训</strong>，掌握所从事工作应当具备的安全生产知识</li></ol><h3><span id="事故处理">事故处理</span></h3><p><strong>事故隐患</strong>泛指生产系统中导致事故发生的人的不安全行为、物的不安全状态和管理上的缺陷等，分为一般事故隐患和重大事故隐患。</p><p>事故按照性质可以分为责任事故、非责任事故和破坏事故。<br>生产安全事故的调查应坚持<strong>“四不放过”原则</strong>，即：</p><ol><li>事故原因未查清不放过</li><li>事故责任人未受到处理不放过</li><li>事故责任人和周围群众未受到教育不放过</li><li>事故没有制定切实可行的整改措施不放过</li></ol><h3><span id="安全知识">安全知识</span></h3><p>发生触电事故的危险电压一般是从<strong>65V</strong>开始。</p>]]></content>
+    <content type="html"><![CDATA[<p>生产运作过程包括投入、转换、产出、反馈。<strong>生产管理</strong>是对生产运作系统的设计、运行和维护过程的管理。<br><strong>生产管理的基本问题</strong>包括产出要素管理、资源要素管理、环境要素管理等。<strong>产出要素管理</strong>包括质量、时间、成本、服务。<strong>资源要素管理</strong>包括设备设施管理、物料管理、人力资源管理、信息管理。<br><strong>生产效率</strong>，又称作业能率，是指实际产量与标准产量的比率。</p><h2><span id="1-现场管理">1. 现场管理</span></h2><p><strong>现场管理的核心内容</strong>就是提高人的业务效率，并可以应对现场工作环境的改变。<strong>优化现场管理的实质</strong>是改善存在的差距。</p><h3><span id="6s管理方法">6S管理方法</span></h3><p><strong>整理（SEIRI）</strong>将工作场所的任何物品区分为有必要和没有必要的，除了有必要的留下来，其他的都消除掉。<br><strong>整顿（SEITON）</strong>把留下来的必要用的物品依规定位置摆放，并放置整齐加以标识。<br><strong>清扫（SEISO）</strong>将工作场所内看得见与看不见的地方清扫干净，保持工作场所干净、亮丽的环境。<br><strong>清洁（SEIKETSU）</strong>将整理、整顿、清扫进行到底，并且制度化，经常保持环境处在美观的状态。<br><strong>素养（SHITSUKE）</strong>每位成员养成良好的习惯，并遵守规则做事，培养积极主动的精神（也称习惯性）。<br><strong>安全（SECURITY）</strong>重视成员安全教育，每时每刻都有安全第一观念，防患于未然。 </p><h3><span id="现场管理五大要素">现场管理五大要素</span></h3><p>提高生产效率、产品质量以及预防安全事故都离不开人、机、料、法、环这五大要素。<br><strong>人（Man）</strong>就是指在现场的所有人员，是现场管理中最大的不可控因素。<br><strong>机（Machine）</strong>就是指生产中所用的设备、工具等。<br><strong>料（Material）</strong>就是指物料、备件、半成品等<br><strong>法（Method）</strong>是指制造产品所使用的方法、技术。<br><strong>环（Environment）</strong>是指生产现场的环境。</p><h2><span id="2-班组管理">2. 班组管理</span></h2><p><strong>班组</strong>是企业组织生产经营活动的基本单位，是企业最基层的生产管理组织，班组执行程度的好坏直接影响公司产品品质。<strong>班组管理的基本内容</strong>是人、财、物、信息、时间。班组规范化管理中的三定是<strong>定岗、定责、定薪</strong>。</p><p><strong>班组创新管理的主要方式</strong>，按照变革的幅度划分有：渐进式创新、突变式创新、开拓式创新；按照自主性程度划分有：跟随式创新、自主式创新。<br><strong>班组常用的激励方法</strong>有需要激励法、强化激励法、目标激励法和公平激励法。</p><p><strong>班组长</strong>是企业的生产管理者。<br><strong>班组长管理的基本原则</strong>是职工本位原则、系统性原则、激励原则、效益原则、目标管理原则、质量第一原则。班组长每天上班第一件事是<strong>去生产现场</strong>。<br><strong>班组建设最有效的手段</strong>是自身示范，其次是培训。班组培训包括生产技能培训、规章制度培训、安全培训、应急问题能力培训、创新能力培训等。</p><p><strong>沟通的两个基本原则</strong>是目标关注和角色定位。<br><strong>下达命令的三大原则</strong>是任务明确具体、确认下属了解程度、激发下属执行意愿。</p><p><strong>召开班前会的目的</strong>包括营造工作气氛、进行工作安排、员工的教育和指导、传递公司信息等。</p><p><strong>班组安全员</strong>对本班组的<strong>班组人员关系</strong>等情况比较熟悉，工作更具有针对性和实效性。</p><h2><span id="3-质量管理">3. 质量管理</span></h2><p>质量概念涵盖的对象是一切可单独描述和研究的事物。<strong>质量环</strong>是对产品质量的产生、形成和实现过程进行的抽象描述和理论概括。<br>影响产品质量的异常因素是可以发现和消除的。质量检验的实质是<strong>事后把关</strong>。质量检查的<strong>三检制</strong>指自检、互检、专检。<br><strong>质量管理的三个阶段</strong>为质量检验阶段、统计质量控制阶段、全面质量管理阶段。<strong>统计质量控制阶段</strong>的重点主要是确保产品质量符合规范和标准。<br><strong>全过程质量管理</strong>认为质量产生、形成和实现的过程中每个环节都影响最终的质量情况。</p><p><strong>PDCA循环</strong>，P-Plan计划，确定方针和目标；D-Do执行，实现计划中的内容；C-Check检查，总结执行计划的结果，找出问题；A-Action行动，对总结检查的结果进行处理。</p><h2><span id="4-安全管理">4. 安全管理</span></h2><p><strong>安全</strong>是生产系统中的人员免遭不可承受危险的伤害。<strong>安全生产</strong>是专指国家对劳动者在劳动生产过程中可能引起伤亡的保护。<br><strong>安全管理目标</strong>包括生产安全事故控制目标、安全达标目标、文明施工实现目标等。<strong>安全管理的实施程序</strong>，第一步是危害辨别，第二步时危险评估，第三步是危险控制。<br>我国的安全工作方针是<strong>安全第一、预防为主、综合治理</strong>。</p><p><strong>本质安全</strong>是指通过设计等手段使生产设备或生产系统本身具有安全性。具体包括失误—安全（误操作不会导致事故发生或自动阻止误操作）、故障—安全（设备、工艺发生故障时还能暂时正常工作或自动转变安全状态）。</p><p><strong>安全标志</strong>是用于表达特定信息的标志，由（图形符号、安全色、几何图形、文字）组成。<br><strong>劳防用品</strong>分为一般劳动防护用品和特种劳动防护用品。</p><h3><span id="安全生产法">安全生产法</span></h3><p>安全生产法律体系既包括宪法规范（安全生产法律法规基础），也包括行政法律法规、技术性法律法规、程序性法律法规。<br><strong>《安全生产法》</strong>是对<strong>所有生产经营单位</strong>的安全生产普遍使用的基本法律。</p><p>生产经营单位最基本的安全管理制度是<strong>安全生产责任制</strong>。</p><p>生产经营单位的责任和义务包括：</p><ol><li>必须对安全设备进行<strong>经常性</strong>维护、保养</li><li>生产、经营、储存、使用危险品的车间、商店、仓库不得与员工宿舍在同一座建筑物内</li><li>生产经营单位负责人对本单位的安全生产工作全面负责</li><li>生产经营单位负责人接到事故报告后，应当迅速采取有效措施并组织抢救</li><li>对同一个项目的多个承包单位承租的安全生产工作实施<strong>统一协调、管理</strong></li></ol><p>从业人员在安全生产方面的权利包括：</p><ol><li>依法获得社会保险的权利</li><li>了解作业场所和岗位存在危险因素的权利</li><li>了解事故防范和应急措施，并对本单位<strong>安全生产工作</strong>提出意见和建议</li><li>对安全生产工作中存在的问题提出批评、检举和控告的权利，有权拒绝<strong>违章指挥</strong>和<strong>强令冒险作业</strong></li><li>发现直接危及人身安全的紧急情况时，有权进行<strong>紧急避险</strong></li><li>因生产安全事故受到损害时，除依法享有工伤社会保险外，还有依照民事法律相关规定，向本单位提出赔偿要求的权利</li></ol><p>从业人员在安全生产方面的义务包括：</p><ol><li>遵守国家有关安全生产方面的法律、法规和规章</li><li>作业过程中，严格遵守本单位<strong>安全生产规章制度和操作规程</strong>，服从安全生产管理</li><li>作业过程中，正确佩戴和使用<strong>劳动防护用品</strong></li><li>自觉接受生产经营单位有关安全生产的<strong>教育和培训</strong>，掌握所从事工作应当具备的安全生产知识</li></ol><h3><span id="事故处理">事故处理</span></h3><p><strong>事故隐患</strong>泛指生产系统中导致事故发生的人的不安全行为、物的不安全状态和管理上的缺陷等，分为一般事故隐患和重大事故隐患。</p><p>事故按照性质可以分为责任事故、非责任事故和破坏事故。<br>生产安全事故的调查应坚持<strong>“四不放过”原则</strong>，即：</p><ol><li>事故原因未查清不放过</li><li>事故责任人未受到处理不放过</li><li>事故责任人和周围群众未受到教育不放过</li><li>事故没有制定切实可行的整改措施不放过</li></ol><h3><span id="安全知识">安全知识</span></h3><p>发生触电事故的危险电压一般是从<strong>65V</strong>开始。</p>]]></content>
     
     <summary type="html">
     
