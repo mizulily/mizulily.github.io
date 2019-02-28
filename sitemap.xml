@@ -2,9 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2019/02/28/knowledge/know-opensource/</loc>
+    
+    <lastmod>2019-02-28T00:46:32.483Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/02/28/training/train-career/</loc>
+    
+    <lastmod>2019-02-28T00:46:18.936Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/10/note/note-database/</loc>
+    
+    <lastmod>2019-02-27T06:37:33.663Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/10/30/note/note-ccna/</loc>
+    
+    <lastmod>2019-02-27T06:31:41.480Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018/05/17/introduction/intro-opc/</loc>
     
-    <lastmod>2019-02-15T04:45:37.076Z</lastmod>
+    <lastmod>2019-02-27T05:13:49.383Z</lastmod>
     
   </url>
   
@@ -156,23 +184,9 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/05/10/note/note-database/</loc>
-    
-    <lastmod>2018-12-20T07:28:12.305Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2018/04/28/note/note-cs/</loc>
     
     <lastmod>2018-12-19T08:56:09.782Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/10/30/note/note-ccna/</loc>
-    
-    <lastmod>2018-12-19T02:56:51.987Z</lastmod>
     
   </url>
   

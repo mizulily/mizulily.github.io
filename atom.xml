@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-26T07:08:10.559Z</updated>
+  <updated>2019-02-28T00:46:32.483Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>know-opensource</title>
+    <link href="http://yoursite.com/2019/02/28/knowledge/know-opensource/"/>
+    <id>http://yoursite.com/2019/02/28/knowledge/know-opensource/</id>
+    <published>2019-02-28T00:46:32.000Z</published>
+    <updated>2019-02-28T00:46:32.483Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>train-career</title>
+    <link href="http://yoursite.com/2019/02/28/training/train-career/"/>
+    <id>http://yoursite.com/2019/02/28/training/train-career/</id>
+    <published>2019-02-28T00:46:18.000Z</published>
+    <updated>2019-02-28T00:46:18.936Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Windows中工作组、域及账户</title>
@@ -134,14 +162,29 @@
     <link href="http://yoursite.com/2018/10/30/note/note-ccna/"/>
     <id>http://yoursite.com/2018/10/30/note/note-ccna/</id>
     <published>2018-10-30T01:30:10.000Z</published>
-    <updated>2018-12-19T02:56:51.987Z</updated>
+    <updated>2019-02-27T06:31:41.480Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><!-- toc --><ul><li><a href="#522-ip地址分类">5.2.2 IP地址分类</a></li></ul><!-- tocstop --><h3><span id="522-ip地址分类">5.2.2 IP地址分类</span></h3><p>IPv4定义了5种地址类型，分别为A至E类。</p><p><strong>A类地址</strong>是最高位为0的地址，换算成十进制就是0.x.x.x~127.x.x.x之间的地址都属于A类地址，A类地址的前8位二进制数（第一段）是网络位。<br><strong>B类地址</strong>是最高两位为10的地址，换算成十进制就是128.x.x.x~191.x.x.x都属于B类地址，B类地址的前16位二进制数（第一、第二段）是网络位。<br><strong>C类地址</strong>是最高三位为110的地址，换算成十进制就是192.x.x.x~223.x.x.x都属于C类地址，C类地址的前24位二进制数（第一、第二、第三段）是网络位。<br><strong>D类地址</strong>是最高四位为1110的地址，换算成十进制就是224.x.x.x~239.x.x.x都属于D类地址，也就是<strong>组播地址</strong>。</p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;!-- toc --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#522-ip地址分类&quot;&gt;5.2.2 IP地址分类&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- tocstop --&gt;
+&lt;h3&gt;&lt;span id=&quot;522-ip地址分类&quot;&gt;5.2.2 I
+      
     
     </summary>
     
       <category term="note" scheme="http://yoursite.com/categories/note/"/>
     
+    
+      <category term="network" scheme="http://yoursite.com/tags/network/"/>
     
   </entry>
   
@@ -491,64 +534,6 @@
       <category term="network basis" scheme="http://yoursite.com/tags/network-basis/"/>
     
       <category term="transmission devide" scheme="http://yoursite.com/tags/transmission-devide/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>扩展虚拟机存储空间</title>
-    <link href="http://yoursite.com/2018/06/25/tip/tip-vm-extend/"/>
-    <id>http://yoursite.com/2018/06/25/tip/tip-vm-extend/</id>
-    <published>2018-06-25T04:36:49.000Z</published>
-    <updated>2018-12-24T06:11:23.743Z</updated>
-    
-    <content type="html"><![CDATA[<p>扩展虚拟机存储空间分为两类：</p><ol><li>仅仅空间不够用，可以添加一块新的虚拟硬盘，进入虚拟机后用磁盘管理配置为一个新盘符</li><li>扩展系统盘空间，使用VMWare中的工具（实用工具——扩展容量），可以扩展容量的磁盘不可以有快照（快照管理器——删除快照），同时虚拟磁盘文件不可以分成多个文件存储</li></ol><p>若扩展磁盘容量时提示“<strong>在部分链上无法执行所调用的函数，请打开父虚拟磁盘</strong>”，报错是由于虚拟磁盘分成多个文件存储，无法直接扩容，解决方法如下：</p><ol><li>在VMWare中选中该磁盘，确定需要转换的磁盘文件名并关闭 </li><li>打开DOS窗口，进入VMWare安装目录</li><li><p>输入命令</p><pre><code>vmware-vdiskmanager.exe -r &quot;虚拟磁盘文件旧.vmdk&quot; -t 0 &quot;虚拟磁盘文件新.vmdk&quot;</code></pre></li><li><p>合并完成后可以将新生成的单个虚拟磁盘文件替换原有多个虚拟磁盘文件</p></li><li>重新打开VMWare，选择扩容虚拟磁盘即可</li></ol><p>Reference <a href="https://blog.csdn.net/xx033138/article/details/78568985" target="_blank" rel="noopener">VMware:在部分链上无法执行所调用的函数，请打开父虚拟磁盘</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;扩展虚拟机存储空间分为两类：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;仅仅空间不够用，可以添加一块新的虚拟硬盘，进入虚拟机后用磁盘管理配置为一个新盘符&lt;/li&gt;
-&lt;li&gt;扩展系统盘空间，使用VMWare中的工具（实用工具——扩展容量），可以扩展容量的磁盘不可以有快照（快照管理器——删除快
-      
-    
-    </summary>
-    
-      <category term="tip" scheme="http://yoursite.com/categories/tip/"/>
-    
-    
-      <category term="virtual machine" scheme="http://yoursite.com/tags/virtual-machine/"/>
-    
-      <category term="VMWare" scheme="http://yoursite.com/tags/VMWare/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>虚拟机三种网络连接模式</title>
-    <link href="http://yoursite.com/2018/06/12/knowledge/know-vm-network/"/>
-    <id>http://yoursite.com/2018/06/12/knowledge/know-vm-network/</id>
-    <published>2018-06-12T08:08:32.000Z</published>
-    <updated>2018-12-25T00:37:16.613Z</updated>
-    
-    <content type="html"><![CDATA[<p>VMware虚拟机有三种网络模式，分别是<strong>桥接模式(Bridged)</strong>、<strong>网络地址转换模式(NAT)</strong>、<strong>仅主机模式(Host-only)</strong>。</p><p>安装完成VMWare之后会自动生成三个虚拟网络，其中VMnet0用于桥接模式，VMnet1用于仅主机模式，VMnet8用于NAT模式，后两者提供DHCP服务不需要手动设定IP。</p><ol><li><p>桥接模式<br>该模式下虚拟机就像局域网中一台独立的主机，在分配局域网所要求的网络地址、子网掩码、网管等之后，与宿主计算机所在网络的其他计算机都可以互相访问。<br>若希望利用VMWare在局域网内建立虚拟服务器并为局域网用户提供网络服务，就应该选择桥接模式。<br>如果出现主机不能ping通虚拟机的情况，可以查看主机的防火墙的入站规则中对ICMP协议相关的配置文件是否启用。<br><img src="/2018/06/12/knowledge/know-vm-network/vmware_network_bridged.png" alt="bridged"></p></li><li><p>NAT模式<br>该模式下虚拟机网卡连接到宿主计算机VMnet8网卡上，加设了一个虚拟的NAT服务器，虚拟机可以与宿主计算机互访，对外访问时使用的时宿主机的IP地址，而外部无法访问虚拟机。<br>若希望将虚拟机连接外部网络，这种模式最简单，不需要做任何网络设置。<br><img src="/2018/06/12/knowledge/know-vm-network/vmware_network_nat.png" alt="bridged"></p></li><li><p>仅主机模式<br>该模式下虚拟机网卡连接到宿主计算机VMnet1网卡上，虚拟机只能与宿主计算机互访。<br>若希望创建与网内其他机器隔离的虚拟系统，进行特殊的网络调试工作，可以使用仅主机模式。<br><img src="/2018/06/12/knowledge/know-vm-network/vmware_network_hostonly.png" alt="bridged"></p></li></ol><p>Reference<br><a href="https://blog.csdn.net/collection4u/article/details/14127671" target="_blank" rel="noopener">Vmware虚拟机下三种网络模式配置</a><br><a href="http://penpenguanguan.com/337.html" target="_blank" rel="noopener">理解VMWare的三种网络连接模式(bridged、NAT、host-only)</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;VMware虚拟机有三种网络模式，分别是&lt;strong&gt;桥接模式(Bridged)&lt;/strong&gt;、&lt;strong&gt;网络地址转换模式(NAT)&lt;/strong&gt;、&lt;strong&gt;仅主机模式(Host-only)&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;安装完成VMWare之后会
-      
-    
-    </summary>
-    
-      <category term="knowledge" scheme="http://yoursite.com/categories/knowledge/"/>
-    
-    
-      <category term="virtual machine" scheme="http://yoursite.com/tags/virtual-machine/"/>
-    
-      <category term="VMWare" scheme="http://yoursite.com/tags/VMWare/"/>
     
   </entry>
   
