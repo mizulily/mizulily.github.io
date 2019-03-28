@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-02-28T03:20:57.160Z</updated>
+  <updated>2019-03-28T03:07:07.441Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,89 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>WLAN关闭随机物理地址</title>
+    <link href="http://yoursite.com/2019/03/28/tip/tip-rand-mac/"/>
+    <id>http://yoursite.com/2019/03/28/tip/tip-rand-mac/</id>
+    <published>2019-03-28T02:22:37.000Z</published>
+    <updated>2019-03-28T03:07:07.441Z</updated>
+    
+    <content type="html"><![CDATA[<p>在Win 10中打开“网络和Internet”，在左侧选择“WLAN”，点击“硬件属性”，可以查看WLAN网卡的物理地址(MAC)。<br>发现WLAN无线网卡的物理地址会根据所连接的网络发生变化。<br>实际上这是由于系统打开了对于WLAN的<strong>随机硬件地址</strong>功能，该功能使他人不能轻易获取本机的MAC地址来跟踪位置，如果需要固定的MAC地址进行绑定时要将该功能关闭。<br>当没有无线网络连接时，下方“随机硬件地址”栏点击关闭，此时MAC地址将固定不变。<br>当连接到某个无线网络时，点击网络名称，进入此网络的设置，同样在“随机硬件地址”栏下选择关闭，随后断开并重新连接该无线网络，此时MAC地址将固定不变。<br>由于后一项设置针对当前网络连接，因此从安全方面考虑仅在常用的无线网络中关闭该项设置即可。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;在Win 10中打开“网络和Internet”，在左侧选择“WLAN”，点击“硬件属性”，可以查看WLAN网卡的物理地址(MAC)。&lt;br&gt;发现WLAN无线网卡的物理地址会根据所连接的网络发生变化。&lt;br&gt;实际上这是由于系统打开了对于WLAN的&lt;strong&gt;随机硬件地址&lt;
+      
+    
+    </summary>
+    
+      <category term="tip" scheme="http://yoursite.com/categories/tip/"/>
+    
+    
+      <category term="network" scheme="http://yoursite.com/tags/network/"/>
+    
+      <category term="WLAN" scheme="http://yoursite.com/tags/WLAN/"/>
+    
+      <category term="MAC" scheme="http://yoursite.com/tags/MAC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件开发术语汇总</title>
+    <link href="http://yoursite.com/2019/03/12/review/rev-softwaredev/"/>
+    <id>http://yoursite.com/2019/03/12/review/rev-softwaredev/</id>
+    <published>2019-03-12T04:45:21.000Z</published>
+    <updated>2019-03-13T03:18:00.973Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>架构</strong> 就是指人们根据自己对世界的认识，为解决某个问题，主动地、有目的地去识别问题，并进行分解、合并，解决这个问题的实践活动。<br>软件架构，就是将客户的不同需求抽象成为抽象组件，并且能够描述这些抽象组件之间的通信和调用。它不仅涉及到结构与行为，而且还涉及到系统的使用，功能，性能，适应性，重用性，可理解性，经济性和技术约束的权衡和美学考虑。</p><p><strong>框架</strong>是一个提供了诸多服务，供开发人员进行二次开发，实现具体功能的应用系统，是可被应用开发者定制的应用骨架。<br>框架不是架构，框架比架构更具体，更偏重于技术，而架构偏重于设计。一个架构可以通过多种框架来实现。</p><p><strong>模式</strong>是指从生产经验和生活经验中经过抽象和升华提炼出来的核心知识体系。模式（Pattern）其实就是解决某一类问题的方法论。软件设计模式强调的是一个设计问题的解决方法，是一套被反复使用、多数人知晓的、经过分类编目的、代码设计经验的总结。<br>一个架构中可能会出现多个设计模式来解决多个问题。</p><p><strong>模块</strong>是一个通用概念，可能从功能或其他目的来区分。程序模块，是指的一段能够实现某个有价值目标的的成员代码段。功能模块的说法一般在分析和设计阶段出现得比较频繁，一个功能模块来表示一组功能的集合。模块的定义原则应该是：<strong>高内聚</strong>和<strong>低耦合</strong></p><p><strong>组件</strong>是面向对象里面的一个重用的概念，也称为<strong>构件</strong>，是一个具象的概念，是封装了一个或多个程序模块的实体。组件强调的是封装，利用接口进行交互。因为封装有不同层次的封装，对应不同层次的接口，在谈论组件的时候一定要分辨清楚谈论的层次和范围。</p><p><strong>插件</strong>是满足一定接口规范的具有一定功能的程序模块，通过和应用程序的互动，来替应用程序增加一些特定的功能。开发者可以在自己软件系统中设计相应的接口以匹配某个插件，也可以设计一定的接口规范，来让别人开发插件。<br>插件是是组件的一个子类，就是将组件中具有某些特点的组件归为插件，这些特点是：益于与系统分离，接口明晰，可以替换的程序模块。</p><p><strong>控件</strong>可视化的组件。</p><p><strong>中间件</strong>提供系统软件和应用软件之间连接的软件，以便于软件各部件之间的沟通。</p><p>Reference<br><a href="https://www.cnblogs.com/doit8791/p/6129963.html" target="_blank" rel="noopener">软件架构、框架、模式、模块、组件、插件概念汇总</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;架构&lt;/strong&gt; 就是指人们根据自己对世界的认识，为解决某个问题，主动地、有目的地去识别问题，并进行分解、合并，解决这个问题的实践活动。&lt;br&gt;软件架构，就是将客户的不同需求抽象成为抽象组件，并且能够描述这些抽象组件之间的通信和调用。它不仅涉及到结构与
+      
+    
+    </summary>
+    
+      <category term="review" scheme="http://yoursite.com/categories/review/"/>
+    
+    
+      <category term="software development" scheme="http://yoursite.com/tags/software-development/"/>
+    
+      <category term="term" scheme="http://yoursite.com/tags/term/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>加密算法和数字证书</title>
+    <link href="http://yoursite.com/2019/03/06/knowledge/know-encryption/"/>
+    <id>http://yoursite.com/2019/03/06/knowledge/know-encryption/</id>
+    <published>2019-03-06T05:17:22.000Z</published>
+    <updated>2019-03-06T06:52:16.832Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>对称加密</strong>是指加密与解密使用同样的密钥，安全性取决于密钥长度。密钥大小要考虑安全性和效率的权衡，一般小于256bit。对称加密的一大缺点是密钥的管理和分配， 将密钥发送到请求方的过程中有很大风险会被拦截。常用的对称加密算法有DES和AES。</p><p><strong>非对称加密</strong>使用了一对密钥，公钥发送给任何请求它的人，私钥由自己保管。与对称加密相比，非对称加密安全性大大提高，但是效率很低。常用的非对称加密算法是RSA。<br><strong>公钥</strong>与<strong>私钥</strong>成对出现，公钥用来加密和验章，私钥用来解密和签章，用公钥加密的内容只能用私钥解密，用私钥加密的内容只能用公钥解密。<br>当用户接受文件时，对方用该用户的公钥加密，该用户用自己的私钥解密，保证该信息只能由他看到，即安全传输。<br>当用户发送文件时，用自己的私钥签名，对方用该用户的公钥解密，保证信息是由该用户发出的，即<strong>数字签名</strong>。签名加密的内容与文件内容有关时，可以验证文件内容在发送过程中未被修改。</p><p>为了弥补对称加密的安全性问题和非对称加密的效率问题，通常采用两者结合的方式，将对称加密的密钥通过非对称加密发送出去。<br><img src="/2019/03/06/knowledge/know-encryption/DES+RSA.jpg" alt="encryption"></p><p>CA(Certificate Authority)即证书授权中心，是负责管理和签发证书的第三方机构，一般来说CA具有足够的权威性，是所有行业和公众认可的。证书授权中心将申请者的公钥、申请者和颁发者信息以及自己的签名一起用自己的私钥加密，生成<strong>数字证书</strong>。发送方只需将数字证书附上，接收方使用CA的公钥解密数字证书，得到发送方的真实公钥，避免公钥和数字签名被篡改。<br>颁发者和使用者相同的证书为<strong>自签名证书</strong>。<strong>根证书</strong>是CA给自己颁发的证书，是信任链的起始点，安装CA根证书意味着对这个CA的信任。</p><p>证书的编码格式通常有PEM（base64编码）和DER（二进制编码）。</p><ul><li>.crt .cer 证书文件</li><li>.key 私钥文件</li><li>.csr 证书签名请求</li><li>.pfx .keystore 包含证书和私钥（需要密码）</li></ul><p>在Windows中可以通过在命令提示符中输入certmgr打开证书管理工具。</p><p>Reference<br><a href="https://zhuanlan.zhihu.com/p/31477508" target="_blank" rel="noopener">知乎专栏——公钥和私钥</a><br><a href="https://songlee24.github.io/2015/05/03/public-key-and-private-key/" target="_blank" rel="noopener">理解公钥和私钥</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;对称加密&lt;/strong&gt;是指加密与解密使用同样的密钥，安全性取决于密钥长度。密钥大小要考虑安全性和效率的权衡，一般小于256bit。对称加密的一大缺点是密钥的管理和分配， 将密钥发送到请求方的过程中有很大风险会被拦截。常用的对称加密算法有DES和AES。&lt;
+      
+    
+    </summary>
+    
+      <category term="knowledge" scheme="http://yoursite.com/categories/knowledge/"/>
+    
+    
+      <category term="encryption" scheme="http://yoursite.com/tags/encryption/"/>
+    
+      <category term="certification" scheme="http://yoursite.com/tags/certification/"/>
+    
+  </entry>
   
   <entry>
     <title>开源软件协议</title>
@@ -438,7 +521,7 @@
     <link href="http://yoursite.com/2018/07/24/tip/tip-killservice/"/>
     <id>http://yoursite.com/2018/07/24/tip/tip-killservice/</id>
     <published>2018-07-24T04:41:59.000Z</published>
-    <updated>2018-12-24T06:11:00.206Z</updated>
+    <updated>2019-03-28T02:35:38.190Z</updated>
     
     <content type="html"><![CDATA[<p>状态为Starting或Stopping的服务无法在Service桌面应用或任务管理器的Service选项卡中启动或停止，可以通过命令行taskkill指令进行强制停止。</p><pre><code>taskkill /PID 任务管理器中的服务PID /F</code></pre>]]></content>
     
@@ -456,7 +539,7 @@
       <category term="tip" scheme="http://yoursite.com/categories/tip/"/>
     
     
-      <category term="Service" scheme="http://yoursite.com/tags/Service/"/>
+      <category term="service" scheme="http://yoursite.com/tags/service/"/>
     
   </entry>
   
@@ -485,81 +568,6 @@
     
     
       <category term="SQL Server" scheme="http://yoursite.com/tags/SQL-Server/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数字通信发展历史与展望</title>
-    <link href="http://yoursite.com/2018/06/29/review/rev-mobilecomm/"/>
-    <id>http://yoursite.com/2018/06/29/review/rev-mobilecomm/</id>
-    <published>2018-06-29T06:56:27.000Z</published>
-    <updated>2018-09-28T05:40:54.700Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/2018/06/29/review/rev-mobilecomm/generation.jpg" alt="generations"></p><a id="more"></a><p>NOT DONE</p><p>LTE系统有两种制式：FDD-LTE和TDD-LTE，即频分双工LTE系统和时分双工LTE系统，二者技术的主要区别在于空中接口的物理层上（像帧结构、时分设计、同步等）。FDD-LTE系统空口上下行传输采用一对对称的频段接收和发送数据，而TDD-LTE系统上下行则使用相同的频段在不同的时隙上传输，相对于FDD双工方式，TDD有着较高的频谱利用率。</p><p>—-To Be Continued—-</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/2018/06/29/review/rev-mobilecomm/generation.jpg&quot; alt=&quot;generations&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="review" scheme="http://yoursite.com/categories/review/"/>
-    
-    
-      <category term="digital communication" scheme="http://yoursite.com/tags/digital-communication/"/>
-    
-      <category term="5G" scheme="http://yoursite.com/tags/5G/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>现场安全生产管理培训</title>
-    <link href="http://yoursite.com/2018/06/26/training/train-safety/"/>
-    <id>http://yoursite.com/2018/06/26/training/train-safety/</id>
-    <published>2018-06-26T08:22:43.000Z</published>
-    <updated>2019-02-28T01:14:51.615Z</updated>
-    
-    <content type="html"><![CDATA[<p>生产运作过程包括投入、转换、产出、反馈。<strong>生产管理</strong>是对生产运作系统的设计、运行和维护过程的管理。<br><strong>生产管理的基本问题</strong>包括产出要素管理、资源要素管理、环境要素管理等。<strong>产出要素管理</strong>包括质量、时间、成本、服务。<strong>资源要素管理</strong>包括设备设施管理、物料管理、人力资源管理、信息管理。<br><strong>生产效率</strong>，又称作业能率，是指实际产量与标准产量的比率。</p><h2><span id="1-现场管理">1. 现场管理</span></h2><p><strong>现场管理的核心内容</strong>就是提高人的业务效率，并可以应对现场工作环境的改变。<strong>优化现场管理的实质</strong>是改善存在的差距。</p><h3><span id="6s管理方法">6S管理方法</span></h3><p><strong>整理（SEIRI）</strong>将工作场所的任何物品区分为有必要和没有必要的，除了有必要的留下来，其他的都消除掉。<br><strong>整顿（SEITON）</strong>把留下来的必要用的物品依规定位置摆放，并放置整齐加以标识。<br><strong>清扫（SEISO）</strong>将工作场所内看得见与看不见的地方清扫干净，保持工作场所干净、亮丽的环境。<br><strong>清洁（SEIKETSU）</strong>将整理、整顿、清扫进行到底，并且制度化，经常保持环境处在美观的状态。<br><strong>素养（SHITSUKE）</strong>每位成员养成良好的习惯，并遵守规则做事，培养积极主动的精神（也称习惯性）。<br><strong>安全（SECURITY）</strong>重视成员安全教育，每时每刻都有安全第一观念，防患于未然。 </p><h3><span id="现场管理五大要素">现场管理五大要素</span></h3><p>提高生产效率、产品质量以及预防安全事故都离不开人、机、料、法、环这五大要素。<br><strong>人（Man）</strong>就是指在现场的所有人员，是现场管理中最大的不可控因素。<br><strong>机（Machine）</strong>就是指生产中所用的设备、工具等。<br><strong>料（Material）</strong>就是指物料、备件、半成品等<br><strong>法（Method）</strong>是指制造产品所使用的方法、技术。<br><strong>环（Environment）</strong>是指生产现场的环境。</p><h2><span id="2-班组管理">2. 班组管理</span></h2><p><strong>班组</strong>是企业组织生产经营活动的基本单位，是企业最基层的生产管理组织，班组执行程度的好坏直接影响公司产品品质。<strong>班组管理的基本内容</strong>是人、财、物、信息、时间。班组规范化管理中的三定是<strong>定岗、定责、定薪</strong>。</p><p><strong>班组创新管理的主要方式</strong>，按照变革的幅度划分有：渐进式创新、突变式创新、开拓式创新；按照自主性程度划分有：跟随式创新、自主式创新。<br><strong>班组常用的激励方法</strong>有需要激励法、强化激励法、目标激励法和公平激励法。</p><p><strong>班组长</strong>是企业的生产管理者。<br><strong>班组长管理的基本原则</strong>是职工本位原则、系统性原则、激励原则、效益原则、目标管理原则、质量第一原则。班组长每天上班第一件事是<strong>去生产现场</strong>。<br><strong>班组建设最有效的手段</strong>是自身示范，其次是培训。班组培训包括生产技能培训、规章制度培训、安全培训、应急问题能力培训、创新能力培训等。</p><p><strong>沟通的两个基本原则</strong>是目标关注和角色定位。<br><strong>下达命令的三大原则</strong>是任务明确具体、确认下属了解程度、激发下属执行意愿。</p><p><strong>召开班前会的目的</strong>包括营造工作气氛、进行工作安排、员工的教育和指导、传递公司信息等。</p><p><strong>班组安全员</strong>对本班组的<strong>班组人员关系</strong>等情况比较熟悉，工作更具有针对性和实效性。</p><h2><span id="3-质量管理">3. 质量管理</span></h2><p>质量概念涵盖的对象是一切可单独描述和研究的事物。<strong>质量环</strong>是对产品质量的产生、形成和实现过程进行的抽象描述和理论概括。<br>影响产品质量的异常因素是可以发现和消除的。质量检验的实质是<strong>事后把关</strong>。质量检查的<strong>三检制</strong>指自检、互检、专检。<br><strong>质量管理的三个阶段</strong>为质量检验阶段、统计质量控制阶段、全面质量管理阶段。<strong>统计质量控制阶段</strong>的重点主要是确保产品质量符合规范和标准。<br><strong>全过程质量管理</strong>认为质量产生、形成和实现的过程中每个环节都影响最终的质量情况。</p><p><strong>PDCA循环</strong>，P-Plan计划，确定方针和目标；D-Do执行，实现计划中的内容；C-Check检查，总结执行计划的结果，找出问题；A-Action行动，对总结检查的结果进行处理。</p><h2><span id="4-安全管理">4. 安全管理</span></h2><p><strong>安全</strong>是生产系统中的人员免遭不可承受危险的伤害。<strong>安全生产</strong>是专指国家对劳动者在劳动生产过程中可能引起伤亡的保护。<br><strong>安全管理目标</strong>包括生产安全事故控制目标、安全达标目标、文明施工实现目标等。<strong>安全管理的实施程序</strong>，第一步是危害辨别，第二步时危险评估，第三步是危险控制。<br>我国的安全工作方针是<strong>安全第一、预防为主、综合治理</strong>。</p><p><strong>本质安全</strong>是指通过设计等手段使生产设备或生产系统本身具有安全性。具体包括失误—安全（误操作不会导致事故发生或自动阻止误操作）、故障—安全（设备、工艺发生故障时还能暂时正常工作或自动转变安全状态）。</p><p><strong>安全标志</strong>是用于表达特定信息的标志，由（图形符号、安全色、几何图形、文字）组成。<br><strong>劳防用品</strong>分为一般劳动防护用品和特种劳动防护用品。</p><h3><span id="安全生产法">安全生产法</span></h3><p>安全生产法律体系既包括宪法规范（安全生产法律法规基础），也包括行政法律法规、技术性法律法规、程序性法律法规。<br><strong>《安全生产法》</strong>是对<strong>所有生产经营单位</strong>的安全生产普遍使用的基本法律。</p><p>生产经营单位最基本的安全管理制度是<strong>安全生产责任制</strong>。</p><p>生产经营单位的责任和义务包括：</p><ol><li>必须对安全设备进行<strong>经常性</strong>维护、保养</li><li>生产、经营、储存、使用危险品的车间、商店、仓库不得与员工宿舍在同一座建筑物内</li><li>生产经营单位负责人对本单位的安全生产工作全面负责</li><li>生产经营单位负责人接到事故报告后，应当迅速采取有效措施并组织抢救</li><li>对同一个项目的多个承包单位承租的安全生产工作实施<strong>统一协调、管理</strong></li></ol><p>从业人员在安全生产方面的权利包括：</p><ol><li>依法获得社会保险的权利</li><li>了解作业场所和岗位存在危险因素的权利</li><li>了解事故防范和应急措施，并对本单位<strong>安全生产工作</strong>提出意见和建议</li><li>对安全生产工作中存在的问题提出批评、检举和控告的权利，有权拒绝<strong>违章指挥</strong>和<strong>强令冒险作业</strong></li><li>发现直接危及人身安全的紧急情况时，有权进行<strong>紧急避险</strong></li><li>因生产安全事故受到损害时，除依法享有工伤社会保险外，还有依照民事法律相关规定，向本单位提出赔偿要求的权利</li></ol><p>从业人员在安全生产方面的义务包括：</p><ol><li>遵守国家有关安全生产方面的法律、法规和规章</li><li>作业过程中，严格遵守本单位<strong>安全生产规章制度和操作规程</strong>，服从安全生产管理</li><li>作业过程中，正确佩戴和使用<strong>劳动防护用品</strong></li><li>自觉接受生产经营单位有关安全生产的<strong>教育和培训</strong>，掌握所从事工作应当具备的安全生产知识</li></ol><h3><span id="事故处理">事故处理</span></h3><p><strong>事故隐患</strong>泛指生产系统中导致事故发生的人的不安全行为、物的不安全状态和管理上的缺陷等，分为一般事故隐患和重大事故隐患。</p><p>事故按照性质可以分为责任事故、非责任事故和破坏事故。<br>生产安全事故的调查应坚持<strong>“四不放过”原则</strong>，即：</p><ol><li>事故原因未查清不放过</li><li>事故责任人未受到处理不放过</li><li>事故责任人和周围群众未受到教育不放过</li><li>事故没有制定切实可行的整改措施不放过</li></ol><h3><span id="安全知识">安全知识</span></h3><p>发生触电事故的危险电压一般是从<strong>65V</strong>开始。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;生产运作过程包括投入、转换、产出、反馈。&lt;strong&gt;生产管理&lt;/strong&gt;是对生产运作系统的设计、运行和维护过程的管理。&lt;br&gt;&lt;strong&gt;生产管理的基本问题&lt;/strong&gt;包括产出要素管理、资源要素管理、环境要素管理等。&lt;strong&gt;产出要素管理&lt;/str
-      
-    
-    </summary>
-    
-      <category term="training" scheme="http://yoursite.com/categories/training/"/>
-    
-    
-      <category term="safety" scheme="http://yoursite.com/tags/safety/"/>
-    
-      <category term="management" scheme="http://yoursite.com/tags/management/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>网络互连设备及作用</title>
-    <link href="http://yoursite.com/2018/06/26/knowledge/know-networkdevice/"/>
-    <id>http://yoursite.com/2018/06/26/knowledge/know-networkdevice/</id>
-    <published>2018-06-26T06:35:07.000Z</published>
-    <updated>2018-09-28T05:43:15.728Z</updated>
-    
-    <content type="html"><![CDATA[<p>两个网络实现互访和通信，需要转换两者协议、处理速率和带宽差别等，解决这些问题并进行协调、转换的设备就是<strong>网络互连设备</strong>，包括网卡、中继器、集线器、网桥、交换机、路由器、网关等。两个网络实现通信的难度取决于两者的差别程度，与OSI七层模型关系密切。</p><a id="more"></a><p>NOT DONE<br><!--more--><br>网卡<br>中继器<br>集线器<br>网桥<br>交换机<br>路由器<br>网关</p><p>—-To Be Continued—-</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;两个网络实现互访和通信，需要转换两者协议、处理速率和带宽差别等，解决这些问题并进行协调、转换的设备就是&lt;strong&gt;网络互连设备&lt;/strong&gt;，包括网卡、中继器、集线器、网桥、交换机、路由器、网关等。两个网络实现通信的难度取决于两者的差别程度，与OSI七层模型关系密切。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="knowledge" scheme="http://yoursite.com/categories/knowledge/"/>
-    
-    
-      <category term="network basis" scheme="http://yoursite.com/tags/network-basis/"/>
-    
-      <category term="transmission devide" scheme="http://yoursite.com/tags/transmission-devide/"/>
     
   </entry>
   

@@ -3,6 +3,77 @@
   
     
     <entry>
+      <title>WLAN关闭随机物理地址</title>
+      <link href="/2019/03/28/tip/tip-rand-mac/"/>
+      <url>/2019/03/28/tip/tip-rand-mac/</url>
+      <content type="html"><![CDATA[<p>在Win 10中打开“网络和Internet”，在左侧选择“WLAN”，点击“硬件属性”，可以查看WLAN网卡的物理地址(MAC)。<br>发现WLAN无线网卡的物理地址会根据所连接的网络发生变化。<br>实际上这是由于系统打开了对于WLAN的<strong>随机硬件地址</strong>功能，该功能使他人不能轻易获取本机的MAC地址来跟踪位置，如果需要固定的MAC地址进行绑定时要将该功能关闭。<br>当没有无线网络连接时，下方“随机硬件地址”栏点击关闭，此时MAC地址将固定不变。<br>当连接到某个无线网络时，点击网络名称，进入此网络的设置，同样在“随机硬件地址”栏下选择关闭，随后断开并重新连接该无线网络，此时MAC地址将固定不变。<br>由于后一项设置针对当前网络连接，因此从安全方面考虑仅在常用的无线网络中关闭该项设置即可。</p>]]></content>
+      
+      <categories>
+          
+          <category> tip </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> network </tag>
+            
+            <tag> WLAN </tag>
+            
+            <tag> MAC </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>软件开发术语汇总</title>
+      <link href="/2019/03/12/review/rev-softwaredev/"/>
+      <url>/2019/03/12/review/rev-softwaredev/</url>
+      <content type="html"><![CDATA[<p><strong>架构</strong> 就是指人们根据自己对世界的认识，为解决某个问题，主动地、有目的地去识别问题，并进行分解、合并，解决这个问题的实践活动。<br>软件架构，就是将客户的不同需求抽象成为抽象组件，并且能够描述这些抽象组件之间的通信和调用。它不仅涉及到结构与行为，而且还涉及到系统的使用，功能，性能，适应性，重用性，可理解性，经济性和技术约束的权衡和美学考虑。</p><p><strong>框架</strong>是一个提供了诸多服务，供开发人员进行二次开发，实现具体功能的应用系统，是可被应用开发者定制的应用骨架。<br>框架不是架构，框架比架构更具体，更偏重于技术，而架构偏重于设计。一个架构可以通过多种框架来实现。</p><p><strong>模式</strong>是指从生产经验和生活经验中经过抽象和升华提炼出来的核心知识体系。模式（Pattern）其实就是解决某一类问题的方法论。软件设计模式强调的是一个设计问题的解决方法，是一套被反复使用、多数人知晓的、经过分类编目的、代码设计经验的总结。<br>一个架构中可能会出现多个设计模式来解决多个问题。</p><p><strong>模块</strong>是一个通用概念，可能从功能或其他目的来区分。程序模块，是指的一段能够实现某个有价值目标的的成员代码段。功能模块的说法一般在分析和设计阶段出现得比较频繁，一个功能模块来表示一组功能的集合。模块的定义原则应该是：<strong>高内聚</strong>和<strong>低耦合</strong></p><p><strong>组件</strong>是面向对象里面的一个重用的概念，也称为<strong>构件</strong>，是一个具象的概念，是封装了一个或多个程序模块的实体。组件强调的是封装，利用接口进行交互。因为封装有不同层次的封装，对应不同层次的接口，在谈论组件的时候一定要分辨清楚谈论的层次和范围。</p><p><strong>插件</strong>是满足一定接口规范的具有一定功能的程序模块，通过和应用程序的互动，来替应用程序增加一些特定的功能。开发者可以在自己软件系统中设计相应的接口以匹配某个插件，也可以设计一定的接口规范，来让别人开发插件。<br>插件是是组件的一个子类，就是将组件中具有某些特点的组件归为插件，这些特点是：益于与系统分离，接口明晰，可以替换的程序模块。</p><p><strong>控件</strong>可视化的组件。</p><p><strong>中间件</strong>提供系统软件和应用软件之间连接的软件，以便于软件各部件之间的沟通。</p><p>Reference<br><a href="https://www.cnblogs.com/doit8791/p/6129963.html" target="_blank" rel="noopener">软件架构、框架、模式、模块、组件、插件概念汇总</a></p>]]></content>
+      
+      <categories>
+          
+          <category> review </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> software development </tag>
+            
+            <tag> term </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>加密算法和数字证书</title>
+      <link href="/2019/03/06/knowledge/know-encryption/"/>
+      <url>/2019/03/06/knowledge/know-encryption/</url>
+      <content type="html"><![CDATA[<p><strong>对称加密</strong>是指加密与解密使用同样的密钥，安全性取决于密钥长度。密钥大小要考虑安全性和效率的权衡，一般小于256bit。对称加密的一大缺点是密钥的管理和分配， 将密钥发送到请求方的过程中有很大风险会被拦截。常用的对称加密算法有DES和AES。</p><p><strong>非对称加密</strong>使用了一对密钥，公钥发送给任何请求它的人，私钥由自己保管。与对称加密相比，非对称加密安全性大大提高，但是效率很低。常用的非对称加密算法是RSA。<br><strong>公钥</strong>与<strong>私钥</strong>成对出现，公钥用来加密和验章，私钥用来解密和签章，用公钥加密的内容只能用私钥解密，用私钥加密的内容只能用公钥解密。<br>当用户接受文件时，对方用该用户的公钥加密，该用户用自己的私钥解密，保证该信息只能由他看到，即安全传输。<br>当用户发送文件时，用自己的私钥签名，对方用该用户的公钥解密，保证信息是由该用户发出的，即<strong>数字签名</strong>。签名加密的内容与文件内容有关时，可以验证文件内容在发送过程中未被修改。</p><p>为了弥补对称加密的安全性问题和非对称加密的效率问题，通常采用两者结合的方式，将对称加密的密钥通过非对称加密发送出去。<br><img src="/2019/03/06/knowledge/know-encryption/DES+RSA.jpg" alt="encryption"></p><p>CA(Certificate Authority)即证书授权中心，是负责管理和签发证书的第三方机构，一般来说CA具有足够的权威性，是所有行业和公众认可的。证书授权中心将申请者的公钥、申请者和颁发者信息以及自己的签名一起用自己的私钥加密，生成<strong>数字证书</strong>。发送方只需将数字证书附上，接收方使用CA的公钥解密数字证书，得到发送方的真实公钥，避免公钥和数字签名被篡改。<br>颁发者和使用者相同的证书为<strong>自签名证书</strong>。<strong>根证书</strong>是CA给自己颁发的证书，是信任链的起始点，安装CA根证书意味着对这个CA的信任。</p><p>证书的编码格式通常有PEM（base64编码）和DER（二进制编码）。</p><ul><li>.crt .cer 证书文件</li><li>.key 私钥文件</li><li>.csr 证书签名请求</li><li>.pfx .keystore 包含证书和私钥（需要密码）</li></ul><p>在Windows中可以通过在命令提示符中输入certmgr打开证书管理工具。</p><p>Reference<br><a href="https://zhuanlan.zhihu.com/p/31477508" target="_blank" rel="noopener">知乎专栏——公钥和私钥</a><br><a href="https://songlee24.github.io/2015/05/03/public-key-and-private-key/" target="_blank" rel="noopener">理解公钥和私钥</a></p>]]></content>
+      
+      <categories>
+          
+          <category> knowledge </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> encryption </tag>
+            
+            <tag> certification </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>开源软件协议</title>
       <link href="/2019/02/28/knowledge/know-opensource/"/>
       <url>/2019/02/28/knowledge/know-opensource/</url>
@@ -342,7 +413,7 @@
       
         <tags>
             
-            <tag> Service </tag>
+            <tag> service </tag>
             
         </tags>
       
@@ -373,7 +444,7 @@
       <title>数字通信发展历史与展望</title>
       <link href="/2018/06/29/review/rev-mobilecomm/"/>
       <url>/2018/06/29/review/rev-mobilecomm/</url>
-      <content type="html"><![CDATA[<p><img src="/2018/06/29/review/rev-mobilecomm/generation.jpg" alt="generations"></p><a id="more"></a><p>NOT DONE</p><p>LTE系统有两种制式：FDD-LTE和TDD-LTE，即频分双工LTE系统和时分双工LTE系统，二者技术的主要区别在于空中接口的物理层上（像帧结构、时分设计、同步等）。FDD-LTE系统空口上下行传输采用一对对称的频段接收和发送数据，而TDD-LTE系统上下行则使用相同的频段在不同的时隙上传输，相对于FDD双工方式，TDD有着较高的频谱利用率。</p><p>—-To Be Continued—-</p>]]></content>
+      <content type="html"><![CDATA[<p><img src="/2018/06/29/review/rev-mobilecomm/generation.jpg" alt="generations"></p><a id="more"></a><p>NOT DONE</p><p>LTE系统有两种制式：FDD-LTE和TDD-LTE，即频分双工LTE系统和时分双工LTE系统，二者技术的主要区别在于空中接口的物理层上（像帧结构、时分设计、同步等）。FDD-LTE系统空口上下行传输采用一对对称的频段接收和发送数据，而TDD-LTE系统上下行则使用相同的频段在不同的时隙上传输，相对于FDD双工方式，TDD有着较高的频谱利用率。</p>]]></content>
       
       <categories>
           

@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2019/03/28/tip/tip-rand-mac/</loc>
+    
+    <lastmod>2019-03-28T03:07:07.441Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/07/24/tip/tip-killservice/</loc>
+    
+    <lastmod>2019-03-28T02:35:38.190Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/03/12/review/rev-softwaredev/</loc>
+    
+    <lastmod>2019-03-13T03:18:00.973Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/06/29/review/rev-mobilecomm/</loc>
+    
+    <lastmod>2019-03-12T04:54:59.523Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/03/06/knowledge/know-encryption/</loc>
+    
+    <lastmod>2019-03-06T06:52:16.832Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/02/28/knowledge/know-opensource/</loc>
     
     <lastmod>2019-02-28T03:20:57.160Z</lastmod>
@@ -156,13 +191,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/07/24/tip/tip-killservice/</loc>
-    
-    <lastmod>2018-12-24T06:11:00.206Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2018/05/25/tip/tip-ftld-bug/</loc>
     
     <lastmod>2018-12-24T06:10:48.342Z</lastmod>
@@ -271,13 +299,6 @@
     <loc>http://yoursite.com/2018/05/25/note/note-industrial/</loc>
     
     <lastmod>2018-09-28T05:41:35.246Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/06/29/review/rev-mobilecomm/</loc>
-    
-    <lastmod>2018-09-28T05:40:54.700Z</lastmod>
     
   </url>
   
