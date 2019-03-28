@@ -367,8 +367,10 @@
     {% if theme.end_tag.enable and not is_index %}
       <div>
         {% if post.end %}
-             {% include 'passage-end.swig' %}
-         {% endif %}
+            {% include 'passage-end.swig' %}
+        {% else %}
+            {% include 'passage-not-end.swig' %}
+        {% endif %}
       </div>
     {% endif %}
 

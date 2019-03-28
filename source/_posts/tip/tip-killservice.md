@@ -2,7 +2,7 @@
 title: 强制停止Windows服务
 date: 2018-07-24 12:41:59
 tags:
-  - Service
+  - service
 categories: tip
 hide: true
 end: true
