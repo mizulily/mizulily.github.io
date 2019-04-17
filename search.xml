@@ -3,6 +3,59 @@
   
     
     <entry>
+      <title>TTL字段</title>
+      <link href="/2019/04/17/knowledge/know-ttl/"/>
+      <url>/2019/04/17/knowledge/know-ttl/</url>
+      <content type="html"><![CDATA[<p>TTL全称是<strong>生存时间</strong>(Time-to-Live)，在IP和ICMP协议中均包含该字段。<br>当我们对网络上的主机进行ping操作的时候，我们本地机器会发出一个数据包，数据包经过一定数量的路由器传送到目的主机，但是由于很多的原因，一些数据包不能正常传送到目的主机，那如果不给这些数据包一个生存时间的话，这些数据包会一直在网络上传送，导致网络开销的增大。当数据包传送到一个路由器之后，TTL就自动减1，如果减到0了还是没有传送到目的主机，那么就自动丢失。<br>最新的Windows系统初始值为TTL=128，Linux系统初始值为TTL=64/255。在进行ping操作时，返回的TTL是经过路由递减后的TTL，因此若ping返回的TTL=51，那么可以推测到目的主机经过了64-51=13个路由，且目的主机可能为Linux系统。<br>可以使用tracert命令查看到达目标主机经过的所有路由节点，通常超过30个节点还没有完成跟踪的网站被认为是无法访问的。</p>]]></content>
+      
+      
+        <tags>
+            
+            <tag> network </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>windows三个内置账户</title>
+      <link href="/2019/04/17/knowledge/know-win-builtin/"/>
+      <url>/2019/04/17/knowledge/know-win-builtin/</url>
+      <content type="html"><![CDATA[<p>Windows中处于安全性考虑有三个由操作系统创建的、较为特别的内置账户或组，主要作为系统服务或进程运行账户，与通常的用户账户没有任何关联，分别为Local System、Network Service和Local Service。</p><ol><li><p>Local System账户，全名为NT AUTHORITY\SYSTEM，预设拥有本机所有权限，当它访问网络资源时是作为计算机的域账户使用的。</p></li><li><p>Network Service账户，全名为NT AUTHORITY\NETWORK SERVICE，预设拥有本机部分权限，它能以计算机的名义访问网络资源，并根据实际环境把访问凭据提交给远程计算机。</p></li><li><p>Local Service账户，全名为NT AUTHORITY\LOCAL SERVICE，预设拥有本机最小权限，并在网络凭证中具有匿名身份</p></li></ol>]]></content>
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+            <tag> system management </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>并发编程</title>
+      <link href="/2019/04/01/knowledge/know-concurrent/"/>
+      <url>/2019/04/01/knowledge/know-concurrent/</url>
+      <content type="html"><![CDATA[<h2><span id="并发编程的三个模型">并发编程的三个模型</span></h2><ol><li><p>IO多路复用(Multiplexing)<br>也称为事件驱动模型，在单一进（线）程上下文中处理多个IO数据流，每个逻辑流都能访问该进（线）程的全部地址空间，适合处理很多闲置的IO。</p></li><li><p>多进程<br>每个逻辑控制流都是一个进程，由内核来调度和维护，每个进程由独立的虚拟地址空间，想要和其他进程通信，必须使用某种显式的进程间通信机制(Interprocess communication, IPC)。</p></li><li><p>多线程<br>线程运行在单一进程中，所有运行在同一个进程中的线程共享整个虚拟地址空间，包括代码、数据、堆栈等。线程间逻辑控制方式简单，但受限于2GB地址空间，线程之间的同步和加锁比较麻烦，一个线程的崩溃可能影响到整个程序的稳定性。</p></li><li><p>协程？</p></li></ol><h2><span id="进程间通信方式">进程间通信方式</span></h2><ol><li><p>管道(Pipe)</p></li><li><p>系统IPC<br>包括消息队列、信号、共享存储等。</p></li><li><p>套接字(Socket)</p></li></ol><h2><span id="线程间通信方式">线程间通信方式</span></h2>]]></content>
+      
+      
+        <tags>
+            
+            <tag> programming </tag>
+            
+            <tag> concurrent </tag>
+            
+            <tag> process </tag>
+            
+            <tag> thread </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>WLAN关闭随机物理地址</title>
       <link href="/2019/03/28/tip/tip-rand-mac/"/>
       <url>/2019/03/28/tip/tip-rand-mac/</url>
@@ -136,7 +189,7 @@
             
             <tag> Windows </tag>
             
-            <tag> System Management </tag>
+            <tag> system management </tag>
             
         </tags>
       
@@ -577,7 +630,7 @@
     </entry>
     
     <entry>
-      <title>FTTM中的软件Bug</title>
+      <title>___FTTM中的软件Bug</title>
       <link href="/2018/05/25/tip/tip-ftld-bug/"/>
       <url>/2018/05/25/tip/tip-ftld-bug/</url>
       <content type="html"><![CDATA[<p>在使用FactoryTalk Transaction Manager过程中，有时会遇到双击配置Live Data Connector时整个程序没有响应的情况，排除可能的问题包括：</p><ol><li>两个Configuration中重名的Connector</li><li>选择不存在的FactoryTalk View SE程序</li><li>打开FactoryTalk View SE服务器和客户端的顺序</li><li>Kepserver OPC服务器安装</li><li>硬盘剩余容量小</li></ol><p>这些情况都不会造成软件崩溃。<br>在一次尝试中意外复现了该问题，证明如下操作会造成Live Data Connector无法配置：<br>对于一个未绑定FactoryTalk View SE程序的Live Data Connector，双击初次配置并选择程序的过程中<strong>不可以</strong>选择“Cancel取消”，<strong>可以</strong>任意选择一个程序后在导入标签的页面选择“Close关闭”，否则FactoryTalk Transaction Manager会立即崩溃，再次打开可以启动自身或其他Configuration中的服务，但无法更改任何Live Data Connector的配置。</p><p>软件版本：<br>Windows Server 2008 R2<br>FactoryTalk Service Platform 2.74.00 (CPR9 SR7.4)<br>FactoryTalk Transaction Manager 10.10.00</p>]]></content>
@@ -660,7 +713,11 @@
       
         <tags>
             
-            <tag> industrial network - field bus - protocol </tag>
+            <tag> industrial network </tag>
+            
+            <tag> field bus </tag>
+            
+            <tag> protocol </tag>
             
         </tags>
       
@@ -930,7 +987,7 @@
     </entry>
     
     <entry>
-      <title>使用C#编写OPC程序</title>
+      <title>___C#编写OPC程序</title>
       <link href="/2018/04/28/experience/exp-cs-opc/"/>
       <url>/2018/04/28/experience/exp-cs-opc/</url>
       <content type="html"><![CDATA[<p><a href="https://opcfoundation.org/" target="_blank" rel="noopener">OPC基金会官网</a>真是弱爆了。</p><h3><span id="1-配置opcdaautodll">1. 配置OPCDAAuto.dll</span></h3><p>OPC的自动化接口即OPCDAAuto.dll<br>1)下载文件OPCDAAuto.dll，版本2.2.5.30<br>2)放到System32文件夹下，用管理员身份打开cmd<br>3)输入regsvr32 opcdaauto.dll后提示成功<br>4)打开Visual Studio在项目中打开相应项目，对解决方案右键-添加-引用，浏览选择opcdaaturo.dll<br>5)依赖项中出现COM-Interop.OPCAutomation，在C#程序开头using OPCAutomation；不再显示红色波浪线错误，即配置成功。</p><p>Reference <a href="https://blog.csdn.net/u012252959/article/details/49699559" target="_blank" rel="noopener">u012252959的博客</a></p><p>—-To Be Continued—-</p>]]></content>
@@ -969,14 +1026,14 @@
             
             <tag> C# </tag>
             
-            <tag> programming language </tag>
+            <tag> programming </tag>
             
         </tags>
       
     </entry>
     
     <entry>
-      <title>FactoryTalk Transaction Manager使用心得</title>
+      <title>___FactoryTalk Transaction Manager使用心得</title>
       <link href="/2018/04/27/experience/exp-trans-1/"/>
       <url>/2018/04/27/experience/exp-trans-1/</url>
       <content type="html"><![CDATA[<h2><span id="基本概念">基本概念</span></h2><p><strong>FactoryTalk Transaction Manager</strong>（前身RSSql）是Rockwell公司FactoryTalk系列组态软件之一，主要实现工控系统与数据库的通信，该系列软件基于<a href="https://baike.baidu.com/item/SOA/2140650" target="_blank" rel="noopener">SOA架构</a>开发，因此Transaction Manager的应用软件部分实际上是对各个数据传送的Windows服务进行配置的UI界面(Configuration User Interface)，该软件的核心实际上是各个接口的服务程序。<br><a id="more"></a></p><p><img src="/2018/04/27/experience/exp-trans-1/structure.JPG" alt="structure"></p><p>Transaction and Control Manager服务包含了Transaction Manager Service服务和FactoryTalk Live Data控制接口，可以通过该服务连接Rockwell软件和所有OPC服务器。启动操作系统后查看服务列表，可以看到Transaction Manager相关的各个服务。</p><p><img src="/2018/04/27/experience/exp-trans-1/services.png" alt="services"></p><p>FactoryTalk Transaction Manager可以使用以下<strong>控制接口</strong>(Control Connector)，来关联数据点(data point)或存储地址(memory location)：</p><ol><li><strong>FactoryTalk Live Data</strong></li><li>Dynamic Data Exchange (DDE)</li><li>RSLinx Classic OPC</li><li>RSView32</li><li><strong>Generic OPC</strong></li></ol><p>FactoryTalk Transaction Manager可以使用以下<strong>企业接口</strong>(Enterprise Connector)，来创建数据对象(data object)与企业系统中的数据表(database table)和预存过程(stored procedure)进行交互：</p><ol><li>Open Database Connectivity (ODBC)</li><li><strong>Microsoft OLE DB</strong></li><li>Microsoft COM+</li><li><strong>Oracle Call Interface (OCI)</strong></li><li>Time-series Data Compression</li><li>FactoryTalk Metrics connector</li></ol><h2><span id="配置过程">配置过程</span></h2><p>###<br>&lt;!– ## 1. OPC Server -&gt; SQL Server ##</p><p>OPC Server: KEPSever Enterprise 5.13<br>SQL Server: Microsoft SQL Server 2008 R2</p><h2><span id="2-live-data-gt-sql-server">2. Live Data -&gt; SQL Server</span></h2><h2><span id="3-sql-server-gt-live-data-gt">3. SQL Server -&gt; Live Data –&gt;</span></h2><p>—-To Be Continued—-</p>]]></content>

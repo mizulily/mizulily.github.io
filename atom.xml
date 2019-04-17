@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-28T03:07:07.441Z</updated>
+  <updated>2019-04-17T06:54:11.101Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,86 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TTL字段</title>
+    <link href="http://yoursite.com/2019/04/17/knowledge/know-ttl/"/>
+    <id>http://yoursite.com/2019/04/17/knowledge/know-ttl/</id>
+    <published>2019-04-17T06:43:33.000Z</published>
+    <updated>2019-04-17T06:54:11.101Z</updated>
+    
+    <content type="html"><![CDATA[<p>TTL全称是<strong>生存时间</strong>(Time-to-Live)，在IP和ICMP协议中均包含该字段。<br>当我们对网络上的主机进行ping操作的时候，我们本地机器会发出一个数据包，数据包经过一定数量的路由器传送到目的主机，但是由于很多的原因，一些数据包不能正常传送到目的主机，那如果不给这些数据包一个生存时间的话，这些数据包会一直在网络上传送，导致网络开销的增大。当数据包传送到一个路由器之后，TTL就自动减1，如果减到0了还是没有传送到目的主机，那么就自动丢失。<br>最新的Windows系统初始值为TTL=128，Linux系统初始值为TTL=64/255。在进行ping操作时，返回的TTL是经过路由递减后的TTL，因此若ping返回的TTL=51，那么可以推测到目的主机经过了64-51=13个路由，且目的主机可能为Linux系统。<br>可以使用tracert命令查看到达目标主机经过的所有路由节点，通常超过30个节点还没有完成跟踪的网站被认为是无法访问的。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;TTL全称是&lt;strong&gt;生存时间&lt;/strong&gt;(Time-to-Live)，在IP和ICMP协议中均包含该字段。&lt;br&gt;当我们对网络上的主机进行ping操作的时候，我们本地机器会发出一个数据包，数据包经过一定数量的路由器传送到目的主机，但是由于很多的原因，一些数据包
+      
+    
+    </summary>
+    
+    
+      <category term="network" scheme="http://yoursite.com/tags/network/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>windows三个内置账户</title>
+    <link href="http://yoursite.com/2019/04/17/knowledge/know-win-builtin/"/>
+    <id>http://yoursite.com/2019/04/17/knowledge/know-win-builtin/</id>
+    <published>2019-04-17T01:39:01.000Z</published>
+    <updated>2019-04-17T01:53:24.186Z</updated>
+    
+    <content type="html"><![CDATA[<p>Windows中处于安全性考虑有三个由操作系统创建的、较为特别的内置账户或组，主要作为系统服务或进程运行账户，与通常的用户账户没有任何关联，分别为Local System、Network Service和Local Service。</p><ol><li><p>Local System账户，全名为NT AUTHORITY\SYSTEM，预设拥有本机所有权限，当它访问网络资源时是作为计算机的域账户使用的。</p></li><li><p>Network Service账户，全名为NT AUTHORITY\NETWORK SERVICE，预设拥有本机部分权限，它能以计算机的名义访问网络资源，并根据实际环境把访问凭据提交给远程计算机。</p></li><li><p>Local Service账户，全名为NT AUTHORITY\LOCAL SERVICE，预设拥有本机最小权限，并在网络凭证中具有匿名身份</p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Windows中处于安全性考虑有三个由操作系统创建的、较为特别的内置账户或组，主要作为系统服务或进程运行账户，与通常的用户账户没有任何关联，分别为Local System、Network Service和Local Service。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Loca
+      
+    
+    </summary>
+    
+    
+      <category term="Windows" scheme="http://yoursite.com/tags/Windows/"/>
+    
+      <category term="system management" scheme="http://yoursite.com/tags/system-management/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>并发编程</title>
+    <link href="http://yoursite.com/2019/04/01/knowledge/know-concurrent/"/>
+    <id>http://yoursite.com/2019/04/01/knowledge/know-concurrent/</id>
+    <published>2019-04-01T01:48:49.000Z</published>
+    <updated>2019-04-17T01:40:06.019Z</updated>
+    
+    <content type="html"><![CDATA[<h2><span id="并发编程的三个模型">并发编程的三个模型</span></h2><ol><li><p>IO多路复用(Multiplexing)<br>也称为事件驱动模型，在单一进（线）程上下文中处理多个IO数据流，每个逻辑流都能访问该进（线）程的全部地址空间，适合处理很多闲置的IO。</p></li><li><p>多进程<br>每个逻辑控制流都是一个进程，由内核来调度和维护，每个进程由独立的虚拟地址空间，想要和其他进程通信，必须使用某种显式的进程间通信机制(Interprocess communication, IPC)。</p></li><li><p>多线程<br>线程运行在单一进程中，所有运行在同一个进程中的线程共享整个虚拟地址空间，包括代码、数据、堆栈等。线程间逻辑控制方式简单，但受限于2GB地址空间，线程之间的同步和加锁比较麻烦，一个线程的崩溃可能影响到整个程序的稳定性。</p></li><li><p>协程？</p></li></ol><h2><span id="进程间通信方式">进程间通信方式</span></h2><ol><li><p>管道(Pipe)</p></li><li><p>系统IPC<br>包括消息队列、信号、共享存储等。</p></li><li><p>套接字(Socket)</p></li></ol><h2><span id="线程间通信方式">线程间通信方式</span></h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2&gt;&lt;span id=&quot;并发编程的三个模型&quot;&gt;并发编程的三个模型&lt;/span&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;IO多路复用(Multiplexing)&lt;br&gt;也称为事件驱动模型，在单一进（线）程上下文中处理多个IO数据流，每个逻辑流都能访问该进（线）程的全部地址空间，适合处
+      
+    
+    </summary>
+    
+    
+      <category term="programming" scheme="http://yoursite.com/tags/programming/"/>
+    
+      <category term="concurrent" scheme="http://yoursite.com/tags/concurrent/"/>
+    
+      <category term="process" scheme="http://yoursite.com/tags/process/"/>
+    
+      <category term="thread" scheme="http://yoursite.com/tags/thread/"/>
+    
+  </entry>
   
   <entry>
     <title>WLAN关闭随机物理地址</title>
@@ -158,7 +238,7 @@
     <link href="http://yoursite.com/2018/12/26/knowledge/know-wkgp-dm-acc/"/>
     <id>http://yoursite.com/2018/12/26/knowledge/know-wkgp-dm-acc/</id>
     <published>2018-12-26T06:53:13.000Z</published>
-    <updated>2018-12-26T07:08:10.559Z</updated>
+    <updated>2019-04-01T01:54:31.837Z</updated>
     
     <content type="html"><![CDATA[<p>局域网上的资源需要管理，<strong>工作组</strong>和<strong>域</strong>是两种不同的资源管理模式。</p><ol><li><p>工作组<br>工作组(Workgroup)是松散的管理方式，每台计算机管理员只能管理本地计算机，没有统一查找网络资源的机制，也没有统一的用户账户身份验证机制，用户（本地或远程）登录该计算机只能使用本机的用户账户来验证身份，是较小规模计算机网络的组织形式。计算机安装操作系统后，默认属于WORKGROUP工作组。</p></li><li><p>域<br>域(Domain)是相对严格的组织，至少有一台服务器负责每台连入局域网的电脑和用户的验证工作，称为<strong>域控制器</strong>。域控制器中包含了这个域的账户、密码、计算机信息等构成的数据库，仅当局域网计算机的域、账号、密码都正确时可以访问域中的资源，否则以对等网用户的方式访问共享资源。</p></li></ol>]]></content>
     
@@ -178,7 +258,7 @@
     
       <category term="Windows" scheme="http://yoursite.com/tags/Windows/"/>
     
-      <category term="System Management" scheme="http://yoursite.com/tags/System-Management/"/>
+      <category term="system management" scheme="http://yoursite.com/tags/system-management/"/>
     
   </entry>
   
@@ -488,86 +568,6 @@
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>OPC数据访问</title>
-    <link href="http://yoursite.com/2018/07/30/knowledge/know-opcdataaccess/"/>
-    <id>http://yoursite.com/2018/07/30/knowledge/know-opcdataaccess/</id>
-    <published>2018-07-30T00:21:16.000Z</published>
-    <updated>2018-09-28T05:43:31.782Z</updated>
-    
-    <content type="html"><![CDATA[<p>OPC采用client/server模式，主要包括三部分：服务器(server)、组(group)和数据项(item)。<strong>服务器对象</strong>保存服务器和服务器作为OPC组对象容器的所有信息。<strong>组对象</strong>包括公共组和私有组两种，公共组由多个客户共享，私有组只隶属于一个OPC客户。OPC客户可以通过组对象来读写数据并设定OPC服务器应提供的数据更新速率。<strong>数据项对象</strong>是读写数据的最小逻辑单位，每个数据项包括值(value)、品质(quality)、和时间戳(timestamp)三个变量。</p><p>OPC数据访问主要有同步访问和异步访问两种方式。<strong>同步数据访问</strong>时，OPC服务器按照要求返回数据之前，OPC应用程序一直处于等待状态，在动作完成前不能执行任何应用程序侧的处理。<strong>异步数据访问</strong>时，对OPC服务器提出数据访问要求后立即返回到OPC应用程序中，服务器完成后通知OPC应用程序，从而得到数据访问结果。</p><p>C#中调用OPC主要使用自动化接口OPCAutomation.dll库。</p><ol><li>SyncR</li></ol><p>—-To Be Continued—-</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;OPC采用client/server模式，主要包括三部分：服务器(server)、组(group)和数据项(item)。&lt;strong&gt;服务器对象&lt;/strong&gt;保存服务器和服务器作为OPC组对象容器的所有信息。&lt;strong&gt;组对象&lt;/strong&gt;包括公共组和私有组两
-      
-    
-    </summary>
-    
-      <category term="knowledge" scheme="http://yoursite.com/categories/knowledge/"/>
-    
-    
-      <category term="OPC" scheme="http://yoursite.com/tags/OPC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>强制停止Windows服务</title>
-    <link href="http://yoursite.com/2018/07/24/tip/tip-killservice/"/>
-    <id>http://yoursite.com/2018/07/24/tip/tip-killservice/</id>
-    <published>2018-07-24T04:41:59.000Z</published>
-    <updated>2019-03-28T02:35:38.190Z</updated>
-    
-    <content type="html"><![CDATA[<p>状态为Starting或Stopping的服务无法在Service桌面应用或任务管理器的Service选项卡中启动或停止，可以通过命令行taskkill指令进行强制停止。</p><pre><code>taskkill /PID 任务管理器中的服务PID /F</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;状态为Starting或Stopping的服务无法在Service桌面应用或任务管理器的Service选项卡中启动或停止，可以通过命令行taskkill指令进行强制停止。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;taskkill /PID 任务管理器中的服务PID /F
-&lt;/code
-      
-    
-    </summary>
-    
-      <category term="tip" scheme="http://yoursite.com/categories/tip/"/>
-    
-    
-      <category term="service" scheme="http://yoursite.com/tags/service/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SQL Server备份还原</title>
-    <link href="http://yoursite.com/2018/07/05/tip/tip-backup-data/"/>
-    <id>http://yoursite.com/2018/07/05/tip/tip-backup-data/</id>
-    <published>2018-07-05T00:39:25.000Z</published>
-    <updated>2018-12-24T06:10:41.339Z</updated>
-    
-    <content type="html"><![CDATA[<ol><li><p>数据库整体备份/还原<br>右键数据库名-任务-备份/还原，将数据库整体备份到一个.bak文件中。</p></li><li><p>生成脚本还原<br>需要单独备份SQL Server中某些表、存储过程、函数等对象，或导出部分表格数据时，右键数据库名-任务-生成脚本，选择需要备份的对象，点击“高级”，在“要编写脚本的数据类型”项中选择“仅限架构”、“仅限数据”或“架构和数据”。</p></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;数据库整体备份/还原&lt;br&gt;右键数据库名-任务-备份/还原，将数据库整体备份到一个.bak文件中。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;生成脚本还原&lt;br&gt;需要单独备份SQL Server中某些表、存储过程、函数等对象，或导出部分表格数据时，右键数据库名-任
-      
-    
-    </summary>
-    
-      <category term="tip" scheme="http://yoursite.com/categories/tip/"/>
-    
-    
-      <category term="SQL Server" scheme="http://yoursite.com/tags/SQL-Server/"/>
     
   </entry>
   
