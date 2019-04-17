@@ -1,5 +1,5 @@
 ---
-title: 使用C#编写OPC程序
+title: ___C#编写OPC程序
 date: 2018-04-28 09:23:59
 tags:
   - OPC

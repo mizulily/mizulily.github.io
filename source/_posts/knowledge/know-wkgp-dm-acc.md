@@ -3,7 +3,7 @@ title: Windows中工作组、域及账户
 date: 2018-12-26 14:53:13
 tags:
   - Windows
-  - System Management
+  - system management
 categories: knowledge
 hide: true
 end: true

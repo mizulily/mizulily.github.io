@@ -3,7 +3,7 @@ title: 《Learning hard C#学习笔记》笔记
 date: 2018-04-28 08:55:46
 tags:
   - C#
-  - programming language
+  - programming
 categories: note
 toc: true
 ---
