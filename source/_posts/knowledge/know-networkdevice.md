@@ -3,7 +3,7 @@ title: 网络互连设备及作用
 date: 2018-06-26 14:35:07
 tags: 
   - network basis
-  - transmission devide
+  - transmission
 categories: knowledge
 ---
 

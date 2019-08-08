@@ -3,7 +3,7 @@ title: 网络通信传输介质
 date: 2018-05-14 09:07:37
 tags:
   - network basis
-  - transmission media
+  - transmission
 categories: knowledge
 end: true
 ---
