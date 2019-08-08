@@ -2,6 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2019/08/08/knowledge/know-uni-resource/</loc>
+    
+    <lastmod>2019-08-08T02:15:47.914Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/08/01/note/note-csapp/</loc>
+    
+    <lastmod>2019-08-08T01:46:22.538Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/08/05/knowledge/know-cloudservice/</loc>
+    
+    <lastmod>2019-08-08T01:45:27.811Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/05/20/note/note-maintain/</loc>
+    
+    <lastmod>2019-05-31T00:30:48.536Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/05/28/training/train-intproperty/</loc>
+    
+    <lastmod>2019-05-30T08:37:12.096Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/04/24/tip/tip-drop-database/</loc>
+    
+    <lastmod>2019-04-24T03:39:41.502Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/14/knowledge/know-networkmedia/</loc>
+    
+    <lastmod>2019-04-24T03:27:15.141Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/06/26/knowledge/know-networkdevice/</loc>
+    
+    <lastmod>2019-04-24T03:27:07.066Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/04/17/knowledge/know-ttl/</loc>
     
     <lastmod>2019-04-17T06:54:11.101Z</lastmod>
@@ -163,13 +219,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/05/14/knowledge/know-networkmedia/</loc>
-    
-    <lastmod>2018-12-25T00:37:01.433Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2018/05/03/knowledge/know-DNS&localhost/</loc>
     
     <lastmod>2018-12-25T00:36:45.083Z</lastmod>
@@ -292,13 +341,6 @@
     <loc>http://yoursite.com/2018/07/30/knowledge/know-opcdataaccess/</loc>
     
     <lastmod>2018-09-28T05:43:31.782Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/06/26/knowledge/know-networkdevice/</loc>
-    
-    <lastmod>2018-09-28T05:43:15.728Z</lastmod>
     
   </url>
   

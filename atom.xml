@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-17T06:54:11.101Z</updated>
+  <updated>2019-08-08T02:15:47.914Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,153 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>URI统一资源标识符</title>
+    <link href="http://yoursite.com/2019/08/08/knowledge/know-uni-resource/"/>
+    <id>http://yoursite.com/2019/08/08/knowledge/know-uni-resource/</id>
+    <published>2019-08-08T01:43:46.000Z</published>
+    <updated>2019-08-08T02:15:47.914Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>URI(Uniform Resource Identifier，统一资源标识符)</strong>是用于标识某个互联网资源名称的字符串，允许用户对任何本地和互联网资源通过特定协议进行交互操作。<br>Web上地址的基本形式是URI，它有两种形式：URL和URN，两者是互补的。</p><p><strong>URL(Uniform Resource Locator，统一资源定位符)</strong>提供找到该资源的路径，具体格式为</p><pre><code>[协议名]://[用户名]:[密码]@[服务器地址]:[服务器端口号]/[路径]?[查询字符串]#[片段ID]</code></pre><p>URL的缺点是当信息资源存放地点发生变化时，必须对URL作相应的改变。</p><p><strong>URN(Uniform Resource Name, 统一资源名称)</strong>唯一标识一个实体，与资源的所在地无关，用于在特定的命名空间标识持久性互联网资源。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;URI(Uniform Resource Identifier，统一资源标识符)&lt;/strong&gt;是用于标识某个互联网资源名称的字符串，允许用户对任何本地和互联网资源通过特定协议进行交互操作。&lt;br&gt;Web上地址的基本形式是URI，它有两种形式：URL和UR
+      
+    
+    </summary>
+    
+      <category term="knowledge" scheme="http://yoursite.com/categories/knowledge/"/>
+    
+    
+      <category term="internet" scheme="http://yoursite.com/tags/internet/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>云服务的三种形式</title>
+    <link href="http://yoursite.com/2019/08/05/knowledge/know-cloudservice/"/>
+    <id>http://yoursite.com/2019/08/05/knowledge/know-cloudservice/</id>
+    <published>2019-08-05T02:45:47.000Z</published>
+    <updated>2019-08-08T01:45:27.811Z</updated>
+    
+    <content type="html"><![CDATA[<p>云服务是一个统称，可以分成三大类：</p><ol><li><strong>基础设施服务(IaaS, Infrastructure-as-a-service)</strong></li><li><strong>平台服务(PaaS, Platform-as-a-service)</strong></li><li><strong>软件服务(SaaS, Software-as-a-service)</strong></li></ol><p>假如你是一个餐饮业者，打算做披萨生意，你可以从头到尾，自己生产披萨，但是这样比较麻烦，需要准备的东西多，因此你决定外包一部分工作，采用他人的服务。你有三个方案。</p><p>（1）方案一：IaaS<br>他人提供厨房、炉子、煤气，你使用这些基础设施，来烤你的披萨。</p><p>（2）方案二：PaaS<br>除了基础设施，他人还提供披萨饼皮。你只要把自己的配料洒在饼皮上，让他帮你烤出来就行了。也就是说，你要做的就是设计披萨的味道（海鲜披萨或者鸡肉披萨），他人提供平台服务，让你把自己的设计实现。</p><p>（3）方案三：SaaS<br>他人直接做好了披萨，不用你的介入，到手的就是一个成品。你要做的就是把它卖出去，最多再包装一下，印上你自己的 Logo。</p><p>对应软件开发则是下面这张图：<br><img src="/2019/08/05/knowledge/know-cloudservice/bg2017072307.jpg" alt="SoftwareDevel"></p><p>SaaS是软件开发、管理、部署都交给第三方，不需要关心技术问题，可以拿来即用。普通用户接触到的互联网服务几乎都是SaaS。<br>PaaS提供软件部署平台，抽象掉了硬件和操作系统细节，可以无缝扩展，开发者只需关注自己的业务逻辑，不需要关注底层。<br>IaaS是云服务的最底层，提供一些基础资源，用户需要自己控制底层，实现基础设施的使用逻辑。</p><p>Reference <a href="http://www.ruanyifeng.com/blog/2017/07/iaas-paas-saas.html" target="_blank" rel="noopener">IaaS，PaaS，SaaS 的区别</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;云服务是一个统称，可以分成三大类：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;基础设施服务(IaaS, Infrastructure-as-a-service)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平台服务(PaaS, Platform-as-a-servi
+      
+    
+    </summary>
+    
+      <category term="knowledge" scheme="http://yoursite.com/categories/knowledge/"/>
+    
+    
+      <category term="cloud" scheme="http://yoursite.com/tags/cloud/"/>
+    
+      <category term="service" scheme="http://yoursite.com/tags/service/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《深入理解计算机系统》笔记</title>
+    <link href="http://yoursite.com/2019/08/01/note/note-csapp/"/>
+    <id>http://yoursite.com/2019/08/01/note/note-csapp/</id>
+    <published>2019-08-01T06:00:21.000Z</published>
+    <updated>2019-08-08T01:46:22.538Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>知识产权初级培训</title>
+    <link href="http://yoursite.com/2019/05/28/training/train-intproperty/"/>
+    <id>http://yoursite.com/2019/05/28/training/train-intproperty/</id>
+    <published>2019-05-28T08:09:36.000Z</published>
+    <updated>2019-05-30T08:37:12.096Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>知识产权</strong>是人们就其智力创造的成果依法享有的专有权利。知识产权是一种民事权利，是一种私权。<br>知识产权公认的四个基本特征：</p><ol><li><strong>非物质性</strong>（本质），知识产权的对象是一定的信息，不占有物理空间，是没有形体的财产。</li><li><strong>专有性</strong>，在法定范围内权利人享有禁止他人未经许可的实施使用和不与他人分享的权利。</li><li><strong>地域性</strong>，依照一个国家（或地区）法律取得的知识产权，仅在该地域内有效。</li><li><strong>时间性</strong>，知识产权仅在法律规定的期限内有效，一旦期满即丧失专有权。</li></ol><p>需要强调的是，</p><p>我国《民法总则》（2017年10月1日施行）第123条规定：民事主体依法享有知识产权，</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;知识产权&lt;/strong&gt;是人们就其智力创造的成果依法享有的专有权利。知识产权是一种民事权利，是一种私权。&lt;br&gt;知识产权公认的四个基本特征：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;非物质性&lt;/strong&gt;（本质），知识产权的对象是一定的信息，不占有物
+      
+    
+    </summary>
+    
+      <category term="training" scheme="http://yoursite.com/categories/training/"/>
+    
+    
+      <category term="intellectual property" scheme="http://yoursite.com/tags/intellectual-property/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《代码不朽》笔记</title>
+    <link href="http://yoursite.com/2019/05/20/note/note-maintain/"/>
+    <id>http://yoursite.com/2019/05/20/note/note-maintain/</id>
+    <published>2019-05-20T06:20:39.000Z</published>
+    <updated>2019-05-31T00:30:48.536Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>《代码不朽：编写可维护软件的10大要则》 作者：（荷）Joost Visser 翻译：张若飞 电子工业出版社 2016年10月第1版 TP311.5 TP312.8 ISBN: 978-7-121-29898-1 </strong><br>本书从大量实践项目中提取出了编写可维护软件的10个最佳原则，不仅可以用来测量软件的质量和可维护性，还可以指导编写出高质量的代码。本书一一介绍了这些原则，提供了翔实的代码示例，能够让读者了解到如何对代码进行重构从而满足这些原则，提高可维护性。<br><a id="more"></a></p><h1><span id="软件质量的8个特征">软件质量的8个特征</span></h1><p>可维护性、功能可适性、性能效率、兼容性、可使用性、可靠性、安全性、可移植性</p><h1><span id="软件维护的4种方式">软件维护的4种方式</span></h1><ol><li>纠正性维护：发现并修复Bug</li><li>适应性维护：适应操作环境的改变</li><li>完善性维护：用户提出新的需求或之前的需求有变化</li><li>预防性维护：改进质量或用户方可能产生的Bug</li></ol><h1><span id="软件可维护性原则">软件可维护性原则</span></h1><h2><span id="1-编写短小的代码单元">1. 编写短小的代码单元</span></h2><ul><li>代码单元的长度应该限制在15行以内</li><li>短小的代码易于理解、测试和重用</li></ul><p>重构技巧：<br>1) 提取方法，进一步分解为多个更小的单元<br>2) 将方法替换为方法对象， 避免新的单元参数过多</p><h2><span id="2-编写简单的代码单元">2. 编写简单的代码单元</span></h2><h2><span id="3-不写重复代码">3. 不写重复代码</span></h2><h2><span id="4-保持代码单元的接口简单">4. 保持代码单元的接口简单</span></h2><h2><span id="5-分离模块之间的关注点">5. 分离模块之间的关注点</span></h2><h2><span id="6-架构组件松耦合">6. 架构组件松耦合</span></h2><h2><span id="7-保持架构组件之间的平衡">7. 保持架构组件之间的平衡</span></h2><h2><span id="8-保持小规模代码库">8. 保持小规模代码库</span></h2><h2><span id="9-自动化开发部署和测试">9. 自动化开发部署和测试</span></h2><h2><span id="10-编写简洁的代码">10. 编写简洁的代码</span></h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;《代码不朽：编写可维护软件的10大要则》 作者：（荷）Joost Visser 翻译：张若飞 电子工业出版社 2016年10月第1版 TP311.5 TP312.8 ISBN: 978-7-121-29898-1 &lt;/strong&gt;&lt;br&gt;本书从大量实践项目中提取出了编写可维护软件的10个最佳原则，不仅可以用来测量软件的质量和可维护性，还可以指导编写出高质量的代码。本书一一介绍了这些原则，提供了翔实的代码示例，能够让读者了解到如何对代码进行重构从而满足这些原则，提高可维护性。&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="note" scheme="http://yoursite.com/categories/note/"/>
+    
+    
+      <category term="software development" scheme="http://yoursite.com/tags/software-development/"/>
+    
+      <category term="maintain" scheme="http://yoursite.com/tags/maintain/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>强制删除数据库</title>
+    <link href="http://yoursite.com/2019/04/24/tip/tip-drop-database/"/>
+    <id>http://yoursite.com/2019/04/24/tip/tip-drop-database/</id>
+    <published>2019-04-24T03:25:01.000Z</published>
+    <updated>2019-04-24T03:39:41.502Z</updated>
+    
+    <content type="html"><![CDATA[<p>在SQL Server Management Studio中删除数据库时提示无法删除(Cannot drop database databasename because it is currently in use)。这是因为在操作数据库中出现了问题，如打开数据库连接后未正确关闭等。<br>解决方案是运行如下脚本：</p><pre><code>USE [master]GOALTER DATABASE database_nameSET SINGLE_USER WITH ROLLBACK IMMEDIATE --将数据库回滚到原始配置状态GODROP DATABASE database_name--删除数据库GO</code></pre><p>Reference <a href="https://blog.csdn.net/mx5721/article/details/8057542" target="_blank" rel="noopener">mx5721的博客</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;在SQL Server Management Studio中删除数据库时提示无法删除(Cannot drop database databasename because it is currently in use)。这是因为在操作数据库中出现了问题，如打开数据库连接后未正
+      
+    
+    </summary>
+    
+      <category term="tip" scheme="http://yoursite.com/categories/tip/"/>
+    
+    
+      <category term="SQL Server" scheme="http://yoursite.com/tags/SQL-Server/"/>
+    
+      <category term="Database" scheme="http://yoursite.com/tags/Database/"/>
+    
+  </entry>
   
   <entry>
     <title>TTL字段</title>
@@ -408,166 +555,6 @@
       <category term="ghost" scheme="http://yoursite.com/tags/ghost/"/>
     
       <category term="LAOMAOTAO" scheme="http://yoursite.com/tags/LAOMAOTAO/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>查询SQL Server表的索引</title>
-    <link href="http://yoursite.com/2018/10/08/tip/tip-sqlindex/"/>
-    <id>http://yoursite.com/2018/10/08/tip/tip-sqlindex/</id>
-    <published>2018-10-08T08:45:20.000Z</published>
-    <updated>2018-12-24T06:11:20.013Z</updated>
-    
-    <content type="html"><![CDATA[<p>1.执行存储过程</p><pre><code>EXEC sp_helpindex 表名</code></pre><p>2.或者获取表的所有信息，即执行存储过程</p><pre><code>EXEC sp_help 表名</code></pre><p>在输出结果中包含’index_name’和’index_keys’项</p><p>3.将表的设计模式打开，查看表属性</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;1.执行存储过程&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;EXEC sp_helpindex 表名
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.或者获取表的所有信息，即执行存储过程&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;EXEC sp_help 表名
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在输出结果中包含
-      
-    
-    </summary>
-    
-      <category term="tip" scheme="http://yoursite.com/categories/tip/"/>
-    
-    
-      <category term="SQL Server" scheme="http://yoursite.com/tags/SQL-Server/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>结构化数据、半结构化数据和非结构化数据</title>
-    <link href="http://yoursite.com/2018/09/28/knowledge/know-datastruct/"/>
-    <id>http://yoursite.com/2018/09/28/knowledge/know-datastruct/</id>
-    <published>2018-09-28T05:49:52.000Z</published>
-    <updated>2019-02-28T00:54:03.661Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>结构化数据</strong>是指可以使用关系型数据库表示和存储，表现为二维形式的数据。一般特点是数据以行为单位，一行数据表示一个实体信息，一列数据具有相同的类型。结构化数据的存储和排列是很有规律的，有利于查询和修改，但扩展性不好。</p><p><strong>半结构化数据</strong>不顾和关系型数据库的数据模型结构，但包含相关标记，用来分隔语义元素并对记录和字段分层，也称自描述的结构。半结构化数据，对于同一类实体可以有不同的属性，个数也不一定相同，属性的顺序不重要，可以看作树或者图的存储结构，常见的有xml和json文件，扩展性较好。</p><p><strong>非结构化数据</strong>就是没有固定结构的数据，如文档、图片、视频等，对于这类数据一般直接整体进行存储，且通常存储为二进制数据格式。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;结构化数据&lt;/strong&gt;是指可以使用关系型数据库表示和存储，表现为二维形式的数据。一般特点是数据以行为单位，一行数据表示一个实体信息，一列数据具有相同的类型。结构化数据的存储和排列是很有规律的，有利于查询和修改，但扩展性不好。&lt;/p&gt;
-&lt;p&gt;&lt;stron
-      
-    
-    </summary>
-    
-      <category term="knowledge" scheme="http://yoursite.com/categories/knowledge/"/>
-    
-    
-      <category term="data management" scheme="http://yoursite.com/tags/data-management/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>离散制造与流程制造</title>
-    <link href="http://yoursite.com/2018/09/25/knowledge/know-manufacture/"/>
-    <id>http://yoursite.com/2018/09/25/knowledge/know-manufacture/</id>
-    <published>2018-09-25T07:33:34.000Z</published>
-    <updated>2018-12-24T06:08:57.921Z</updated>
-    
-    <content type="html"><![CDATA[<p>根据生产中使用的物质形态，制造业可划分为离散制造和流程制造。</p><p><strong>离散制造</strong>是将不同的零部件加工、装配成最终产品，如汽车、电子、船舶等制造业。<br>离散制造主要特征为生产过程中没有发生物质改变，只是物料的形状和组合发生改变，一般具有相对固定的产品结构、原材料清单和零部件配套关系。<br>离散制造型企业自动化主要在单元级，一般是人员密集型企业，自动化水平相对较低，柔性要求高。其产能主要由加工要素配置合理性决定，既有按订单生产，也有按库存生产。由于产品工艺过程经常变更，因此需要良好的计划能力，对工序级的作业调度需要考虑优先级、设备能力、均衡生产等多个方面，通过良好的作业顺序提高生产效率。从这个意义上来说，离散制造型企业通过软件改进来提升竞争力更具潜力。</p><p><strong>流程制造</strong>是经过一些列加工装置使原材料进行化学或物理变化得到最终产品，如化工、食品、制药、钢铁等制造业。流程制造分为重复生产和连续生产两种类型，区别在于重复生产可以将产品一个个分开。流程制造在每个工艺过程中会出现主产品、副产品、中间产品、回流物和废物等，上级物料和下级物料的数量关系可能随温度、压力、湿度、季节、人员技术水平、工艺条件的不同而变化。<br>流程制造主要特征为计划制定相对简单和稳定，工具和设备为专用产品而设计，专注于物料数量、质量和工艺参数的控制。<br>流程制造型企业大多采用大规模大批量的生产方式，工艺技术成熟，自动化水平较高，只有满负荷生产才能降低成本，因此企业年度生产计划更重要，作业调度不一定需要精确到工序。其产能主要由设备产能决定，设备维护尤为重要，主要采用按库存的生产方式，生产计划的依据主要是市场预测。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;根据生产中使用的物质形态，制造业可划分为离散制造和流程制造。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;离散制造&lt;/strong&gt;是将不同的零部件加工、装配成最终产品，如汽车、电子、船舶等制造业。&lt;br&gt;离散制造主要特征为生产过程中没有发生物质改变，只是物料的形状和组合发生改变，一般具
-      
-    
-    </summary>
-    
-      <category term="knowledge" scheme="http://yoursite.com/categories/knowledge/"/>
-    
-    
-      <category term="manufacture" scheme="http://yoursite.com/tags/manufacture/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>注塑成型工艺</title>
-    <link href="http://yoursite.com/2018/08/21/craft/craft-inj-mold/"/>
-    <id>http://yoursite.com/2018/08/21/craft/craft-inj-mold/</id>
-    <published>2018-08-21T08:27:21.000Z</published>
-    <updated>2018-09-28T05:44:44.169Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>注塑成型</strong>又称注射模塑成型，在一定温度下，通过螺杆搅拌完全熔融的塑料材料，用高压射入模腔，经冷却固化后得到成品。该方法适用于形状复杂部件的批量生产。</p><p>注塑成型过程主要分为合模、射胶、保压、冷却、开模、取出六个阶段。常规材料主要有热塑性塑料，此外热固性塑料和橡胶等成型也可使用，但料筒温度较低、注射压力较高，需要模具加热、物料在模具中固化或硫化、趁热脱模等过程。</p><p>一模多穴是指一个模具生产多个产品；一机多模是指一个机器上放入多个模具，从而生产多个产品。</p><p>—-To Be Continued—-</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;注塑成型&lt;/strong&gt;又称注射模塑成型，在一定温度下，通过螺杆搅拌完全熔融的塑料材料，用高压射入模腔，经冷却固化后得到成品。该方法适用于形状复杂部件的批量生产。&lt;/p&gt;
-&lt;p&gt;注塑成型过程主要分为合模、射胶、保压、冷却、开模、取出六个阶段。常规材料主要有
-      
-    
-    </summary>
-    
-      <category term="craft" scheme="http://yoursite.com/categories/craft/"/>
-    
-    
-      <category term="injection molding" scheme="http://yoursite.com/tags/injection-molding/"/>
-    
-      <category term="plastic" scheme="http://yoursite.com/tags/plastic/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>金属加工工艺</title>
-    <link href="http://yoursite.com/2018/08/20/craft/craft-machine/"/>
-    <id>http://yoursite.com/2018/08/20/craft/craft-machine/</id>
-    <published>2018-08-20T02:27:14.000Z</published>
-    <updated>2018-12-24T06:11:45.449Z</updated>
-    
-    <content type="html"><![CDATA[<p>金属加工主要分为粗加工、精加工和热加工等方式。<strong>粗加工</strong></p><p><strong>细加工</strong>包括磨削、</p><p>车削、磨削、铣削、镗削、钻削都是常见的金属冷加工方式。<br><strong>热加工</strong>包括铸造、焊接、锻造、冲压等。</p><p><strong>车削</strong>是指利用工件的旋转运动和刀具的直线或曲线运动来改变毛坯形状和尺寸，适合加工回转表面，如内外圆柱面、圆锥面、沟槽、螺纹等。<strong>铣削</strong>是指将工件固定，用高速旋转的铣刀在毛坯上走刀。</p><p><strong>卧式机床</strong>主轴横卧，工件夹在卡盘上将负荷传递给主轴，优点是观察和操作方便，适合加工中小型轮盘和轴类。<strong>立式机床</strong>主轴直立，工件重量分散到床身上，优点是承重能力强、刚性好，时候加工直径大的工件。</p><p>—-To Be Continued—-</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;金属加工主要分为粗加工、精加工和热加工等方式。&lt;strong&gt;粗加工&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;细加工&lt;/strong&gt;包括磨削、&lt;/p&gt;
-&lt;p&gt;车削、磨削、铣削、镗削、钻削都是常见的金属冷加工方式。&lt;br&gt;&lt;strong&gt;热加工&lt;/strong&gt;包括
-      
-    
-    </summary>
-    
-      <category term="craft" scheme="http://yoursite.com/categories/craft/"/>
-    
-    
-      <category term="machine" scheme="http://yoursite.com/tags/machine/"/>
-    
-      <category term="metal" scheme="http://yoursite.com/tags/metal/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>know-iis</title>
-    <link href="http://yoursite.com/2018/08/16/knowledge/know-iis/"/>
-    <id>http://yoursite.com/2018/08/16/knowledge/know-iis/</id>
-    <published>2018-08-16T00:41:14.000Z</published>
-    <updated>2018-09-28T05:41:54.462Z</updated>
-    
-    <content type="html"><![CDATA[<p>—-To Be Continued—-</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;—-To Be Continued—-&lt;/p&gt;
-
-      
-    
-    </summary>
-    
     
   </entry>
   
