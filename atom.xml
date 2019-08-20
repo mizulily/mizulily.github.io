@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-08T02:15:47.914Z</updated>
+  <updated>2019-08-20T03:33:34.022Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>编程命名规范</title>
+    <link href="http://yoursite.com/2019/08/20/knowledge/know-naming-rule/"/>
+    <id>http://yoursite.com/2019/08/20/knowledge/know-naming-rule/</id>
+    <published>2019-08-20T03:03:51.000Z</published>
+    <updated>2019-08-20T03:33:34.022Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li><p><strong>匈牙利命名法</strong>(Hungarian Notation)<br>匈牙利命名法是微软内部一个匈牙利人发起使用的，随后逐渐在微软内部流行起来并推广给了全世界的Windows开发人员。<br>其主要思想是：在变量和函数名中加入前缀，以增进人们对程序的理解。<br>常用前缀一览：<br> b   -&gt;  boolean<br> ch  -&gt;  char<br> f   -&gt;  float/flag<br> db  -&gt;  double<br> dw  -&gt;  double word<br> i   -&gt;  int/index<br> c   -&gt;  count of items<br> p   -&gt;  pointer<br> a   -&gt;  array<br> s   -&gt;  string<br> st  -&gt;  structure<br> fn  -&gt;  function<br> h   -&gt;  handle<br> m   -&gt;  member<br> g   -&gt;  global<br> l   -&gt;  local</p></li><li><p><strong>驼峰命名法</strong>(Camel-case Notation)<br>小驼峰命名法第一个单词首字母小写，其他单词首字母大写。<br>大驼峰命名法每个单词都大写，也称<strong>帕斯卡命名法</strong>(Pascal Notation / Upper Camel-case)。</p></li><li><p><strong>下划线命名法</strong>(Under-score-case Notation)<br>每个单词都用下划线分割，这种方法在C语言和UNIX环境中非常普遍。</p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;匈牙利命名法&lt;/strong&gt;(Hungarian Notation)&lt;br&gt;匈牙利命名法是微软内部一个匈牙利人发起使用的，随后逐渐在微软内部流行起来并推广给了全世界的Windows开发人员。&lt;br&gt;其主要思想是：在变量和函数名中加入前缀，
+      
+    
+    </summary>
+    
+    
+      <category term="programming" scheme="http://yoursite.com/tags/programming/"/>
+    
+      <category term="notation" scheme="http://yoursite.com/tags/notation/"/>
+    
+  </entry>
   
   <entry>
     <title>URI统一资源标识符</title>
@@ -458,9 +484,9 @@
       <category term="note" scheme="http://yoursite.com/categories/note/"/>
     
     
-      <category term="Oracle" scheme="http://yoursite.com/tags/Oracle/"/>
-    
       <category term="Database" scheme="http://yoursite.com/tags/Database/"/>
+    
+      <category term="Oracle" scheme="http://yoursite.com/tags/Oracle/"/>
     
   </entry>
   
@@ -521,40 +547,6 @@
     
     
       <category term="network" scheme="http://yoursite.com/tags/network/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>将Ghost系统还原到虚拟机</title>
-    <link href="http://yoursite.com/2018/10/19/tip/tip-vm-ghost/"/>
-    <id>http://yoursite.com/2018/10/19/tip/tip-vm-ghost/</id>
-    <published>2018-10-19T03:05:28.000Z</published>
-    <updated>2018-12-24T06:11:27.299Z</updated>
-    
-    <content type="html"><![CDATA[<ol><li><p>创建空虚拟机<br>安装来源界面，选择“稍后安装操作系统”，并选择需要还原的系统和版本，选择合适的内存、硬盘后完成创建。</p></li><li><p>用老毛桃进入WinPE<br>打开老毛桃，左侧选择ISO模式，点击“生成ISO”会在D盘创建名为“老毛桃ISO”的文件夹。在刚创建的虚拟机设置里面，“硬件”标签中的光驱选择“使用ISO映像文件”并选择“老毛桃ISO”文件夹下的LMT.iso文件，“选项”标签中的高级，固件类型选择“BIOS”。<br>启动虚拟机后引导进入WinPE，选择一项进入，建议选择新机器的WinPE，启动成功后会进入老毛桃的WinPE，包含多个系统维护工具。</p></li><li><p>用老毛桃还原Ghost<br>首先进行硬盘分区，打开DiskGenius分区工具，点击快速分区，选择MBR或者GUID分区表类型，并完成分区。<br>点击“老毛桃PE装机工具”，选择“还原分区”，选择需要还原的Ghost文件和安装的分区，点击确定进行还原。</p></li><li><p>用老毛桃修复引导记录<br>还原完成后重启出现了“The boot configuration data for your pc is missing or contain errors”报错，点击启动“修复引导工具”并选择还原后的系统分区。<br>注意，若选用GUID分区，需要创建ESP分区并将引导放入ESP分区，并在虚拟机中设置UEFI启动。<br>修复完成后重启就可以正常启动啦！</p></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;创建空虚拟机&lt;br&gt;安装来源界面，选择“稍后安装操作系统”，并选择需要还原的系统和版本，选择合适的内存、硬盘后完成创建。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;用老毛桃进入WinPE&lt;br&gt;打开老毛桃，左侧选择ISO模式，点击“生成ISO”会在D盘创建名为“老
-      
-    
-    </summary>
-    
-      <category term="tip" scheme="http://yoursite.com/categories/tip/"/>
-    
-    
-      <category term="virtual machine" scheme="http://yoursite.com/tags/virtual-machine/"/>
-    
-      <category term="VMWare" scheme="http://yoursite.com/tags/VMWare/"/>
-    
-      <category term="ghost" scheme="http://yoursite.com/tags/ghost/"/>
-    
-      <category term="LAOMAOTAO" scheme="http://yoursite.com/tags/LAOMAOTAO/"/>
     
   </entry>
   
